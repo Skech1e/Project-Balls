@@ -1,0 +1,99 @@
+{
+    "name": "New Controls",
+    "maps": [
+        {
+            "name": "Controls",
+            "id": "ce81569d-33f2-403c-916e-5f73e5df1086",
+            "actions": [
+                {
+                    "name": "Aim",
+                    "type": "Button",
+                    "id": "954bf167-051c-4b37-b65b-33842c3ece1c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Power and Throw",
+                    "type": "Button",
+                    "id": "98f081d4-b1ff-4a5f-81e9-af6da9c21990",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d5fbbe53-c16a-48a1-a4e5-f25007323a3d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Phone",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "9b66c256-5759-4203-8f4f-d59a96206641",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Aim",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "70f5a302-2827-47fd-8ce8-90ea0918844c",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Phone",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1ddb299a-ce21-42c9-b5ed-b631986e4a7c",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Phone",
+                    "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "ca746887-7a85-449c-b068-371c127ecc50",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Phone",
+                    "action": "Power and Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Phone",
+            "bindingGroup": "Phone",
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

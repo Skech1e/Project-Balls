@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 07fa99e5acb711c47a9cc37b89fdbd89
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BURGER_GEO
+    100002: CACTUS_GEOS
+    100004: //RootNode
+    100006: DESERT_GROUND_GEO
+    100008: PALNTS_PALNE_GEO
+    100010: pCube81
+    100012: WALL_GEO
+    400000: BURGER_GEO
+    400002: CACTUS_GEOS
+    400004: //RootNode
+    400006: DESERT_GROUND_GEO
+    400008: PALNTS_PALNE_GEO
+    400010: pCube81
+    400012: WALL_GEO
+    2100000: WALL_DESERT_TEX_MAT
+    2100002: lambert1
+    2100004: DESERT_PLANT_TEX_MAT
+    2100006: CACTUS_TEX_MAT
+    2100008: BURGER_TEX_MAT
+    2100010: lambert20
+    2300000: BURGER_GEO
+    2300002: CACTUS_GEOS
+    2300004: DESERT_GROUND_GEO
+    2300006: PALNTS_PALNE_GEO
+    2300008: pCube81
+    2300010: WALL_GEO
+    3300000: BURGER_GEO
+    3300002: CACTUS_GEOS
+    3300004: DESERT_GROUND_GEO
+    3300006: PALNTS_PALNE_GEO
+    3300008: pCube81
+    3300010: WALL_GEO
+    4300000: WALL_GEO
+    4300002: pCube81
+    4300004: PALNTS_PALNE_GEO
+    4300006: CACTUS_GEOS
+    4300008: BURGER_GEO
+    4300010: DESERT_GROUND_GEO
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BURGER_TEX_MAT
+    second: {fileID: 2100000, guid: 738a706bc97cd854589ab586bb7fc004, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CACTUS_TEX_MAT
+    second: {fileID: 2100000, guid: 8d2abf99b5db37b4da0c5ba9f352a539, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DESERT_PLANT_TEX_MAT
+    second: {fileID: 2100000, guid: 6dd35de32e818d941a8cbb2ef37a81d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WALL_DESERT_TEX_MAT
+    second: {fileID: 2100000, guid: 7f15726ca4dd4b74d9158ea8256b427c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 75884d35c3f72c9459d130c6269fdf34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert20
+    second: {fileID: 2100000, guid: ea39cefffc0565944aaf1491326c0cee, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wall_lambert21_BaseColor
+    second: {fileID: 2800000, guid: 91bb0d592a7545646b1ab43ea67c0826, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: burger final texture 02
+    second: {fileID: 2800000, guid: c2ae8c98f3580284d9026a64c17ee41f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cactus diff
+    second: {fileID: 2800000, guid: 58b7c5c2f73bb3e45b46296ce5aeab7f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fgrass1_v2_256 (1)
+    second: {fileID: 2800000, guid: 2b677781a353ca4429379e489928c92f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sand ground diff tex
+    second: {fileID: 2800000, guid: 3f4b812e4c190e640a1e05ad010e6157, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wall new fro desert  diff
+    second: {fileID: 2800000, guid: ee36d18a33f54ff4f8214b85ba0dc005, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 120
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
