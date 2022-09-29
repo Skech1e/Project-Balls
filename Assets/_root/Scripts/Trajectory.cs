@@ -51,6 +51,6 @@ public class Trajectory : MonoBehaviour
     {
         float x = velocity.x * t;
         float y = (velocity.y * t) - (gravity * Mathf.Pow(t, 2) / 2);
-        return new Vector3(x + transform.position.x, y + transform.position.y, x + transform.position.z);
+        return new Vector3(x + transform.position.x, y + transform.position.y, 0);
     }
 }
