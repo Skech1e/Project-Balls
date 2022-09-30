@@ -26,7 +26,6 @@ public class Trajectory : MonoBehaviour
     private void Awake()
     {
         line = GetComponent<LineRenderer>();
-        lineSegment = 20;
         gravity = Mathf.Abs(Physics.gravity.y);
         line.useWorldSpace = false;
         input = new PlayerInputs();
@@ -39,21 +38,21 @@ public class Trajectory : MonoBehaviour
 
     }
 
-    //private void OnEnable()
-    //{
-    //    input.Enable();
-    //    input.Controls.Aim.started += TouchAim;
-    //    input.Controls.Aim.performed += TouchAim;
-    //    input.Controls.Aim.canceled += TouchAim;
-    //}
+    private void OnEnable()
+    {
+        input.Enable();
+        input.Controls.Aim.started += TouchAim;
+        input.Controls.Aim.performed += TouchAim;
+        input.Controls.Aim.canceled += TouchAim;
+    }
 
-    //private void OnDisable()
-    //{
-    //    input.Disable();
-    //    input.Controls.Aim.started -= TouchAim;
-    //    input.Controls.Aim.performed -= TouchAim;
-    //    input.Controls.Aim.canceled -= TouchAim;
-    //}
+    private void OnDisable()
+    {
+        input.Disable();
+        input.Controls.Aim.started -= TouchAim;
+        input.Controls.Aim.performed -= TouchAim;
+        input.Controls.Aim.canceled -= TouchAim;
+    }
 
     void TouchAim(InputAction.CallbackContext context)
     {
