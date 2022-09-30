@@ -7,12 +7,12 @@
             "actions": [
                 {
                     "name": "Aim",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "954bf167-051c-4b37-b65b-33842c3ece1c",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Power and Throw",
@@ -28,46 +28,13 @@
                 {
                     "name": "",
                     "id": "d5fbbe53-c16a-48a1-a4e5-f25007323a3d",
-                    "path": "",
+                    "path": "<Touchscreen>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "Phone",
                     "action": "Aim",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "1D Axis",
-                    "id": "9b66c256-5759-4203-8f4f-d59a96206641",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Aim",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "70f5a302-2827-47fd-8ce8-90ea0918844c",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Phone",
-                    "action": "Aim",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "1ddb299a-ce21-42c9-b5ed-b631986e4a7c",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Phone",
-                    "action": "Aim",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
