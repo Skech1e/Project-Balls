@@ -39,8 +39,8 @@
                 {
                     "name": "",
                     "id": "ca746887-7a85-449c-b068-371c127ecc50",
-                    "path": "",
-                    "interactions": "",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Hold(duration=1.401298E-45)",
                     "processors": "",
                     "groups": "Phone",
                     "action": "Power and Throw",

@@ -21,7 +21,11 @@ public class Trajectory : MonoBehaviour
 
     [SerializeField] PlayerInputs input;
 
-    [SerializeField] Vector2 InputScale;
+    public Vector2 InputScale;
+    [SerializeField] [Range(0.001f, 0.1f)] float precision;
+
+    Vector3[] lineArray;
+    public Vector3[] ballPath;
 
     private void Awake()
     {
@@ -60,31 +64,43 @@ public class Trajectory : MonoBehaviour
 
         if(action == InputActionPhase.Performed)
         {            
-            InputScale.y += context.ReadValue<Vector2>().x;
+            InputScale += context.ReadValue<Vector2>();
         }
         else if(action == InputActionPhase.Canceled)
         {
-            InputScale.y = 0;
+            //InputScale.x = 0;
         }
     }
 
     void Update()
     {
+        ClampInputValues();
+        velocity.x = InputScale.x * precision;
+        velocity.y = InputScale.y * precision;
+        velocity.z = velocity.y;
         Yveloc = velocity.y;
-        transform.rotation = Quaternion.Euler(InputScale);
-        StartCoroutine(RenderLine());
+        //StartCoroutine(RenderLine());
+        RenderLine();
+
+        ballPath = lineArray;
     }
 
-    IEnumerator RenderLine()
+    void ClampInputValues()
+    {
+        InputScale.x = Mathf.Clamp(InputScale.x, -250f, 250f);
+        InputScale.y = Mathf.Clamp(InputScale.y, 250f, 650f);
+    }
+
+    void RenderLine()
     {
         line.positionCount = lineSegment + 1;
         line.SetPositions(CalculateLineArray());
-        yield return null;
+        //yield return null;
     }
 
     private Vector3[] CalculateLineArray()
     {
-        Vector3[] lineArray = new Vector3[lineSegment + 1];
+        lineArray = new Vector3[lineSegment + 1];
 
         var lowestTimevalue = MaxZDuration() / lineSegment;
 
@@ -118,9 +134,10 @@ public class Trajectory : MonoBehaviour
     }
     private Vector3 CalculateLinePoints(float t)
     {
+        float x = velocity.x * t;
         float z = velocity.z * t;
         float y = (velocity.y * t) - (gravity * Mathf.Pow(t, 2) / 2);
-        return new Vector3(0, y, z);
+        return new Vector3(x, y, z);
     }
 
     float MaxYDuration()
