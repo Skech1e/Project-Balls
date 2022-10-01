@@ -57,7 +57,6 @@ public class Ball : MonoBehaviour
         direction.x = track.InputScale.x * Time.fixedDeltaTime;
         direction.y = track.InputScale.y * Time.fixedDeltaTime;
         direction.z = track.InputScale.y * Time.fixedDeltaTime;
-        print(Time.fixedDeltaTime);
     }
 
     private void FixedUpdate()

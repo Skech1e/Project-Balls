@@ -969,7 +969,6 @@ GameObject:
   - component: {fileID: 338086603}
   - component: {fileID: 338086602}
   - component: {fileID: 338086601}
-  - component: {fileID: 338086608}
   - component: {fileID: 338086607}
   - component: {fileID: 338086609}
   - component: {fileID: 338086610}
@@ -1155,31 +1154,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &338086608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338086600}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49bbf37b24a265c4da437fe8a5bd10e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  line: {fileID: 0}
-  lineSegment: 69
-  velocity: {x: 0, y: 0, z: 0}
-  Yveloc: 0
-  gravity: 0
-  Ymax: 0
-  linecastSegment: 69
-  hitMask:
-    serializedVersion: 2
-    m_Bits: 0
-  InputScale: {x: 0, y: 0}
-  precision: 0
-  ballPath: []
 --- !u!114 &338086609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2554,8 +2528,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   InputScale: {x: 0, y: 0}
-  precision: 0
   ballPath: []
+  clampX0: 0
+  clampX1: 0
+  clampY0: 0
+  clampY1: 0
+  precision: 0
 --- !u!120 &1040401487
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3024,8 +3002,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   InputScale: {x: 0, y: 0}
-  precision: 0.02
   ballPath: []
+  clampX0: -5
+  clampX1: 5
+  clampY0: 5
+  clampY1: 15
+  precision: 0.02
 --- !u!120 &1396681923
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -4318,9 +4300,6 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   defaultPos: {x: 0, y: 0, z: 0}
   balls: {fileID: 2041569611}
-  a: 0
-  b: 0
-  c: 0
 --- !u!1 &1905687217
 GameObject:
   m_ObjectHideFlags: 0

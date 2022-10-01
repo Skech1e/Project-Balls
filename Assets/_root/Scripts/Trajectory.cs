@@ -18,14 +18,16 @@ public class Trajectory : MonoBehaviour
     [Header("Linecast")]
     [SerializeField] int linecastSegment;
     [SerializeField] LayerMask hitMask;
-
+    public Vector2 InputScale;
     [SerializeField] PlayerInputs input;
 
-    public Vector2 InputScale;
-    [SerializeField] [Range(0.001f, 0.1f)] float precision;
 
     Vector3[] lineArray;
     public Vector3[] ballPath;
+
+    [Space]
+    public float clampX0, clampX1, clampY0, clampY1;
+    [SerializeField][Range(0.001f, 0.1f)] float precision;
 
     private void Awake()
     {
@@ -87,8 +89,8 @@ public class Trajectory : MonoBehaviour
 
     void ClampInputValues()
     {
-        InputScale.x = Mathf.Clamp(InputScale.x, -250f, 250f);
-        InputScale.y = Mathf.Clamp(InputScale.y, 250f, 650f);
+        InputScale.x = Mathf.Clamp(InputScale.x, clampX0/precision, clampX1 / precision);
+        InputScale.y = Mathf.Clamp(InputScale.y, clampY0/precision, clampY1 / precision);
     }
 
     void RenderLine()
