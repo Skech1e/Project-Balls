@@ -24,10 +24,11 @@ public class Trajectory : MonoBehaviour
 
     Vector3[] lineArray;
     public Vector3[] ballPath;
+    Ball ball;
 
     [Space]
     public float clampX0, clampX1, clampY0, clampY1;
-    [SerializeField][Range(0.001f, 0.1f)] float precision;
+    [Range(0.001f, 0.1f)] public float precision;
 
     private void Awake()
     {
@@ -37,11 +38,11 @@ public class Trajectory : MonoBehaviour
         input = new PlayerInputs();
         velocity.z = 10f;
         velocity.y = 10f;
-
+        ball = FindObjectOfType<Ball>();
     }
     void Start()
     {
-
+        transform.position = ball.transform.position;
     }
 
     private void OnEnable()
@@ -78,8 +79,8 @@ public class Trajectory : MonoBehaviour
     {
         ClampInputValues();
         velocity.x = InputScale.x * precision;
-        velocity.y = InputScale.y * precision;
-        velocity.z = velocity.y;
+        velocity.y = InputScale.y * precision * 1.5f;
+        velocity.z = InputScale.y * precision;
         Yveloc = velocity.y;
         //StartCoroutine(RenderLine());
         RenderLine();
