@@ -2998,7 +2998,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: cef80eacad1e15b4ebad2432515b72a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3072,7 +3072,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     shadowBias: 0.5
     generateLightingData: 0
   m_UseWorldSpace: 1
@@ -4624,7 +4624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1996201081}
   - component: {fileID: 1996201082}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Back Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5058,7 +5058,7 @@ GameObject:
   - component: {fileID: 33638153381622641}
   - component: {fileID: 137751759186830921}
   - component: {fileID: 183195834115954193}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5075,7 +5075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4784297552263337}
   - component: {fileID: 65582675483981097}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Side Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5091,7 +5091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4623187386774019}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: basket
   m_TagString: basket
   m_Icon: {fileID: 0}
@@ -5110,7 +5110,7 @@ GameObject:
   - component: {fileID: 33538528629366531}
   - component: {fileID: 23879402713190603}
   - component: {fileID: 64343696377058069}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5127,7 +5127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4867101398752551}
   - component: {fileID: 65835633686711445}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Front Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5144,7 +5144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4632655750735203}
   - component: {fileID: 65108831455713841}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: 'Side Collider '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5161,7 +5161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4782670955291719}
   - component: {fileID: 65329235095902949}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Basket Detector
   m_TagString: Normal Basket
   m_Icon: {fileID: 0}

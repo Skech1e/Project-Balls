@@ -82,7 +82,6 @@ public class Trajectory : MonoBehaviour
         velocity.y = InputScale.y * precision * 1.5f;
         velocity.z = InputScale.y * precision;
         Yveloc = velocity.y;
-        //StartCoroutine(RenderLine());
         RenderLine();
 
         ballPath = lineArray;
@@ -130,7 +129,10 @@ public class Trajectory : MonoBehaviour
                 var hit = Physics.Linecast(CalculateLinePoints(t), CalculateLinePoints(tt), out hitPoint, hitMask);
 
                 if (hit)
+                {
+                    print(hitPoint.rigidbody.name);
                     return hitPoint.point;
+                }
             }
             return CalculateLinePoints(MaxYDuration());
         }
