@@ -40,22 +40,18 @@ public class Ball : MonoBehaviour
         direction.y = track.InputScale.y * track.precision * 1.5f;
         direction.z = track.InputScale.y * track.precision;
 
-        ThrowBall();
-
-        if (Throw == false)
-        {
-            transform.Rotate(69f * Time.deltaTime, 42.0f * Time.deltaTime, 13.37f * Time.deltaTime);
-        }
+        
 
     }
 
     private void FixedUpdate()
     {
+        ThrowBall();
+
         if (Throw == true)
-        {
-           
             RotateBallOnThrow(randomValue);
-        }
+        else
+            transform.Rotate(69f * Time.deltaTime, 42.0f * Time.deltaTime, 13.37f * Time.deltaTime);
 
     }
 
@@ -92,7 +88,7 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "Ground" && transform.position != defaultPos)
+        if (collision.collider.tag == "ground" && transform.position != defaultPos)
         {
             Throw = false;
             Invoke(nameof(ResetBall), 2f);
