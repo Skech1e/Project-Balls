@@ -14,6 +14,8 @@ public class Projectile1 : MonoBehaviour
     Rigidbody rb;
     Trajectory track;
 
+    
+
     private void Start()
     {
         defaultPos = balls.transform.position;
