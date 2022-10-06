@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class CollisionTrigger : MonoBehaviour
 {
-    [SerializeField] Transform Final;
+    [SerializeField] BoxCollider Final;
     public void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
-            Final.gameObject.SetActive(true);
-            Invoke(nameof(Reset), 2f);
+            Final.enabled = true;
         }
     }
 
+
     private void Awake()
     {
-        Final.gameObject.SetActive(false);
+        Final.enabled = false;
     }
 
     private void Reset()
     {
-        Final.gameObject.SetActive(false);
+        
     }
     // Start is called before the first frame update
     void Start()
