@@ -960,6 +960,7 @@ GameObject:
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
+  - component: {fileID: 330585550}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1122,6 +1123,21 @@ MonoBehaviour:
   gameMode: 1
   scb_Timer: {fileID: 2146322003}
   scores: {fileID: 4782670955291721}
+--- !u!114 &330585550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41139a8fc19974488eb8666abefc5d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scores:
+    Name: 
+    HiScore: 0
 --- !u!43 &344013424
 Mesh:
   m_ObjectHideFlags: 0

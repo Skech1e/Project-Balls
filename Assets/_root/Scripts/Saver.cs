@@ -10,7 +10,7 @@ public class Saver : MonoBehaviour
     public void SavetoJson()
     {
         string score = JsonUtility.ToJson(_scores);
-        System.IO.File.WriteAllText(Application.persistentDataPath + "/usr/scglobal.json", score);
+        System.IO.File.WriteAllText(Application.persistentDataPath + "/scglobal.json", score);
         print("data saved successfully");
     }
 

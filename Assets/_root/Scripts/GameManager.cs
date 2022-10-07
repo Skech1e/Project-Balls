@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     {
         Countdown();
         GameModeSelection();
-        RecordScores()
+        RecordScores();
     }
 
     private void OnDisable()
