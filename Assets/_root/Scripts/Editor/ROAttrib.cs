@@ -1,4 +1,3 @@
-#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 public class ReadOnlyProperty : PropertyAttribute { }
@@ -13,4 +12,3 @@ public class ReadOnlyPropertyDrawer : PropertyDrawer
         GUI.enabled = true;
     }
 }
-#endif

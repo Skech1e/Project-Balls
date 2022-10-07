@@ -46,6 +46,17 @@
                     "action": "Power and Throw",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8338dcb4-da9b-40b6-9a42-10121b0e9bf2",
+                    "path": "<Touchscreen>/touch*/Press",
+                    "interactions": "MultiTap",
+                    "processors": "",
+                    "groups": "Phone",
+                    "action": "Power and Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

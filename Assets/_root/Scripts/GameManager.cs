@@ -7,17 +7,18 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [Header("Scoring")]
-    [ReadOnlyProperty] public int highScore;
-    [ReadOnlyProperty] public int totalScore;
-    [SerializeField] int timer, score, bonus;
-    bool gameModeSelected, timedGame;
+    [SerializeField] int highScore;
+    [SerializeField] int totalScore;
+    [SerializeField] float timer;
+    [SerializeField] int score, bonus;
+    [SerializeField] bool gameModeSelected, timedGame;
 
     enum GameMode { training, casual, rapidFire }
 
     [SerializeField] GameMode gameMode = new GameMode();
 
     [SerializeField] TextMeshProUGUI scb_Timer;
-
+    
     private void Awake()
     {
         timedGame = false;
@@ -61,14 +62,16 @@ public class GameManager : MonoBehaviour
 
     void Countdown()
     {
-        timer -= timedGame == true && timer > 0 ? (int)Time.deltaTime : 0;
+        timer -= timedGame == true && timer > 0 ? Time.deltaTime : 0;
+        
         DisplayTime(timer);
     }
 
-    void DisplayTime(int timer)
+    void DisplayTime(float timer)
     {
-        int minutes = timer / 60;
-        int seconds = timer % 60;
-        scb_Timer.text = string.Format("{0}:{1}", minutes, seconds);
+        int minutes = Mathf.FloorToInt(timer / 60);
+        int seconds = Mathf.FloorToInt(timer % 60);
+        scb_Timer.text = string.Format("{0}:{1:00}", minutes, seconds);
+        
     }
 }
