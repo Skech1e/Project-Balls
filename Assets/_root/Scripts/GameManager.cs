@@ -18,11 +18,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameMode gameMode = new GameMode();
 
     [SerializeField] TextMeshProUGUI scb_Timer;
-    
+    [SerializeField] Scored scores;
+    private ScoreData scrdata = new();
+    private Saver saver;
     private void Awake()
     {
         timedGame = false;
         gameModeSelected = false;
+        saver = GetComponent<Saver>();
     }
 
     // Start is called before the first frame update
@@ -36,6 +39,12 @@ public class GameManager : MonoBehaviour
     {
         Countdown();
         GameModeSelection();
+        RecordScores()
+    }
+
+    private void OnDisable()
+    {
+        saver.SavetoJson();
     }
 
     void GameModeSelection()
@@ -71,7 +80,15 @@ public class GameManager : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(timer / 60);
         int seconds = Mathf.FloorToInt(timer % 60);
-        scb_Timer.text = string.Format("{0}:{1:00}", minutes, seconds);
-        
+        scb_Timer.text = string.Format("{0}:{1:00}", minutes, seconds);        
+    }
+
+    void RecordScores()
+    {
+        totalScore = scores.totalScore;
+        highScore = totalScore > scores.highscore ? totalScore : scores.highscore;
+
+        scrdata.HiScore = highScore;
+        scrdata.Name = null;
     }
 }

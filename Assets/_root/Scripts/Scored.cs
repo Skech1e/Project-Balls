@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Scored : MonoBehaviour
 {
-    [SerializeField] int totalScore, highscore;
+    [SerializeField] public int totalScore, highscore;
     [SerializeField] int timer;
     [SerializeField] int score = 69, bonus;
 

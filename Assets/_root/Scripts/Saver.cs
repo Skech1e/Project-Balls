@@ -11,11 +11,12 @@ public class Saver : MonoBehaviour
     {
         string score = JsonUtility.ToJson(_scores);
         System.IO.File.WriteAllText(Application.persistentDataPath + "/usr/scglobal.json", score);
+        print("data saved successfully");
     }
 
     public void LoadfromJson()
     {
-
+        
     }
 }
 
