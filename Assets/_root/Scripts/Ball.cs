@@ -38,9 +38,7 @@ public class Ball : MonoBehaviour
     {
         direction.x = track.InputScale.x * track.precision;
         direction.y = track.InputScale.y * track.precision * 1.5f;
-        direction.z = track.InputScale.y * track.precision;
-
-        
+        direction.z = track.InputScale.y * track.precision;        
 
     }
 

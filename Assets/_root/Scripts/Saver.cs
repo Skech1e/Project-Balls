@@ -7,16 +7,18 @@ public class Saver : MonoBehaviour
 {
     [SerializeField] private ScoreData _scores = new ScoreData();
 
-    public void SavetoJson()
+    public void SavetoJson(ScoreData _score)
     {
-        string score = JsonUtility.ToJson(_scores);
+        string score = JsonUtility.ToJson(_score);
         System.IO.File.WriteAllText(Application.persistentDataPath + "/scglobal.json", score);
         print("data saved successfully");
     }
 
-    public void LoadfromJson()
+    public ScoreData LoadfromJson()
     {
-        
+        string score = System.IO.File.ReadAllText(Application.persistentDataPath + "/scglobal.json");
+        return JsonUtility.FromJson<ScoreData>(score);
+
     }
 }
 

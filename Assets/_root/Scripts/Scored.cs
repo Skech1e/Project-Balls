@@ -5,24 +5,21 @@ using UnityEngine;
 
 public class Scored : MonoBehaviour
 {
-    [SerializeField] public int totalScore, highscore;
-    [SerializeField] int timer;
-    [SerializeField] int score = 69, bonus;
-
-    [SerializeField] List<TextMeshProUGUI> scoreboard = new(3);
-
+    [SerializeField] public int totalScore;
+    [SerializeField] int score;
     BoxCollider bc;
+    GameManager gameManager;
 
     private void Awake()
     {
         bc = GetComponent<BoxCollider>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        foreach (var entry in scoreboard)
-            entry.text = 0.ToString();
+        
     }
 
     // Update is called once per frame
@@ -35,10 +32,9 @@ public class Scored : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            totalScore += score + bonus;
-            UpdateScoreBoard();
+            score = gameManager.ScorePerGoal();
+            totalScore += score;
         }
-
     }
 
     private void OnTriggerExit(Collider other)
@@ -46,10 +42,4 @@ public class Scored : MonoBehaviour
         bc.enabled = false;
     }
 
-    void UpdateScoreBoard()
-    {
-        scoreboard[0].text = highscore.ToString();
-        scoreboard[1].text = totalScore.ToString();
-        //scoreboard[2].text = timer.ToString();
-    }
 }

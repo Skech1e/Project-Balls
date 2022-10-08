@@ -1120,9 +1120,12 @@ MonoBehaviour:
   bonus: 0
   gameModeSelected: 0
   timedGame: 0
-  gameMode: 1
-  scb_Timer: {fileID: 2146322003}
+  gameMode: 0
   scores: {fileID: 4782670955291721}
+  scoreboard:
+  - {fileID: 1822030821}
+  - {fileID: 1080685607}
+  - {fileID: 2146322003}
 --- !u!114 &330585550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6649,14 +6652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalScore: 0
-  highscore: 0
-  timer: 0
   score: 69
-  bonus: 0
-  scoreboard:
-  - {fileID: 1822030821}
-  - {fileID: 1080685607}
-  - {fileID: 2146322003}
 --- !u!4 &4784297552263337
 Transform:
   m_ObjectHideFlags: 0

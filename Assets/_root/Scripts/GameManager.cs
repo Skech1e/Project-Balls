@@ -13,19 +13,23 @@ public class GameManager : MonoBehaviour
     [SerializeField] int score, bonus;
     [SerializeField] bool gameModeSelected, timedGame;
 
-    enum GameMode { training, casual, rapidFire }
+    enum GameMode { select_one, training, casual, rapidFire }
 
     [SerializeField] GameMode gameMode = new GameMode();
 
-    [SerializeField] TextMeshProUGUI scb_Timer;
     [SerializeField] Scored scores;
     private ScoreData scrdata = new();
     private Saver saver;
+
+    [SerializeField] List<TextMeshProUGUI> scoreboard = new(3);
     private void Awake()
     {
         timedGame = false;
         gameModeSelected = false;
         saver = GetComponent<Saver>();
+
+        foreach (var entry in scoreboard)
+            entry.text = 0.ToString();
     }
 
     // Start is called before the first frame update
@@ -40,11 +44,18 @@ public class GameManager : MonoBehaviour
         Countdown();
         GameModeSelection();
         RecordScores();
+        UpdateScoreBoard();
+    }
+
+    private void OnEnable()
+    {
+        scrdata.HiScore = saver.LoadfromJson().HiScore;
+        highScore = scrdata.HiScore;
     }
 
     private void OnDisable()
     {
-        saver.SavetoJson();
+        saver.SavetoJson(scrdata);
     }
 
     void GameModeSelection()
@@ -53,6 +64,9 @@ public class GameManager : MonoBehaviour
         {
             switch (gameMode)
             {
+                case GameMode.select_one:
+                    gameModeSelected = false;
+                    break;
                 case GameMode.training:
                     gameModeSelected = true;
                     break;
@@ -60,10 +74,8 @@ public class GameManager : MonoBehaviour
                     gameModeSelected = true;
                     break;
                 case GameMode.rapidFire:
-                    {
-                        gameModeSelected = true;
-                        timedGame = true;
-                    }
+                    gameModeSelected = true;
+                    timedGame = true;
                     break;
             }
         }
@@ -72,7 +84,6 @@ public class GameManager : MonoBehaviour
     void Countdown()
     {
         timer -= timedGame == true && timer > 0 ? Time.deltaTime : 0;
-        
         DisplayTime(timer);
     }
 
@@ -80,15 +91,29 @@ public class GameManager : MonoBehaviour
     {
         int minutes = Mathf.FloorToInt(timer / 60);
         int seconds = Mathf.FloorToInt(timer % 60);
-        scb_Timer.text = string.Format("{0}:{1:00}", minutes, seconds);        
+        scoreboard[2].text = string.Format("{0}:{1:00}", minutes, seconds);
     }
+
 
     void RecordScores()
     {
         totalScore = scores.totalScore;
-        highScore = totalScore > scores.highscore ? totalScore : scores.highscore;
+        highScore = totalScore > highScore ? totalScore : highScore;
 
         scrdata.HiScore = highScore;
-        scrdata.Name = null;
+        scrdata.Name = "test";
+    }
+
+    void UpdateScoreBoard()
+    {
+        scoreboard[0].text = highScore.ToString();
+        scoreboard[1].text = totalScore.ToString();
+    }
+
+    public int ScorePerGoal()
+    {
+        score = 69;
+        bonus = 0;
+        return score + bonus;
     }
 }
