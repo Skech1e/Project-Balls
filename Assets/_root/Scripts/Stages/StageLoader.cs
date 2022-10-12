@@ -16,7 +16,6 @@ public class StageLoader : MonoBehaviour
             for(int j = 0; j < b; j++)
             {
                 positionArray[i, j] = positions.transform.GetChild(i).transform.GetChild(j);
-                print(positionArray[i,j].name);
             }
         }
     }
