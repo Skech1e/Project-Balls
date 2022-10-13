@@ -22,8 +22,6 @@ public class StageHandler : MonoBehaviour
 
     private void Awake()
     {
-        istack.Count = 4;
-        jstack.Count = 4;
         level.Capacity = 10;
         //level[0] = pa.positionArray[0];
 
@@ -41,9 +39,9 @@ public class StageHandler : MonoBehaviour
                     istack.Push(i);
                     jstack.Push(j);
                     count++;
-                    if(count > 3)
+                    if(istack.Count > 3)
                     {
-
+                        //av.columns[istack.]
                     }
                     basket[count].transform.parent.position = pa.target[i, j].position;
                     //basket.transform.parent.position += Vector3.back * offset;
