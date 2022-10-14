@@ -9,11 +9,13 @@ public class Scored : MonoBehaviour
     [SerializeField] int score;
     BoxCollider bc;
     GameManager gameManager;
+    StageHandler stageHandler;
 
     private void Awake()
     {
         bc = GetComponent<BoxCollider>();
         gameManager = FindObjectOfType<GameManager>();
+        stageHandler = FindObjectOfType<StageHandler>();
     }
 
     // Start is called before the first frame update
@@ -40,6 +42,12 @@ public class Scored : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         bc.enabled = false;
+        Invoke(nameof(Cheer), 0.3f);
+    }
+
+    void Cheer()
+    {
+        stageHandler.loadNext = true;
     }
 
 }

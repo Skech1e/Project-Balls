@@ -8,15 +8,16 @@ public class PositionsArray : MonoBehaviour
     public Transform[,] target = new Transform[3,5];
     bool test;
 
-    private void OnValidate()
+    private void Awake()
     {
         positionArray.Capacity = 15;
 
-        /*for (int i = 0; i < 15; i++)
+        for (int j = 0; j < positionArray.Capacity; j++)
         {
-            positionArray[i] = transform.GetChild(i);
-        }*/
-        var k = 0;
+            positionArray.Add(transform.GetChild(j));
+        }
+
+        /*var k = 0;
         for(int i = 0; i < 3; i++)
         {
             for (int j = 0; j < 5; j++)
@@ -24,6 +25,7 @@ public class PositionsArray : MonoBehaviour
                 target[i, j] = transform.GetChild(j+k);
             }
             k += 5;
-        }   
+        }*/   
     }
+
 }

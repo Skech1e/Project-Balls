@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-
+using UnityEditor;
 public class StageHandler : MonoBehaviour
 {
 
@@ -9,25 +10,56 @@ public class StageHandler : MonoBehaviour
     [SerializeField] List<Scored> basket = new();
     [SerializeField] PositionsArray pa;
 
+    public bool loadNext;
+    public int currentLevel;
+
     [Header("Debug")]
     [SerializeField] ArrayViewer av;
     public bool test;
-    float offset = 0.8f;
     public int count;
     enum LevelType { still, moving }
 
     LevelType leveltype = new LevelType();
 
-    [SerializeField] Stack <int> istack, jstack = new();
+    [SerializeField] Queue<int> istack, jstack;
 
     private void Awake()
     {
+        basket.Capacity = 4;
+        istack = new Queue<int>();
+        jstack = new Queue<int>();
         level.Capacity = 10;
-        //level[0] = pa.positionArray[0];
 
+        for (int i = 1; i < basket.Capacity; i++)
+            basket[i].transform.parent.gameObject.SetActive(false);
+
+        LevelInit();
     }
 
-    private void OnValidate()
+    private void Update()
+    {
+        if (loadNext == true)
+            LevelChange();
+
+        basket[0].transform.parent.position = Vector3.MoveTowards(basket[0].transform.parent.position, level[currentLevel].position, Time.fixedDeltaTime);
+    }
+
+    void LevelInit()
+    {
+        level.Add(pa.positionArray[12]);
+        level.Add(pa.positionArray[8]);
+        level.Add(pa.positionArray[5]);
+        level.Add(pa.positionArray[7]);
+        level.Add(pa.positionArray[14]);
+    }
+
+    void LevelChange()
+    {
+        currentLevel++;
+        loadNext = false;
+    }
+
+    public void Check()
     {
         count = 0;
         for (int i = 0; i < 3; i++)
@@ -36,12 +68,15 @@ public class StageHandler : MonoBehaviour
             {
                 if (av.columns[i].rows[j] == true)
                 {
-                    istack.Push(i);
-                    jstack.Push(j);
+                    istack.Enqueue(i);
+                    jstack.Enqueue(j);
                     count++;
-                    if(istack.Count > 3)
+                    if (istack.Count > 3 && jstack.Count > 3)
                     {
-                        //av.columns[istack.]
+                        av.columns[istack.ElementAt(0)].rows[jstack.ElementAt(0)] = false;
+                        istack.Dequeue();
+                        jstack.Dequeue();
+
                     }
                     basket[count].transform.parent.position = pa.target[i, j].position;
                     //basket.transform.parent.position += Vector3.back * offset;
@@ -66,9 +101,29 @@ public class StageHandler : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
+
+
+    /*[CustomEditor(typeof(StageHandler))]
+    public class StackViewer : Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+
+
+            var ts = (StageHandler)target;
+            var iStack = ts.istack;
+            var jStack = ts.jstack;
+
+
+            foreach (var item in iStack)
+                GUILayout.Label("I: " + item.ToString());
+
+            foreach (var item in jStack)
+                GUILayout.Label("J: " + item.ToString());
+        }
+
+
+    }*/
 }
