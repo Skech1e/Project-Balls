@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int score, bonus;
     [SerializeField] bool gameModeSelected, timedGame;
 
-    enum GameMode { select_one, training, casual, rapidFire }
+    enum GameMode { select_one, casual, rapidFire }
 
     [SerializeField] GameMode gameMode = new GameMode();
 
@@ -66,9 +66,6 @@ public class GameManager : MonoBehaviour
             {
                 case GameMode.select_one:
                     gameModeSelected = false;
-                    break;
-                case GameMode.training:
-                    gameModeSelected = true;
                     break;
                 case GameMode.casual:
                     gameModeSelected = true;
