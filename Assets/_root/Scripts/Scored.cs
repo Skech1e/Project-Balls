@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class Scored : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Scored : MonoBehaviour
     bool goal;
     BoxCollider bc;
     [SerializeField] TextMeshProUGUI scoreTextPopup;
+    Vector3 initScoreTextPosition, TargetScoreTextPosition;
     GameManager gameManager;
     StageHandler stageHandler;
 
@@ -18,6 +20,8 @@ public class Scored : MonoBehaviour
         bc = GetComponent<BoxCollider>();
         gameManager = FindObjectOfType<GameManager>();
         stageHandler = FindObjectOfType<StageHandler>();
+        initScoreTextPosition = scoreTextPopup.transform.localPosition;
+        TargetScoreTextPosition = new Vector3(initScoreTextPosition.x, initScoreTextPosition.y + 6.9f, initScoreTextPosition.z);
         scoreTextPopup.gameObject.SetActive(false);
     }
 
@@ -25,6 +29,16 @@ public class Scored : MonoBehaviour
     void Start()
     {
         
+    }
+
+    private void OnEnable()
+    {
+        GameEvents.OnGoalEvent += ScoreTextMotion;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.OnGoalEvent -= ScoreTextMotion;
     }
 
     // Update is called once per frame
@@ -46,13 +60,16 @@ public class Scored : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         bc.enabled = false;
-        ScoreTextMotion();
-        //Invoke(nameof(Cheer), 0.3f);
+        Invoke(nameof(Cheer), 1f);
     }
 
     void Cheer()
     {
         stageHandler.loadNext = true;
+        scoreTextPopup.transform.localPosition = initScoreTextPosition;
+        scoreTextPopup.gameObject.SetActive(false);
+        scoreTextPopup.alpha = 1f;
+        goal = false;
     }
 
     void ScoreTextMotion()
@@ -60,9 +77,9 @@ public class Scored : MonoBehaviour
         if(goal == true)
         {
             scoreTextPopup.gameObject.SetActive(true);
-            var pos = scoreTextPopup.transform.position;
-            scoreTextPopup.transform.position = Vector3.MoveTowards(pos, new Vector3(pos.x, pos.y + 12f, pos.z), Time.deltaTime);
-            //goal = false;
+            var pos = scoreTextPopup.transform.localPosition;
+            scoreTextPopup.transform.localPosition = Vector3.MoveTowards(pos, TargetScoreTextPosition, Time.deltaTime);
+            scoreTextPopup.alpha -= Time.deltaTime * 1.69f;
         }
         
     }
