@@ -63,6 +63,7 @@ public class Ball : MonoBehaviour
             {
                 body.isKinematic = false;
                 body.AddForce(direction, ForceMode.Impulse);
+                body.AddTorque(direction , ForceMode.Force);
                 Throw = true;
                 randomValue = random.NextInt(-1, 2);
                 track.gameObject.SetActive(false);
@@ -81,7 +82,8 @@ public class Ball : MonoBehaviour
 
     void RotateBallOnThrow(float value)
     {
-        transform.Rotate(value * 240f * Time.fixedDeltaTime, 0, 0);
+        //transform.Rotate(value * 240f * Time.fixedDeltaTime, 0, 0);
+        //body.AddTorque(value * Time.fixedDeltaTime, 0, 0, ForceMode.Force);
     }
 
     private void OnCollisionEnter(Collision collision)

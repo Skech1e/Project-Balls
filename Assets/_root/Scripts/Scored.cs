@@ -76,6 +76,7 @@ public class Scored : MonoBehaviour
     {
         if(goal == true)
         {
+            scoreTextPopup.text = score.ToString();
             scoreTextPopup.gameObject.SetActive(true);
             var pos = scoreTextPopup.transform.localPosition;
             scoreTextPopup.transform.localPosition = Vector3.MoveTowards(pos, TargetScoreTextPosition, Time.deltaTime);

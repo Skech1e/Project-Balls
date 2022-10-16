@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] float timer;
     [SerializeField] int score, bonus;
     [SerializeField] bool gameModeSelected, timedGame;
+    [SerializeField][Range(3,9)] int ball_count;
 
     enum GameMode { select_one, casual, rapidFire }
 
@@ -112,5 +113,10 @@ public class GameManager : MonoBehaviour
         score = 69;
         bonus = 0;
         return score + bonus;
+    }
+
+    public void BallCounter()
+    {
+
     }
 }
