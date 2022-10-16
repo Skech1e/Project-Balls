@@ -63,7 +63,7 @@ public class Ball : MonoBehaviour
             {
                 body.isKinematic = false;
                 body.AddForce(direction, ForceMode.Impulse);
-                body.AddTorque(direction , ForceMode.Force);
+                body.AddTorque(direction    , ForceMode.Force);
                 Throw = true;
                 randomValue = random.NextInt(-1, 2);
                 track.gameObject.SetActive(false);
