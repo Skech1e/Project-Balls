@@ -41,7 +41,7 @@ public class StageHandler : MonoBehaviour
         if (loadNext == true)
             LevelChange();
 
-        basket[0].transform.parent.position = Vector3.MoveTowards(basket[0].transform.parent.position, level[currentLevel].position, Time.fixedDeltaTime);
+        basket[0].transform.parent.position = Vector3.MoveTowards(basket[0].transform.parent.position, level[currentLevel].position, Time.deltaTime*5);
     }
 
     void LevelInit()

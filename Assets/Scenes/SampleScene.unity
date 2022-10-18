@@ -1479,9 +1479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
+  m_RenderShadows: 0
+  m_RequiresDepthTextureOption: 0
+  m_RequiresOpaqueTextureOption: 0
   m_CameraType: 0
   m_Cameras: []
   m_RendererIndex: -1
@@ -1490,7 +1490,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
+  m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -2505,7 +2505,7 @@ LightingSettings:
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 0
-  m_BakeBackend: 1
+  m_BakeBackend: 0
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
   m_Padding: 2
@@ -3968,6 +3968,59 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1013360794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1013360796}
+  - component: {fileID: 1013360795}
+  m_Layer: 0
+  m_Name: Light Probe Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!220 &1013360795
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013360794}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 1, y: 0.20874262, z: 1.9086637}
+  - {x: 1, y: 1.3476076, z: -0.21065426}
+  - {x: 2.402341, y: -1, z: 1}
+  - {x: 1.6686649, y: -1, z: -1.8571949}
+  - {x: -1, y: -0.116099834, z: 2.637845}
+  - {x: -0.848423, y: 1.5414734, z: -1}
+  - {x: -2.6665802, y: -1, z: 1}
+  - {x: -1.6239347, y: -1, z: -1.625452}
+  - {x: -12.14, y: -2.01, z: -9.85}
+  - {x: -12.14, y: -2.01, z: -9.85}
+  - {x: -12.14, y: -2.01, z: -9.85}
+  m_Dering: 1
+--- !u!4 &1013360796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013360794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.14, y: 2.01, z: 9.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1066938842
 GameObject:
   m_ObjectHideFlags: 0
@@ -8063,6 +8116,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basket Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 4536062951841906494, guid: dd45f7b50d0fd21408e8efb9b02b03fc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4536062951841906494, guid: dd45f7b50d0fd21408e8efb9b02b03fc,
         type: 3}
