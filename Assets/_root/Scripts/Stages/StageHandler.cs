@@ -7,6 +7,8 @@ public class StageHandler : MonoBehaviour
 {
 
     [SerializeField] List<Transform> level = new();
+    [SerializeField] List<Transform> level2 = new();
+    [SerializeField] List<Transform> level3 = new();
     [SerializeField] List<Scored> basket = new();
     [SerializeField] PositionsArray pa;
 

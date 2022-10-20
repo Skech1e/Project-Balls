@@ -8,6 +8,8 @@ public class PositionsArray : MonoBehaviour
     public Transform[,] target = new Transform[3,5];
     bool test;
 
+    public Transform GetPosition(int id) => transform.GetChild(id);
+
     private void Awake()
     {
         positionArray.Capacity = 15;
