@@ -20,7 +20,7 @@ public class Trajectory : MonoBehaviour
     [SerializeField] LayerMask hitMask;
     public Vector2 InputScale;
     [SerializeField] PlayerInputs input;
-
+    
 
     Vector3[] lineArray;
     public Vector3[] ballPath;

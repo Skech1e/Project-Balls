@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.github.oparaskos.unity.tube.renderer": {
-      "version": "git+https://github.com/oparaskos/unity-tube-renderer.git#0.1.0",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "38e0dbbde8b716351c454c66d52c69d604c32cf6"
-    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,

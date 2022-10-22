@@ -1,6 +1,5 @@
 {
   "dependencies": {
-"com.github.oparaskos.unity.tube.renderer": "git+https://github.com/oparaskos/unity-tube-renderer.git#0.1.0",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.8.9",
     "com.unity.collab-proxy": "1.17.1",
