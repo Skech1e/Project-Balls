@@ -1,3 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement />
+    <ui:VisualElement style="background-image: url(&apos;project://database/Assets/_root/Sprites/CRAZY_BASKET_HOME_PAGE.jpg?fileID=2800000&amp;guid=8e01e03310c87c243ab4b499ed5baf4d&amp;type=3#CRAZY_BASKET_HOME_PAGE&apos;); flex-grow: 1;">
+        <ui:VisualElement style="height: auto; flex-direction: row; flex-grow: 0.95;">
+            <ui:VisualElement style="flex-grow: 0.5;" />
+            <ui:VisualElement style="flex-grow: 0.5;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ButtonsSpacer" style="flex-grow: 0; flex-direction: row; justify-content: space-around;">
+            <ui:Button display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/_root/Sprites/UI%20BUTTONS%20PNG/1x/SETTINGS%20BUTTON.png?fileID=2800000&amp;guid=2601c812c49c4e140beeeee87b14232a&amp;type=3#SETTINGS BUTTON&apos;); width: 40px; height: 40px; background-color: rgba(188, 188, 188, 0);" />
+            <ui:Button display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/_root/Sprites/UI%20BUTTONS%20PNG/1x/PLAY%20CIRCLE%20BUTTON.png?fileID=2800000&amp;guid=887da580463138e43a417faeeff56102&amp;type=3#PLAY CIRCLE BUTTON&apos;); width: 50px; height: 50px; background-color: rgba(188, 188, 188, 0);" />
+            <ui:Button display-tooltip-when-elided="true" enable-rich-text="true" style="background-image: url(&apos;project://database/Assets/_root/Sprites/UI%20BUTTONS%20PNG/1x/ACHIEVEMENT%20BUTTON.png?fileID=2800000&amp;guid=24674eb56b930544ea444e41566da058&amp;type=3#ACHIEVEMENT BUTTON&apos;); -unity-background-scale-mode: stretch-to-fill; width: 40px; height: 40px; background-color: rgba(188, 188, 188, 0);" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 0;" />
+    </ui:VisualElement>
 </ui:UXML>
