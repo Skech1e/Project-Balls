@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 94012b1bc876f544399ab3ca6815e614
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: GROUND_GEO
+    100002: polySurface244
+    100004: polySurface257
+    100006: polySurface258
+    100008: polySurface261
+    100010: polySurface279
+    100012: polySurface281
+    100014: polySurface286
+    100016: polySurface287
+    100018: polySurface289
+    100020: polySurface294
+    100022: //RootNode
+    100024: snow_bg_f
+    100026: SNOW_DUST_GEO3
+    100028: snow_wall03
+    100030: sowman_geo_grp
+    400000: GROUND_GEO
+    400002: polySurface244
+    400004: polySurface257
+    400006: polySurface258
+    400008: polySurface261
+    400010: polySurface279
+    400012: polySurface281
+    400014: polySurface286
+    400016: polySurface287
+    400018: polySurface289
+    400020: polySurface294
+    400022: //RootNode
+    400024: snow_bg_f
+    400026: SNOW_DUST_GEO3
+    400028: snow_wall03
+    400030: sowman_geo_grp
+    2100000: lambert22
+    2100002: lambert23
+    2100004: Land_TEX_MAT
+    2100006: Snowmen_TEX_MAT
+    2300000: GROUND_GEO
+    2300002: polySurface244
+    2300004: polySurface257
+    2300006: polySurface258
+    2300008: polySurface261
+    2300010: polySurface279
+    2300012: polySurface281
+    2300014: polySurface286
+    2300016: polySurface287
+    2300018: polySurface289
+    2300020: polySurface294
+    2300022: SNOW_DUST_GEO3
+    2300024: snow_wall03
+    3300000: GROUND_GEO
+    3300002: polySurface244
+    3300004: polySurface257
+    3300006: polySurface258
+    3300008: polySurface261
+    3300010: polySurface279
+    3300012: polySurface281
+    3300014: polySurface286
+    3300016: polySurface287
+    3300018: polySurface289
+    3300020: polySurface294
+    3300022: SNOW_DUST_GEO3
+    3300024: snow_wall03
+    4300000: SNOW_DUST_GEO3
+    4300002: snow_wall03
+    4300004: GROUND_GEO
+    4300006: polySurface279
+    4300008: polySurface294
+    4300010: polySurface261
+    4300012: polySurface244
+    4300014: polySurface286
+    4300016: polySurface287
+    4300018: polySurface281
+    4300020: polySurface258
+    4300022: polySurface289
+    4300024: polySurface257
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Land_TEX_MAT
+    second: {fileID: 2100000, guid: 65c216091c059a440b731a97cba2aa93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Snowmen_TEX_MAT
+    second: {fileID: 2100000, guid: 38932b4e00bfa1644b14279110a6e398, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert22
+    second: {fileID: 2100000, guid: cc2f2fee033eba64aa926efc81d156b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert23
+    second: {fileID: 2100000, guid: 43b0cbb607a14ce40895f0ced6c7e6df, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 70176167-snow-texture
+    second: {fileID: 2800000, guid: a01126e2b17ce3e4bb1c927c6ef994ad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wall_Land_BaseColor
+    second: {fileID: 2800000, guid: c76c748c9d3f37e4c9180da9029d3647, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wall_lambert1_BaseColor
+    second: {fileID: 2800000, guid: 24893af7ced397745ab02a1a230e4ae1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: snowmen texture
+    second: {fileID: 2800000, guid: ff83ebc29f250374aa5a7bb36c835ba6, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 120
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
