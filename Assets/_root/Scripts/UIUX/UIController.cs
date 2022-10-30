@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] GameObject mainMenu, pages;
-    [SerializeField] List<GameObject> pagesList = new();
+    
+    bool flip;
 
     private void Awake()
     {
@@ -25,11 +26,18 @@ public class UIController : MonoBehaviour
         
     }
 
-    public void OpenPages()
+    public void Play()
     {
-         
+        SceneManager.LoadScene("SampleScene");
     }
-    
+
+    public void Close()
+    {
+        transform.parent.gameObject.SetActive(false);
+        //var g = GetComponent<UIComponent>();
+        //print(g.name + "\n" + g.transform.parent.name);
+    }
+
     public void Apply()
     {
 
