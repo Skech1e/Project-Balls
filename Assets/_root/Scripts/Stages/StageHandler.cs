@@ -8,7 +8,7 @@ using UnityEngine.Events;
 public class StageHandler : MonoBehaviour
 {
 
-    [SerializeField] List<Transform> level = new();
+    [SerializeField] List<Transform> level, level2, level3 = new();
     [SerializeField] List<UnityEvent> lvChangeEvent = new();
     [SerializeField] List<Scored> basket = new();
     [SerializeField] PositionsArray pa;
@@ -31,7 +31,6 @@ public class StageHandler : MonoBehaviour
         basket.Capacity = 4;
         istack = new Queue<int>();
         jstack = new Queue<int>();
-        level.Capacity = 10;
 
         for (int i = 1; i < basket.Capacity; i++)
             basket[i].transform.parent.gameObject.SetActive(false);
@@ -49,11 +48,7 @@ public class StageHandler : MonoBehaviour
 
     void LevelInit()
     {
-        level.Add(pa.positionArray[12]);
-        level.Add(pa.positionArray[8]);
-        level.Add(pa.positionArray[5]);
-        level.Add(pa.positionArray[7]);
-        level.Add(pa.positionArray[14]);
+            
     }
 
     void LevelChange()
