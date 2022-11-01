@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.Events;
+
 public class StageHandler : MonoBehaviour
 {
 
     [SerializeField] List<Transform> level = new();
-    [SerializeField] List<Transform> level2 = new();
-    [SerializeField] List<Transform> level3 = new();
+    [SerializeField] List<UnityEvent> lvChangeEvent = new();
     [SerializeField] List<Scored> basket = new();
     [SerializeField] PositionsArray pa;
 
