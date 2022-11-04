@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class CollisionTrigger : MonoBehaviour
 {
-    [SerializeField] BoxCollider Final;
+    [SerializeField] BoxCollider FinalCollider;
     public void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
-            Final.enabled = true;
+            FinalCollider.enabled = true;
         }
     }
 
 
     private void Awake()
     {
-        Final.enabled = false;
+        FinalCollider.enabled = false;
     }
 
     private void Reset()

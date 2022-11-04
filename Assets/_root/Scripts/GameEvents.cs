@@ -9,7 +9,7 @@ public class GameEvents : MonoBehaviour
 
     public static void OnGoalTrigger()
     {
-        if(OnGoalEvent != null)
+        if (OnGoalEvent != null)
             OnGoalEvent();
     }
 

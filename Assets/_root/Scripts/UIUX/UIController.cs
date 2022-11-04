@@ -26,10 +26,6 @@ public class UIController : MonoBehaviour
         
     }
 
-    public void Play()
-    {
-        SceneManager.LoadScene("SampleScene");
-    }
 
     public void Close()
     {

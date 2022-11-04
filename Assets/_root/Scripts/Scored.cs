@@ -14,6 +14,9 @@ public class Scored : MonoBehaviour
     GameManager gameManager;
     StageHandler stageHandler;
 
+    public delegate void LevelHandler();
+    public event LevelHandler LevelChanged;
+
     private void Awake()
     {
         bc = GetComponent<BoxCollider>();
@@ -32,13 +35,14 @@ public class Scored : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEvents.OnGoalEvent += ScoreTextMotion;
+        LevelChanged += stageHandler.ChangeLevel;
     }
 
     private void OnDisable()
     {
-        GameEvents.OnGoalEvent -= ScoreTextMotion;
+        LevelChanged -= stageHandler.ChangeLevel;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -53,6 +57,7 @@ public class Scored : MonoBehaviour
             score = gameManager.ScorePerGoal();
             totalScore += score;
             goal = true;
+
         }
     }
 
@@ -69,6 +74,7 @@ public class Scored : MonoBehaviour
         scoreTextPopup.gameObject.SetActive(false);
         scoreTextPopup.alpha = 1f;
         goal = false;
+        LevelChanged.Invoke();
     }
 
     void ScoreTextMotion()
@@ -79,7 +85,7 @@ public class Scored : MonoBehaviour
             scoreTextPopup.gameObject.SetActive(true);
             var pos = scoreTextPopup.transform.localPosition;
             scoreTextPopup.transform.localPosition = Vector3.MoveTowards(pos, TargetScoreTextPosition, Time.deltaTime);
-            scoreTextPopup.alpha -= Time.deltaTime * 1.69f;
+            scoreTextPopup.alpha -= Time.deltaTime * 1.69f;            
         }
         
     }
