@@ -35,7 +35,7 @@ public class StageHandler : MonoBehaviour
         print(Levels[currentLevel].name);
         Levels[currentLevel].SetActive(false);
         currentLevel++;
-        if (currentLevel < Levels.)
+        if (currentLevel < Levels.Capacity)
             Levels[currentLevel].SetActive(true);
     }
  
