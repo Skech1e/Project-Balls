@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LevelButtons_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 4
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
+    - {fileID: 2800000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
+    - {fileID: 2800000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
+    - {fileID: 2800000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
+    - {fileID: 2800000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
+    - {fileID: 2800000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
+    - {fileID: 2800000, guid: b28766101216239409cbd129f62a5543, type: 3}
+    - {fileID: 2800000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
+    - {fileID: 2800000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
+    - {fileID: 2800000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
+    - {fileID: 2800000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
+    - {fileID: 2800000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
+    - {fileID: 2800000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
+    - {fileID: 2800000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
+    - {fileID: 2800000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
+    - {fileID: 2800000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
+    - {fileID: 2800000, guid: 02dc657c764b1c34a9242b628e325c2e, type: 3}
+    - {fileID: 2800000, guid: 6fde71ceef5101c45bf0c38249aee334, type: 3}
+    - {fileID: 2800000, guid: 0ec5126f556730b418c9a3f502223696, type: 3}
+    - {fileID: 2800000, guid: f839102919ddb2940929ec43448dc0af, type: 3}
+    - {fileID: 2800000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
+  - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
+  - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
+  - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
+  - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
+  - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
+  - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
+  - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
+  - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
+  - {fileID: 21300000, guid: f839102919ddb2940929ec43448dc0af, type: 3}
+  - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
+  - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
+  - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
+  - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
+  - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
+  - {fileID: 21300000, guid: 02dc657c764b1c34a9242b628e325c2e, type: 3}
+  - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
+  - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
+  - {fileID: 21300000, guid: 6fde71ceef5101c45bf0c38249aee334, type: 3}
+  - {fileID: 21300000, guid: 0ec5126f556730b418c9a3f502223696, type: 3}
+  - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - LVL_7
+  - LVL_3
+  - LVL_5
+  - LVL_11
+  - LVL_8
+  - LVL_12
+  - LVL_14
+  - LVL_4
+  - LVL_13
+  - LVL_20
+  - LVL_2
+  - LVL_1
+  - LVL_9
+  - LVL_10
+  - LOCKED_BTN
+  - LVL_17
+  - LVL_15
+  - LVL_6
+  - LVL_18
+  - LVL_19
+  - LVL_16
+  m_RenderDataMap: {}
+  m_Tag: LevelButtons_Atlas
+  m_IsVariant: 0
