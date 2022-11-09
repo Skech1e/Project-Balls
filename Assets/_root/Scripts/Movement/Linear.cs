@@ -1,23 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Linear;
 using static UnityEngine.Rendering.DebugUI;
 
-public class Linear : Motion
+public class Linear : MonoBehaviour
 {
-    public float Length;
-    public enum Direction { Left, Right, Upwards, Downwards}
+    [Min(0.5f)] public float Length, Speed, offset;
+    public float X;
+    public bool isHorizontal;
+    private Vector3 basketPosition;
 
-    [SerializeField]
-    private Direction direction;
 
-
-    protected override void Move(float value)
+    private void Start()
     {
-        Mathf.PingPong(Time.time, value);
+        offset = 12f;
+        basketPosition = transform.position;
     }
+
     private void Update()
     {
-        transform.position = new Vector3(Mathf.PingPong(Time.time*Speed, Length)+12, transform.position.y, transform.position.z);
+        //basketPosition = transform.position;
+        transform.position = basketPosition;
+
+        if(isHorizontal == true)
+            basketPosition.x = Mathf.PingPong(Time.time * Speed, Length) + offset;
+        else
+            basketPosition.y = Mathf.PingPong(Time.time * Speed, Length) + offset;
+
     }
 }
