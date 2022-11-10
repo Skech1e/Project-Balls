@@ -14,66 +14,20 @@ public class Motion : MonoBehaviour
             case Direction.Still: return;
 
             case Direction.Horizontal:
-                if (gameObject.GetComponent<Linear>() == null)
-                    gameObject.AddComponent<Linear>().isHorizontal = true;
+                gameObject.GetComponent<Linear>().enabled = !gameObject.GetComponent<Rotational>().enabled;
+                gameObject.GetComponent<Linear>().isHorizontal = true;
                 return;
 
             case Direction.Vertical:
-                if (gameObject.GetComponent<Linear>() == null)
-                    gameObject.AddComponent<Linear>().isHorizontal = false;
+                gameObject.GetComponent<Linear>().enabled = !gameObject.GetComponent<Rotational>().enabled;
+                gameObject.GetComponent<Linear>().isHorizontal = false;
                 return;
 
             case Direction.Rotational:
-                if (gameObject.GetComponent<Rotational>() == null)
-                    gameObject.AddComponent<Rotational>();
+                gameObject.GetComponent<Rotational>().enabled = !gameObject.GetComponent<Linear>().enabled;
                 return;
         }
 
-        //switch (MoveDirection)
-        //{
-        //    case Direction.Still:
-
-        //        break;
-
-        //    case Direction.Horizontal:
-        //        if (linear == null)
-        //            this.AddComponent<Linear>();
-        //        linear = GetComponent<Linear>();
-        //        linear.isHorizontal = true;
-        //        break;
-
-        //    case Direction.Vertical:
-        //        if (linear == null)
-        //            this.AddComponent<Linear>();
-        //        linear = GetComponent<Linear>();
-        //        linear.isHorizontal = false;
-        //        break;
-
-        //    case Direction.Rotational:
-        //        if (rotational == null)
-        //        {
-        //            this.AddComponent<Rotational>();
-        //            if (linear != null)
-
-        //                DestroyImmediate(linear);
-        //        }
-        //        rotational = GetComponent<Rotational>();
-        //        break;
-
-        //    default:
-        //        break;
-        //}
-
-
     }
 
-    private void Clear()
-    {
-        var mp = GetComponents<MotionParams>();
-
-        foreach (MotionParams found in mp)
-        {
-            DestroyImmediate(found);
-        }
-    }
 }

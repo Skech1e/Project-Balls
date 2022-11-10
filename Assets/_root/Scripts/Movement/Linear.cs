@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Linear : MonoBehaviour
 {
-    [Min(0.5f)] public float Length, Speed, offset;
-    public float X;
+    [SerializeField][Range(0.5f, 10f)] float Length, Speed;
+    [SerializeField][Range(0,20f)] float offset;
     public bool isHorizontal;
     private Vector3 basketPosition;
 
@@ -16,7 +16,6 @@ public class Linear : MonoBehaviour
 
     private void Update()
     {
-        //basketPosition = transform.position;
         transform.position = basketPosition;
 
         if(isHorizontal == true)
