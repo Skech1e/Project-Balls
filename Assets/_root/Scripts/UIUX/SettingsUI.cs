@@ -29,7 +29,7 @@ public class SettingsUI : MonoBehaviour
 
     public void ToggleSound()
     {
-
+        sound.sprite = on ? on : off;
     }
     public void ToggleMusic()
     {
