@@ -55,6 +55,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: da7a67be63a7d514798b579ae703d4a1, type: 3}
     - {fileID: 2800000, guid: 2601c812c49c4e140beeeee87b14232a, type: 3}
     - {fileID: 2800000, guid: 05a1e53d4aca70f4c82c1e34233a96e4, type: 3}
+    - {fileID: 2800000, guid: e6f9a89ca20823346b041834315e65cb, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -68,6 +69,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4f0d2278d7b9b2a47b856dcde7b61c53, type: 3}
   - {fileID: 21300000, guid: 938814788d4360042b5aac12ff0d63b3, type: 3}
   - {fileID: 21300000, guid: 18fbd0bbdcbc60241b75e1bbf2fc5cc4, type: 3}
+  - {fileID: 21300000, guid: e6f9a89ca20823346b041834315e65cb, type: 3}
   - {fileID: 21300000, guid: 05a1e53d4aca70f4c82c1e34233a96e4, type: 3}
   - {fileID: 21300000, guid: 612dee7ee9750f04589dcf918f40fec3, type: 3}
   - {fileID: 21300000, guid: da7a67be63a7d514798b579ae703d4a1, type: 3}
@@ -80,6 +82,7 @@ SpriteAtlas:
   - PAUSE BUTTON
   - LEFT_ARW_BTN
   - HOME BUTTON
+  - CANCEL BUTTON@2x
   - SHOP BUTTON
   - ADD_COINS_BTN
   - RIGHT_ARW_BTN
