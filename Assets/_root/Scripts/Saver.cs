@@ -14,11 +14,24 @@ public class Saver : MonoBehaviour
         print("data saved successfully");
     }
 
-    public ScoreData LoadfromJson()
+    public ScoreData LoadScores()
     {
         string score = System.IO.File.ReadAllText(Application.persistentDataPath + "/scglobal.json");
         return JsonUtility.FromJson<ScoreData>(score);
 
+    }
+
+    public void SavetoJson(UserData _user)
+    {
+        string user = JsonUtility.ToJson(_user);
+        System.IO.File.WriteAllText(Application.persistentDataPath + "/cb_usr.json", user);
+        print("user config saved");
+    }
+
+    public UserData LoadUser()
+    {
+        string user = System.IO.File.ReadAllText(Application.persistentDataPath + "/cb_usr.json");
+        return JsonUtility.FromJson<UserData>(user);
     }
 }
 
@@ -36,6 +49,9 @@ public class UserData
     public int level;
     public int balance;
     public List<Inventory> usr_inventory = new List<Inventory>();
+
+    public bool Sound, Music;
+    public int Graphics;
 }
 
 [System.Serializable]

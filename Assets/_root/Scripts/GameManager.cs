@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        scrdata.HiScore = saver.LoadfromJson().HiScore;
+        scrdata.HiScore = saver.LoadScores().HiScore;
         highScore = scrdata.HiScore;
     }
 

@@ -1,24 +1,58 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class SettingsUI : MonoBehaviour
 {
-    [SerializeField] Image music, sound;
-    [SerializeField] TextMeshProUGUI txt_graphics;
-    [SerializeField] Sprite on, off;
-    [SerializeField] List<Sprite> spr_graphics = new();
-    enum Graphics { Low, Medium, High };
-    [SerializeField] Graphics graphics = new Graphics();
+    [SerializeField] Image spr_music, spr_sound;
+    [SerializeField] TextMeshProUGUI txt_graphics, shadow_text;
+    [SerializeField] List<Sprite> Toggle = new();
 
-    public int counter;
+    bool Sound, Music;
+    enum Graphics : int { Low = 0, Medium = 1, High = 2 };
+    private readonly int graphicsLength = Enum.GetValues(typeof(Graphics)).Length;
 
+    [SerializeField]
+    private int _counter;
+    public int Counter
+    {
+        get => _counter;
+        set
+        {
+            _counter = Mathf.Clamp(value, 0, graphicsLength);
+            _counter = _counter >= graphicsLength ? 0 : _counter;
+        }
+    }
+
+    //Saving vars
+    UserData usrdata = new();
+    Saver saver;
+
+    private void Awake()
+    {
+        saver = GetComponent<Saver>();
+    }
+
+    private void OnEnable()
+    {
+        Sound = saver.LoadUser().Sound;
+        Music = saver.LoadUser().Music;
+        Counter = saver.LoadUser().Graphics;
+    }
+
+    private void OnDisable()
+    {
+        CloseSave();
+    }
     // Start is called before the first frame update
     void Start()
-    {
-        counter = 0;
+    {        
+        spr_sound.sprite = Sound == true ? Toggle[1] : Toggle[0];
+        spr_music.sprite = Music == true ? Toggle[1] : Toggle[0];
+        txt_graphics.text = shadow_text.text = ((Graphics)Counter).ToString();
+        
     }
 
     // Update is called once per frame
@@ -29,20 +63,27 @@ public class SettingsUI : MonoBehaviour
 
     public void ToggleSound()
     {
-        sound.sprite = on ? on : off;
+        Sound = !Sound;
+        spr_sound.sprite = Sound == true ? Toggle[1] : Toggle[0];
     }
     public void ToggleMusic()
     {
-
+        Music = !Music;
+        spr_music.sprite = Music == true ? Toggle[1] : Toggle[0];
     }
     public void SwitchGraphics()
     {
-        counter++;
-        graphics = (Graphics)counter;
-        txt_graphics.text = graphics.ToString();
-        txt_graphics.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = txt_graphics.text;
+        Counter++;
 
-        if (counter > 2)
-            counter = 0;
+        txt_graphics.text = ((Graphics) Counter).ToString();
+        shadow_text.text = txt_graphics.text;
+    }
+
+    public void CloseSave()
+    {
+        usrdata.Music = Music;
+        usrdata.Sound = Sound;
+        usrdata.Graphics = Counter;
+        saver.SavetoJson(usrdata);
     }
 }
