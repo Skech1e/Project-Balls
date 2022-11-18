@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class Linear : MonoBehaviour
 {
-    [SerializeField][Range(0.5f, 10f)] float Length, Speed;
-    [SerializeField][Range(0,20f)] float offset;
-    enum Axis { Horizontal, Vertical }
+    [SerializeField][Range(0.1f, 10f)] float Length, Speed;
+    [SerializeField][Range(0, 20f)] float offset;
+    enum Axis { Horizontal, Vertical, Diagonal, Diagonal_Inverse }
     [SerializeField] Axis axis;
     enum MovementDirection { positive = 1, negative = -1 }
     [SerializeField] MovementDirection moveDirection;
@@ -27,7 +27,19 @@ public class Linear : MonoBehaviour
 
         if (axis == Axis.Horizontal)
             basketPosition.x = moveValue * (int)moveDirection;
+        else if (axis == Axis.Diagonal)
+        {
+            basketPosition.x = moveValue * (int)moveDirection;
+            basketPosition.y = moveValue * (int)moveDirection;
+        }
+        else if(axis == Axis.Diagonal_Inverse)
+        {
+            basketPosition.x = (moveValue/2) * (int)moveDirection;
+            basketPosition.y = -(moveValue / 2) * (int)moveDirection;
+        }
         else
             basketPosition.y = moveValue * (int)moveDirection;
+
     }
 }
+
