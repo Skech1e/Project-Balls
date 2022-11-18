@@ -3,7 +3,7 @@ using UnityEngine;
 public class Rotational : MonoBehaviour
 {
     [SerializeField][Range(0.5f, 90f)] float Speed;
-    [SerializeField][Range(0.1f, 1.5f)] float OffsetAmount;
+    [SerializeField][Range(-1.5f, 1.5f)] float OffsetAmount;
     [SerializeField] bool HorizontalOffset;
     [SerializeField] Vector3 Centre;
     Transform basket;
