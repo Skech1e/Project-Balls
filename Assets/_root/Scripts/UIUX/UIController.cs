@@ -43,4 +43,13 @@ public class UIController : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void PauseMenu()
+    {
+        Time.timeScale = 0;
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+    }
 }

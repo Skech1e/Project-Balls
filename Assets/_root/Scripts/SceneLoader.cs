@@ -34,4 +34,5 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene(sceneNumber);
         GameObject.Find(nameof(level));
     }
+
 }
