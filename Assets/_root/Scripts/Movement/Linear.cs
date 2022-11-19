@@ -3,7 +3,7 @@ using UnityEngine;
 public class Linear : MonoBehaviour
 {
     [SerializeField][Range(0.1f, 10f)] float Length, Speed;
-    [SerializeField][Range(0, 20f)] float offset;
+    [SerializeField][Range(-20f, 20f)] float offset;
     enum Axis { Horizontal, Vertical, Diagonal, Diagonal_Inverse }
     [SerializeField] Axis axis;
     enum MovementDirection { positive = 1, negative = -1 }
@@ -17,12 +17,12 @@ public class Linear : MonoBehaviour
     private void Start()
     {
         //offset = 12f;
-        basketPosition = transform.GetChild(1).localPosition;
+        basketPosition = transform.GetChild(0).localPosition;
     }
 
     private void Update()
     {
-        transform.GetChild(1).localPosition = basketPosition;
+        transform.GetChild(0).localPosition = basketPosition;
         moveValue = Mathf.PingPong(Time.time * Speed, Length) + offset;
 
         if (axis == Axis.Horizontal)

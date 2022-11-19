@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+public class LevelUIManager : MonoBehaviour
 {
     //[SerializeField] List<Arena> Arenas = new();
     [SerializeField] List<Levels> Arena1 = new();

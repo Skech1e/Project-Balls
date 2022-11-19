@@ -43,7 +43,7 @@ public class StageHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Levels[currentLevel].SetActive(true);
+        //Levels[currentLevel].SetActive(true);
     }
 
 

@@ -20,7 +20,7 @@ public class Rotational : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        basket = transform.GetChild(1);
+        basket = transform.GetChild(0);
     }
 
     // Update is called once per frame

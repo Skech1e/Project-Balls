@@ -11,6 +11,7 @@ public class Scored : MonoBehaviour
     BoxCollider bc;
     [SerializeField] TextMeshProUGUI scoreTextPopup;
     Vector3 initScoreTextPosition, TargetScoreTextPosition;
+    GameObject basket;
     GameManager gameManager;
     StageHandler stageHandler;
 
@@ -25,6 +26,9 @@ public class Scored : MonoBehaviour
         initScoreTextPosition = scoreTextPopup.transform.localPosition;
         TargetScoreTextPosition = new Vector3(initScoreTextPosition.x, initScoreTextPosition.y + 6.9f, initScoreTextPosition.z);
         scoreTextPopup.gameObject.SetActive(false);
+
+        basket = transform.parent.gameObject;
+        basket.SetActive(true);
     }
 
     // Start is called before the first frame update
@@ -74,7 +78,7 @@ public class Scored : MonoBehaviour
         scoreTextPopup.gameObject.SetActive(false);
         scoreTextPopup.alpha = 1f;
         goal = false;
-        LevelChanged.Invoke();
+        basket.SetActive(false);
     }
 
     void ScoreTextMotion()

@@ -8,15 +8,23 @@ public class Levels : MonoBehaviour
 {
     [SerializeField] protected bool isUnlocked;
     [SerializeField] int Arena, Levelno;
+    Button Button;
     Image LevelIcon;
     [SerializeField] List<Sprite> IconList = new();
 
     delegate void LevelUnlock();
     event LevelUnlock OnUnlock;
 
+    SceneLoader SceneLoader;
+
     private void Awake()
     {
         Levelno = int.Parse(name);
+        LevelIcon = GetComponent<Image>();
+        LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
+        Button = GetComponent<Button>();
+        Button.interactable = isUnlocked == true ? true : false;
+        SceneLoader = FindObjectOfType<SceneLoader>();
     }
 
 
@@ -36,5 +44,9 @@ public class Levels : MonoBehaviour
     void Unlock()
     {
         LevelIcon.sprite = IconList[1];
+    }
+    public void LoadLevel()
+    {
+        SceneLoader.SceneLoad(Arena-1, Levelno);
     }
 }
