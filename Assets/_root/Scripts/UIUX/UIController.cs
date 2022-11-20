@@ -52,4 +52,16 @@ public class UIController : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+
+    public void Levels()
+    {
+        //Time.timeScale = 1;
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
+    }
+
 }

@@ -5,34 +5,51 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    [SerializeField] List<Scene> SceneList = new();
+    [SerializeField] List<Transform> ArenaList = new();
+    public int loadLevel = -1;   
+    [SerializeField]GameObject test;
+
+    private static SceneLoader staticSceneLoader;
 
     private void OnEnable()
     {
         DontDestroyOnLoad(this);
+        SceneManager.sceneLoaded += OnSceneLoad;
+
+        if(staticSceneLoader == null)
+            staticSceneLoader = this;
+        else
+            Destroy(gameObject);
+    }
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoad;
     }
 
-    public void LoadScene1()
+    private void Update()
     {
-        SceneManager.LoadScene("SampleScene");
+        
     }
-    public void LoadSceneSnow()
+    private void Start()
     {
-        SceneManager.LoadScene("SnowLevel");
-    }
-    public void LoadSceneDesert()
-    {
-        SceneManager.LoadScene("DesertLevel");
+        loadLevel = 100;
     }
 
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
-    public void SceneLoad(int sceneNumber, int level)
+    public void SceneLoad(int sceneNumber, int _loadLevel)
     {
+        //if(SceneManager.GetActiveScene().buildIndex != 0)
         SceneManager.LoadScene(sceneNumber);
-        GameObject.Find(nameof(level));
+        loadLevel = _loadLevel - 1;
+        
     }
 
+    void OnSceneLoad(Scene scene, LoadSceneMode mode)
+    {
+        test = GameObject.FindGameObjectWithTag("Level");
+        test.transform.GetChild(loadLevel).gameObject.SetActive(true);
+    }
 }

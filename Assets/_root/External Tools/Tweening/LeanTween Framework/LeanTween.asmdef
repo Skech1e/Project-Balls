@@ -5,6 +5,8 @@
     "includePlatforms": [
         "Android",
         "Editor",
+        "iOS",
+        "WSA",
         "WindowsStandalone32",
         "WindowsStandalone64"
     ],

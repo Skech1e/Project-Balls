@@ -25,9 +25,17 @@ public class Levels : MonoBehaviour
         Button = GetComponent<Button>();
         Button.interactable = isUnlocked == true ? true : false;
         SceneLoader = FindObjectOfType<SceneLoader>();
+
+        Button.onClick.AddListener(() => LoadLevel());
     }
 
-
+    private void OnValidate()
+    {
+        LevelIcon = GetComponent<Image>();
+        Button = GetComponent<Button>();
+        LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
+        Button.interactable = isUnlocked == true ? true : false;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +55,6 @@ public class Levels : MonoBehaviour
     }
     public void LoadLevel()
     {
-        SceneLoader.SceneLoad(Arena-1, Levelno);
+        SceneLoader.SceneLoad(Arena, Levelno);
     }
 }

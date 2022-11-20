@@ -12,6 +12,7 @@ public class Scored : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreTextPopup;
     Vector3 initScoreTextPosition, TargetScoreTextPosition;
     GameObject basket;
+    public Scored[] basketCount;
     GameManager gameManager;
     StageHandler stageHandler;
 
@@ -40,6 +41,8 @@ public class Scored : MonoBehaviour
     private void OnEnable()
     {
         LevelChanged += stageHandler.ChangeLevel;
+        basketCount = FindObjectsOfType<Scored>(false);
+        
     }
 
     private void OnDisable()
