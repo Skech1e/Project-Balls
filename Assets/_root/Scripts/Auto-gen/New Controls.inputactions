@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Power and Throw",
+                    "name": "Throw",
                     "type": "Button",
                     "id": "98f081d4-b1ff-4a5f-81e9-af6da9c21990",
                     "expectedControlType": "Button",
@@ -43,7 +43,7 @@
                     "interactions": "Hold(duration=1.401298E-45)",
                     "processors": "",
                     "groups": "Phone",
-                    "action": "Power and Throw",
+                    "action": "Throw",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -54,7 +54,7 @@
                     "interactions": "MultiTap",
                     "processors": "",
                     "groups": "Phone",
-                    "action": "Power and Throw",
+                    "action": "Throw",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

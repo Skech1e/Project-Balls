@@ -34,9 +34,9 @@ public class Projectile1 : MonoBehaviour
     PlayerInputs pl;
     void Shoot()
     {
-        pl ??= new PlayerInputs();
+       /* pl ??= new PlayerInputs();
         pl.Enable();
-        pl.Controls.PowerandThrow.performed += context =>
+        pl.Controls.Throw.performed += context =>
         {
             balls.transform.position = defaultPos;
             rb.velocity = Vector2.zero;
@@ -44,10 +44,10 @@ public class Projectile1 : MonoBehaviour
             rb.AddForce(direction, ForceMode.Impulse);
             print("k");
         };
-        pl.Controls.PowerandThrow.canceled += context =>
+        pl.Controls.Throw.canceled += context =>
         {
             balls.GetComponent<TrailRenderer>().enabled = false;
-        };
+        };*/
     }
 
 

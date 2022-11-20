@@ -39,7 +39,7 @@ namespace GlobalBasket
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Power and Throw"",
+                    ""name"": ""Throw"",
                     ""type"": ""Button"",
                     ""id"": ""98f081d4-b1ff-4a5f-81e9-af6da9c21990"",
                     ""expectedControlType"": ""Button"",
@@ -67,7 +67,7 @@ namespace GlobalBasket
                     ""interactions"": ""Hold(duration=1.401298E-45)"",
                     ""processors"": """",
                     ""groups"": ""Phone"",
-                    ""action"": ""Power and Throw"",
+                    ""action"": ""Throw"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -78,7 +78,7 @@ namespace GlobalBasket
                     ""interactions"": ""MultiTap"",
                     ""processors"": """",
                     ""groups"": ""Phone"",
-                    ""action"": ""Power and Throw"",
+                    ""action"": ""Throw"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -102,7 +102,7 @@ namespace GlobalBasket
             // Controls
             m_Controls = asset.FindActionMap("Controls", throwIfNotFound: true);
             m_Controls_Aim = m_Controls.FindAction("Aim", throwIfNotFound: true);
-            m_Controls_PowerandThrow = m_Controls.FindAction("Power and Throw", throwIfNotFound: true);
+            m_Controls_Throw = m_Controls.FindAction("Throw", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -163,13 +163,13 @@ namespace GlobalBasket
         private readonly InputActionMap m_Controls;
         private IControlsActions m_ControlsActionsCallbackInterface;
         private readonly InputAction m_Controls_Aim;
-        private readonly InputAction m_Controls_PowerandThrow;
+        private readonly InputAction m_Controls_Throw;
         public struct ControlsActions
         {
             private @PlayerInputs m_Wrapper;
             public ControlsActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
             public InputAction @Aim => m_Wrapper.m_Controls_Aim;
-            public InputAction @PowerandThrow => m_Wrapper.m_Controls_PowerandThrow;
+            public InputAction @Throw => m_Wrapper.m_Controls_Throw;
             public InputActionMap Get() { return m_Wrapper.m_Controls; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -182,9 +182,9 @@ namespace GlobalBasket
                     @Aim.started -= m_Wrapper.m_ControlsActionsCallbackInterface.OnAim;
                     @Aim.performed -= m_Wrapper.m_ControlsActionsCallbackInterface.OnAim;
                     @Aim.canceled -= m_Wrapper.m_ControlsActionsCallbackInterface.OnAim;
-                    @PowerandThrow.started -= m_Wrapper.m_ControlsActionsCallbackInterface.OnPowerandThrow;
-                    @PowerandThrow.performed -= m_Wrapper.m_ControlsActionsCallbackInterface.OnPowerandThrow;
-                    @PowerandThrow.canceled -= m_Wrapper.m_ControlsActionsCallbackInterface.OnPowerandThrow;
+                    @Throw.started -= m_Wrapper.m_ControlsActionsCallbackInterface.OnThrow;
+                    @Throw.performed -= m_Wrapper.m_ControlsActionsCallbackInterface.OnThrow;
+                    @Throw.canceled -= m_Wrapper.m_ControlsActionsCallbackInterface.OnThrow;
                 }
                 m_Wrapper.m_ControlsActionsCallbackInterface = instance;
                 if (instance != null)
@@ -192,9 +192,9 @@ namespace GlobalBasket
                     @Aim.started += instance.OnAim;
                     @Aim.performed += instance.OnAim;
                     @Aim.canceled += instance.OnAim;
-                    @PowerandThrow.started += instance.OnPowerandThrow;
-                    @PowerandThrow.performed += instance.OnPowerandThrow;
-                    @PowerandThrow.canceled += instance.OnPowerandThrow;
+                    @Throw.started += instance.OnThrow;
+                    @Throw.performed += instance.OnThrow;
+                    @Throw.canceled += instance.OnThrow;
                 }
             }
         }
@@ -211,7 +211,7 @@ namespace GlobalBasket
         public interface IControlsActions
         {
             void OnAim(InputAction.CallbackContext context);
-            void OnPowerandThrow(InputAction.CallbackContext context);
+            void OnThrow(InputAction.CallbackContext context);
         }
     }
 }

@@ -33397,6 +33397,11 @@ PrefabInstance:
       propertyPath: track
       value: 
       objectReference: {fileID: 1396681922}
+    - target: {fileID: 3617020423756415597, guid: dd45f7b50d0fd21408e8efb9b02b03fc,
+        type: 3}
+      propertyPath: Action
+      value: 
+      objectReference: {fileID: 662901994}
     - target: {fileID: 3870990750995506564, guid: dd45f7b50d0fd21408e8efb9b02b03fc,
         type: 3}
       propertyPath: m_RootOrder
@@ -33456,16 +33461,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Basket Ball
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536062951841906494, guid: dd45f7b50d0fd21408e8efb9b02b03fc,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536062951841906494, guid: dd45f7b50d0fd21408e8efb9b02b03fc,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd45f7b50d0fd21408e8efb9b02b03fc, type: 3}

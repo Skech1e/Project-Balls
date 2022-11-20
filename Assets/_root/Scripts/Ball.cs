@@ -4,6 +4,7 @@ using UnityEngine;
 using Unity.Mathematics;
 using Random = Unity.Mathematics.Random;
 using GlobalBasket;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Ball : MonoBehaviour
@@ -19,12 +20,18 @@ public class Ball : MonoBehaviour
     [SerializeField] int randomValue;
 
     PlayerInputs input;
+
+    [SerializeField] Button Action;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
+        Action = GetComponent<Button>();
         defaultPos = transform.position;
         defaultRotn = transform.rotation;
         random = new Random(seed: 1);
+
+        Action.onClick.AddListener(() => Throw = true);
     }
 
     // Start is called before the first frame update
@@ -53,11 +60,11 @@ public class Ball : MonoBehaviour
 
     }
 
-    void ThrowBall()
+    public void ThrowBall()
     {
-        input ??= new PlayerInputs();
+        /*input ??= new PlayerInputs();
         input.Enable();
-        input.Controls.PowerandThrow.performed += context =>
+        input.Controls.Throw.performed += context =>
         {
             if (transform.position == defaultPos)
             {
@@ -68,7 +75,17 @@ public class Ball : MonoBehaviour
                 randomValue = random.NextInt(-1, 2);
                 track.gameObject.SetActive(false);
             }
-        };
+        };*/
+
+        if (transform.position == defaultPos && Throw == true)
+        {
+            body.isKinematic = false;
+            body.AddForce(direction, ForceMode.Impulse);
+            body.AddTorque(direction, ForceMode.Force);
+            randomValue = random.NextInt(-1, 2);
+            track.gameObject.SetActive(false);
+        }
+
     }
 
     void ResetBall()
