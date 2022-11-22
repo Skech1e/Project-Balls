@@ -12,7 +12,7 @@ public class Ball : MonoBehaviour
     [SerializeField] Vector3 direction;
 
     public Trajectory track;
-    [SerializeField] bool Throw;
+    [SerializeField] public bool Throw;
     Rigidbody body;
     Vector3 defaultPos;
     private Quaternion defaultRotn;
@@ -21,23 +21,43 @@ public class Ball : MonoBehaviour
 
     PlayerInputs input;
 
-    [SerializeField] Button Action;
+    [SerializeField] Scored[] basketCount;
+    bool resetBall;
+    public bool ThrowProperty
+    {
+        get
+        {
+            return Throw;
+        }
+        set
+        {
+            Throw = value;
+        }
+    }
+
+    private void OnEnable()
+    {
+        Scored.GoalScored += CheckRemainingBaskets;
+    }
+
+    private void OnDisable()
+    {
+        Scored.GoalScored -= CheckRemainingBaskets;
+    }
 
     private void Awake()
     {
         body = GetComponent<Rigidbody>();
-        Action = GetComponent<Button>();
         defaultPos = transform.position;
         defaultRotn = transform.rotation;
         random = new Random(seed: 1);
-
-        Action.onClick.AddListener(() => Throw = true);
     }
 
     // Start is called before the first frame update
     void Start()
     {
         body.isKinematic = true;
+        resetBall = true;
     }
 
     // Update is called once per frame
@@ -45,19 +65,22 @@ public class Ball : MonoBehaviour
     {
         direction.x = track.InputScale.x * track.precision;
         direction.y = track.InputScale.y * track.precision * 1.5f;
-        direction.z = track.InputScale.y * track.precision;        
-
+        direction.z = track.InputScale.y * track.precision;
     }
 
     private void FixedUpdate()
     {
         ThrowBall();
 
-        if (Throw == true)
-            RotateBallOnThrow(randomValue);
-        else
+        if (Throw == false)
             transform.Rotate(69f * Time.deltaTime, 42.0f * Time.deltaTime, 13.37f * Time.deltaTime);
 
+    }
+
+    void CheckRemainingBaskets()
+    {
+        basketCount = FindObjectsOfType<Scored>(false);
+        resetBall = basketCount.Length > 1 ? true : false;
     }
 
     public void ThrowBall()
@@ -97,15 +120,9 @@ public class Ball : MonoBehaviour
         track.gameObject.SetActive(true);
     }
 
-    void RotateBallOnThrow(float value)
-    {
-        //transform.Rotate(value * 240f * Time.fixedDeltaTime, 0, 0);
-        //body.AddTorque(value * Time.fixedDeltaTime, 0, 0, ForceMode.Force);
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "ground" && transform.position != defaultPos)
+        if (collision.collider.tag == "ground" && transform.position != defaultPos && resetBall == true)
         {
             Throw = false;
             Invoke(nameof(ResetBall), 2f);

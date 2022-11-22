@@ -6,8 +6,17 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    
-    bool flip;
+    [SerializeField] GameObject Panel, LevelCompleteUI;
+
+    private void OnEnable()
+    {
+        StageHandler.OnLevelFinish += LevelFinished;
+    }
+
+    private void OnDisable()
+    {
+        StageHandler.OnLevelFinish -= LevelFinished;
+    }
 
     private void Awake()
     {
@@ -30,8 +39,6 @@ public class UIController : MonoBehaviour
     public void Close()
     {
         transform.parent.gameObject.SetActive(false);
-        //var g = GetComponent<UIComponent>();
-        //print(g.name + "\n" + g.transform.parent.name);
     }
 
     public void Apply()
@@ -56,6 +63,12 @@ public class UIController : MonoBehaviour
     public void Levels()
     {
         //Time.timeScale = 1;
+    }
+
+    public void LevelFinished()
+    {
+        Panel.SetActive(true);
+        LevelCompleteUI.SetActive(true);
     }
 
     public void MainMenu()

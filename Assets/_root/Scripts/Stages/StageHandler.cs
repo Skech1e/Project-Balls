@@ -3,20 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StageHandler : MonoBehaviour
-{
-    [SerializeField] List<GameObject> Levels = new();
-
-    public bool loadNext;
-    public int currentLevel;
-
+{    
     public bool test;
-    public int count;
-       
-    
+    public Scored[] basketCount;
+    [SerializeField] int goalCount;
+
+    public delegate void LevelFinish();
+    public static event LevelFinish OnLevelFinish;
+
+
+    private void OnEnable()
+    {
+        Scored.GoalScored += GoalTracker;
+    }
+
+    private void OnDisable()
+    {
+        Scored.GoalScored -= GoalTracker;
+    }
+
     private void Awake()
     {
-        currentLevel = 0;
-    }   
+        
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        basketCount = FindObjectsOfType<Scored>(false);
+    }
 
     private void Update()
     {
@@ -26,24 +41,24 @@ public class StageHandler : MonoBehaviour
 
     void LevelChange()
     {
-        currentLevel++;
-        loadNext = false;
+
     }
 
     public void ChangeLevel()
     {
-        print(Levels[currentLevel].name);
-        Levels[currentLevel].SetActive(false);
-        currentLevel++;
-        if (currentLevel < Levels.Capacity)
-            Levels[currentLevel].SetActive(true);
+
     }
  
-
-    // Start is called before the first frame update
-    void Start()
+    void ResetGoalCount()
     {
-        //Levels[currentLevel].SetActive(true);
+        goalCount = 0;
+    }
+
+    void GoalTracker()
+    {
+        goalCount++;
+        if (goalCount == basketCount.Length)
+            OnLevelFinish.Invoke();
     }
 
 

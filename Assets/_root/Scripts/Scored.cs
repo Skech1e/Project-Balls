@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,8 +17,10 @@ public class Scored : MonoBehaviour
     GameManager gameManager;
     StageHandler stageHandler;
 
-    public delegate void LevelHandler();
-    public event LevelHandler LevelChanged;
+
+    public delegate void OnGoal();
+    public static event OnGoal GoalScored;
+
 
     private void Awake()
     {
@@ -35,19 +38,16 @@ public class Scored : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     private void OnEnable()
     {
-        LevelChanged += stageHandler.ChangeLevel;
         basketCount = FindObjectsOfType<Scored>(false);
-        
     }
 
     private void OnDisable()
     {
-        LevelChanged -= stageHandler.ChangeLevel;
+
     }
 
 
@@ -64,8 +64,14 @@ public class Scored : MonoBehaviour
             score = gameManager.ScorePerGoal();
             totalScore += score;
             goal = true;
-
+            Invoke(nameof(InvokeGoalScoredEvent), 1.5f);
         }
+
+    }
+
+    void InvokeGoalScoredEvent()
+    {
+        GoalScored.Invoke();
     }
 
     private void OnTriggerExit(Collider other)
@@ -76,7 +82,6 @@ public class Scored : MonoBehaviour
 
     void Cheer()
     {
-        stageHandler.loadNext = true;
         scoreTextPopup.transform.localPosition = initScoreTextPosition;
         scoreTextPopup.gameObject.SetActive(false);
         scoreTextPopup.alpha = 1f;

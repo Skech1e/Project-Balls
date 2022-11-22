@@ -12,16 +12,13 @@ public class LevelChangeEvent : StageHandler
 
     private void Start()
     {
-        scored.LevelChanged += ChangeLevel;
     }
 
     private void OnEnable()
     {
-        scored.LevelChanged += ChangeLevel;
     }
 
     private void OnDisable()
     {
-        scored.LevelChanged -= ChangeLevel;
     }
 }
