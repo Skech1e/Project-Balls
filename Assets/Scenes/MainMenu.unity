@@ -399,7 +399,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
@@ -563,7 +562,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
@@ -856,7 +854,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
@@ -1020,7 +1017,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
@@ -1809,7 +1805,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
@@ -2094,7 +2089,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
@@ -2258,7 +2252,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
@@ -2733,7 +2726,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
@@ -2979,7 +2971,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 11
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
@@ -3037,7 +3028,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
@@ -3201,7 +3191,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
@@ -3481,7 +3470,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
@@ -4165,7 +4153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 4
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
@@ -4305,7 +4292,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 9
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
@@ -4363,7 +4349,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
@@ -4594,7 +4579,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
@@ -5005,7 +4989,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 487955271}
   m_OnClick:
     m_PersistentCalls:
@@ -5030,7 +5014,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5060,9 +5044,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84f711f613f89247851e3647e24c165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 1
+  isUnlocked: 0
   Arena: 1
-  Levelno: 12
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
@@ -5761,7 +5744,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -5818,7 +5801,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 581571932}
   m_OnClick:
     m_PersistentCalls:
@@ -5835,9 +5818,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84f711f613f89247851e3647e24c165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 1
+  isUnlocked: 0
   Arena: 1
-  Levelno: 7
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
@@ -5977,7 +5959,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 8
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
@@ -7022,7 +7003,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
@@ -7268,7 +7248,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 1
   Arena: 1
-  Levelno: 1
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
@@ -8310,7 +8289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
@@ -8769,7 +8747,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 3
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
@@ -9110,7 +9087,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
@@ -10079,7 +10055,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
@@ -10497,7 +10472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
@@ -11609,7 +11583,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 2
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
@@ -12291,7 +12264,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 16
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
@@ -12349,7 +12321,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
@@ -12513,7 +12484,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
@@ -12677,7 +12647,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
@@ -13291,7 +13260,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
@@ -13531,7 +13499,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
@@ -13831,7 +13798,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
@@ -14418,6 +14384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31ac3825a13ec8488feb9abf7cae67a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Panel: {fileID: 0}
+  LevelCompleteUI: {fileID: 0}
 --- !u!1 &1617871120
 GameObject:
   m_ObjectHideFlags: 0
@@ -14472,7 +14440,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
@@ -14855,7 +14822,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 6
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
@@ -15253,7 +15219,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 10
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
@@ -15492,7 +15457,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 15
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
@@ -15632,7 +15596,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 13
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
@@ -15823,7 +15786,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
@@ -16063,7 +16025,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
@@ -16348,7 +16309,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
@@ -16809,7 +16769,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
@@ -17200,7 +17159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 1
-  Levelno: 5
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
@@ -17391,7 +17349,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
@@ -17819,7 +17776,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 3
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
@@ -18119,7 +18075,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isUnlocked: 0
   Arena: 2
-  Levelno: 0
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
@@ -18579,7 +18534,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2093728727}
   m_OnClick:
     m_PersistentCalls:
@@ -18604,7 +18559,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -18634,9 +18589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84f711f613f89247851e3647e24c165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isUnlocked: 1
+  isUnlocked: 0
   Arena: 1
-  Levelno: 14
   IconList:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}

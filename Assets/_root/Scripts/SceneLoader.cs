@@ -50,6 +50,6 @@ public class SceneLoader : MonoBehaviour
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
         test = GameObject.FindGameObjectWithTag("Level");
-        test.transform.GetChild(loadLevel).gameObject.SetActive(true);
+        
     }
 }

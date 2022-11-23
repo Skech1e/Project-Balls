@@ -22,7 +22,16 @@ public class Ball : MonoBehaviour
     PlayerInputs input;
 
     [SerializeField] Scored[] basketCount;
-    bool resetBall;
+    static bool resetBall;
+    public bool resetter
+    {
+        get { return resetBall; }
+        set
+        {
+            resetBall = value;
+        }
+    }
+
     public bool ThrowProperty
     {
         get
@@ -38,11 +47,13 @@ public class Ball : MonoBehaviour
     private void OnEnable()
     {
         Scored.GoalScored += CheckRemainingBaskets;
+        LevelManager.OnLevelLoad += ResetBall;
     }
 
     private void OnDisable()
     {
         Scored.GoalScored -= CheckRemainingBaskets;
+        LevelManager.OnLevelLoad -= ResetBall;
     }
 
     private void Awake()
@@ -80,7 +91,7 @@ public class Ball : MonoBehaviour
     void CheckRemainingBaskets()
     {
         basketCount = FindObjectsOfType<Scored>(false);
-        resetBall = basketCount.Length > 1 ? true : false;
+        resetBall = basketCount.Length > 0 ? true : false;
     }
 
     public void ThrowBall()
@@ -113,16 +124,18 @@ public class Ball : MonoBehaviour
 
     void ResetBall()
     {
-        //transform.rotation = defaultRotn;
-        transform.position = defaultPos;
-        body.velocity = Vector2.zero;
-        body.isKinematic = true;
-        track.gameObject.SetActive(true);
+        if (resetBall == true)
+        {
+            transform.position = defaultPos;
+            body.velocity = Vector2.zero;
+            body.isKinematic = true;
+            track.gameObject.SetActive(true);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "ground" && transform.position != defaultPos && resetBall == true)
+        if (collision.collider.tag == "ground" && transform.position != defaultPos)
         {
             Throw = false;
             Invoke(nameof(ResetBall), 2f);

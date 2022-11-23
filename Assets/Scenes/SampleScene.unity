@@ -440,13 +440,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 52166270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &54109093
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,13 +621,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 54598296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!135 &56306449 stripped
 SphereCollider:
   m_CorrespondingSourceObject: {fileID: 3469287836825398088, guid: dd45f7b50d0fd21408e8efb9b02b03fc,
@@ -2166,13 +2158,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 161755843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &168620243
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,13 +2528,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 206741547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1001 &212801223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3406,13 +3390,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 245322186}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &252107105
 GameObject:
   m_ObjectHideFlags: 0
@@ -5079,6 +5059,7 @@ MonoBehaviour:
   test: 1
   basketCount: []
   goalCount: 0
+  currentLevel: 0
 --- !u!114 &330585552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7770,51 +7751,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480651136}
   m_CullTransparentMesh: 1
---- !u!1 &487547877
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 487547879}
-  - component: {fileID: 487547878}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &487547878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487547877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8a5dab32a76a1a4dbcdb0af09ce0b1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 0}
---- !u!4 &487547879
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487547877}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.000012, y: 1.7999883, z: 9.024014}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &500737435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8009,13 +7945,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 503202885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!4 &508613493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 302924388269199526, guid: 9367d88b718fa8c46a3fc2f762bafc93,
@@ -9049,13 +8981,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 610044251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &613697649
 GameObject:
   m_ObjectHideFlags: 0
@@ -9575,13 +9503,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 634041148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &635899023
 GameObject:
   m_ObjectHideFlags: 0
@@ -11220,13 +11144,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 735773209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &739932267
 GameObject:
   m_ObjectHideFlags: 0
@@ -14035,13 +13955,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 914881448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &924532147
 GameObject:
   m_ObjectHideFlags: 0
@@ -14764,6 +14680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 962851468}
+  - component: {fileID: 962851469}
   m_Layer: 0
   m_Name: Levels
   m_TagString: Level
@@ -14802,6 +14719,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &962851469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962851467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketCount: 0
+  goalCount: 0
+  currentLevel: 0
+  LevelCapacity: 16
 --- !u!1 &972569217
 GameObject:
   m_ObjectHideFlags: 0
@@ -16389,13 +16322,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1113781039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &1126987687
 GameObject:
   m_ObjectHideFlags: 0
@@ -17518,13 +17447,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1221606907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &1223740706
 GameObject:
   m_ObjectHideFlags: 0
@@ -21374,7 +21299,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1477254327}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 962851469}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: ChangeLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 569068747}
+        m_TargetAssemblyTypeName: Tween, Assembly-CSharp
+        m_MethodName: Disable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 437854545}
+        m_TargetAssemblyTypeName: Tween, Assembly-CSharp
+        m_MethodName: Disable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1477254327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30827,13 +30788,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1985067634}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1001 &1988695313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31088,13 +31045,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2003824914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &2010223636
 GameObject:
   m_ObjectHideFlags: 0
@@ -31630,13 +31583,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2051575525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &2051589244
 GameObject:
   m_ObjectHideFlags: 0
@@ -33152,13 +33101,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2146082930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc17ae08edc908844a2a5cd749afb929, type: 3}
+  m_Script: {fileID: 11500000, guid: 88bbd85ed9c783c4f975b372985ad7c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelFinish: 0
-  timeOver: 0
-  basketCount: 0
-  scoredBasketCount: 0
 --- !u!1 &2146322001
 GameObject:
   m_ObjectHideFlags: 0

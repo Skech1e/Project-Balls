@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class Levels : MonoBehaviour
 {
     [SerializeField] protected bool isUnlocked;
-    [SerializeField] int Arena, Levelno;
+    [SerializeField] int Arena;
+    public static int Levelno;
+
     Button Button;
     Image LevelIcon;
     [SerializeField] List<Sprite> IconList = new();
@@ -18,15 +20,14 @@ public class Levels : MonoBehaviour
     SceneLoader SceneLoader;
 
     private void Awake()
-    {
-        Levelno = int.Parse(name);
+    {        
         LevelIcon = GetComponent<Image>();
         LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
         Button = GetComponent<Button>();
         Button.interactable = isUnlocked == true ? true : false;
         SceneLoader = FindObjectOfType<SceneLoader>();
 
-        Button.onClick.AddListener(() => LoadLevel());
+        Button.onClick.AddListener(LoadLevel);
     }
 
     private void OnValidate()
@@ -46,7 +47,7 @@ public class Levels : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void Unlock()
@@ -55,6 +56,7 @@ public class Levels : MonoBehaviour
     }
     public void LoadLevel()
     {
+        Levelno = int.Parse(name);
         SceneLoader.SceneLoad(Arena, Levelno);
     }
 }

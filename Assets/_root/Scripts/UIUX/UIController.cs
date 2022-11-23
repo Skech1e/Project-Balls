@@ -10,12 +10,12 @@ public class UIController : MonoBehaviour
 
     private void OnEnable()
     {
-        StageHandler.OnLevelFinish += LevelFinished;
+        LevelManager.OnLevelFinish += LevelFinished;
     }
 
     private void OnDisable()
     {
-        StageHandler.OnLevelFinish -= LevelFinished;
+        LevelManager.OnLevelFinish -= LevelFinished;
     }
 
     private void Awake()
@@ -60,7 +60,7 @@ public class UIController : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void Levels()
+    public void NextLevel()
     {
         //Time.timeScale = 1;
     }
@@ -69,6 +69,7 @@ public class UIController : MonoBehaviour
     {
         Panel.SetActive(true);
         LevelCompleteUI.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void MainMenu()

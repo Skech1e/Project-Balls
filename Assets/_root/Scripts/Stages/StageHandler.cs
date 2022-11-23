@@ -7,19 +7,19 @@ public class StageHandler : MonoBehaviour
     public bool test;
     public Scored[] basketCount;
     [SerializeField] int goalCount;
+    [SerializeField] int currentLevel;
 
-    public delegate void LevelFinish();
-    public static event LevelFinish OnLevelFinish;
+   
 
 
     private void OnEnable()
     {
-        Scored.GoalScored += GoalTracker;
+        
     }
 
     private void OnDisable()
     {
-        Scored.GoalScored -= GoalTracker;
+        
     }
 
     private void Awake()
@@ -30,7 +30,7 @@ public class StageHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        basketCount = FindObjectsOfType<Scored>(false);
+        
     }
 
     private void Update()
@@ -47,6 +47,7 @@ public class StageHandler : MonoBehaviour
     public void ChangeLevel()
     {
 
+        goalCount = 0;
     }
  
     void ResetGoalCount()
@@ -56,9 +57,6 @@ public class StageHandler : MonoBehaviour
 
     void GoalTracker()
     {
-        goalCount++;
-        if (goalCount == basketCount.Length)
-            OnLevelFinish.Invoke();
     }
 
 
