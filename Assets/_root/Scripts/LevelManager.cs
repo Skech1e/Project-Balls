@@ -5,24 +5,15 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] int basketCount;
-    [SerializeField] int goalCount, currentLevel, LevelCapacity;
+    [SerializeField] int currentLevel, LevelCapacity;
     List<Transform> levels = new();
-
-
-    public delegate void LevelFinish();
-    public static event LevelFinish OnLevelFinish;
-    public static event LevelFinish OnLevelLoad;
-
 
     private void OnEnable()
     {
-        Scored.GoalScored += GoalTracker;
     }
 
     private void OnDisable()
     {
-        Scored.GoalScored -= GoalTracker;
     }
 
     private void Awake()
@@ -50,27 +41,18 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    void GoalTracker()
-    {
-        goalCount++;
-        basketCount = LevelReporting.basketCount.Length;
-        if (goalCount >= basketCount)
-            OnLevelFinish.Invoke();
-    }
-
     public void ChangeLevel()
     {
         levels[currentLevel].gameObject.SetActive(false);
         currentLevel++;
         levels[currentLevel].gameObject.SetActive(true);
-        ResetCount();
-        OnLevelLoad.Invoke();
+
+        LevelReporting.goalCount = 0;
         Time.timeScale = 1;
     }
 
     void ResetCount()
     {
-        goalCount = 0;
-        basketCount = FindObjectOfType<Scored>(false).basketCount.Length;
+        LevelReporting.goalCount = 0;
     }
 }

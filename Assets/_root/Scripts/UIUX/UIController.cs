@@ -8,14 +8,17 @@ public class UIController : MonoBehaviour
 {
     [SerializeField] GameObject Panel, LevelCompleteUI;
 
+    public delegate void UIControl();
+    public static event UIControl OnUIEvent;
+
     private void OnEnable()
     {
-        LevelManager.OnLevelFinish += LevelFinished;
+        LevelReporting.LevelComplete += LevelFinished;
     }
 
     private void OnDisable()
     {
-        LevelManager.OnLevelFinish -= LevelFinished;
+        LevelReporting.LevelComplete -= LevelFinished;
     }
 
     private void Awake()
@@ -78,4 +81,9 @@ public class UIController : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void Restart()
+    {
+        Time.timeScale = 1;
+        OnUIEvent.Invoke();
+    }
 }

@@ -22,15 +22,7 @@ public class Ball : MonoBehaviour
     PlayerInputs input;
 
     [SerializeField] Scored[] basketCount;
-    static bool resetBall;
-    public bool resetter
-    {
-        get { return resetBall; }
-        set
-        {
-            resetBall = value;
-        }
-    }
+    public static bool resetBall;
 
     public bool ThrowProperty
     {
@@ -47,13 +39,13 @@ public class Ball : MonoBehaviour
     private void OnEnable()
     {
         Scored.GoalScored += CheckRemainingBaskets;
-        LevelManager.OnLevelLoad += ResetBall;
+        LevelReporting.LevelReset += ResetBall;
     }
 
     private void OnDisable()
     {
         Scored.GoalScored -= CheckRemainingBaskets;
-        LevelManager.OnLevelLoad -= ResetBall;
+        LevelReporting.LevelReset -= ResetBall;
     }
 
     private void Awake()

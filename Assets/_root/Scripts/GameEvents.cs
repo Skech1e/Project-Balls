@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class GameEvents : MonoBehaviour
 {
-    public delegate void OnGoal();
-    public static event OnGoal OnGoalEvent;
+    public delegate void OnEvent();
+    public static event OnEvent OnGoalEvent;
+
 
     public static void OnGoalTrigger()
     {

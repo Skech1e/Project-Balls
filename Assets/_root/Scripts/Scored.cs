@@ -102,4 +102,9 @@ public class Scored : MonoBehaviour
         
     }
 
+
+    void ResetLevel()
+    {
+
+    }
 }
