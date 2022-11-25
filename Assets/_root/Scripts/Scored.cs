@@ -12,10 +12,8 @@ public class Scored : MonoBehaviour
     BoxCollider bc;
     [SerializeField] TextMeshProUGUI scoreTextPopup;
     Vector3 initScoreTextPosition, TargetScoreTextPosition;
-    GameObject basket;
+    [SerializeField] GameObject basket;
     public Scored[] basketCount;
-    GameManager gameManager;
-    StageHandler stageHandler;
 
 
     public delegate void OnGoal();
@@ -25,13 +23,10 @@ public class Scored : MonoBehaviour
     private void Awake()
     {
         bc = GetComponent<BoxCollider>();
-        gameManager = FindObjectOfType<GameManager>();
-        stageHandler = FindObjectOfType<StageHandler>();
         initScoreTextPosition = scoreTextPopup.transform.localPosition;
         TargetScoreTextPosition = new Vector3(initScoreTextPosition.x, initScoreTextPosition.y + 6.9f, initScoreTextPosition.z);
         scoreTextPopup.gameObject.SetActive(false);
 
-        basket = transform.parent.gameObject;
         basket.SetActive(true);
     }
 
@@ -43,11 +38,13 @@ public class Scored : MonoBehaviour
     private void OnEnable()
     {
         basketCount = FindObjectsOfType<Scored>(false);
+        
+
     }
 
     private void OnDisable()
     {
-
+        
     }
 
 
@@ -61,7 +58,7 @@ public class Scored : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            score = gameManager.ScorePerGoal();
+            score = GameManager.score;
             totalScore += score;
             goal = true;
             Invoke(nameof(InvokeGoalScoredEvent), 1.5f);

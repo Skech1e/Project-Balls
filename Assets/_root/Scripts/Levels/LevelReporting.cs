@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class LevelReporting : MonoBehaviour
 {
-    public static Scored[] basketCount;
-    public Scored[] basketCountIns;
+    public static Basket[] basketCount;
+    public Basket[] basketCountIns;
+
     public static int goalCount;
 
     public delegate void OnGoalReport();
@@ -31,7 +32,8 @@ public class LevelReporting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        basketCount = FindObjectsOfType<Scored>(false);
+        basketCount = FindObjectsOfType<Basket>(false);
+        
         goalCount = 0;
     }
 
@@ -44,7 +46,7 @@ public class LevelReporting : MonoBehaviour
     void ResetLevel()
     {
         goalCount = 0;
-        foreach (Scored basket in basketCount)
+        foreach (Basket basket in basketCount)
             basket.gameObject.SetActive(true);
         Ball.resetBall = true;
         LevelReset.Invoke();

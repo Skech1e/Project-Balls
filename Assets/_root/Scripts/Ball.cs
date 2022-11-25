@@ -40,12 +40,14 @@ public class Ball : MonoBehaviour
     {
         Scored.GoalScored += CheckRemainingBaskets;
         LevelReporting.LevelReset += ResetBall;
+        LevelManager.OnLevelChangeEvent += ResetBall;
     }
 
     private void OnDisable()
     {
         Scored.GoalScored -= CheckRemainingBaskets;
         LevelReporting.LevelReset -= ResetBall;
+        LevelManager.OnLevelChangeEvent -= ResetBall;
     }
 
     private void Awake()
@@ -76,7 +78,10 @@ public class Ball : MonoBehaviour
         ThrowBall();
 
         if (Throw == false)
-            transform.Rotate(69f * Time.deltaTime, 42.0f * Time.deltaTime, 13.37f * Time.deltaTime);
+        {
+            transform.Rotate(Vector3.back * 69 * Time.deltaTime);
+            transform.Rotate(Vector3.right * 30 * Time.deltaTime);
+        }
 
     }
 

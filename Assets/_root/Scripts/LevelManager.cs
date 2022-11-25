@@ -6,7 +6,10 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] int currentLevel, LevelCapacity;
-    List<Transform> levels = new();
+    [SerializeField] List<Transform> levels = new();
+
+    public delegate void OnLevelChange();
+    public static OnLevelChange OnLevelChangeEvent;
 
     private void OnEnable()
     {
@@ -28,6 +31,7 @@ public class LevelManager : MonoBehaviour
         currentLevel = Levels.Levelno - 1;
         levels[currentLevel].gameObject.SetActive(true);
         ResetCount();
+
     }
 
     // Update is called once per frame
@@ -47,6 +51,8 @@ public class LevelManager : MonoBehaviour
         currentLevel++;
         levels[currentLevel].gameObject.SetActive(true);
 
+        Ball.resetBall = true;
+        OnLevelChangeEvent.Invoke();
         LevelReporting.goalCount = 0;
         Time.timeScale = 1;
     }

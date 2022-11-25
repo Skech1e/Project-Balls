@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] int highScore;
     [SerializeField] int totalScore;
     [SerializeField] float timer;
-    [SerializeField] int score, bonus;
+    [SerializeField] public static int score;
+    [SerializeField] int bonus;
     [SerializeField] bool gameModeSelected, timedGame;
     [SerializeField][Range(3,9)] int ball_count;
 
@@ -23,6 +24,10 @@ public class GameManager : MonoBehaviour
     private Saver saver;
 
     [SerializeField] List<TextMeshProUGUI> scoreboard = new(3);
+
+    public delegate void OnScore();
+    public static event OnScore OnScoreEvent;
+
     private void Awake()
     {
         timedGame = false;
@@ -44,19 +49,19 @@ public class GameManager : MonoBehaviour
     {
         Countdown();
         GameModeSelection();
-        RecordScores();
-        UpdateScoreBoard();
     }
 
     private void OnEnable()
     {
         scrdata.HiScore = saver.LoadScores().HiScore;
         highScore = scrdata.HiScore;
+        Scored.GoalScored += RecordAndUpdateScoreboard;
     }
 
     private void OnDisable()
     {
         saver.SavetoJson(scrdata);
+        Scored.GoalScored -= RecordAndUpdateScoreboard;
     }
 
     void GameModeSelection()
@@ -93,19 +98,22 @@ public class GameManager : MonoBehaviour
     }
 
 
+    void RecordAndUpdateScoreboard()
+    {
+        ScorePerGoal();
+        RecordScores();
+        scoreboard[0].text = highScore.ToString();
+        scoreboard[1].text = totalScore.ToString();
+
+    }
+
     void RecordScores()
     {
-        totalScore = scores.totalScore;
+        totalScore += score;
         highScore = totalScore > highScore ? totalScore : highScore;
 
         scrdata.HiScore = highScore;
         scrdata.Name = "test";
-    }
-
-    void UpdateScoreBoard()
-    {
-        scoreboard[0].text = highScore.ToString();
-        scoreboard[1].text = totalScore.ToString();
     }
 
     public int ScorePerGoal()

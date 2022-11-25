@@ -4553,6 +4553,7 @@ MonoBehaviour:
   totalScore: 0
   score: 69
   scoreTextPopup: {fileID: 406035287}
+  basketCount: []
 --- !u!1 &298461209634946781
 GameObject:
   m_ObjectHideFlags: 0
