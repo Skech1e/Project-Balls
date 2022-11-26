@@ -10,17 +10,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] int highScore;
     [SerializeField] int totalScore;
     [SerializeField] float timer;
-    [SerializeField] public static int score;
+    public static int score;
     [SerializeField] int bonus;
     [SerializeField] bool gameModeSelected, timedGame;
     [SerializeField][Range(3,9)] int ball_count;
 
     enum GameMode { select_one, casual, rapidFire }
 
-    [SerializeField] GameMode gameMode = new GameMode();
+    [SerializeField] GameMode gameMode = new();
 
     [SerializeField] Scored scores;
-    private ScoreData scrdata = new();
+    private readonly ScoreData scrdata = new();
     private Saver saver;
 
     [SerializeField] List<TextMeshProUGUI> scoreboard = new(3);
@@ -56,12 +56,14 @@ public class GameManager : MonoBehaviour
         scrdata.HiScore = saver.LoadScores().HiScore;
         highScore = scrdata.HiScore;
         Scored.GoalScored += RecordAndUpdateScoreboard;
+        Ball.BallEvent += BallCounter;
     }
 
     private void OnDisable()
     {
         saver.SavetoJson(scrdata);
         Scored.GoalScored -= RecordAndUpdateScoreboard;
+        Ball.BallEvent -= BallCounter;
     }
 
     void GameModeSelection()

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] GameObject Panel, LevelCompleteUI;
+    [SerializeField] GameObject Panel, LevelCompleteUI, LevelFailedUI, Buttons, Pause;
 
     public delegate void UIControl();
     public static event UIControl OnUIEvent;
@@ -70,8 +70,17 @@ public class UIController : MonoBehaviour
 
     public void LevelFinished()
     {
+        Buttons.SetActive(false);
         Panel.SetActive(true);
         LevelCompleteUI.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void LevelFailed()
+    {
+        Buttons.SetActive(false);
+        Panel.SetActive(true);
+        LevelFailedUI.SetActive(true);
         Time.timeScale = 0;
     }
 

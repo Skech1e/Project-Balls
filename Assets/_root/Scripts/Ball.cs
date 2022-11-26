@@ -12,17 +12,19 @@ public class Ball : MonoBehaviour
     [SerializeField] Vector3 direction;
 
     public Trajectory track;
-    [SerializeField] public bool Throw;
+    [SerializeField] bool Throw;
     Rigidbody body;
     Vector3 defaultPos;
     private Quaternion defaultRotn;
     Random random;
     [SerializeField] int randomValue;
-
-    PlayerInputs input;
+    readonly PlayerInputs input;
 
     [SerializeField] Scored[] basketCount;
     public static bool resetBall;
+
+    public delegate void BallEventHandler();
+    public static event BallEventHandler BallEvent;
 
     public bool ThrowProperty
     {
@@ -79,8 +81,8 @@ public class Ball : MonoBehaviour
 
         if (Throw == false)
         {
-            transform.Rotate(Vector3.back * 69 * Time.deltaTime);
-            transform.Rotate(Vector3.right * 30 * Time.deltaTime);
+            transform.Rotate(69 * Time.deltaTime * Vector3.back);
+            transform.Rotate(30 * Time.deltaTime * Vector3.right);
         }
 
     }
@@ -88,7 +90,7 @@ public class Ball : MonoBehaviour
     void CheckRemainingBaskets()
     {
         basketCount = FindObjectsOfType<Scored>(false);
-        resetBall = basketCount.Length > 0 ? true : false;
+        resetBall = basketCount.Length > 0;
     }
 
     public void ThrowBall()
@@ -132,10 +134,19 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == "ground" && transform.position != defaultPos)
+        if (collision.collider.CompareTag("ground") && transform.position != defaultPos)
         {
+            if (Throw == true)
+            {
+                Invoke(nameof(InvokeBallEvent), 2f);
+                Invoke(nameof(ResetBall), 2f);
+            }                
             Throw = false;
-            Invoke(nameof(ResetBall), 2f);
         }
+    }
+
+    void InvokeBallEvent()
+    {
+        BallEvent.Invoke();
     }
 }
