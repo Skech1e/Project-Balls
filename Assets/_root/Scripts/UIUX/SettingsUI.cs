@@ -11,7 +11,7 @@ public class SettingsUI : MonoBehaviour
     [SerializeField] List<Sprite> Toggle = new();
 
     bool Sound, Music;
-    enum Graphics : int { Low = 0, Medium = 1, High = 2 };
+    enum Graphics : int { Low = 0, Medium = 1, High = 2, Max = 3 };
     private readonly int graphicsLength = Enum.GetValues(typeof(Graphics)).Length;
 
     [SerializeField]
@@ -40,6 +40,7 @@ public class SettingsUI : MonoBehaviour
         Sound = saver.LoadUser().Sound;
         Music = saver.LoadUser().Music;
         Counter = saver.LoadUser().Graphics;
+        QualitySettings.SetQualityLevel(Counter, false);
     }
 
     private void OnDisable()
@@ -77,6 +78,8 @@ public class SettingsUI : MonoBehaviour
 
         txt_graphics.text = ((Graphics) Counter).ToString();
         shadow_text.text = txt_graphics.text;
+
+        QualitySettings.SetQualityLevel(Counter);
     }
 
     public void CloseSave()

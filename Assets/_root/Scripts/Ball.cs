@@ -5,6 +5,7 @@ using Unity.Mathematics;
 using Random = Unity.Mathematics.Random;
 using GlobalBasket;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Ball : MonoBehaviour
@@ -25,6 +26,8 @@ public class Ball : MonoBehaviour
 
     public delegate void BallEventHandler();
     public static event BallEventHandler BallEvent;
+
+    GameObject thisBall;
 
     public bool ThrowProperty
     {
@@ -58,6 +61,7 @@ public class Ball : MonoBehaviour
         defaultPos = transform.position;
         defaultRotn = transform.rotation;
         random = new Random(seed: 1);
+        thisBall = this.gameObject;
     }
 
     // Start is called before the first frame update
@@ -117,6 +121,7 @@ public class Ball : MonoBehaviour
             body.AddTorque(direction, ForceMode.Force);
             randomValue = random.NextInt(-1, 2);
             track.gameObject.SetActive(false);
+            BallEvent.Invoke();
         }
 
     }
@@ -129,6 +134,7 @@ public class Ball : MonoBehaviour
             body.velocity = Vector2.zero;
             body.isKinematic = true;
             track.gameObject.SetActive(true);
+            Throw = false;
         }
     }
 
@@ -138,15 +144,15 @@ public class Ball : MonoBehaviour
         {
             if (Throw == true)
             {
-                Invoke(nameof(InvokeBallEvent), 2f);
                 Invoke(nameof(ResetBall), 2f);
-            }                
-            Throw = false;
+            }
         }
     }
 
-    void InvokeBallEvent()
+
+    public static void CancelInvokeMethod()
     {
-        BallEvent.Invoke();
+        Ball b = FindObjectOfType<Ball>();
+        b.CancelInvoke();
     }
 }

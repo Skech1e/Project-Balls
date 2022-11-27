@@ -92,7 +92,6 @@ public class UIController : MonoBehaviour
 
     public void Restart()
     {
-        Time.timeScale = 1;
         OnUIEvent.Invoke();
     }
 }

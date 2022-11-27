@@ -99,9 +99,10 @@ public class Scored : MonoBehaviour
         
     }
 
-
-    void ResetLevel()
+    public static void CancelInvokeMethod()
     {
-
+        Scored sc = FindObjectOfType<Scored>();
+        sc.CancelInvoke();
     }
+
 }

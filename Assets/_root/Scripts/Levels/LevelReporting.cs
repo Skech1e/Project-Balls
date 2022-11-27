@@ -44,9 +44,16 @@ public class LevelReporting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        foreach(Transform child in transform)
+            child.gameObject.SetActive(true);
+
         basketCount = FindObjectsOfType<Basket>(false);
+        //foreach (Basket basket in basketCount)
+        //    basket.gameObject.SetActive(true);
+
         ballCount = (int)_BallCount;
         goalCount = 0;
+        
     }
 
     // Update is called once per frame
@@ -57,12 +64,12 @@ public class LevelReporting : MonoBehaviour
 
     void ResetLevel()
     {
-        goalCount = 0;
-        foreach (Basket basket in basketCount)
-            basket.gameObject.SetActive(true);
+        Start();
         Ball.resetBall = true;
         LevelReset.Invoke();
         Time.timeScale = 1;
+        Scored.CancelInvokeMethod();
+        Ball.CancelInvokeMethod();
     }
 
 
