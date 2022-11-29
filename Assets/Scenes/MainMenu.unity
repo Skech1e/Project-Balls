@@ -5491,14 +5491,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571518697}
-  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: 12.01, y: 3.7779996, z: 4.83}
+  m_LocalRotation: {x: 0.08715578, y: -0, z: -0, w: 0.9961947}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 681075714}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1160903528}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
 --- !u!1 &581571930
 GameObject:
@@ -7475,7 +7475,7 @@ MonoBehaviour:
   ArenaList: []
   loadLevel: -1
   test: {fileID: 0}
-  cinemachine: {fileID: 571518697}
+  cameraRotator: {fileID: 1160903527}
 --- !u!114 &810874881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7522,12 +7522,7 @@ MonoBehaviour:
   highScore: 0
   totalScore: 0
   timer: 42
-  bonus: 0
-  gameModeSelected: 0
-  timedGame: 0
   ball_count: 6
-  gameMode: 0
-  scores: {fileID: 0}
   scoreboard:
   - {fileID: 0}
   - {fileID: 0}
@@ -9530,7 +9525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a401515aede99a48b638d287cbb15bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Levelist: []
 --- !u!1 &988821742
 GameObject:
   m_ObjectHideFlags: 0
@@ -11103,6 +11097,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147866938}
   m_CullTransparentMesh: 1
+--- !u!1 &1160903527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1160903528}
+  - component: {fileID: 1160903529}
+  m_Layer: 0
+  m_Name: Camera Rotation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1160903528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160903527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.01, y: 3.7779996, z: 4.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 571518699}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1160903529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160903527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24566104501fe3c47aed9ededccbae7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1202195647
 GameObject:
   m_ObjectHideFlags: 0
@@ -11836,7 +11875,7 @@ MonoBehaviour:
   ArenaList: []
   loadLevel: 0
   test: {fileID: 0}
-  cinemachine: {fileID: 0}
+  cameraRotator: {fileID: 0}
 --- !u!1 &1331393967
 GameObject:
   m_ObjectHideFlags: 0
@@ -16634,7 +16673,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a401515aede99a48b638d287cbb15bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Levelist: []
 --- !u!1 &1873124703
 GameObject:
   m_ObjectHideFlags: 0
@@ -18956,4 +18994,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a401515aede99a48b638d287cbb15bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Levelist: []

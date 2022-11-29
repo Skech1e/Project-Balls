@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
         if(Levels.IsLevelLoaded == true)
         {
             timer += Time.deltaTime;
-            DisplayTime(timer);
+            //DisplayTime(timer);
         }
     }
     IEnumerator BonusReduction()

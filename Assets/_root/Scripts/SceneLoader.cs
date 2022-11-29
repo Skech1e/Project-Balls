@@ -11,12 +11,12 @@ public class SceneLoader : MonoBehaviour
 
     private static SceneLoader staticSceneLoader;
 
-    [SerializeField] GameObject cinemachine;
+    [SerializeField] GameObject cameraRotator;
 
     private void OnEnable()
     {
         DontDestroyOnLoad(this);
-        DontDestroyOnLoad(cinemachine);
+        DontDestroyOnLoad(cameraRotator);
         SceneManager.sceneLoaded += OnSceneLoad;
 
         if(staticSceneLoader == null)
