@@ -174,6 +174,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1 &54109093
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +359,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!135 &56306449 stripped
 SphereCollider:
   m_CorrespondingSourceObject: {fileID: 3469287836825398088, guid: dd45f7b50d0fd21408e8efb9b02b03fc,
@@ -1756,6 +1758,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1 &168620243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,6 +1995,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1001 &210940910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2986,6 +2990,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1 &252107105
 GameObject:
   m_ObjectHideFlags: 0
@@ -4641,7 +4646,6 @@ MonoBehaviour:
   highScore: 0
   totalScore: 0
   timer: 42
-  bonus: 0
   ball_count: 6
   scoreboard:
   - {fileID: 1822030821}
@@ -7264,6 +7268,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 3
   ballCount: 0
+  sc: 0
 --- !u!1 &529907192
 GameObject:
   m_ObjectHideFlags: 0
@@ -8274,6 +8279,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1 &618480141
 GameObject:
   m_ObjectHideFlags: 0
@@ -8732,6 +8738,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1 &635899023
 GameObject:
   m_ObjectHideFlags: 0
@@ -9846,6 +9853,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!4 &763318863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 302924388269199526, guid: 9367d88b718fa8c46a3fc2f762bafc93,
@@ -11769,6 +11777,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1001 &915009969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12069,7 +12078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6cf43b361e2696047a6e1865c53572a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be57dfcc0e881e5488fd7a22abcbd6fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -13599,6 +13608,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 6
   ballCount: 0
+  sc: 0
 --- !u!1 &1141351199
 GameObject:
   m_ObjectHideFlags: 0
@@ -14507,6 +14517,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 6
   ballCount: 0
+  sc: 0
 --- !u!1 &1223740706
 GameObject:
   m_ObjectHideFlags: 0
@@ -24658,6 +24669,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 6
   ballCount: 0
+  sc: 0
 --- !u!1001 &2000485831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24819,6 +24831,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1 &2051575525
 GameObject:
   m_ObjectHideFlags: 0
@@ -24869,6 +24882,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1001 &2076364127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26049,6 +26063,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 0
   ballCount: 0
+  sc: 0
 --- !u!1 &2146322001
 GameObject:
   m_ObjectHideFlags: 0
