@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SettingsAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 4
+      m_TextureCompression: 2
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: ce42a71eb84e4d64fbded01c9041d15d, type: 3}
+    - {fileID: 2800000, guid: 75e1ff057fc85334480aa1801417fa87, type: 3}
+    - {fileID: 2800000, guid: feff9cadceebe7f4f92c43fc7a0ed486, type: 3}
+    - {fileID: 2800000, guid: fb6411bb58c442c4b904475fd02a51ef, type: 3}
+    - {fileID: 2800000, guid: bd19f6068eb13cb46a8996d0fc116a22, type: 3}
+    - {fileID: 2800000, guid: 630879306903e1046b3438f78b811079, type: 3}
+    - {fileID: 2800000, guid: 02226ca82218b8146b879000f85bdd0f, type: 3}
+    - {fileID: 2800000, guid: bc5914022ced84e42bf67fcafea91662, type: 3}
+    - {fileID: 2800000, guid: d11c0ee8eb027bc4da26a87c1d1cf0c8, type: 3}
+    - {fileID: 2800000, guid: c6595bfbd90b941499a9d751cec4b6a3, type: 3}
+    - {fileID: 2800000, guid: 33d10f6c005b93b4b8e73f00630a331e, type: 3}
+    - {fileID: 2800000, guid: e692b6ece6882324d87409a6fb7cb425, type: 3}
+    - {fileID: 2800000, guid: 896e56a65ec861c478afc6f3061b432c, type: 3}
+    - {fileID: 2800000, guid: 4b8b28e36a39c5249af160fe1730a133, type: 3}
+    - {fileID: 2800000, guid: cf363115a2749d14f8c085016da98bb4, type: 3}
+    - {fileID: 2800000, guid: 58cbc6e7e30d14e4e83eaad39e1588ea, type: 3}
+    - {fileID: 2800000, guid: 1838fcf305757b54f93fd9ca1a7b0d40, type: 3}
+    - {fileID: 2800000, guid: 800f5071c9e5cc4469371eff6d38b9d2, type: 3}
+    - {fileID: 2800000, guid: d0664d31a81b0ab42bc8b8fdeb528002, type: 3}
+    - {fileID: 2800000, guid: 6c39deda72d6dc14786a4986579e2949, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 630879306903e1046b3438f78b811079, type: 3}
+  - {fileID: 21300000, guid: d0664d31a81b0ab42bc8b8fdeb528002, type: 3}
+  - {fileID: 21300000, guid: 800f5071c9e5cc4469371eff6d38b9d2, type: 3}
+  - {fileID: 21300000, guid: bc5914022ced84e42bf67fcafea91662, type: 3}
+  - {fileID: 21300000, guid: 4b8b28e36a39c5249af160fe1730a133, type: 3}
+  - {fileID: 21300000, guid: 1838fcf305757b54f93fd9ca1a7b0d40, type: 3}
+  - {fileID: 21300000, guid: 75e1ff057fc85334480aa1801417fa87, type: 3}
+  - {fileID: 21300000, guid: cf363115a2749d14f8c085016da98bb4, type: 3}
+  - {fileID: 21300000, guid: bd19f6068eb13cb46a8996d0fc116a22, type: 3}
+  - {fileID: 21300000, guid: 896e56a65ec861c478afc6f3061b432c, type: 3}
+  - {fileID: 21300000, guid: 58cbc6e7e30d14e4e83eaad39e1588ea, type: 3}
+  - {fileID: 21300000, guid: 02226ca82218b8146b879000f85bdd0f, type: 3}
+  - {fileID: 21300000, guid: d11c0ee8eb027bc4da26a87c1d1cf0c8, type: 3}
+  - {fileID: 21300000, guid: 6c39deda72d6dc14786a4986579e2949, type: 3}
+  - {fileID: 21300000, guid: fb6411bb58c442c4b904475fd02a51ef, type: 3}
+  - {fileID: 21300000, guid: c6595bfbd90b941499a9d751cec4b6a3, type: 3}
+  - {fileID: 21300000, guid: 33d10f6c005b93b4b8e73f00630a331e, type: 3}
+  - {fileID: 21300000, guid: e692b6ece6882324d87409a6fb7cb425, type: 3}
+  - {fileID: 21300000, guid: feff9cadceebe7f4f92c43fc7a0ed486, type: 3}
+  - {fileID: 21300000, guid: ce42a71eb84e4d64fbded01c9041d15d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - MEDIUM_BUTTON
+  - YES_BTN
+  - EXIT_PANEL
+  - 'PRIVACY POLICY '
+  - quit_psd_btn
+  - setting_psd_btn
+  - DONATE
+  - restart_psd_btn
+  - LOW_BUTTON
+  - paused_panel_2
+  - resume_psd_btn
+  - MORE GAMES
+  - RIGHT ARROW
+  - NO_BTN
+  - LEFT ARROW
+  - settings_panel
+  - off_knob
+  - on_knob
+  - HIGH_BUTTON
+  - CREDITS
+  m_RenderDataMap: {}
+  m_Tag: SettingsAtlas
+  m_IsVariant: 0

@@ -8,6 +8,7 @@ public class LevelReporting : MonoBehaviour
     static Basket[] basketCount;
     [SerializeField] Basket[] basketCountIns;
 
+    public static float bonus;
     enum BallCountEnum: int 
     {
         Three = 3, Six = 6, Nine = 9
@@ -16,7 +17,18 @@ public class LevelReporting : MonoBehaviour
     [SerializeField] BallCountEnum _BallCount;
 
     public int ballCount;
-    public static int goalCount;
+    public static int goalCount, ScorePerBasket;
+
+    enum Scorepergoal: int
+    {
+        Hundred = 100,
+        One_Fifty = 150,
+        Two_Hundred = 200,
+        Two_Fifty = 250,
+        Three_Hundred = 300
+    }
+    [SerializeField] Scorepergoal sc;
+
 
     public delegate void OnGoalReport();
     public static event OnGoalReport LevelComplete;
@@ -44,6 +56,8 @@ public class LevelReporting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ScorePerBasket = (int)sc;
+        bonus = 2.0f;
         foreach(Transform child in transform)
             child.gameObject.SetActive(true);
 

@@ -7,19 +7,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [Header("Scoring")]
-    [SerializeField] int highScore;
-    [SerializeField] int totalScore;
-    [SerializeField] float timer;
-    public static int score;
-    [SerializeField] int bonus;
-    [SerializeField] bool gameModeSelected, timedGame;
+    [SerializeField] protected int highScore, totalScore;
+    [SerializeField] protected float timer;
     [SerializeField][Range(3,9)] int ball_count;
+    public static int score;
 
-    enum GameMode { select_one, casual, rapidFire }
 
-    [SerializeField] GameMode gameMode = new();
-
-    [SerializeField] Scored scores;
     private readonly ScoreData scrdata = new();
     private Saver saver;
 
@@ -30,12 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        timedGame = false;
-        gameModeSelected = false;
         saver = GetComponent<Saver>();
-
-        foreach (var entry in scoreboard)
-            entry.text = 0.ToString();
     }
 
     // Start is called before the first frame update
@@ -47,8 +35,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Countdown();
-        GameModeSelection();
+        CountUp();
     }
 
     private void OnEnable()
@@ -57,6 +44,7 @@ public class GameManager : MonoBehaviour
         highScore = scrdata.HiScore;
         Scored.GoalScored += RecordAndUpdateScoreboard;
         Ball.BallEvent += BallCounter;
+        Levels.OnLevelLoad += InitScoreboard;
     }
 
     private void OnDisable()
@@ -64,32 +52,39 @@ public class GameManager : MonoBehaviour
         saver.SavetoJson(scrdata);
         Scored.GoalScored -= RecordAndUpdateScoreboard;
         Ball.BallEvent -= BallCounter;
+        Levels.OnLevelLoad -= InitScoreboard;
     }
 
-    void GameModeSelection()
+    void InitScoreboard()
     {
-        if (gameModeSelected == false)
+        foreach (var entry in scoreboard)
+            entry.text = 0.ToString();
+
+        StartCoroutine(nameof(BonusReduction));
+    }
+
+    void BallCounter()
+    {
+
+    }
+
+    void CountUp()
+    {
+        if(Levels.IsLevelLoaded == true)
         {
-            switch (gameMode)
-            {
-                case GameMode.select_one:
-                    gameModeSelected = false;
-                    break;
-                case GameMode.casual:
-                    gameModeSelected = true;
-                    break;
-                case GameMode.rapidFire:
-                    gameModeSelected = true;
-                    timedGame = true;
-                    break;
-            }
+            timer += Time.deltaTime;
+            DisplayTime(timer);
         }
     }
-
-    void Countdown()
+    IEnumerator BonusReduction()
     {
-        timer -= timedGame == true && timer > 0 ? Time.deltaTime : 0;
-        DisplayTime(timer);
+        do
+        {
+            LevelReporting.bonus -= 0.1f;
+        }while(LevelReporting.bonus > 1);
+
+        print("Bonus: "+LevelReporting.bonus);
+        yield return new WaitForSeconds(6.9f);
     }
 
     void DisplayTime(float timer)
@@ -99,6 +94,7 @@ public class GameManager : MonoBehaviour
         scoreboard[2].text = string.Format("{0}:{1:00}", minutes, seconds);
     }
 
+/* SCORING */
 
     void RecordAndUpdateScoreboard()
     {
@@ -119,14 +115,12 @@ public class GameManager : MonoBehaviour
     }
 
     public int ScorePerGoal()
-    {
-        score = 69;
-        bonus = 0;
-        return score + bonus;
+    {        
+        var _score = (float)LevelReporting.ScorePerBasket;
+        score = (int)(_score * LevelReporting.bonus);
+
+        return score;
     }
 
-    public void BallCounter()
-    {
-
-    }
 }
+

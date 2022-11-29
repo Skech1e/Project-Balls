@@ -52,7 +52,7 @@ namespace GlobalBasket
                 {
                     ""name"": """",
                     ""id"": ""d5fbbe53-c16a-48a1-a4e5-f25007323a3d"",
-                    ""path"": ""<Touchscreen>/delta"",
+                    ""scpath"": ""<Touchscreen>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Phone"",
@@ -63,7 +63,7 @@ namespace GlobalBasket
                 {
                     ""name"": """",
                     ""id"": ""ca746887-7a85-449c-b068-371c127ecc50"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""scpath"": ""<Keyboard>/space"",
                     ""interactions"": ""Hold(duration=1.401298E-45)"",
                     ""processors"": """",
                     ""groups"": ""Phone"",
@@ -74,7 +74,7 @@ namespace GlobalBasket
                 {
                     ""name"": """",
                     ""id"": ""8338dcb4-da9b-40b6-9a42-10121b0e9bf2"",
-                    ""path"": ""<Touchscreen>/touch*/Press"",
+                    ""scpath"": ""<Touchscreen>/touch*/Press"",
                     ""interactions"": ""MultiTap"",
                     ""processors"": """",
                     ""groups"": ""Phone"",

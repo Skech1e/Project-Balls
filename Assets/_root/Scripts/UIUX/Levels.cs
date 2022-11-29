@@ -9,6 +9,7 @@ public class Levels : MonoBehaviour
     [SerializeField] protected bool isUnlocked;
     [SerializeField] int Arena;
     public static int Levelno;
+    public static bool IsLevelLoaded;
 
     Button Button;
     Image LevelIcon;
@@ -16,6 +17,9 @@ public class Levels : MonoBehaviour
 
     delegate void LevelUnlock();
     event LevelUnlock OnUnlock;
+
+    public delegate void LevelLoaded();
+    public static event LevelLoaded OnLevelLoad;
 
     SceneLoader SceneLoader;
 
@@ -58,5 +62,7 @@ public class Levels : MonoBehaviour
     {
         Levelno = int.Parse(name);
         SceneLoader.SceneLoad(Arena, Levelno);
+        IsLevelLoaded = true;
+        OnLevelLoad.Invoke();
     }
 }

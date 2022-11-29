@@ -4642,11 +4642,7 @@ MonoBehaviour:
   totalScore: 0
   timer: 42
   bonus: 0
-  gameModeSelected: 0
-  timedGame: 0
   ball_count: 6
-  gameMode: 0
-  scores: {fileID: 0}
   scoreboard:
   - {fileID: 1822030821}
   - {fileID: 1080685607}
@@ -6110,7 +6106,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh177822
+  m_Name: pb_Mesh58142
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12222,7 +12218,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh178406
+  m_Name: pb_Mesh58660
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14637,7 +14633,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh179408
+  m_Name: pb_Mesh59402
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14926,7 +14922,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh179358
+  m_Name: pb_Mesh59378
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17231,7 +17227,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh179564
+  m_Name: pb_Mesh59510
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20377,7 +20373,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh179250
+  m_Name: pb_Mesh59302
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25501,7 +25497,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh178566
+  m_Name: pb_Mesh58764
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
