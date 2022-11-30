@@ -7522,8 +7522,11 @@ MonoBehaviour:
   highScore: 0
   totalScore: 0
   timer: 0
+  execTimer: 0
   ball_count: 6
   scoreboard:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
