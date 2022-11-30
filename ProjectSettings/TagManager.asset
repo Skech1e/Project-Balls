@@ -25,6 +25,11 @@ TagManager:
   - 15
   - 16
   - POV
+  - scb0
+  - scb1
+  - scb2
+  - scb3
+  - scb4
   layers:
   - Default
   - TransparentFX

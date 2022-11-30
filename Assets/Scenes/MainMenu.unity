@@ -5492,7 +5492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571518697}
   m_LocalRotation: {x: 0.08715578, y: -0, z: -0, w: 0.9961947}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.010000229, y: 3.0679996, z: -16.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7521,7 +7521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highScore: 0
   totalScore: 0
-  timer: 42
+  timer: 0
   ball_count: 6
   scoreboard:
   - {fileID: 0}
@@ -11122,7 +11122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160903527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.01, y: 3.7779996, z: 4.83}
+  m_LocalPosition: {x: 12, y: 0.71, z: 21.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11142,6 +11142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24566104501fe3c47aed9ededccbae7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  POV: {fileID: 0}
+  speed: 0.042
 --- !u!1 &1202195647
 GameObject:
   m_ObjectHideFlags: 0

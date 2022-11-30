@@ -24,7 +24,7 @@ public class PositionsArray : MonoBehaviour
         {
             for (int j = 0; j < 5; j++)
             {
-                target[i, j] = transform.GetChild(j+k);
+                targetAngle[i, j] = transform.GetChild(j+k);
             }
             k += 5;
         }*/   

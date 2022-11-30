@@ -63,7 +63,6 @@ public class Scored : MonoBehaviour
             goal = true;
             Invoke(nameof(InvokeGoalScoredEvent), 1.5f);
         }
-
     }
 
     void InvokeGoalScoredEvent()

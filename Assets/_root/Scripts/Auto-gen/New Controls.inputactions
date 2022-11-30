@@ -13,15 +13,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Throw",
-                    "type": "Button",
-                    "id": "98f081d4-b1ff-4a5f-81e9-af6da9c21990",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -33,28 +24,6 @@
                     "processors": "",
                     "groups": "Phone",
                     "action": "Aim",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ca746887-7a85-449c-b068-371c127ecc50",
-                    "path": "<Keyboard>/space",
-                    "interactions": "Hold(duration=1.401298E-45)",
-                    "processors": "",
-                    "groups": "Phone",
-                    "action": "Throw",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8338dcb4-da9b-40b6-9a42-10121b0e9bf2",
-                    "path": "<Touchscreen>/touch*/Press",
-                    "interactions": "MultiTap",
-                    "processors": "",
-                    "groups": "Phone",
-                    "action": "Throw",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

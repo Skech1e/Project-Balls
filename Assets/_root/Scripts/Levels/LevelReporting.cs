@@ -16,7 +16,7 @@ public class LevelReporting : MonoBehaviour
 
     [SerializeField] BallCountEnum _BallCount;
 
-    public int ballCount;
+    public static int ballCount;
     public static int goalCount, ScorePerBasket;
 
     enum Scorepergoal: int

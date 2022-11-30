@@ -61,7 +61,7 @@ public class Ball : MonoBehaviour
         defaultPos = transform.position;
         defaultRotn = transform.rotation;
         random = new Random(seed: 1);
-        thisBall = this.gameObject;
+        thisBall = gameObject;
     }
 
     // Start is called before the first frame update
@@ -86,7 +86,8 @@ public class Ball : MonoBehaviour
         if (Throw == false)
         {
             transform.Rotate(69 * Time.deltaTime * Vector3.back);
-            transform.Rotate(30 * Time.deltaTime * Vector3.right);
+            transform.parent.Rotate(30 * Time.deltaTime * Vector3.right, Space.Self);
+
         }
 
     }
@@ -99,21 +100,6 @@ public class Ball : MonoBehaviour
 
     public void ThrowBall()
     {
-        /*input ??= new PlayerInputs();
-        input.Enable();
-        input.Controls.Throw.performed += context =>
-        {
-            if (transform.position == defaultPos)
-            {
-                body.isKinematic = false;
-                body.AddForce(direction, ForceMode.Impulse);
-                body.AddTorque(direction, ForceMode.Force);
-                Throw = true;
-                randomValue = random.NextInt(-1, 2);
-                track.gameObject.SetActive(false);
-            }
-        };*/
-
         if (transform.position == defaultPos && Throw == true)
         {
             body.isKinematic = false;
@@ -123,11 +109,11 @@ public class Ball : MonoBehaviour
             track.gameObject.SetActive(false);
             BallEvent.Invoke();
         }
-
     }
 
     void ResetBall()
     {
+        CancelInvoke();
         if (resetBall == true)
         {
             transform.position = defaultPos;
