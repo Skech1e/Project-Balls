@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     private Saver saver;
 
     [SerializeField] List<TextMeshProUGUI> scoreboard = new(5);
+    string[] scbnames = new string[5];
 
     public delegate void OnScore();
     public static event OnScore OnScoreEvent;
@@ -27,6 +28,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         saver = GetComponent<Saver>();
+        for(int i = 0; i < scbnames.Length; i++)
+        {
+            scbnames[i] = "scb" + i;
+            print(scbnames[i]);
+        }
     }
 
     // Start is called before the first frame update
@@ -56,17 +62,18 @@ public class GameManager : MonoBehaviour
         saver.SavetoJson(scrdata);
         Scored.GoalScored -= RecordAndUpdateScoreboard;
         Ball.BallEvent -= BallCounter;
-        Levels.OnLevelLoad -= InitScoreboard;
+        //Levels.OnLevelLoad -= StartCoroutine(nameof(InitScoreboard));
     }
 
-    void InitScoreboard()
+    IEnumerator InitScoreboard()
     {
+        yield return new WaitForSeconds(0.2f);
+        print(GameObject.FindGameObjectWithTag("scb3"));
         for (int i = 0; i < scoreboard.Capacity; i++)
-            scoreboard[i] = GameObject.FindGameObjectWithTag("scb"+i).GetComponent<TextMeshProUGUI>();
+            scoreboard[i] = GameObject.FindGameObjectWithTag(scbnames[i]).GetComponent<TextMeshProUGUI>();
 
         foreach (var entry in scoreboard)
             entry.text = 0.ToString();
-
     }
 
     void BallCounter()

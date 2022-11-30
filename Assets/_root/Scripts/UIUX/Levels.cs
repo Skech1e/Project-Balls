@@ -64,5 +64,6 @@ public class Levels : MonoBehaviour
         SceneLoader.SceneLoad(Arena, Levelno);
         IsLevelLoaded = true;
         OnLevelLoad.Invoke();
+        OnLevelLoad.Invoke();
     }
 }
