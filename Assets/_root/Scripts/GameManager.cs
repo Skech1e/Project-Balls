@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
         highScore = scrdata.HiScore;
         Scored.GoalScored += RecordAndUpdateScoreboard;
         Ball.BallEvent += BallCounter;
-        Levels.OnLevelLoad += InitScoreboard;
+        //Levels.OnLevelLoad += InitScoreboard;
     }
 
     private void OnDisable()
