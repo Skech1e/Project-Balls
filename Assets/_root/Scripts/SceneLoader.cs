@@ -13,6 +13,7 @@ public class SceneLoader : MonoBehaviour
 
     [SerializeField] GameObject cameraRotator;
 
+
     private void OnEnable()
     {
         DontDestroyOnLoad(this);
@@ -47,7 +48,6 @@ public class SceneLoader : MonoBehaviour
         //if(SceneManager.GetActiveScene().buildIndex != 0)
         SceneManager.LoadScene(sceneNumber);
         loadLevel = _loadLevel - 1;
-        
     }
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)

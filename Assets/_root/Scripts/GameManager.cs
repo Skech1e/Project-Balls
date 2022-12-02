@@ -1,3 +1,4 @@
+using GlobalBasket;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,21 +7,24 @@ using System.Timers;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [Header("Scoring")]
     [SerializeField] protected int highScore, totalScore;
     [SerializeField] protected float timer, execTimer;
-    [SerializeField][Range(3,9)] int ball_count;
     public static int score;
-
 
     private readonly ScoreData scrdata = new();
     private Saver saver;
+    private PlayerInputs input;
 
     [SerializeField] List<TextMeshProUGUI> scoreboard = new(5);
-    string[] scbnames = new string[5];
+
+    [SerializeField]
+    bool touchedProperty;
 
     public delegate void OnScore();
     public static event OnScore OnScoreEvent;
@@ -28,11 +32,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         saver = GetComponent<Saver>();
-        for(int i = 0; i < scbnames.Length; i++)
-        {
-            scbnames[i] = "scb" + i;
-            print(scbnames[i]);
-        }
+        input = new();
     }
 
     // Start is called before the first frame update
@@ -52,38 +52,68 @@ public class GameManager : MonoBehaviour
     {
         scrdata.HiScore = saver.LoadScores().HiScore;
         highScore = scrdata.HiScore;
+
         Scored.GoalScored += RecordAndUpdateScoreboard;
-        Ball.BallEvent += BallCounter;
-        //Levels.OnLevelLoad += InitScoreboard;
+        SceneManager.sceneLoaded += InitScoreboard;
+        Levels.OnLevelLoad += InitScoreboardData;
+        UIController.OnUIEvent += ResetTimer;
+        LevelManager.OnLevelChangeEvent += ResetTimer;
     }
 
     private void OnDisable()
     {
         saver.SavetoJson(scrdata);
+
+        input.Disable();
+        input.Controls.Aim.started -= FirstTouch;
+        input.Controls.Aim.performed -= FirstTouch;
         Scored.GoalScored -= RecordAndUpdateScoreboard;
-        Ball.BallEvent -= BallCounter;
-        //Levels.OnLevelLoad -= StartCoroutine(nameof(InitScoreboard));
+        SceneManager.sceneLoaded -= InitScoreboard;
+        Levels.OnLevelLoad -= InitScoreboardData;
+        UIController.OnUIEvent -= ResetTimer;
+        LevelManager.OnLevelChangeEvent -= ResetTimer;
     }
 
-    IEnumerator InitScoreboard()
+    void InitScoreboard(Scene scene, LoadSceneMode mode)
     {
-        yield return new WaitForSeconds(0.2f);
-        print(GameObject.FindGameObjectWithTag("scb3"));
         for (int i = 0; i < scoreboard.Capacity; i++)
-            scoreboard[i] = GameObject.FindGameObjectWithTag(scbnames[i]).GetComponent<TextMeshProUGUI>();
+            scoreboard[i] = GameObject.FindGameObjectWithTag("scb" + i).GetComponent<TextMeshProUGUI>();
+        InitScoreboardData();
 
-        foreach (var entry in scoreboard)
-            entry.text = 0.ToString();
+        input.Enable();
+        input.Controls.Aim.started += FirstTouch;
+        input.Controls.Aim.performed += FirstTouch;
     }
 
-    void BallCounter()
+    void InitScoreboardData()
     {
+        scoreboard[0].text = scrdata.HiScore.ToString();
+        scoreboard[1].text = totalScore.ToString();
+        scoreboard[2].text = LevelReporting.bonus.ToString();
+        scoreboard[3].text = LevelReporting.ballCount.ToString();
+    }
 
+    void FirstTouch(InputAction.CallbackContext context)
+    {
+        var action = context.phase;
+        if (action == InputActionPhase.Performed)
+        {
+            print("ok");
+            touchedProperty = true;
+
+        }
+    }
+
+    void ResetTimer()
+    {
+        totalScore = 0;
+        timer = 0;
+        touchedProperty = false;
     }
 
     void CountUp()
     {
-        if(Levels.IsLevelLoaded == true)
+        if (Levels.IsLevelLoaded == true && touchedProperty == true)
         {
             timer += Time.deltaTime;
             DisplayTime(timer);
@@ -95,9 +125,10 @@ public class GameManager : MonoBehaviour
         int minutes = Mathf.FloorToInt(timer / 60);
         int seconds = Mathf.FloorToInt(timer % 60);
         scoreboard[4].text = string.Format("{0}:{1:00}", minutes, seconds);
+        scoreboard[2].text = LevelReporting.bonus.ToString("F1"); //bonus display
     }
 
-/* SCORING */
+    /* SCORING */
 
     void RecordAndUpdateScoreboard()
     {
@@ -105,7 +136,6 @@ public class GameManager : MonoBehaviour
         RecordScores();
         scoreboard[0].text = highScore.ToString();
         scoreboard[1].text = totalScore.ToString();
-        scoreboard[2].text = LevelReporting.bonus.ToString();
         scoreboard[3].text = LevelReporting.ballCount.ToString();
 
     }
@@ -128,7 +158,7 @@ public class GameManager : MonoBehaviour
     }
 
     public int ScorePerGoal()
-    {        
+    {
         var _score = (float)LevelReporting.ScorePerBasket;
         score = Mathf.RoundToInt(_score * LevelReporting.bonus);
 

@@ -42,6 +42,11 @@ public class Levels : MonoBehaviour
         Button.interactable = isUnlocked == true ? true : false;
     }
 
+    private void OnDisable()
+    {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,12 +63,11 @@ public class Levels : MonoBehaviour
     {
         LevelIcon.sprite = IconList[1];
     }
-    public void LoadLevel()
+    void LoadLevel()
     {
         Levelno = int.Parse(name);
         SceneLoader.SceneLoad(Arena, Levelno);
         IsLevelLoaded = true;
-        OnLevelLoad.Invoke();
         OnLevelLoad.Invoke();
     }
 }

@@ -8,17 +8,21 @@ public class UIController : MonoBehaviour
 {
     [SerializeField] GameObject Panel, LevelCompleteUI, LevelFailedUI, Buttons, Pause;
 
+    [SerializeField] LevelCompleteUI levelfinishbox;
+
     public delegate void UIControl();
     public static event UIControl OnUIEvent;
 
     private void OnEnable()
     {
         LevelReporting.LevelComplete += LevelFinished;
+        LevelReporting.LevelFailed += LevelFailed;
     }
 
     private void OnDisable()
     {
         LevelReporting.LevelComplete -= LevelFinished;
+        LevelReporting.LevelFailed -= LevelFailed;
     }
 
     private void Awake()
@@ -29,7 +33,7 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -70,6 +74,9 @@ public class UIController : MonoBehaviour
 
     public void LevelFinished()
     {
+        levelfinishbox.score.text = GameManager.score.ToString();
+        levelfinishbox.coins.text = levelfinishbox.score.text;
+
         Buttons.SetActive(false);
         Panel.SetActive(true);
         LevelCompleteUI.SetActive(true);
@@ -80,7 +87,7 @@ public class UIController : MonoBehaviour
     {
         Buttons.SetActive(false);
         Panel.SetActive(true);
-        LevelFailedUI.SetActive(true);
+        LevelFailedUI.SetActive(true);  
         Time.timeScale = 0;
     }
 
