@@ -47,6 +47,13 @@ public class ScoreData
 {
     public string Name;
     public int HiScore;
+
+    public struct LevelScores
+    {
+        public int ArenaID, levelID;
+        public int Hiscore, ballCount;
+        public float TimeTaken;
+    }
 }
 
 [System.Serializable]

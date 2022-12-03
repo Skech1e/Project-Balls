@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public delegate void OnScore();
     public static event OnScore OnScoreEvent;
 
+    [SerializeField] ScriptableObject LevelSCO;
+
     private void Awake()
     {
         saver = GetComponent<Saver>();
@@ -155,6 +157,8 @@ public class GameManager : MonoBehaviour
 
         scrdata.HiScore = highScore;
         scrdata.Name = "test";
+
+        
     }
 
     public int ScorePerGoal()

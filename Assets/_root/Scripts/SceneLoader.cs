@@ -52,7 +52,7 @@ public class SceneLoader : MonoBehaviour
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-        test = GameObject.FindGameObjectWithTag("Level");
+        test = GameObject.FindGameObjectWithTag("LevelScore");
         
     }
 }
