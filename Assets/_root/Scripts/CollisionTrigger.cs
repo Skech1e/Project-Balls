@@ -7,6 +7,7 @@ public class CollisionTrigger : MonoBehaviour
     [SerializeField] BoxCollider FinalCollider;
     public void OnTriggerEnter(Collider other)
     {
+        print("second");
         if(other.gameObject.tag == "Player")
         {
             FinalCollider.enabled = true;
@@ -16,7 +17,7 @@ public class CollisionTrigger : MonoBehaviour
 
     private void Awake()
     {
-        FinalCollider.enabled = false;
+        
     }
 
     private void Reset()
@@ -26,7 +27,7 @@ public class CollisionTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        FinalCollider.enabled = false;
     }
 
     // Update is called once per frame

@@ -7474,7 +7474,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ArenaList: []
   loadLevel: -1
-  test: {fileID: 0}
   cameraRotator: {fileID: 1160903527}
 --- !u!114 &810874881
 MonoBehaviour:
@@ -7523,13 +7522,14 @@ MonoBehaviour:
   totalScore: 0
   timer: 0
   execTimer: 0
-  ball_count: 6
   scoreboard:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  touchedProperty: 0
+  LevelScoreData: {fileID: 11400000, guid: 28dae60e6e063754a8a14a5cbef49506, type: 2}
 --- !u!114 &810874884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11866,7 +11866,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ArenaList: []
   loadLevel: 0
-  test: {fileID: 0}
   cameraRotator: {fileID: 0}
 --- !u!1 &1331393967
 GameObject:
@@ -14560,6 +14559,7 @@ MonoBehaviour:
   LevelFailedUI: {fileID: 0}
   Buttons: {fileID: 0}
   Pause: {fileID: 0}
+  levelfinishbox: {fileID: 0}
 --- !u!1 &1617871120
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,10 +2,7 @@ using GlobalBasket;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
-using System.Timers;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -29,18 +26,20 @@ public class GameManager : MonoBehaviour
     public delegate void OnScore();
     public static event OnScore OnScoreEvent;
 
-    [SerializeField] ScriptableObject LevelSCO;
+    LevelSCO levelsco;
+    [SerializeField] ScriptableObject LevelScoreData;
+
 
     private void Awake()
     {
         saver = GetComponent<Saver>();
-        input = new();
+        input = new();        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        levelsco = ScriptableObject.CreateInstance<LevelSCO>();
     }
 
     // Update is called once per frame
@@ -57,7 +56,6 @@ public class GameManager : MonoBehaviour
 
         Scored.GoalScored += RecordAndUpdateScoreboard;
         SceneManager.sceneLoaded += InitScoreboard;
-        Levels.OnLevelLoad += InitScoreboardData;
         UIController.OnUIEvent += ResetTimer;
         LevelManager.OnLevelChangeEvent += ResetTimer;
     }
@@ -71,7 +69,6 @@ public class GameManager : MonoBehaviour
         input.Controls.Aim.performed -= FirstTouch;
         Scored.GoalScored -= RecordAndUpdateScoreboard;
         SceneManager.sceneLoaded -= InitScoreboard;
-        Levels.OnLevelLoad -= InitScoreboardData;
         UIController.OnUIEvent -= ResetTimer;
         LevelManager.OnLevelChangeEvent -= ResetTimer;
     }
@@ -100,9 +97,7 @@ public class GameManager : MonoBehaviour
         var action = context.phase;
         if (action == InputActionPhase.Performed)
         {
-            print("ok");
             touchedProperty = true;
-
         }
     }
 
@@ -152,13 +147,17 @@ public class GameManager : MonoBehaviour
 
     void RecordScores()
     {
+        int _arenano = LevelManager.currentArena;
+        int _levelno = LevelManager.currentLevel;
         totalScore += score;
         highScore = totalScore > highScore ? totalScore : highScore;
 
         scrdata.HiScore = highScore;
         scrdata.Name = "test";
 
-        
+        levelsco.arenas[_arenano].levels[_levelno].ballCount = highScore;
+        levelsco.arenas[_arenano].levels[_levelno].hiscore = highScore;
+        LevelScoreData = levelsco;
     }
 
     public int ScorePerGoal()

@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     [SerializeField] List<Transform> ArenaList = new();
-    public int loadLevel = -1;   
-    [SerializeField]GameObject test;
+    public int loadLevel = -1;
 
     private static SceneLoader staticSceneLoader;
 
@@ -52,7 +51,7 @@ public class SceneLoader : MonoBehaviour
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-        test = GameObject.FindGameObjectWithTag("LevelScore");
+        
         
     }
 }

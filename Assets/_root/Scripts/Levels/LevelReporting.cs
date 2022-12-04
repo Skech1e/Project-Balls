@@ -45,11 +45,14 @@ public class LevelReporting : MonoBehaviour
     }
     private void OnDisable()
     {
+        LevelManager.ballCount = ballCount;
+
         Scored.GoalScored -= GoalTracker;
         Scored.GoalScored -= UpdateScores;
 
         UIController.OnUIEvent -= ResetLevel;
         Ball.BallEvent -= BallLivesTracker;
+
     }
 
 
