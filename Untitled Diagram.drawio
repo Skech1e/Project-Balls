@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-12T08:27:43.851Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="xcx1Kwuy0R4Kuq6p87E5" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-12T09:07:31.911Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="VP54o5ysYGPZ-Qv2UOKc" version="20.4.1" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1422" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
           <mxGeometry y="30" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-6" value="LevelReporting.cs" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;swimlaneLine=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="14" width="160" height="176" as="geometry" />
+          <mxGeometry x="380" y="14" width="160" height="236" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-7" value="LevelComplete" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;swimlaneLine=1;" vertex="1" parent="-moWh7qVt0uN1S0JNPq3-6">
           <mxGeometry y="26" width="160" height="30" as="geometry" />
@@ -36,6 +36,12 @@
         <mxCell id="-moWh7qVt0uN1S0JNPq3-48" value="UpdateScores()" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;labelBorderColor=default;swimlaneLine=1;" vertex="1" parent="-moWh7qVt0uN1S0JNPq3-6">
           <mxGeometry y="146" width="160" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="-moWh7qVt0uN1S0JNPq3-57" value="BallLivesTracker()" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;labelBorderColor=default;swimlaneLine=1;" vertex="1" parent="-moWh7qVt0uN1S0JNPq3-6">
+          <mxGeometry y="176" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-moWh7qVt0uN1S0JNPq3-59" value="ResetLevel()" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;labelBorderColor=default;swimlaneLine=1;" vertex="1" parent="-moWh7qVt0uN1S0JNPq3-6">
+          <mxGeometry y="206" width="160" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-13" value="LevelManager.cs" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;swimlaneLine=1;" vertex="1" parent="1">
           <mxGeometry x="670" y="180" width="160" height="56" as="geometry" />
         </mxCell>
@@ -43,13 +49,16 @@
           <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-17" value="GameManager.cs" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;swimlaneLine=1;" vertex="1" parent="1">
-          <mxGeometry x="355" y="620" width="230" height="86" as="geometry" />
+          <mxGeometry x="310" y="810" width="230" height="116" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-18" value="OnScoreEvent" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;swimlaneLine=1;" vertex="1" parent="-moWh7qVt0uN1S0JNPq3-17">
           <mxGeometry y="26" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-42" value="RecordAndUpdateScoreboard()" style="text;strokeColor=default;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;labelBorderColor=default;swimlaneLine=1;" vertex="1" parent="-moWh7qVt0uN1S0JNPq3-17">
           <mxGeometry y="56" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-moWh7qVt0uN1S0JNPq3-61" value="ResetTimer()" style="text;strokeColor=default;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;labelBorderColor=default;swimlaneLine=1;" vertex="1" parent="-moWh7qVt0uN1S0JNPq3-17">
+          <mxGeometry y="86" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-19" value="Levels.cs    " style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;swimlaneLine=1;" vertex="1" parent="1">
           <mxGeometry x="660" y="280" width="160" height="56" as="geometry" />
@@ -58,7 +67,7 @@
           <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-21" value="UIController " style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;swimlaneLine=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="430" width="160" height="116" as="geometry" />
+          <mxGeometry x="330" y="570" width="160" height="116" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-22" value="OnUIEvent" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;swimlaneLine=1;" vertex="1" parent="-moWh7qVt0uN1S0JNPq3-21">
           <mxGeometry y="26" width="160" height="30" as="geometry" />
@@ -70,7 +79,7 @@
           <mxGeometry y="86" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-23" value="Ball.cs" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;glass=0;shadow=1;sketch=0;rounded=1;swimlaneFillColor=none;swimlaneLine=1;arcSize=13;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;" vertex="1" parent="1">
-          <mxGeometry x="370" y="230" width="200" height="130" as="geometry" />
+          <mxGeometry x="350" y="380" width="200" height="130" as="geometry" />
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-24" value="BallEvent" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;glass=0;shadow=1;swimlaneFillColor=none;fontFamily=Fira Code;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DFira%2BCode;swimlaneLine=1;" vertex="1" parent="-moWh7qVt0uN1S0JNPq3-23">
           <mxGeometry y="26" width="200" height="34" as="geometry" />
@@ -92,12 +101,12 @@
         <mxCell id="-moWh7qVt0uN1S0JNPq3-51" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=halfCircle;startFill=0;endArrow=oval;endFill=1;" edge="1" parent="1" source="-moWh7qVt0uN1S0JNPq3-14" target="-moWh7qVt0uN1S0JNPq3-41">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-moWh7qVt0uN1S0JNPq3-52" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=halfCircle;startFill=0;endArrow=oval;endFill=1;" edge="1" parent="1" source="-moWh7qVt0uN1S0JNPq3-8">
+        <mxCell id="-moWh7qVt0uN1S0JNPq3-52" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=halfCircle;startFill=0;endArrow=oval;endFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-moWh7qVt0uN1S0JNPq3-8" target="-moWh7qVt0uN1S0JNPq3-41">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="570" y="340" as="targetPoint" />
             <Array as="points">
               <mxPoint x="610" y="85" />
-              <mxPoint x="610" y="340" />
+              <mxPoint x="610" y="490" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -106,6 +115,23 @@
         </mxCell>
         <mxCell id="-moWh7qVt0uN1S0JNPq3-56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=halfCircle;startFill=0;endArrow=oval;endFill=1;" edge="1" parent="1" source="-moWh7qVt0uN1S0JNPq3-9" target="-moWh7qVt0uN1S0JNPq3-54">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-moWh7qVt0uN1S0JNPq3-58" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=halfCircle;startFill=0;endArrow=oval;endFill=1;" edge="1" parent="1" source="-moWh7qVt0uN1S0JNPq3-24" target="-moWh7qVt0uN1S0JNPq3-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-moWh7qVt0uN1S0JNPq3-60" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=halfCircle;startFill=0;endArrow=oval;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-moWh7qVt0uN1S0JNPq3-22" target="-moWh7qVt0uN1S0JNPq3-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-moWh7qVt0uN1S0JNPq3-62" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=halfCircle;startFill=0;endArrow=oval;endFill=1;" edge="1" parent="1" source="-moWh7qVt0uN1S0JNPq3-14" target="-moWh7qVt0uN1S0JNPq3-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-moWh7qVt0uN1S0JNPq3-63" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=halfCircle;startFill=0;endArrow=oval;endFill=1;" edge="1" parent="1" source="-moWh7qVt0uN1S0JNPq3-22" target="-moWh7qVt0uN1S0JNPq3-61">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="611" />
+              <mxPoint x="600" y="911" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
