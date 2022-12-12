@@ -7,7 +7,6 @@ public class CollisionTrigger : MonoBehaviour
     [SerializeField] BoxCollider FinalCollider;
     public void OnTriggerEnter(Collider other)
     {
-        print("second");
         if(other.gameObject.tag == "Player")
         {
             FinalCollider.enabled = true;

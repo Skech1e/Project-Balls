@@ -17,18 +17,18 @@ MonoBehaviour:
     levels:
     - name: Level 1
       levelid: 0
-      hiscore: 0
-      ballCount: 0
+      hiscore: 330
+      ballCount: 2
       timeTaken: 0
     - name: Level 2
       levelid: 0
-      hiscore: 0
-      ballCount: 0
+      hiscore: 330
+      ballCount: 3
       timeTaken: 0
     - name: Level 3
       levelid: 0
-      hiscore: 0
-      ballCount: 0
+      hiscore: 330
+      ballCount: 2
       timeTaken: 0
     - name: Level 4
       levelid: 0

@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        levelsco = ScriptableObject.CreateInstance<LevelSCO>();
+        levelsco = LevelScoreData as LevelSCO;
     }
 
     // Update is called once per frame
@@ -155,9 +155,9 @@ public class GameManager : MonoBehaviour
         scrdata.HiScore = highScore;
         scrdata.Name = "test";
 
-        levelsco.arenas[_arenano].levels[_levelno].ballCount = highScore;
+        levelsco.arenas[_arenano].levels[_levelno].ballCount = LevelReporting.ballCount;
         levelsco.arenas[_arenano].levels[_levelno].hiscore = highScore;
-        LevelScoreData = levelsco;
+        //LevelScoreData = levelsco;
     }
 
     public int ScorePerGoal()
