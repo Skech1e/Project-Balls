@@ -54,7 +54,7 @@ public class LevelManager : MonoBehaviour
 
         Ball.resetBall = true;
         OnLevelChangeEvent.Invoke();
-        LevelReporting.goalCount = 0;
+        ResetCount();
         Time.timeScale = 1;
     }
 

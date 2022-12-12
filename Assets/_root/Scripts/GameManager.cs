@@ -2,7 +2,9 @@ using GlobalBasket;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -106,6 +108,7 @@ public class GameManager : MonoBehaviour
         totalScore = 0;
         timer = 0;
         touchedProperty = false;
+        LoadScores();
     }
 
     void CountUp()
@@ -145,6 +148,11 @@ public class GameManager : MonoBehaviour
         execTimer += execTimer > 6.9f ? -execTimer : Time.deltaTime;
     }
 
+    void LoadScores()
+    {
+        levelsco = AssetDatabase.LoadAssetAtPath<LevelSCO>(Path.Combine(Application.persistentDataPath, "scores.asset"));
+    }    
+
     void RecordScores()
     {
         int _arenano = LevelManager.currentArena;
@@ -157,7 +165,9 @@ public class GameManager : MonoBehaviour
 
         levelsco.arenas[_arenano].levels[_levelno].ballCount = LevelReporting.ballCount;
         levelsco.arenas[_arenano].levels[_levelno].hiscore = highScore;
-        //LevelScoreData = levelsco;
+
+        AssetDatabase.CreateAsset(levelsco, Path.Combine(Application.persistentDataPath, "scores.asset"));
+        AssetDatabase.SaveAssets();
     }
 
     public int ScorePerGoal()
