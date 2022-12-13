@@ -6109,6 +6109,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 33d10f6c005b93b4b8e73f00630a331e, type: 3}
   - {fileID: 21300000, guid: e692b6ece6882324d87409a6fb7cb425, type: 3}
   _counter: 0
+  UserConfigData: {fileID: 0}
 --- !u!114 &406725350
 MonoBehaviour:
   m_ObjectHideFlags: 0
