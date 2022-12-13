@@ -1374,7 +1374,6 @@ GameObject:
   - component: {fileID: 109564699}
   - component: {fileID: 109564701}
   - component: {fileID: 109564702}
-  - component: {fileID: 109564703}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -1515,21 +1514,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 33d10f6c005b93b4b8e73f00630a331e, type: 3}
   - {fileID: 21300000, guid: e692b6ece6882324d87409a6fb7cb425, type: 3}
   _counter: 0
---- !u!114 &109564703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 109564695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41139a8fc19974488eb8666abefc5d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scores:
-    Name: 
-    HiScore: 0
+  UserConfigData: {fileID: 0}
 --- !u!1 &148860625
 GameObject:
   m_ObjectHideFlags: 0
@@ -7450,7 +7435,6 @@ GameObject:
   - component: {fileID: 810874885}
   - component: {fileID: 810874884}
   - component: {fileID: 810874883}
-  - component: {fileID: 810874882}
   - component: {fileID: 810874881}
   - component: {fileID: 810874880}
   m_Layer: 0
@@ -7491,21 +7475,6 @@ MonoBehaviour:
   basketCount: []
   goalCount: 0
   currentLevel: 0
---- !u!114 &810874882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810874879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41139a8fc19974488eb8666abefc5d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scores:
-    Name: 
-    HiScore: 0
 --- !u!114 &810874883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7529,7 +7498,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   touchedProperty: 0
-  LevelScoreData: {fileID: 11400000, guid: 28dae60e6e063754a8a14a5cbef49506, type: 2}
+  LevelScoreData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &810874884
 MonoBehaviour:
   m_ObjectHideFlags: 0

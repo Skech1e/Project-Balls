@@ -30,17 +30,17 @@ public class LevelSCO : ScriptableObject
 
 }
 
-[System.Serializable]
-public class Arena
-{
-    public string name;
-    public Level[] levels = new Level[16];
-}
+//[System.Serializable]
+//public class Arena
+//{
+//    public string name;
+//    public Level[] levels = new Level[16];
+//}
 
-[System.Serializable]
-public class Level
-{
-    public string name = "Level";
-    public int levelid, hiscore, ballCount;
-    public float timeTaken;
-}
+//[System.Serializable]
+//public class Level
+//{
+//    public string name = "Level";
+//    public int levelid, hiscore, ballCount;
+//    public float timeTaken;
+//}

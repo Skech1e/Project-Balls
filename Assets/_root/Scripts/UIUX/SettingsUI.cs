@@ -29,10 +29,11 @@ public class SettingsUI : MonoBehaviour
     //Saving vars
     UserData usrdata = new();
     Saver saver;
+    [SerializeField] ScriptableObject UserConfigData;
 
     private void Awake()
     {
-        saver = GetComponent<Saver>();
+       saver = UserConfigData as Saver;
     }
 
     private void OnEnable()

@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     public static int score;
 
     private readonly ScoreData scrdata = new();
-    private Saver saver;
     private PlayerInputs input;
 
     [SerializeField] List<TextMeshProUGUI> scoreboard = new(5);
@@ -28,20 +27,19 @@ public class GameManager : MonoBehaviour
     public delegate void OnScore();
     public static event OnScore OnScoreEvent;
 
-    LevelSCO levelsco;
+    private Saver saver;
     [SerializeField] ScriptableObject LevelScoreData;
 
 
     private void Awake()
     {
-        saver = GetComponent<Saver>();
         input = new();        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        levelsco = LevelScoreData as LevelSCO;
+        saver = LevelScoreData as Saver;
     }
 
     // Update is called once per frame
@@ -53,7 +51,8 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        scrdata.HiScore = saver.LoadScores().HiScore;
+        LoadScores();
+        //scrdata.HiScore = saver.LoadScores().HiScore;
         highScore = scrdata.HiScore;
 
         Scored.GoalScored += RecordAndUpdateScoreboard;
@@ -64,7 +63,7 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
-        saver.SavetoJson(scrdata);
+        saver.SavetoJson(saver);
 
         input.Disable();
         input.Controls.Aim.started -= FirstTouch;
@@ -150,7 +149,13 @@ public class GameManager : MonoBehaviour
 
     void LoadScores()
     {
-        levelsco = AssetDatabase.LoadAssetAtPath<LevelSCO>(Path.Combine(Application.persistentDataPath, "scores.asset"));
+        for(int i = 0; i < saver.arenas.Length; i++)
+        {
+            for(int j = 0; j < saver.arenas[i].levels.Length; j++)
+            {
+                
+            }
+        }
     }    
 
     void RecordScores()
@@ -160,14 +165,13 @@ public class GameManager : MonoBehaviour
         totalScore += score;
         highScore = totalScore > highScore ? totalScore : highScore;
 
-        scrdata.HiScore = highScore;
-        scrdata.Name = "test";
+        //scrdata.HiScore = highScore;
+        //scrdata.Name = "test";
 
-        levelsco.arenas[_arenano].levels[_levelno].ballCount = LevelReporting.ballCount;
-        levelsco.arenas[_arenano].levels[_levelno].hiscore = highScore;
+        saver.arenas[_arenano].levels[_levelno].ballCount = LevelReporting.ballCount;
+        saver.arenas[_arenano].levels[_levelno].hiscore = highScore;
 
-        AssetDatabase.CreateAsset(levelsco, Path.Combine(Application.persistentDataPath, "scores.asset"));
-        AssetDatabase.SaveAssets();
+
     }
 
     public int ScorePerGoal()

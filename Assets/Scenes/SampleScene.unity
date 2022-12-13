@@ -4872,7 +4872,6 @@ GameObject:
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
-  - component: {fileID: 330585550}
   - component: {fileID: 330585551}
   m_Layer: 0
   m_Name: Main Camera
@@ -5036,21 +5035,6 @@ MonoBehaviour:
   - {fileID: 2146322003}
   touchedProperty: 0
   LevelScoreData: {fileID: 0}
---- !u!114 &330585550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41139a8fc19974488eb8666abefc5d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scores:
-    Name: 
-    HiScore: 0
 --- !u!114 &330585551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6098,7 +6082,6 @@ GameObject:
   - component: {fileID: 406725351}
   - component: {fileID: 406725350}
   - component: {fileID: 406725349}
-  - component: {fileID: 406725348}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -6106,21 +6089,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &406725348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406725347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e41139a8fc19974488eb8666abefc5d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scores:
-    Name: 
-    HiScore: 0
 --- !u!114 &406725349
 MonoBehaviour:
   m_ObjectHideFlags: 0
