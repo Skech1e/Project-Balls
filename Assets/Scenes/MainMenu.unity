@@ -7491,6 +7491,8 @@ MonoBehaviour:
   totalScore: 0
   timer: 0
   execTimer: 0
+  currentArenaNo: 0
+  currentLevelNo: 0
   scoreboard:
   - {fileID: 0}
   - {fileID: 0}

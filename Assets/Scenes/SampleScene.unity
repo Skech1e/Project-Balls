@@ -5029,6 +5029,8 @@ MonoBehaviour:
   totalScore: 0
   timer: 42
   execTimer: 0
+  currentArenaNo: 0
+  currentLevelNo: 0
   scoreboard:
   - {fileID: 1822030821}
   - {fileID: 1080685607}

@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] protected int highScore, totalScore;
     [SerializeField] protected float timer, execTimer;
     public static int score;
+    [SerializeField] int currentArenaNo, currentLevelNo;
 
-    private readonly ScoreData scrdata = new();
+    //private readonly ScoreData scrdata = new();
     private PlayerInputs input;
 
     [SerializeField] List<TextMeshProUGUI> scoreboard = new(5);
@@ -31,15 +32,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] ScriptableObject LevelScoreData;
 
 
+
     private void Awake()
     {
-        input = new();        
+        input = new();
     }
 
     // Start is called before the first frame update
     void Start()
     {
         saver = LevelScoreData as Saver;
+
+        saver.LoadfromJson();
     }
 
     // Update is called once per frame
@@ -51,9 +55,9 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        LoadScores();
-        //scrdata.HiScore = saver.LoadScores().HiScore;
-        highScore = scrdata.HiScore;
+        //LoadfromJson();
+        //scrdata.HiScore = saver.LoadfromJson().HiScore;
+        //highScore = scrdata.HiScore;
 
         Scored.GoalScored += RecordAndUpdateScoreboard;
         SceneManager.sceneLoaded += InitScoreboard;
@@ -76,6 +80,9 @@ public class GameManager : MonoBehaviour
 
     void InitScoreboard(Scene scene, LoadSceneMode mode)
     {
+        currentArenaNo = LevelManager.currentArena;
+        currentLevelNo = LevelManager.currentLevel;
+        print(LevelManager.currentLevel);
         for (int i = 0; i < scoreboard.Capacity; i++)
             scoreboard[i] = GameObject.FindGameObjectWithTag("scb" + i).GetComponent<TextMeshProUGUI>();
         InitScoreboardData();
@@ -83,11 +90,12 @@ public class GameManager : MonoBehaviour
         input.Enable();
         input.Controls.Aim.started += FirstTouch;
         input.Controls.Aim.performed += FirstTouch;
+
     }
 
     void InitScoreboardData()
     {
-        scoreboard[0].text = scrdata.HiScore.ToString();
+        //scoreboard[0].text = scrdata.HiScore.ToString();
         scoreboard[1].text = totalScore.ToString();
         scoreboard[2].text = LevelReporting.bonus.ToString();
         scoreboard[3].text = LevelReporting.ballCount.ToString();
@@ -149,13 +157,7 @@ public class GameManager : MonoBehaviour
 
     void LoadScores()
     {
-        for(int i = 0; i < saver.arenas.Length; i++)
-        {
-            for(int j = 0; j < saver.arenas[i].levels.Length; j++)
-            {
-                
-            }
-        }
+        
     }    
 
     void RecordScores()

@@ -833,6 +833,3 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       timeTaken: 0
-  _scores:
-    Name: 
-    HiScore: 0
