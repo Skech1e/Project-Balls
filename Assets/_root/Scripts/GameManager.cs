@@ -59,11 +59,10 @@ public class GameManager : MonoBehaviour
         //highScore = scrdata.HiScore;
 
         Scored.GoalScored += RecordAndUpdateScoreboard;
-        SceneManager.sceneLoaded += InitScoreboard;
+        SceneLoader.SceneLoaded += InitScoreboard;
         UIController.OnUIEvent += ResetTimer;
         LevelManager.OnLevelChangeEvent += ResetTimer;
         LevelManager.OnLevelChangeEvent += GetLevelInfo;
-        Levels.OnLevelLoad += GetLevelInfo;
     }
 
     private void OnDisable()
@@ -73,12 +72,11 @@ public class GameManager : MonoBehaviour
         input.Disable();
         input.Controls.Aim.started -= FirstTouch;
         input.Controls.Aim.performed -= FirstTouch;
+        LevelReporting.LevelLoad -= GetLevelInfo;
         Scored.GoalScored -= RecordAndUpdateScoreboard;
-        SceneManager.sceneLoaded -= InitScoreboard;
+        SceneLoader.SceneLoaded -= InitScoreboard;
         UIController.OnUIEvent -= ResetTimer;
         LevelManager.OnLevelChangeEvent -= ResetTimer;
-        LevelManager.OnLevelChangeEvent -= GetLevelInfo;
-        Levels.OnLevelLoad -= GetLevelInfo;
     }
 
     void GetLevelInfo()
@@ -87,8 +85,9 @@ public class GameManager : MonoBehaviour
         currentLevelNo = LevelManager.currentLevel;
     }
 
-    void InitScoreboard(Scene scene, LoadSceneMode mode)
+    void InitScoreboard()
     {
+        GetLevelInfo();
 
         for (int i = 0; i < scoreboard.Capacity; i++)
             scoreboard[i] = GameObject.FindGameObjectWithTag("scb" + i).GetComponent<TextMeshProUGUI>();

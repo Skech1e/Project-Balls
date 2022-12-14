@@ -4,7 +4,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public static int currentArena, currentLevel, ballCount;
-    [SerializeField] int LevelCapacity, ActiveArena, ActiveLevel;
+    [SerializeField] int LevelCapacity;
     [SerializeField] List<Transform> levels = new();
 
     public delegate void OnLevelChange();
@@ -12,12 +12,12 @@ public class LevelManager : MonoBehaviour
 
     private void OnEnable()
     {
-        Levels.OnLevelLoad += GetLevelInfo;
+        LevelReporting.LevelLoad += GetLevelInfo;
     }
 
     private void OnDisable()
     {
-        Levels.OnLevelLoad -= GetLevelInfo;
+        LevelReporting.LevelLoad -= GetLevelInfo;
     }
 
     private void Awake()
@@ -29,10 +29,8 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentArena = ActiveArena;
-        ActiveLevel = Levels.Levelno - 1;
-        currentLevel = ActiveLevel;
-        levels[ActiveLevel].gameObject.SetActive(true);
+        currentLevel = Levels.Levelno - 1;
+        levels[currentLevel].gameObject.SetActive(true);
         ResetCount();
     }
 
@@ -44,16 +42,14 @@ public class LevelManager : MonoBehaviour
 
     void GetLevelInfo()
     {
-        currentLevel = Levels.Levelno - 1;
-        print(currentLevel);
+        currentLevel = LevelReporting.Levelnumber - 1;
     }
 
     public void ChangeLevel()
     {
-        levels[ActiveLevel].gameObject.SetActive(false);
-        ActiveLevel++;
-        currentLevel = ActiveLevel;
-        levels[ActiveLevel].gameObject.SetActive(true);
+        levels[currentLevel].gameObject.SetActive(false);
+        currentLevel++;
+        levels[currentLevel].gameObject.SetActive(true);
 
         Ball.resetBall = true;
         OnLevelChangeEvent.Invoke();

@@ -18,9 +18,6 @@ public class Levels : MonoBehaviour
     delegate void LevelUnlock();
     event LevelUnlock OnUnlock;
 
-    public delegate void LevelLoaded();
-    public static event LevelLoaded OnLevelLoad;
-
     SceneLoader SceneLoader;
 
     private void Awake()
@@ -31,7 +28,7 @@ public class Levels : MonoBehaviour
         Button.interactable = isUnlocked == true ? true : false;
         SceneLoader = FindObjectOfType<SceneLoader>();
 
-        Button.onClick.AddListener(() => StartCoroutine(LoadLevel()));
+        Button.onClick.AddListener(() => LoadLevel());
     }
 
     private void OnValidate()
@@ -68,12 +65,10 @@ public class Levels : MonoBehaviour
     {
         LevelIcon.sprite = IconList[1];
     }
-    IEnumerator LoadLevel()
+    void LoadLevel()
     {
         Levelno = int.Parse(name);
-        OnLevelLoad.Invoke();
         IsLevelLoaded = true;
-        yield return new WaitForSeconds(0.2f);
         SceneLoader.SceneLoad(Arena, Levelno);
     }
 }

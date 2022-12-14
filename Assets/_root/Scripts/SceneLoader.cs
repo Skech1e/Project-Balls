@@ -11,7 +11,8 @@ public class SceneLoader : MonoBehaviour
     private static SceneLoader staticSceneLoader;
 
     [SerializeField] GameObject cameraRotator;
-
+    public delegate void OnSceneLoadDelegate();
+    public static event OnSceneLoadDelegate SceneLoaded;
 
     private void OnEnable()
     {
@@ -50,7 +51,6 @@ public class SceneLoader : MonoBehaviour
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-        
-        
+        SceneLoaded.Invoke();       
     }
 }

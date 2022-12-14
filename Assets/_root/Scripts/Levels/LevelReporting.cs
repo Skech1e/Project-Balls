@@ -8,6 +8,7 @@ public class LevelReporting : MonoBehaviour
     static Basket[] basketCount;
     [SerializeField] Basket[] basketCountIns;
 
+    public static int Levelnumber;
     public static float bonus;
     enum BallCountEnum: int 
     {
@@ -34,9 +35,15 @@ public class LevelReporting : MonoBehaviour
     public static event OnGoalReport LevelComplete;
     public static event OnGoalReport LevelReset;
     public static event OnGoalReport LevelFailed;
+    public delegate void OnLevelLoad();
+    public static event OnLevelLoad LevelLoad;
 
     private void OnEnable()
     {
+        Levelnumber = int.Parse(name);
+        LevelManager.currentLevel = Levelnumber - 1;
+        LevelLoad.Invoke();
+
         Scored.GoalScored += GoalTracker;
         Scored.GoalScored += UpdateScores;
 
