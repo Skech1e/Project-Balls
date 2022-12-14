@@ -35,7 +35,6 @@ public class SceneLoader : MonoBehaviour
     }
     private void Start()
     {
-        loadLevel = 100;
     }
 
     public void LoadMainMenu()
@@ -45,7 +44,7 @@ public class SceneLoader : MonoBehaviour
     public void SceneLoad(int sceneNumber, int _loadLevel)
     {
         //if(SceneManager.GetActiveScene().buildIndex != 0)
-        SceneManager.LoadScene(sceneNumber);
+        SceneManager.LoadSceneAsync(sceneNumber);
         loadLevel = _loadLevel - 1;
     }
 

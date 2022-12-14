@@ -42,6 +42,11 @@ public class Levels : MonoBehaviour
         Button.interactable = isUnlocked == true ? true : false;
     }
 
+    private void OnEnable()
+    {
+
+    }
+
     private void OnDisable()
     {
         
@@ -66,9 +71,9 @@ public class Levels : MonoBehaviour
     IEnumerator LoadLevel()
     {
         Levelno = int.Parse(name);
-        SceneLoader.SceneLoad(Arena, Levelno);
-        IsLevelLoaded = true;
-        yield return new WaitForSeconds(0.69f);
         OnLevelLoad.Invoke();
+        IsLevelLoaded = true;
+        yield return new WaitForSeconds(0.2f);
+        SceneLoader.SceneLoad(Arena, Levelno);
     }
 }

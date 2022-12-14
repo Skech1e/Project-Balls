@@ -43,14 +43,13 @@ public class GameManager : MonoBehaviour
     {
         saver = LevelScoreData as Saver;
 
-        saver.LoadfromJson();
+        saver.LoadfromJson(saver);
     }
 
     // Update is called once per frame
     void Update()
     {
         CountUp();
-        BonusReduction();
     }
 
     private void OnEnable()
@@ -63,6 +62,8 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += InitScoreboard;
         UIController.OnUIEvent += ResetTimer;
         LevelManager.OnLevelChangeEvent += ResetTimer;
+        LevelManager.OnLevelChangeEvent += GetLevelInfo;
+        Levels.OnLevelLoad += GetLevelInfo;
     }
 
     private void OnDisable()
@@ -76,13 +77,19 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= InitScoreboard;
         UIController.OnUIEvent -= ResetTimer;
         LevelManager.OnLevelChangeEvent -= ResetTimer;
+        LevelManager.OnLevelChangeEvent -= GetLevelInfo;
+        Levels.OnLevelLoad -= GetLevelInfo;
+    }
+
+    void GetLevelInfo()
+    {
+        currentArenaNo = LevelManager.currentArena;
+        currentLevelNo = LevelManager.currentLevel;
     }
 
     void InitScoreboard(Scene scene, LoadSceneMode mode)
     {
-        currentArenaNo = LevelManager.currentArena;
-        currentLevelNo = LevelManager.currentLevel;
-        print(LevelManager.currentLevel);
+
         for (int i = 0; i < scoreboard.Capacity; i++)
             scoreboard[i] = GameObject.FindGameObjectWithTag("scb" + i).GetComponent<TextMeshProUGUI>();
         InitScoreboardData();
@@ -95,7 +102,7 @@ public class GameManager : MonoBehaviour
 
     void InitScoreboardData()
     {
-        //scoreboard[0].text = scrdata.HiScore.ToString();
+        scoreboard[0].text = saver.arenas[currentArenaNo].levels[currentLevelNo].hiscore.ToString();
         scoreboard[1].text = totalScore.ToString();
         scoreboard[2].text = LevelReporting.bonus.ToString();
         scoreboard[3].text = LevelReporting.ballCount.ToString();
@@ -124,6 +131,7 @@ public class GameManager : MonoBehaviour
         {
             timer += Time.deltaTime;
             DisplayTime(timer);
+            BonusReduction();
         }
     }
 

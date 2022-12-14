@@ -12,10 +12,12 @@ public class LevelManager : MonoBehaviour
 
     private void OnEnable()
     {
+        Levels.OnLevelLoad += GetLevelInfo;
     }
 
     private void OnDisable()
     {
+        Levels.OnLevelLoad -= GetLevelInfo;
     }
 
     private void Awake()
@@ -40,9 +42,10 @@ public class LevelManager : MonoBehaviour
         
     }
 
-    void TimeOver()
+    void GetLevelInfo()
     {
-
+        currentLevel = Levels.Levelno - 1;
+        print(currentLevel);
     }
 
     public void ChangeLevel()

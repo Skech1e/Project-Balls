@@ -40,11 +40,11 @@ public class Saver : ScriptableObject
         Debug.Log("data saved successfully");
     }
 
-    public Saver LoadfromJson()
+    public void LoadfromJson(Saver s)
     {
         string score = File.ReadAllText(scpath);
         Debug.Log("save loaded");
-        return JsonUtility.FromJson<Saver>(score);
+        JsonUtility.FromJsonOverwrite(score, s);
     }
 
     public void SavetoJson(UserData _user)
