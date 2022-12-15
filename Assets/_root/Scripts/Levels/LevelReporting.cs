@@ -105,7 +105,6 @@ public class LevelReporting : MonoBehaviour
     void BallLivesTracker()
     {
         ballCount--;
-        print("LR " + ballCount);
         if (ballCount == 0)
             LevelFailed.Invoke();
     }

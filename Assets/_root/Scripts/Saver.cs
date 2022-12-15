@@ -71,6 +71,7 @@ public class Arena
 [System.Serializable]
 public class Level
 {
+    public bool Unlocked;
     public string name = "Level";
     public int levelid, hiscore, ballCount, starCount;
     public float timeTaken;

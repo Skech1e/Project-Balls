@@ -26,8 +26,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentLevel = Levels.Levelno - 1;
-        print(currentLevel + " LM");
+        currentLevel = Levels.Levelno - 1;  
         levels[currentLevel].gameObject.SetActive(true);
         ResetCount();
     }
@@ -41,7 +40,6 @@ public class LevelManager : MonoBehaviour
     void GetLevelInfo()
     {
         currentLevel = LevelReporting.Levelnumber - 1;
-        print("LM GLI");
     }
 
     public void ChangeLevel()

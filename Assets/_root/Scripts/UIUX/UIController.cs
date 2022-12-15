@@ -74,7 +74,7 @@ public class UIController : MonoBehaviour
 
     public void LevelFinished()
     {
-        levelfinishbox.score.text = GameManager.score.ToString();
+        levelfinishbox.score.text = GameManager.totalScore.ToString();
         levelfinishbox.coins.text = levelfinishbox.score.text;
 
         Buttons.SetActive(false);

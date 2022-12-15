@@ -12,9 +12,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [Header("Scoring")]
-    [SerializeField] protected int highScore, totalScore;
+    [SerializeField] protected int highScore;
     [SerializeField] protected float timer, execTimer;
-    public static int score;
+    public static int score, totalScore;
     [SerializeField] int currentArenaNo, currentLevelNo;
 
     private PlayerInputs input;
@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
         Ball.BallEvent += CoroutineCaller;
         LevelReporting.LevelLoad += InitScoreboard;
         LevelReporting.LevelLoad += ResetTimer;
+        LevelReporting.LevelComplete += UnlockLevels;
         UIController.OnRestartfromUI += ResetTimer;
     }
 
@@ -72,6 +73,7 @@ public class GameManager : MonoBehaviour
         Ball.BallEvent -= CoroutineCaller;
         LevelReporting.LevelLoad -= InitScoreboard;
         LevelReporting.LevelLoad -= ResetTimer;
+        LevelReporting.LevelComplete -= UnlockLevels;
         UIController.OnRestartfromUI -= ResetTimer;
     }
 
@@ -79,6 +81,13 @@ public class GameManager : MonoBehaviour
     {
         currentArenaNo = LevelManager.currentArena;
         currentLevelNo = LevelManager.currentLevel;
+    }
+
+    void UnlockLevels()
+    {
+        if (currentLevelNo < 16)
+            saver.arenas[currentArenaNo].levels[currentLevelNo + 1].Unlocked = true;
+        saver.SavetoJson(saver);
     }
 
     void InitScoreboard()
@@ -120,8 +129,8 @@ public class GameManager : MonoBehaviour
         timer = 0;
         execTimer = 0;
         touchedProperty = false;
-        scoreboard[4].text = string.Format("{0}:{1:00}",0 , 0);
-        UpdateBallCount();
+        scoreboard[4].text = string.Format("{0}:{1:00}", 0, 0);
+        CoroutineCaller();
     }
 
     void CountUp()
@@ -168,18 +177,16 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         scoreboard[3].text = LevelReporting.ballCount.ToString();
-    }    
+    }
 
     void RecordScores()
     {
-        int _arenano = LevelManager.currentArena;
-        int _levelno = LevelManager.currentLevel;
         totalScore += score;
         highScore = totalScore > highScore ? totalScore : highScore;
 
-        saver.arenas[_arenano].levels[_levelno].ballCount = LevelReporting.ballCount;
-        saver.arenas[_arenano].levels[_levelno].hiscore = highScore;
-        saver.arenas[_arenano].levels[_levelno].timeTaken = timer;
+        saver.arenas[currentArenaNo].levels[currentLevelNo].ballCount = LevelReporting.ballCount;
+        saver.arenas[currentArenaNo].levels[currentLevelNo].hiscore = highScore;
+        saver.arenas[currentArenaNo].levels[currentLevelNo].timeTaken = timer;
     }
 
     public int ScorePerGoal()
