@@ -13,7 +13,7 @@ public class Ball : MonoBehaviour
     [SerializeField] Vector3 direction;
 
     public Trajectory track;
-    [SerializeField] bool Throw;
+    [SerializeField] bool Throw, ballEventCalled;
     Rigidbody body;
     Vector3 defaultPos;
     private Quaternion defaultRotn;
@@ -44,15 +44,13 @@ public class Ball : MonoBehaviour
     private void OnEnable()
     {
         Scored.GoalScored += CheckRemainingBaskets;
-        LevelReporting.LevelReset += ResetBall;
-        LevelManager.OnLevelChangeEvent += ResetBall;
+        LevelReporting.LevelLoad += ResetBall;
     }
 
     private void OnDisable()
     {
         Scored.GoalScored -= CheckRemainingBaskets;
-        LevelReporting.LevelReset -= ResetBall;
-        LevelManager.OnLevelChangeEvent -= ResetBall;
+        LevelReporting.LevelLoad -= ResetBall;
     }
 
     private void Awake()
@@ -107,7 +105,6 @@ public class Ball : MonoBehaviour
             body.AddTorque(direction, ForceMode.Force);
             randomValue = random.NextInt(-1, 2);
             track.gameObject.SetActive(false);
-            BallEvent.Invoke();
         }
     }
 
@@ -115,22 +112,29 @@ public class Ball : MonoBehaviour
     {
         CancelInvoke();
         if (resetBall == true)
-        {
+        {            
             transform.position = defaultPos;
             body.velocity = Vector2.zero;
             body.isKinematic = true;
             track.gameObject.SetActive(true);
             Throw = false;
+            ballEventCalled = false;
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+
         if (collision.collider.CompareTag("ground") && transform.position != defaultPos)
         {
             if (Throw == true)
             {
                 Invoke(nameof(ResetBall), 2f);
+                if(ballEventCalled == false)
+                {
+                    BallEvent.Invoke();
+                    ballEventCalled = true;
+                }
             }
         }
     }

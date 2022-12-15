@@ -9,7 +9,6 @@ public class Saver : ScriptableObject
 {
     public Arena[] arenas = new Arena[10];
 
-    //[SerializeField] private ScoreData _scores = new ScoreData();
     string scpath, cfgpath;
 
     private void Awake()
@@ -61,20 +60,6 @@ public class Saver : ScriptableObject
     }
 }
 
-[System.Serializable]
-public class ScoreData
-{
-    public string Name;
-    public int HiScore;
-
-    public struct LevelScores
-    {
-        public int ArenaID, levelID;
-        public int Hiscore, ballCount;
-        public float TimeTaken;
-    }
-}
-
 
 [System.Serializable]
 public class Arena
@@ -87,7 +72,7 @@ public class Arena
 public class Level
 {
     public string name = "Level";
-    public int levelid, hiscore, ballCount;
+    public int levelid, hiscore, ballCount, starCount;
     public float timeTaken;
 }
 
@@ -97,7 +82,7 @@ public class UserData
     public string Name;
     public int level;
     public int balance;
-    public List<Inventory> usr_inventory = new List<Inventory>();
+    public List<Inventory> usr_inventory = new();
 
     public bool Sound, Music;
     public int Graphics;

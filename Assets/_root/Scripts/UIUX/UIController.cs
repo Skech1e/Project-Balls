@@ -11,7 +11,7 @@ public class UIController : MonoBehaviour
     [SerializeField] LevelCompleteUI levelfinishbox;
 
     public delegate void UIControl();
-    public static event UIControl OnUIEvent;
+    public static event UIControl OnRestartfromUI;
 
     private void OnEnable()
     {
@@ -99,6 +99,6 @@ public class UIController : MonoBehaviour
 
     public void Restart()
     {
-        OnUIEvent.Invoke();
+        OnRestartfromUI.Invoke();
     }
 }

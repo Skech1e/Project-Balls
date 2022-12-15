@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     public static int score;
     [SerializeField] int currentArenaNo, currentLevelNo;
 
-    //private readonly ScoreData scrdata = new();
     private PlayerInputs input;
 
     [SerializeField] List<TextMeshProUGUI> scoreboard = new(5);
@@ -54,15 +53,11 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        //LoadfromJson();
-        //scrdata.HiScore = saver.LoadfromJson().HiScore;
-        //highScore = scrdata.HiScore;
-
         Scored.GoalScored += RecordAndUpdateScoreboard;
-        SceneLoader.SceneLoaded += InitScoreboard;
-        UIController.OnUIEvent += ResetTimer;
-        LevelManager.OnLevelChangeEvent += ResetTimer;
-        LevelManager.OnLevelChangeEvent += GetLevelInfo;
+        Ball.BallEvent += CoroutineCaller;
+        LevelReporting.LevelLoad += InitScoreboard;
+        LevelReporting.LevelLoad += ResetTimer;
+        UIController.OnRestartfromUI += ResetTimer;
     }
 
     private void OnDisable()
@@ -72,11 +67,12 @@ public class GameManager : MonoBehaviour
         input.Disable();
         input.Controls.Aim.started -= FirstTouch;
         input.Controls.Aim.performed -= FirstTouch;
-        LevelReporting.LevelLoad -= GetLevelInfo;
+
         Scored.GoalScored -= RecordAndUpdateScoreboard;
-        SceneLoader.SceneLoaded -= InitScoreboard;
-        UIController.OnUIEvent -= ResetTimer;
-        LevelManager.OnLevelChangeEvent -= ResetTimer;
+        Ball.BallEvent -= CoroutineCaller;
+        LevelReporting.LevelLoad -= InitScoreboard;
+        LevelReporting.LevelLoad -= ResetTimer;
+        UIController.OnRestartfromUI -= ResetTimer;
     }
 
     void GetLevelInfo()
@@ -101,9 +97,11 @@ public class GameManager : MonoBehaviour
 
     void InitScoreboardData()
     {
-        scoreboard[0].text = saver.arenas[currentArenaNo].levels[currentLevelNo].hiscore.ToString();
+        totalScore = 0;
+        highScore = saver.arenas[currentArenaNo].levels[currentLevelNo].hiscore;
+        scoreboard[0].text = highScore.ToString();
         scoreboard[1].text = totalScore.ToString();
-        scoreboard[2].text = LevelReporting.bonus.ToString();
+        scoreboard[2].text = LevelReporting.bonus.ToString("F1");
         scoreboard[3].text = LevelReporting.ballCount.ToString();
     }
 
@@ -120,8 +118,10 @@ public class GameManager : MonoBehaviour
     {
         totalScore = 0;
         timer = 0;
+        execTimer = 0;
         touchedProperty = false;
-        LoadScores();
+        scoreboard[4].text = string.Format("{0}:{1:00}",0 , 0);
+        UpdateBallCount();
     }
 
     void CountUp()
@@ -150,8 +150,6 @@ public class GameManager : MonoBehaviour
         RecordScores();
         scoreboard[0].text = highScore.ToString();
         scoreboard[1].text = totalScore.ToString();
-        scoreboard[3].text = LevelReporting.ballCount.ToString();
-
     }
 
     void BonusReduction()
@@ -162,9 +160,14 @@ public class GameManager : MonoBehaviour
         execTimer += execTimer > 6.9f ? -execTimer : Time.deltaTime;
     }
 
-    void LoadScores()
+    void CoroutineCaller()
     {
-        
+        StartCoroutine(UpdateBallCount());
+    }
+    IEnumerator UpdateBallCount()
+    {
+        yield return new WaitForSeconds(0.1f);
+        scoreboard[3].text = LevelReporting.ballCount.ToString();
     }    
 
     void RecordScores()
@@ -174,13 +177,9 @@ public class GameManager : MonoBehaviour
         totalScore += score;
         highScore = totalScore > highScore ? totalScore : highScore;
 
-        //scrdata.HiScore = highScore;
-        //scrdata.Name = "test";
-
         saver.arenas[_arenano].levels[_levelno].ballCount = LevelReporting.ballCount;
         saver.arenas[_arenano].levels[_levelno].hiscore = highScore;
-
-
+        saver.arenas[_arenano].levels[_levelno].timeTaken = timer;
     }
 
     public int ScorePerGoal()

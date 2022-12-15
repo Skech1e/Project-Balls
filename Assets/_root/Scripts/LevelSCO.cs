@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "ScoreData", menuName = "SCObj/LevelSCObj")]
 public class LevelSCO : ScriptableObject
 {
     public Arena[] arenas = new Arena[10];

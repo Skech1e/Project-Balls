@@ -58,7 +58,7 @@ public class Scored : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            score = GameManager.score;
+            score = LevelReporting.ScorePerBasket;
             totalScore += score;
             goal = true;
             Invoke(nameof(InvokeGoalScoredEvent), 1.5f);

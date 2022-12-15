@@ -7,9 +7,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField] int LevelCapacity;
     [SerializeField] List<Transform> levels = new();
 
-    public delegate void OnLevelChange();
-    public static OnLevelChange OnLevelChangeEvent;
-
     private void OnEnable()
     {
         LevelReporting.LevelLoad += GetLevelInfo;
@@ -30,6 +27,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         currentLevel = Levels.Levelno - 1;
+        print(currentLevel + " LM");
         levels[currentLevel].gameObject.SetActive(true);
         ResetCount();
     }
@@ -43,6 +41,7 @@ public class LevelManager : MonoBehaviour
     void GetLevelInfo()
     {
         currentLevel = LevelReporting.Levelnumber - 1;
+        print("LM GLI");
     }
 
     public void ChangeLevel()
@@ -52,7 +51,6 @@ public class LevelManager : MonoBehaviour
         levels[currentLevel].gameObject.SetActive(true);
 
         Ball.resetBall = true;
-        OnLevelChangeEvent.Invoke();
         ResetCount();
         Time.timeScale = 1;
     }

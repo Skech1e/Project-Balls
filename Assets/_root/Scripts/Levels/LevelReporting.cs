@@ -33,31 +33,28 @@ public class LevelReporting : MonoBehaviour
 
     public delegate void OnGoalReport();
     public static event OnGoalReport LevelComplete;
-    public static event OnGoalReport LevelReset;
     public static event OnGoalReport LevelFailed;
     public delegate void OnLevelLoad();
     public static event OnLevelLoad LevelLoad;
 
     private void OnEnable()
     {
+        Ball.BallEvent += BallLivesTracker;
         Levelnumber = int.Parse(name);
         LevelManager.currentLevel = Levelnumber - 1;
-        LevelLoad.Invoke();
-
+        //LevelLoad.Invoke();
+        ResetLevel();
         Scored.GoalScored += GoalTracker;
-        Scored.GoalScored += UpdateScores;
 
-        UIController.OnUIEvent += ResetLevel;
-        Ball.BallEvent += BallLivesTracker;
+        UIController.OnRestartfromUI += ResetLevel;
     }
     private void OnDisable()
     {
         LevelManager.ballCount = ballCount;
 
         Scored.GoalScored -= GoalTracker;
-        Scored.GoalScored -= UpdateScores;
 
-        UIController.OnUIEvent -= ResetLevel;
+        UIController.OnRestartfromUI -= ResetLevel;
         Ball.BallEvent -= BallLivesTracker;
 
     }
@@ -88,10 +85,11 @@ public class LevelReporting : MonoBehaviour
 
     void ResetLevel()
     {
+        Time.timeScale = 1;
+        ballCount = (int)_BallCount;
         Start();
         Ball.resetBall = true;
-        LevelReset.Invoke();
-        Time.timeScale = 1;
+        LevelLoad.Invoke();
         Scored.CancelInvokeMethod();
         Ball.CancelInvokeMethod();
     }
@@ -107,18 +105,10 @@ public class LevelReporting : MonoBehaviour
     void BallLivesTracker()
     {
         ballCount--;
+        print("LR " + ballCount);
         if (ballCount == 0)
             LevelFailed.Invoke();
     }
 
-    void UpdateScores()
-    {
-
-    }
-
-    void RecordScoresToFile()
-    {
-
-    }
 
 }
