@@ -16,9 +16,6 @@ public class Levels : MonoBehaviour
     [SerializeField] List<Sprite> IconList = new();
     [SerializeField] List<GameObject> IconScore = new();
 
-    delegate void LevelUnlock();
-    event LevelUnlock OnUnlock;
-
     SceneLoader SceneLoader;
 
     private Saver saver;
