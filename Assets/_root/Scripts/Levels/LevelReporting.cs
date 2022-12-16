@@ -22,6 +22,7 @@ public class LevelReporting : MonoBehaviour
 
     enum Scorepergoal: int
     {
+        Seventy_Five = 75,
         Hundred = 100,
         One_Fifty = 150,
         Two_Hundred = 200,
@@ -30,6 +31,19 @@ public class LevelReporting : MonoBehaviour
     }
     [SerializeField] Scorepergoal sc;
 
+    enum ScoringTier: int
+    {
+        Five = 5,
+        Seven = 7,
+        Ten = 10,
+        Twelve = 12,
+        Thirteen = 13,
+        Fifteen = 15,
+        Seventeen = 17,
+        Eighteen = 18,
+        Twenty = 20
+    }
+    [SerializeField] ScoringTier[] scTier;
 
     public delegate void OnGoalReport();
     public static event OnGoalReport LevelComplete;
@@ -42,7 +56,10 @@ public class LevelReporting : MonoBehaviour
         Ball.BallEvent += BallLivesTracker;
         Levelnumber = int.Parse(name);
         LevelManager.currentLevel = Levelnumber - 1;
-        //LevelLoad.Invoke();
+
+        for (int i = 0; i < scTier.Length; i++)
+            GameManager.scoreTier[i] = (int)scTier[i];
+
         ResetLevel();
         Scored.GoalScored += GoalTracker;
 

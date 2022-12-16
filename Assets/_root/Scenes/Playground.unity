@@ -520,8 +520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
-  sc: 0
+  _BallCount: 6
+  sc: 150
+  scTier: 0a0000000d000000
 --- !u!1 &54109093
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,8 +705,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
-  sc: 0
+  _BallCount: 3
+  sc: 250
+  scTier: 0a0000000f000000
 --- !u!135 &56306449 stripped
 SphereCollider:
   m_CorrespondingSourceObject: {fileID: 3469287836825398088, guid: dd45f7b50d0fd21408e8efb9b02b03fc,
@@ -2218,8 +2220,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
-  sc: 0
+  _BallCount: 6
+  sc: 200
+  scTier: 0a0000000f000000
 --- !u!1 &168620243
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,8 +2457,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
-  sc: 0
+  _BallCount: 6
+  sc: 100
+  scTier: 070000000a000000
 --- !u!1001 &210940910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3448,8 +3452,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
-  sc: 0
+  _BallCount: 6
+  sc: 150
+  scTier: 0a0000000d000000
 --- !u!1 &252107105
 GameObject:
   m_ObjectHideFlags: 0
@@ -5102,8 +5107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highScore: 0
-  timer: 42
-  execTimer: 0
   currentArenaNo: 0
   currentLevelNo: 0
   scoreboard:
@@ -5671,6 +5674,7 @@ GameObject:
   - component: {fileID: 368705825}
   - component: {fileID: 368705824}
   - component: {fileID: 368705823}
+  - component: {fileID: 368705826}
   m_Layer: 5
   m_Name: M*
   m_TagString: Untagged
@@ -5731,7 +5735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5756,6 +5760,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368705821}
   m_CullTransparentMesh: 0
+--- !u!114 &368705826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368705821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b92a18449a10274b99a7b23d884d76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EaseTypeIn: 27
+  EaseTypeOut: 0
+  TimeIn: 0.3
+  TimeOut: 0
+  DelayIn: 0.3
+  DelayOut: 0
+  Offset: 0.69
+  scaleTypeIn: 3
+  scaleTypeOut: 0
 --- !u!1001 &374116507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5974,6 +5999,7 @@ GameObject:
   - component: {fileID: 385102950}
   - component: {fileID: 385102952}
   - component: {fileID: 385102951}
+  - component: {fileID: 385102953}
   m_Layer: 5
   m_Name: L*
   m_TagString: Untagged
@@ -6014,7 +6040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6039,6 +6065,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385102949}
   m_CullTransparentMesh: 1
+--- !u!114 &385102953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385102949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b92a18449a10274b99a7b23d884d76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EaseTypeIn: 27
+  EaseTypeOut: 0
+  TimeIn: 0.3
+  TimeOut: 0
+  DelayIn: 0.2
+  DelayOut: 0
+  Offset: 0.69
+  scaleTypeIn: 3
+  scaleTypeOut: 0
 --- !u!1 &385876707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6626,7 +6673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &413986753
 Transform:
   m_ObjectHideFlags: 0
@@ -6649,7 +6696,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh366298
+  m_Name: pb_Mesh256898
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6992,6 +7039,7 @@ GameObject:
   - component: {fileID: 443569114}
   - component: {fileID: 443569116}
   - component: {fileID: 443569115}
+  - component: {fileID: 443569117}
   m_Layer: 5
   m_Name: R*
   m_TagString: Untagged
@@ -7032,7 +7080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7057,6 +7105,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443569113}
   m_CullTransparentMesh: 1
+--- !u!114 &443569117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443569113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b92a18449a10274b99a7b23d884d76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EaseTypeIn: 27
+  EaseTypeOut: 0
+  TimeIn: 0.3
+  TimeOut: 0
+  DelayIn: 0.4
+  DelayOut: 0
+  Offset: 0.69
+  scaleTypeIn: 3
+  scaleTypeOut: 0
 --- !u!1 &445818929
 GameObject:
   m_ObjectHideFlags: 0
@@ -7849,7 +7918,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -7982,6 +8051,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 3
   sc: 100
+  scTier: 0500000007000000
 --- !u!1 &523429300
 GameObject:
   m_ObjectHideFlags: 0
@@ -8786,7 +8856,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -9142,8 +9212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
+  _BallCount: 6
   sc: 100
+  scTier: 0a0000000f000000
 --- !u!1 &618480141
 GameObject:
   m_ObjectHideFlags: 0
@@ -9697,8 +9768,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
-  sc: 0
+  _BallCount: 6
+  sc: 150
+  scTier: 0d00000011000000
 --- !u!1 &635899023
 GameObject:
   m_ObjectHideFlags: 0
@@ -10984,8 +11056,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
-  sc: 0
+  _BallCount: 9
+  sc: 75
+  scTier: 0c0000000f000000
 --- !u!4 &763318863 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 302924388269199526, guid: 9367d88b718fa8c46a3fc2f762bafc93,
@@ -12848,8 +12921,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
+  _BallCount: 6
   sc: 150
+  scTier: 0a0000000d000000
 --- !u!1001 &915009969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13299,7 +13373,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh366872
+  m_Name: pb_Mesh257478
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13713,7 +13787,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -14947,6 +15021,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 6
   sc: 100
+  scTier: 070000000c000000
 --- !u!1 &1141351199
 GameObject:
   m_ObjectHideFlags: 0
@@ -15855,6 +15930,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 6
   sc: 100
+  scTier: 070000000a000000
 --- !u!1 &1223740706
 GameObject:
   m_ObjectHideFlags: 0
@@ -15981,7 +16057,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh367700
+  m_Name: pb_Mesh258306
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16164,7 +16240,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -16270,7 +16346,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh367672
+  m_Name: pb_Mesh258278
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16880,7 +16956,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -18251,7 +18327,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -19054,7 +19130,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh367824
+  m_Name: pb_Mesh258430
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21136,7 +21212,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -22326,7 +22402,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh367596
+  m_Name: pb_Mesh258202
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23176,7 +23252,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -23925,7 +24001,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -24061,6 +24137,10 @@ MonoBehaviour:
   Buttons: {fileID: 1852475195}
   Pause: {fileID: 924532147}
   levelfinishbox: {fileID: 569068751}
+  Stars:
+  - {fileID: 385102951}
+  - {fileID: 368705824}
+  - {fileID: 443569115}
 --- !u!1 &1784981950
 GameObject:
   m_ObjectHideFlags: 0
@@ -25598,7 +25678,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -25675,6 +25755,26 @@ PrefabInstance:
       propertyPath: m_SphereColliders.Array.data[0].second
       value: 
       objectReference: {fileID: 56306449}
+    - target: {fileID: 3340022060570932826, guid: 0cf26e88dd8daa149a89e8a8f8903461,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340022060570932826, guid: 0cf26e88dd8daa149a89e8a8f8903461,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340022060570932826, guid: 0cf26e88dd8daa149a89e8a8f8903461,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 3340022060570932827, guid: 0cf26e88dd8daa149a89e8a8f8903461,
+        type: 3}
+      propertyPath: m_Height
+      value: 6.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf26e88dd8daa149a89e8a8f8903461, type: 3}
 --- !u!4 &1877507247 stripped
@@ -26995,6 +27095,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 6
   sc: 150
+  scTier: 0500000007000000
 --- !u!1001 &2000485831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27154,8 +27255,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
-  sc: 0
+  _BallCount: 9
+  sc: 75
+  scTier: 0c0000000f000000
 --- !u!1 &2033520872
 GameObject:
   m_ObjectHideFlags: 0
@@ -27244,6 +27346,7 @@ MonoBehaviour:
   basketCountIns: []
   _BallCount: 6
   sc: 100
+  scTier: 070000000a000000
 --- !u!1001 &2076364127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27738,7 +27841,7 @@ PrefabInstance:
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3062021952048247554, guid: 0cf26e88dd8daa149a89e8a8f8903461,
         type: 3}
@@ -28008,7 +28111,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh366980
+  m_Name: pb_Mesh257586
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28558,8 +28661,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basketCountIns: []
-  _BallCount: 0
-  sc: 0
+  _BallCount: 6
+  sc: 200
+  scTier: 0a0000000d000000
 --- !u!1 &2146322001
 GameObject:
   m_ObjectHideFlags: 0

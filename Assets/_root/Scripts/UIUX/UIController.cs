@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject Panel, LevelCompleteUI, LevelFailedUI, Buttons, Pause;
 
     [SerializeField] LevelCompleteUI levelfinishbox;
+    [SerializeField] Image[] Stars = new Image[3];
 
     public delegate void UIControl();
     public static event UIControl OnRestartfromUI;
@@ -23,6 +24,12 @@ public class UIController : MonoBehaviour
     {
         LevelReporting.LevelComplete -= LevelFinished;
         LevelReporting.LevelFailed -= LevelFailed;
+        for (int i = 0; i < Stars.Length; i++)
+        {
+            var temp = Stars[i].color;
+            temp.a = 0f;
+            Stars[i].color = temp;
+        }
     }
 
     private void Awake()
@@ -80,7 +87,18 @@ public class UIController : MonoBehaviour
         Buttons.SetActive(false);
         Panel.SetActive(true);
         LevelCompleteUI.SetActive(true);
+        DisplayStars();
         Time.timeScale = 0;
+    }
+
+    void DisplayStars()
+    {
+        for(int i = 0; i < GameManager.starCount; i++)
+        {
+            var temp = Stars[i].color;
+            temp.a = 1f;
+            Stars[i].color = temp;
+        }
     }
 
     public void LevelFailed()

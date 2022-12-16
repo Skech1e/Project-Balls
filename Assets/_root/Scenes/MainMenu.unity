@@ -7530,8 +7530,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highScore: 0
-  timer: 0
-  execTimer: 0
   currentArenaNo: 0
   currentLevelNo: 0
   scoreboard:
@@ -14598,6 +14596,10 @@ MonoBehaviour:
   Buttons: {fileID: 0}
   Pause: {fileID: 0}
   levelfinishbox: {fileID: 0}
+  Stars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1617871120
 GameObject:
   m_ObjectHideFlags: 0
