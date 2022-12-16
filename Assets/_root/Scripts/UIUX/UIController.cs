@@ -118,5 +118,11 @@ public class UIController : MonoBehaviour
     public void Restart()
     {
         OnRestartfromUI.Invoke();
+        for (int i = 0; i < Stars.Length; i++)
+        {
+            var temp = Stars[i].color;
+            temp.a = 0f;
+            Stars[i].color = temp;
+        }
     }
 }

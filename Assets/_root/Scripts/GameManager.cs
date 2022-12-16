@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
     void UnlockLevels()
     {
         starCount = timer <= scoreTier[0] ? 3 : timer <= scoreTier[1] ? 2 : 1;
-        print(starCount);
+        saver.arenas[currentArenaNo].levels[currentLevelNo].starCount = starCount;
 
         if (currentLevelNo < 16)
             saver.arenas[currentArenaNo].levels[currentLevelNo + 1].Unlocked = true;

@@ -14,6 +14,7 @@ public class Levels : MonoBehaviour
     Button Button;
     Image LevelIcon;
     [SerializeField] List<Sprite> IconList = new();
+    [SerializeField] List<GameObject> IconScore = new();
 
     delegate void LevelUnlock();
     event LevelUnlock OnUnlock;
@@ -24,9 +25,12 @@ public class Levels : MonoBehaviour
     [SerializeField] ScriptableObject UserLevelData;
 
     private void Awake()
-    {        
+    {
         LevelIcon = GetComponent<Image>();
         LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
+        for (int i = 0; i < 3; i++)
+            IconScore[i] = transform.GetChild(i).gameObject;
+
         Button = GetComponent<Button>();
         Button.interactable = isUnlocked == true ? true : false;
         SceneLoader = FindObjectOfType<SceneLoader>();
@@ -44,12 +48,12 @@ public class Levels : MonoBehaviour
 
     private void OnEnable()
     {
-        
+
     }
 
     private void OnDisable()
     {
-        
+
     }
 
     // Start is called before the first frame update
@@ -58,14 +62,25 @@ public class Levels : MonoBehaviour
         lvlno = int.Parse(name);
         saver = UserLevelData as Saver;
         saver.LoadfromJson(saver);
-        isUnlocked = saver.arenas[Arena].levels[lvlno-1].Unlocked;
+        isUnlocked = saver.arenas[Arena].levels[lvlno - 1].Unlocked;
         Unlock();
+        LoadIconStats();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    void LoadIconStats()
+    {
+        var stars = saver.arenas[Arena].levels[lvlno - 1].starCount;
+        if (stars > 0)
+            for (int i = 0; i < stars; i++)
+            {
+                IconScore[i].SetActive(true);
+            }
     }
 
     void Unlock()
@@ -79,6 +94,6 @@ public class Levels : MonoBehaviour
     {
         Levelno = int.Parse(name);
         IsLevelLoaded = true;
-        SceneLoader.SceneLoad(Arena+1, Levelno);
+        SceneLoader.SceneLoad(Arena + 1, Levelno);
     }
 }
