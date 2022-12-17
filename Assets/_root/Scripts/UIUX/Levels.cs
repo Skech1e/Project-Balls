@@ -14,7 +14,7 @@ public class Levels : MonoBehaviour
     Button Button;
     Image LevelIcon;
     [SerializeField] List<Sprite> IconList = new();
-    [SerializeField] List<GameObject> IconScore = new();
+    [SerializeField] GameObject[] IconScore;
 
     SceneLoader SceneLoader;
 
@@ -24,8 +24,9 @@ public class Levels : MonoBehaviour
     private void Awake()
     {
         LevelIcon = GetComponent<Image>();
+        IconScore = new GameObject[2];
         LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 2; i++)
             IconScore[i] = transform.GetChild(i).gameObject;
 
         Button = GetComponent<Button>();
@@ -73,11 +74,22 @@ public class Levels : MonoBehaviour
     void LoadIconStats()
     {
         var stars = saver.arenas[Arena].levels[lvlno - 1].starCount;
-        if (stars > 0)
-            for (int i = 0; i < stars; i++)
-            {
-                IconScore[i].SetActive(true);
-            }
+        switch (stars)
+        {
+            case 0:
+                break;
+            case 1:
+                IconScore[0].SetActive(true);
+                break;
+            case 2:
+                IconScore[0].SetActive(false);
+                IconScore[1].SetActive(true);
+                break;
+            case 3:
+                IconScore[0].SetActive(true);
+                IconScore[1].SetActive(true);
+                break;
+        }
     }
 
     void Unlock()

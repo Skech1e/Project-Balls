@@ -18,21 +18,21 @@ MonoBehaviour:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 250
+      hiscore: 0
       ballCount: 2
-      starCount: 2
-      timeTaken: 6.4300566
+      starCount: 0
+      timeTaken: 0
     - Unlocked: 1
       name: Level 2
       levelid: 0
-      hiscore: 420
+      hiscore: 0
       ballCount: 4
-      starCount: 1
-      timeTaken: 11.927297
+      starCount: 0
+      timeTaken: 0
     - Unlocked: 1
       name: Level 3
       levelid: 0
-      hiscore: 270
+      hiscore: 0
       ballCount: 4
       starCount: 0
       timeTaken: 16.694656
