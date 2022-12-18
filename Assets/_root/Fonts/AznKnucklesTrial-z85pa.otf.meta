@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b3c3f7c2c818f74aa5434785d2032d8
+guid: 36a239927047ac749b40db5ce3de1a3c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Rupakara
+  - AZN Knuckles Trial
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

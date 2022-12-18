@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 015e1a31284c3bc4faff2228e085859e
+guid: 2bf8d7c5c9e713c4e976ffdc4cdb1dd3
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - OLD SPORT 02 ATHLETIC NCV
+  - LIBRARY 3 AM soft
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

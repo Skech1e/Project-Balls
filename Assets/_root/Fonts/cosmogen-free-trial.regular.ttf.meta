@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 13f8f5b1ae597c14da56ad5abaedc186
+guid: fcd5553ad2b5e8c44b8d91417c320da0
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Indian Rupee
+  - Cosmogen Free Trial
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

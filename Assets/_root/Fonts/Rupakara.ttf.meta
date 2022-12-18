@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 98cdf01299f0e8e4eab2fdecf88b3a68
+guid: 674e0e68fea6af94ba182bcf95e998fe
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,8 +9,9 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Basketball
-  fallbackFontReferences: []
+  - Rupakara
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: bd469f8a9ab02304ebce0c97343a46d1, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

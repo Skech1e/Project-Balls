@@ -2,44 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelSCO : ScriptableObject
+public class LevelSCO : MonoBehaviour
 {
-    public Arena[] arenas = new Arena[10];
-    int i = 1;
-    
-    public void PrintMessage()
-    {
+    // The LineRenderer component that will be used to draw the trajectory
+    public LineRenderer lineRenderer;
 
-    }
-    private void OnValidate()
+    // The number of points in the trajectory
+    public int numPoints = 20;
+
+    // The speed of the object
+    public float speed = 10f;
+
+    // The gravity force applied to the object
+    public Vector3 gravity = new Vector3(0, -9.81f, 0);
+
+    void Update()
     {
-        foreach(Arena arena in arenas)
+        // Calculate the initial velocity of the object
+        Vector3 velocity = transform.forward * speed;
+
+        // Set the position of the first point in the LineRenderer to the current position of the object
+        lineRenderer.SetPosition(0, transform.position);
+
+        // Initialize the previous position to the current position
+        Vector3 previousPosition = transform.position;
+
+        // Loop through the remaining points in the LineRenderer
+        for (int i = 1; i < numPoints; i++)
         {
-            foreach(Level level in arena.levels)
+            // Calculate the position of the point based on the initial velocity, gravity, and the elapsed time
+            float elapsedTime = i * Time.deltaTime;
+            Vector3 newPosition = transform.position + velocity * elapsedTime + 0.5f * gravity * elapsedTime * elapsedTime;
+
+            // Use Physics.Linecast() to check for collisions between the previous position and the new position
+            RaycastHit hit;
+            if (Physics.Linecast(previousPosition, newPosition, out hit))
             {
-                level.name = "Level " + i;
-                i = i < 16 ? (i + 1) : 1;
+                // If a collision is detected, set the position of the point to the point of collision
+                newPosition = hit.point;
             }
+
+            // Set the position of the point in the LineRenderer
+            lineRenderer.SetPosition(i, newPosition);
+
+            // Update the previous position to the current position
+            previousPosition = newPosition;
         }
-    }
-    private void Awake()
-    {
-        Debug.Log("awake");
     }
 
 }
-
-//[System.Serializable]
-//public class Arena
-//{
-//    public string name;
-//    public Level[] levels = new Level[16];
-//}
-
-//[System.Serializable]
-//public class Level
-//{
-//    public string name = "Level";
-//    public int levelid, hiscore, ballCount;
-//    public float timeTaken;
-//}

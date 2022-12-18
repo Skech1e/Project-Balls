@@ -124,8 +124,7 @@ public class Trajectory : MonoBehaviour
             {
                 var t = lowestTimeValue * i;
                 var tt = lowestTimeValue * (i + 1);
-
-                var hit = Physics.Linecast(CalculateLinePoints(t), CalculateLinePoints(tt), out RaycastHit hitPoint, hitMask);
+                var hit = Physics.Linecast(CalculateLinePoints(t), CalculateLinePoints(tt), out RaycastHit hitPoint);
 
                 if (hit)
                 {

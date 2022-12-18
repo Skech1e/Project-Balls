@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 826ce8f618cf89542af3abaa866f3c82
+guid: 06aae96cbe6a0f24cbcf1c7683465a9c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Advanced Dot Digital-7
+  - savec
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

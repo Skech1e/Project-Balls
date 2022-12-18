@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6872703b1eb778f46b1420923997b09f
+guid: d901bd6bc0c9b1849a8cc7ffcf6db4c8
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - OLD SPORT 01 COLLEGE NCV
+  - I AM A PLAYER
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

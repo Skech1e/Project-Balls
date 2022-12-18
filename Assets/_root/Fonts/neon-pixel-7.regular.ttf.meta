@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 33a5ed639d2e67f439ff228486f45c4c
+guid: c762009938aae804fb0bbd029c481048
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - I AM A PLAYER
+  - Neon Pixel-7
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
