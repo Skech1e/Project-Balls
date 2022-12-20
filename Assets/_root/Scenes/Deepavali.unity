@@ -862,7 +862,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 10.443586, y: 2.3230004, z: 20.845743}
+  Centre: {x: 10.802, y: 2.3230004, z: 20.845743}
 --- !u!114 &68582911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,7 +1136,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 11.779587, y: 2.591074, z: 20.845743}
+  Centre: {x: 12.138938, y: 2.178883, z: 20.845743}
 --- !u!114 &81244337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1928,7 +1928,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 14.339586, y: 4.531, z: 20.845743}
+  Centre: {x: 14.698, y: 4.531, z: 20.845743}
 --- !u!114 &168620246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,7 +2048,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 10.443586, y: 2.59232, z: 20.845743}
+  Centre: {x: 10.8029375, y: 2.180129, z: 20.845743}
 --- !u!114 &205160979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2811,7 +2811,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 13.011586, y: 3.777566, z: 20.845743}
+  Centre: {x: 13.370937, y: 3.365375, z: 20.845743}
 --- !u!114 &231107959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3213,7 +3213,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 9.091587, y: 3.777566, z: 20.845743}
+  Centre: {x: 9.450938, y: 3.365375, z: 20.845743}
 --- !u!114 &252107109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3280,7 +3280,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 10.443586, y: 3.5082462, z: 20.845743}
+  Centre: {x: 10.802, y: 3.5082462, z: 20.845743}
 --- !u!114 &259821064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3603,7 +3603,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 14.339586, y: 3.5082462, z: 20.845743}
+  Centre: {x: 14.698, y: 3.5082462, z: 20.845743}
 --- !u!114 &281179082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5744,6 +5744,25 @@ MonoBehaviour:
   Offset: 0.69
   scaleTypeIn: 3
   scaleTypeOut: 0
+--- !u!1 &385176778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1595235623427077760, guid: 4457c708ae07604428b3ee212e400068,
+    type: 3}
+  m_PrefabInstance: {fileID: 885413754}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &385176779
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385176778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.8338513, y: 1.7084628, z: 0.2863793}
+  m_Center: {x: -0.00000011920928, y: 0.28474376, z: 0.3568103}
 --- !u!1 &385876707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6222,7 +6241,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 11.696717, y: 4.80032, z: 20.845743}
+  Centre: {x: 12.056068, y: 4.388129, z: 20.845743}
 --- !u!114 &411981420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7818,7 +7837,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 13.011586, y: 2.59232, z: 20.845743}
+  Centre: {x: 13.370937, y: 2.180129, z: 20.845743}
 --- !u!114 &529907196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8641,7 +8660,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 9.091587, y: 4.531, z: 20.845743}
+  Centre: {x: 9.450001, y: 4.531, z: 20.845743}
 --- !u!114 &608950011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10055,7 +10074,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 13.011586, y: 3.5082462, z: 20.845743}
+  Centre: {x: 13.37, y: 3.5082462, z: 20.845743}
 --- !u!114 &650622570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10922,7 +10941,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 13.011586, y: 2.3230004, z: 20.845743}
+  Centre: {x: 13.37, y: 2.3230004, z: 20.845743}
 --- !u!114 &809355966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11538,7 +11557,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 11.779587, y: 2.3217545, z: 20.845743}
+  Centre: {x: 12.1380005, y: 2.3217545, z: 20.845743}
 --- !u!114 &866102881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11605,7 +11624,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 10.443586, y: 4.5310006, z: 20.845743}
+  Centre: {x: 10.802, y: 4.5310006, z: 20.845743}
 --- !u!114 &875053307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11825,6 +11844,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d05c9dc90987734bb4a936ef5f6837d, type: 2}
+    - target: {fileID: -1034914571090242095, guid: 4457c708ae07604428b3ee212e400068,
+        type: 3}
+      propertyPath: m_TagString
+      value: ground
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_Name
@@ -11867,6 +11891,65 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: efb316f056c55b545b3b3eb2461fc5a2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4457c708ae07604428b3ee212e400068, type: 3}
+--- !u!1 &885413755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -950430460066750858, guid: 4457c708ae07604428b3ee212e400068,
+    type: 3}
+  m_PrefabInstance: {fileID: 885413754}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &885413756
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885413755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7629811779324647873, guid: 4457c708ae07604428b3ee212e400068, type: 3}
+--- !u!1 &885413757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7755664769119081474, guid: 4457c708ae07604428b3ee212e400068,
+    type: 3}
+  m_PrefabInstance: {fileID: 885413754}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &885413758
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885413757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20000002
+  m_Height: 10
+  m_Direction: 1
+  m_Center: {x: 0.000000022351742, y: -2.38448, z: -0.000000029802322}
+--- !u!1 &885413759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1034914571090242095, guid: 4457c708ae07604428b3ee212e400068,
+    type: 3}
+  m_PrefabInstance: {fileID: 885413754}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &885413760
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885413759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.020789294, z: 1}
+  m_Center: {x: 0, y: -0.010394647, z: 0.0000000511931}
 --- !u!1001 &888576151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12738,7 +12821,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29796
+  m_Name: pb_Mesh260624
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13339,7 +13422,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 9.091587, y: 2.59232, z: 20.845743}
+  Centre: {x: 9.450938, y: 2.180129, z: 20.845743}
 --- !u!114 &1004609972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14039,7 +14122,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 11.707586, y: 3.777566, z: 20.845743}
+  Centre: {x: 12.066937, y: 3.365375, z: 20.845743}
 --- !u!114 &1066938846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14242,7 +14325,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 11.707586, y: 3.5082462, z: 20.845743}
+  Centre: {x: 12.066, y: 3.5082462, z: 20.845743}
 --- !u!114 &1100852748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15149,7 +15232,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 13.011586, y: 4.531, z: 20.845743}
+  Centre: {x: 13.37, y: 4.531, z: 20.845743}
 --- !u!114 &1216692152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15319,7 +15402,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 10.443586, y: 4.80032, z: 20.845743}
+  Centre: {x: 10.8029375, y: 4.388129, z: 20.845743}
 --- !u!114 &1223740710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17235,7 +17318,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 9.091587, y: 3.5082462, z: 20.845743}
+  Centre: {x: 9.450001, y: 3.5082462, z: 20.845743}
 --- !u!114 &1329262924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18281,7 +18364,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 14.339586, y: 3.777566, z: 20.845743}
+  Centre: {x: 14.698937, y: 3.365375, z: 20.845743}
 --- !u!114 &1429518116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19424,7 +19507,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 13.011586, y: 4.80032, z: 20.845743}
+  Centre: {x: 13.370937, y: 4.388129, z: 20.845743}
 --- !u!114 &1497863795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22573,7 +22656,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 14.339586, y: 2.59232, z: 20.845743}
+  Centre: {x: 14.698937, y: 2.180129, z: 20.845743}
 --- !u!114 &1822129914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23936,7 +24019,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 9.091587, y: 2.3230004, z: 20.845743}
+  Centre: {x: 9.450001, y: 2.3230004, z: 20.845743}
 --- !u!114 &1928752141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24113,7 +24196,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 11.696717, y: 4.531, z: 20.845743}
+  Centre: {x: 12.055131, y: 4.531, z: 20.845743}
 --- !u!114 &1956353981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25245,7 +25328,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 14.339586, y: 4.80032, z: 20.845743}
+  Centre: {x: 14.698937, y: 4.388129, z: 20.845743}
 --- !u!114 &2097310845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25371,7 +25454,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 14.339586, y: 2.3230004, z: 20.845743}
+  Centre: {x: 14.698, y: 2.3230004, z: 20.845743}
 --- !u!114 &2131081377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25643,7 +25726,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 10.443586, y: 3.777566, z: 20.845743}
+  Centre: {x: 10.8029375, y: 3.365375, z: 20.845743}
 --- !u!114 &2138827805
 MonoBehaviour:
   m_ObjectHideFlags: 0

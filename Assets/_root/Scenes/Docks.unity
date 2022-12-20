@@ -862,7 +862,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 10.351586, y: 2.0710003, z: 20.845743}
+  Centre: {x: 10.351586, y: 2.0710003, z: 21.617744}
 --- !u!114 &68582911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2272,7 +2272,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 15.221586, y: 4.8310003, z: 20.845743}
+  Centre: {x: 15.221586, y: 4.8310003, z: 21.617744}
 --- !u!114 &168620246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3624,7 +3624,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 10.351586, y: 3.5525577, z: 20.845743}
+  Centre: {x: 10.351586, y: 3.5525577, z: 21.617744}
 --- !u!114 &259821064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3947,7 +3947,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 15.221586, y: 3.5525577, z: 20.845743}
+  Centre: {x: 15.221586, y: 3.5525577, z: 21.617744}
 --- !u!114 &281179082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9149,7 +9149,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 8.661587, y: 4.8310003, z: 20.845743}
+  Centre: {x: 8.661587, y: 4.8310003, z: 21.617744}
 --- !u!114 &608950011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10563,7 +10563,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 13.561586, y: 3.5525577, z: 20.845743}
+  Centre: {x: 13.561586, y: 3.5525577, z: 21.617744}
 --- !u!114 &650622570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11464,7 +11464,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 13.561586, y: 2.0710003, z: 20.845743}
+  Centre: {x: 13.561586, y: 2.0710003, z: 21.617744}
 --- !u!114 &809355966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12462,7 +12462,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 12.021586, y: 2.069443, z: 20.845743}
+  Centre: {x: 12.021586, y: 2.069443, z: 21.617744}
 --- !u!114 &866102881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12529,7 +12529,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 10.351586, y: 4.8310003, z: 20.845743}
+  Centre: {x: 10.351586, y: 4.8310003, z: 21.617744}
 --- !u!114 &875053307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13528,7 +13528,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh373778
+  m_Name: pb_Mesh29812
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14439,7 +14439,7 @@ GameObject:
   - component: {fileID: 1050443507}
   m_Layer: 0
   m_Name: pPlane5 (1)
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15115,7 +15115,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 11.931586, y: 3.5525577, z: 20.845743}
+  Centre: {x: 11.931586, y: 3.5525577, z: 21.617744}
 --- !u!114 &1100852748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16101,7 +16101,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 13.561586, y: 4.8310003, z: 20.845743}
+  Centre: {x: 13.561586, y: 4.8310003, z: 21.617744}
 --- !u!114 &1216692152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18515,7 +18515,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 8.661587, y: 3.5525577, z: 20.845743}
+  Centre: {x: 8.661587, y: 3.5525577, z: 21.617744}
 --- !u!114 &1329262924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27149,7 +27149,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 8.661587, y: 2.0710003, z: 20.845743}
+  Centre: {x: 8.661587, y: 2.0710003, z: 21.617744}
 --- !u!114 &1928752141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27326,7 +27326,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 11.918, y: 4.8310003, z: 20.845743}
+  Centre: {x: 11.918, y: 4.8310003, z: 21.617744}
 --- !u!114 &1956353981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28831,7 +28831,7 @@ MonoBehaviour:
   Speed: 0
   OffsetAmount: 0
   HorizontalOffset: 0
-  Centre: {x: 15.221586, y: 2.0710003, z: 20.845743}
+  Centre: {x: 15.221586, y: 2.0710003, z: 21.617744}
 --- !u!114 &2131081377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29530,6 +29530,7 @@ GameObject:
   - component: {fileID: 7627306997278608218}
   - component: {fileID: 1535964977556581011}
   - component: {fileID: 5079097936900186813}
+  - component: {fileID: 7627306997278608219}
   m_Layer: 0
   m_Name: pCylinder4
   m_TagString: Untagged
@@ -30474,6 +30475,7 @@ GameObject:
   - component: {fileID: 7133357550149761800}
   - component: {fileID: 1003713835183110916}
   - component: {fileID: 2035983856998067662}
+  - component: {fileID: 7133357550149761801}
   m_Layer: 0
   m_Name: SP_TNR_Electricpole_5
   m_TagString: Untagged
@@ -33073,9 +33075,10 @@ GameObject:
   - component: {fileID: 401910259572549987}
   - component: {fileID: 8667412458776465904}
   - component: {fileID: 8290128557496697338}
+  - component: {fileID: 8667412458776465905}
   m_Layer: 0
   m_Name: pCube11
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33682,6 +33685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4773265395595464808}
+  - component: {fileID: 6891385315335091377}
   m_Layer: 0
   m_Name: fence
   m_TagString: Untagged
@@ -33689,6 +33693,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &6891385315335091377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891385315335091376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.68, y: 4.35, z: 0.2}
+  m_Center: {x: 0, y: 1.62, z: -5.92}
 --- !u!1 &6943374122348043049
 GameObject:
   m_ObjectHideFlags: 0
@@ -33826,6 +33843,20 @@ Transform:
   m_Father: {fileID: 533193073675497995}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &7133357550149761801
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2893955181711893435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.1
+  m_Height: 5.666821
+  m_Direction: 1
+  m_Center: {x: -0.52554923, y: 2.3303974, z: 1.1519874}
 --- !u!33 &7182211690057862078
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -33906,13 +33937,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887754742898713151}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2744067, y: 0.26795152, z: -3.6885877}
+  m_LocalPosition: {x: -2.64, y: 0.26795152, z: -3.6885877}
   m_LocalScale: {x: 0.86739844, y: 0.941282, z: 0.86739844}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 533193073675497995}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7627306997278608219
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887754742898713151}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8211372540250625004, guid: cf0512cb06bf0744eaa51433ef6cdde6, type: 3}
 --- !u!4 &7637390117865694732
 Transform:
   m_ObjectHideFlags: 0
@@ -33989,13 +34034,27 @@ GameObject:
   - component: {fileID: 4577682065633343415}
   - component: {fileID: 4125639495229474946}
   - component: {fileID: 5143764523029252898}
+  - component: {fileID: 7933234789853242344}
   m_Layer: 0
   m_Name: pPlane4
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7933234789853242344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7933234789853242343}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13.985918, y: 0, z: 13.985919}
+  m_Center: {x: -0.05734253, y: -0.485074, z: 7.1892667}
 --- !u!33 &7936350765286569880
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -34459,6 +34518,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5127467026456401616}
   m_Mesh: {fileID: 664456749670281567, guid: cf0512cb06bf0744eaa51433ef6cdde6, type: 3}
+--- !u!65 &8667412458776465905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5127467026456401616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 84.41377, y: 1.3228133, z: 12.865299}
+  m_Center: {x: -43.234795, y: -2.2611547, z: -57.033836}
 --- !u!33 &8734273913721255530
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -34727,6 +34799,7 @@ GameObject:
   - component: {fileID: 6582452973954892862}
   - component: {fileID: 3674711610705342472}
   - component: {fileID: 8753440949844792337}
+  - component: {fileID: 9132896068393483179}
   m_Layer: 0
   m_Name: basket_Holder
   m_TagString: Untagged
@@ -34734,3 +34807,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &9132896068393483179
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9132896068393483178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3551893, y: 2.355188, z: 0.16610104}
+  m_Center: {x: -0.0000007748604, y: -0.000000059604645, z: -0.43687436}
