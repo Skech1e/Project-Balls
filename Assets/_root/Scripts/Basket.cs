@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Basket : MonoBehaviour
 {
-    protected GameObject Tbasket;
 
     private void OnEnable()
     {
@@ -15,10 +14,6 @@ public class Basket : MonoBehaviour
     private void OnDisable()
     {
         
-    }
-    private void DisableBasket()
-    {
-        gameObject.SetActive(false);
     }
 
 
