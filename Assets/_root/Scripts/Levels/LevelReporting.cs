@@ -116,7 +116,10 @@ public class LevelReporting : MonoBehaviour
     {
         goalCount++;
         if (goalCount == basketCount.Length)
+        {
+            print("done");
             LevelComplete.Invoke();
+        }
     }
 
     void BallLivesTracker()

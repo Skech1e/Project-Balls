@@ -20,8 +20,8 @@ public class PlayPageUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(counter >= ArenaCount-1)
-            Right.gameObject.SetActive(false);
+        if(counter >= ArenaSelector.Count- 1)
+            Right.gameObject.SetActive(false); 
         else
             Right.gameObject.SetActive(true);
 

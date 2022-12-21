@@ -860,7 +860,7 @@ MonoBehaviour:
   TimeOut: 0
   DelayIn: 0.15
   DelayOut: 0
-  Offset: 0.69
+  Offset: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!114 &3324094605466069831
@@ -3221,9 +3221,9 @@ MonoBehaviour:
   EaseTypeOut: 0
   TimeIn: 0.3
   TimeOut: 0
-  DelayIn: 0.4
+  DelayIn: 0.8
   DelayOut: 0
-  Offset: 0.69
+  Offset: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094606117340869
@@ -3666,9 +3666,9 @@ MonoBehaviour:
   EaseTypeOut: 0
   TimeIn: 0.3
   TimeOut: 0
-  DelayIn: 0.2
+  DelayIn: 0.4
   DelayOut: 0
-  Offset: 0.69
+  Offset: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094606191137606
@@ -3863,9 +3863,9 @@ MonoBehaviour:
   EaseTypeOut: 0
   TimeIn: 0.3
   TimeOut: 0
-  DelayIn: 0.3
+  DelayIn: 0.6
   DelayOut: 0
-  Offset: 0.69
+  Offset: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094606221494928
