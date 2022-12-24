@@ -8,6 +8,7 @@ using UnityEngine;
 public class Saver : ScriptableObject
 {
     public Arena[] arenas = new Arena[10];
+    public UserData usrdata = new();
 
     string scpath, cfgpath;
 
@@ -65,6 +66,8 @@ public class Saver : ScriptableObject
 public class Arena
 {
     public string name;
+    public int price;
+    public bool unlocked;
     public Level[] levels = new Level[16];
 }
 

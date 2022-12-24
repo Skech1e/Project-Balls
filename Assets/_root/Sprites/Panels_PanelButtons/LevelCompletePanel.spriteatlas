@@ -57,12 +57,16 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 13d205773860c6f4fa1216978cf7aa1d, type: 3}
     - {fileID: 2800000, guid: adb67d37b2e80ce4ba404b891485e2f7, type: 3}
     - {fileID: 2800000, guid: e39f81504ebd87e4aa32966fa60c920e, type: 3}
+    - {fileID: 2800000, guid: dd12a7d0ec7a8794aabd9bd53bba431f, type: 3}
+    - {fileID: 2800000, guid: 4c8c0ffe15fba1e49ad3c83842a8f2ba, type: 3}
+    - {fileID: 2800000, guid: cfe585b8d5260cc4f9ef545acc0e299f, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: e39f81504ebd87e4aa32966fa60c920e, type: 3}
+  - {fileID: 21300000, guid: dd12a7d0ec7a8794aabd9bd53bba431f, type: 3}
   - {fileID: 21300000, guid: 367575665268bd54d82097b9c4f2079f, type: 3}
   - {fileID: 21300000, guid: bd84e8865d896fb4a8e910be66ceb323, type: 3}
   - {fileID: 21300000, guid: a289c1f6a9eb88f4bbcca246337496ee, type: 3}
@@ -71,12 +75,15 @@ SpriteAtlas:
   - {fileID: 21300000, guid: fe2c1457cae974c4f898d21905f5a744, type: 3}
   - {fileID: 21300000, guid: 1916bf5725f45ef44a393760044241a6, type: 3}
   - {fileID: 21300000, guid: 13d205773860c6f4fa1216978cf7aa1d, type: 3}
+  - {fileID: 21300000, guid: cfe585b8d5260cc4f9ef545acc0e299f, type: 3}
   - {fileID: 21300000, guid: 02877ac8d437c4a4ab9f8c0d958000d8, type: 3}
   - {fileID: 21300000, guid: 853c777ab18482041911e4ea62e7cf75, type: 3}
   - {fileID: 21300000, guid: 487dcd9a94e500d4287e181d1a7958c7, type: 3}
+  - {fileID: 21300000, guid: 4c8c0ffe15fba1e49ad3c83842a8f2ba, type: 3}
   - {fileID: 21300000, guid: b1e5e43f0e634b948a07e14c6f190411, type: 3}
   m_PackedSpriteNamesToIndex:
   - LVL_FLD_PANEL
+  - buy
   - LEFT_MT_STR
   - REPLAY_CMPT_BTN
   - LEFT_STR
@@ -85,9 +92,11 @@ SpriteAtlas:
   - COINS_COUNT
   - MIDDLE_MT_STR
   - RIGHT_STR
+  - unlock_btn
   - NEXT_BTN
   - HOME_BTN
   - MIDDLE_STR
+  - unlock
   - LVL_CMPT_PANEL
   m_RenderDataMap: {}
   m_Tag: LevelCompletePanel

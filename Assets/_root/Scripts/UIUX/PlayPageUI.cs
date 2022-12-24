@@ -10,7 +10,8 @@ public class PlayPageUI : MonoBehaviour
     [SerializeField] int ArenaCount;
     public int counter;
     PositionTween pt;
-    
+    [SerializeField] GameObject LockedPanel;
+    Saver sc;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,7 @@ public class PlayPageUI : MonoBehaviour
         counter++;
         ArenaSelector[counter-1].GetComponent<PositionTween>().Disable();
         ArenaSelector[counter].gameObject.SetActive(true);
+        if()
     }
 
     public void OnClickLeft()
