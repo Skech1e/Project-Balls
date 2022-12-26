@@ -29,11 +29,11 @@ public class SettingsUI : MonoBehaviour
     //Saving vars
     UserData usrdata = new();
     Saver saver;
-    [SerializeField] ScriptableObject UserConfigData;
+    //[SerializeField] ScriptableObject UserConfigData;
 
     private void Awake()
     {
-       saver = UserConfigData as Saver;
+       saver = GameManager.LevelScoreData as Saver;
     }
 
     private void OnEnable()

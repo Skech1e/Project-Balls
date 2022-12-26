@@ -19,7 +19,7 @@ public class Levels : MonoBehaviour
     SceneLoader SceneLoader;
 
     private Saver saver;
-    [SerializeField] ScriptableObject UserLevelData;
+    //[SerializeField] ScriptableObject UserLevelData;
 
     private void Awake()
     {
@@ -58,7 +58,7 @@ public class Levels : MonoBehaviour
     void Start()
     {
         lvlno = int.Parse(name);
-        saver = UserLevelData as Saver;
+        saver = GameManager.LevelScoreData as Saver;
         saver.LoadfromJson(saver);
         isUnlocked = saver.arenas[Arena].levels[lvlno - 1].Unlocked;
         Unlock();

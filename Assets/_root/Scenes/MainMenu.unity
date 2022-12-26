@@ -184,7 +184,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1011434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1073,7 +1072,7 @@ RectTransform:
   - {fileID: 752230564}
   - {fileID: 2061894681}
   m_Father: {fileID: 1980836111}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1471,7 +1470,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &36279336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1639,7 +1637,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &40296488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1959,7 +1956,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &46435139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2497,7 +2493,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &66896057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2665,7 +2660,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &66926491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3367,8 +3361,8 @@ MonoBehaviour:
   - {fileID: 1781178513}
   Left: {fileID: 1116010713}
   Right: {fileID: 1980131087}
-  ArenaCount: 3
   counter: 0
+  LockedPanel: {fileID: 0}
 --- !u!1 &86911395
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,7 +3424,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &86911398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3674,7 +3667,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &90744056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4070,7 +4062,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &107558100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4395,7 +4386,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &109341213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4657,7 +4647,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 33d10f6c005b93b4b8e73f00630a331e, type: 3}
   - {fileID: 21300000, guid: e692b6ece6882324d87409a6fb7cb425, type: 3}
   _counter: 0
-  UserConfigData: {fileID: 0}
 --- !u!1 &119095053
 GameObject:
   m_ObjectHideFlags: 0
@@ -4719,7 +4708,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &119095056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4887,7 +4875,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &122189686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5743,7 +5730,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &141825564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6808,7 +6794,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &172412113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7270,7 +7255,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &182946048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7658,7 +7642,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &188406815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7980,7 +7963,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &200130629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8346,7 +8328,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &212883304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8591,7 +8572,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &221418798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9187,7 +9167,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &243116040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9605,7 +9584,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &246144469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9855,7 +9833,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &249690288
 GameObject:
   m_ObjectHideFlags: 0
@@ -9917,7 +9894,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &249690291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10467,7 +10443,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &267137909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11244,7 +11219,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &281554064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11716,7 +11690,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &292983151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12038,7 +12011,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &303919634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12928,7 +12900,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &338719105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13547,7 +13518,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &367002078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14463,7 +14433,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &372756105
 GameObject:
   m_ObjectHideFlags: 0
@@ -14602,7 +14571,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &374128622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14922,7 +14890,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &381117959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15248,7 +15215,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &392689713
 GameObject:
   m_ObjectHideFlags: 0
@@ -15453,7 +15419,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &399756684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15774,7 +15739,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &403553794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15942,7 +15906,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &411499670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16253,7 +16216,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &417851893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16421,7 +16383,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &418736557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16589,7 +16550,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &427232825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17521,7 +17481,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &470703685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17765,7 +17724,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &480769768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18244,7 +18202,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &493431686
 GameObject:
   m_ObjectHideFlags: 0
@@ -18442,7 +18399,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &498994113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18993,7 +18949,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &512184693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19375,7 +19330,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &539453986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19902,7 +19856,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 13527793884104b46b7446fd7464c3ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9539b197a7c910548ba880bfab0ef676, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -19981,7 +19935,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &551130387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20149,7 +20102,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &554481176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21212,7 +21164,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &572578818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21539,7 +21490,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &583670932
 GameObject:
   m_ObjectHideFlags: 0
@@ -21759,7 +21709,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &589455811
 GameObject:
   m_ObjectHideFlags: 0
@@ -21898,7 +21847,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &596064174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23037,6 +22985,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622426353}
   m_CullTransparentMesh: 1
+--- !u!1 &622486852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622486853}
+  - component: {fileID: 622486855}
+  - component: {fileID: 622486854}
+  - component: {fileID: 622486856}
+  m_Layer: 5
+  m_Name: Close
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &622486853
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622486852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 985824565}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 400, y: 540}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &622486854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622486852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9a4f95cf10e64374fa7fe251d378591a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &622486855
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622486852}
+  m_CullTransparentMesh: 1
+--- !u!114 &622486856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622486852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 622486854}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 985824568}
+        m_TargetAssemblyTypeName: Tween, Assembly-CSharp
+        m_MethodName: Disable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &624396401
 GameObject:
   m_ObjectHideFlags: 0
@@ -24332,7 +24413,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &659125680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24785,7 +24865,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &670191569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25209,7 +25288,7 @@ RectTransform:
   - {fileID: 1136091108}
   - {fileID: 1089727576}
   m_Father: {fileID: 985824565}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25828,7 +25907,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &694120863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25996,7 +26074,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &696126035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27500,7 +27577,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &736402637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27827,7 +27903,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &742243658
 GameObject:
   m_ObjectHideFlags: 0
@@ -28102,7 +28177,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &746282394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28742,7 +28816,7 @@ RectTransform:
   - {fileID: 345004746}
   - {fileID: 992014024}
   m_Father: {fileID: 985824565}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -28912,7 +28986,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &762487163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29292,7 +29365,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &776880817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29460,7 +29532,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &781693701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29704,7 +29775,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &784306117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29937,7 +30007,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &788840484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30181,7 +30250,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &793072888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30878,7 +30946,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   touchedProperty: 0
-  LevelScoreData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &810874884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31363,7 +31430,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &817181959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31744,7 +31810,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &823508282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31988,7 +32053,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &825217841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32309,7 +32373,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &838708360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32869,7 +32932,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &858573405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33190,7 +33252,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &869337744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33602,6 +33663,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879688581}
   m_CullTransparentMesh: 1
+--- !u!1 &881479670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 881479671}
+  - component: {fileID: 881479674}
+  - component: {fileID: 881479673}
+  - component: {fileID: 881479672}
+  m_Layer: 5
+  m_Name: Close
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &881479671
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881479670}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1980836111}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 400, y: 540}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &881479672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881479670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 881479673}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1980836110}
+        m_TargetAssemblyTypeName: Tween, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &881479673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881479670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9a4f95cf10e64374fa7fe251d378591a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &881479674
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881479670}
+  m_CullTransparentMesh: 1
 --- !u!1 &886702935
 GameObject:
   m_ObjectHideFlags: 0
@@ -33663,7 +33857,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &886702938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34392,7 +34585,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &904702135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35077,7 +35269,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &927084735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35480,7 +35671,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &940286319
 GameObject:
   m_ObjectHideFlags: 0
@@ -35965,7 +36155,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &944273436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36648,7 +36837,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &965426239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37003,6 +37191,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 622486853}
   - {fileID: 679009733}
   - {fileID: 756462950}
   m_Father: {fileID: 2123655577}
@@ -37067,7 +37256,7 @@ MonoBehaviour:
   EaseTypeOut: 15
   TimeIn: 0.24
   TimeOut: 0.24
-  DelayIn: 0.15
+  DelayIn: 0.3
   DelayOut: 0.15
   Offset: 0.699
   scaleTypeIn: 3
@@ -37088,7 +37277,7 @@ MonoBehaviour:
   EaseTypeOut: 15
   TimeIn: 0.12
   TimeOut: 0.12
-  DelayIn: 0.15
+  DelayIn: 0.3
   DelayOut: 0.15
   Offset: 0
 --- !u!225 &985824570
@@ -37164,7 +37353,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &988272202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37847,7 +38035,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1007132686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38167,7 +38354,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1007384741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39017,7 +39203,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1029546206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39810,7 +39995,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1046251558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40131,7 +40315,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1054181188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40299,7 +40482,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1056618298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41030,7 +41212,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1086022387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42333,7 +42514,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1117272527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42959,7 +43139,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1135463098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43529,7 +43708,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1144075619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44054,7 +44232,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1147976466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44865,7 +45042,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1174731984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45766,7 +45942,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1210434062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46745,7 +46920,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1226590108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47223,7 +47397,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &1250049621
 GameObject:
   m_ObjectHideFlags: 0
@@ -47285,7 +47458,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1250049624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47529,7 +47701,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1263435786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48079,7 +48250,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1285211736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48730,7 +48900,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1300742702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48898,7 +49067,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1301161448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49142,7 +49310,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1304890844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49808,7 +49975,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1327171017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51242,7 +51408,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1379033353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51708,7 +51873,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &1393871976
 GameObject:
   m_ObjectHideFlags: 0
@@ -52304,7 +52468,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1418214934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52549,7 +52712,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1425117813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52794,7 +52956,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1426767776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53192,7 +53353,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1442693166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53513,7 +53673,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1455960834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53681,7 +53840,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1461089492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54269,7 +54427,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1477254962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55687,7 +55844,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1545946241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55991,7 +56147,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1548351314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57128,7 +57283,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1580325573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58309,7 +58463,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1598522853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58477,7 +58630,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1607871598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59510,7 +59662,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1650350712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59760,7 +59911,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &1653934368
 GameObject:
   m_ObjectHideFlags: 0
@@ -59822,7 +59972,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 78701b65506a5c543a37ec447886d044, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1653934371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60787,7 +60936,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1691407524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61539,7 +61687,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1715322569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61707,7 +61854,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1717581940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61996,7 +62142,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1719019742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62240,7 +62385,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1720036623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62490,7 +62634,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &1723867488
 GameObject:
   m_ObjectHideFlags: 0
@@ -63186,7 +63329,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1744917220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63354,7 +63496,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1747595752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63751,7 +63892,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1750898800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63996,7 +64136,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1757221174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64400,7 +64539,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &1778531015
 GameObject:
   m_ObjectHideFlags: 0
@@ -64544,7 +64682,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &1778951887
 GameObject:
   m_ObjectHideFlags: 0
@@ -65181,7 +65318,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1802226258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65654,7 +65790,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1820447333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66186,7 +66321,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1832662523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66507,7 +66641,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1837538510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67330,7 +67463,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1866775069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68391,7 +68523,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1908022242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68530,7 +68661,7 @@ RectTransform:
   - {fileID: 1422912}
   - {fileID: 168529339}
   m_Father: {fileID: 1980836111}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -69144,7 +69275,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b28766101216239409cbd129f62a5543, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1939347535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69685,7 +69815,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1949354648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69930,7 +70059,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1965146784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70250,7 +70378,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &1973317307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70500,7 +70627,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: c08e38b26950ef842a1c515cd2ea0dd4, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &1978396441
 GameObject:
   m_ObjectHideFlags: 0
@@ -70743,6 +70869,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 881479671}
   - {fileID: 23060297}
   - {fileID: 1908461363}
   m_Father: {fileID: 966156904}
@@ -70769,7 +70896,7 @@ MonoBehaviour:
   EaseTypeOut: 15
   TimeIn: 0.24
   TimeOut: 0.24
-  DelayIn: 0.15
+  DelayIn: 0.3
   DelayOut: 0.15
   Offset: 0.699
   scaleTypeIn: 3
@@ -70790,7 +70917,7 @@ MonoBehaviour:
   EaseTypeOut: 15
   TimeIn: 0.12
   TimeOut: 0.12
-  DelayIn: 0.15
+  DelayIn: 0.3
   DelayOut: 0.15
   Offset: 0
 --- !u!225 &1980836114
@@ -73245,7 +73372,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cc410d3aed0d504e8c499ec32eb7946, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &2066389651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73931,7 +74057,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &2074225559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74546,7 +74671,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!1 &2093948730
 GameObject:
   m_ObjectHideFlags: 0
@@ -74684,7 +74808,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: 904d5c42b5d26914eb2122e80ec8d066, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &2094764243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75622,7 +75745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2123655577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -75728,7 +75851,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
   - {fileID: 21300000, guid: f7bcb215b55aedb42b36ca14be8e2a96, type: 3}
   IconScore: []
-  UserLevelData: {fileID: 11400000, guid: 40b3320f167b77a43b1c2ba7b55bacc4, type: 2}
 --- !u!114 &2129237451
 MonoBehaviour:
   m_ObjectHideFlags: 0

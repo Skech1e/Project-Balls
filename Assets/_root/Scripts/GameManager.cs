@@ -24,11 +24,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     bool touchedProperty;
 
-    public delegate void OnScore();
-    public static event OnScore OnScoreEvent;
-
     private Saver saver;
-    [SerializeField] ScriptableObject LevelScoreData;
+    public static ScriptableObject LevelScoreData;
 
     public static int[] scoreTier = new int[2];
     public static int starCount;
@@ -37,6 +34,8 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         input = new();
+        string assetpath = "Assets/_root/Scripts/UserData.asset";
+        LevelScoreData = AssetDatabase.LoadAssetAtPath<ScriptableObject>(assetpath);
     }
 
     // Start is called before the first frame update

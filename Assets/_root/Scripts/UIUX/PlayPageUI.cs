@@ -7,16 +7,17 @@ public class PlayPageUI : MonoBehaviour
 {
     [SerializeField] List<Transform> ArenaSelector = new();
     [SerializeField] Button Left, Right;
-    [SerializeField] int ArenaCount;
     public int counter;
     PositionTween pt;
     [SerializeField] GameObject LockedPanel;
-    Saver sc;
+    
+    private Saver saver;
     // Start is called before the first frame update
     void Start()
     {
-        
+        saver = GameManager.LevelScoreData as Saver;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -39,7 +40,8 @@ public class PlayPageUI : MonoBehaviour
         counter++;
         ArenaSelector[counter-1].GetComponent<PositionTween>().Disable();
         ArenaSelector[counter].gameObject.SetActive(true);
-        if()
+        if (saver.arenas[counter].unlocked == false)
+            LockedPanel.SetActive(true);
     }
 
     public void OnClickLeft()
