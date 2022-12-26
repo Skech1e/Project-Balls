@@ -14,14 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arenas:
   - name: Arena 1
+    price: 0
+    unlocked: 0
     levels:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 0
+      hiscore: 200
       ballCount: 2
-      starCount: 0
-      timeTaken: 0
+      starCount: 3
+      timeTaken: 5.882689
     - Unlocked: 1
       name: Level 2
       levelid: 0
@@ -128,8 +130,10 @@ MonoBehaviour:
       starCount: 0
       timeTaken: 0
   - name: Arena 2
+    price: 0
+    unlocked: 1
     levels:
-    - Unlocked: 0
+    - Unlocked: 1
       name: Level 1
       levelid: 0
       hiscore: 0
@@ -242,6 +246,8 @@ MonoBehaviour:
       starCount: 0
       timeTaken: 0
   - name: Arena 3
+    price: 0
+    unlocked: 0
     levels:
     - Unlocked: 0
       name: Level 1
@@ -356,6 +362,8 @@ MonoBehaviour:
       starCount: 0
       timeTaken: 0
   - name: Arena 4
+    price: 0
+    unlocked: 0
     levels:
     - Unlocked: 0
       name: Level 1
@@ -470,6 +478,8 @@ MonoBehaviour:
       starCount: 0
       timeTaken: 0
   - name: Arena 5
+    price: 0
+    unlocked: 0
     levels:
     - Unlocked: 0
       name: Level 1
@@ -584,6 +594,8 @@ MonoBehaviour:
       starCount: 0
       timeTaken: 0
   - name: Arena 6
+    price: 0
+    unlocked: 0
     levels:
     - Unlocked: 0
       name: Level 1
@@ -698,6 +710,8 @@ MonoBehaviour:
       starCount: 0
       timeTaken: 0
   - name: Arena 7
+    price: 0
+    unlocked: 0
     levels:
     - Unlocked: 0
       name: Level 1
@@ -812,6 +826,8 @@ MonoBehaviour:
       starCount: 0
       timeTaken: 0
   - name: Arena 8
+    price: 0
+    unlocked: 0
     levels:
     - Unlocked: 0
       name: Level 1
@@ -926,6 +942,8 @@ MonoBehaviour:
       starCount: 0
       timeTaken: 0
   - name: Arena 9
+    price: 0
+    unlocked: 0
     levels:
     - Unlocked: 0
       name: Level 1
@@ -1040,6 +1058,8 @@ MonoBehaviour:
       starCount: 0
       timeTaken: 0
   - name: Arena 10
+    price: 0
+    unlocked: 0
     levels:
     - Unlocked: 0
       name: Level 1
@@ -1153,3 +1173,11 @@ MonoBehaviour:
       ballCount: 0
       starCount: 0
       timeTaken: 0
+  usrdata:
+    Name: 
+    level: 0
+    balance: 0
+    usr_inventory: []
+    Sound: 0
+    Music: 0
+    Graphics: 0

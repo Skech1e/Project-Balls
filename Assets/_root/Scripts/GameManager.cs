@@ -34,8 +34,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         input = new();
-        string assetpath = "Assets/_root/Scripts/UserData.asset";
-        LevelScoreData = AssetDatabase.LoadAssetAtPath<ScriptableObject>(assetpath);
+        LevelScoreData = Resources.Load<ScriptableObject>("UserData");
     }
 
     // Start is called before the first frame update
