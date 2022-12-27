@@ -27,7 +27,6 @@ public class SettingsUI : MonoBehaviour
     }
 
     //Saving vars
-    UserData usrdata = new();
     Saver saver;
     //[SerializeField] ScriptableObject UserConfigData;
 
@@ -85,9 +84,9 @@ public class SettingsUI : MonoBehaviour
 
     public void CloseSave()
     {
-        usrdata.Music = Music;
-        usrdata.Sound = Sound;
-        usrdata.Graphics = Counter;
-        saver.SavetoJson(usrdata);
+        saver.usrdata.Music = Music;
+        saver.usrdata.Sound = Sound;
+        saver.usrdata.Graphics = Counter;
+        saver.SavetoJson(saver.usrdata);
     }
 }

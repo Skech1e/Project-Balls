@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayPageUI : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI coinBalance;
     [SerializeField] List<Transform> ArenaSelector = new();
     [SerializeField] Button Left, Right;
     public int counter;
@@ -16,6 +18,7 @@ public class PlayPageUI : MonoBehaviour
     void Start()
     {
         saver = GameManager.LevelScoreData as Saver;
+        coinBalance.text = saver.usrdata.balance.ToString();
     }
 
 

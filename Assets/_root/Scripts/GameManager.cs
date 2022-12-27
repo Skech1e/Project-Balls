@@ -2,12 +2,9 @@ using GlobalBasket;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -64,6 +61,7 @@ public class GameManager : MonoBehaviour
     private void OnDisable()
     {
         saver.SavetoJson(saver);
+        //saver.SavetoJson(saver.usrdata);
 
         input.Disable();
         input.Controls.Aim.started -= FirstTouch;
@@ -190,6 +188,8 @@ public class GameManager : MonoBehaviour
         saver.arenas[currentArenaNo].levels[currentLevelNo].ballCount = LevelReporting.ballCount;
         saver.arenas[currentArenaNo].levels[currentLevelNo].hiscore = highScore;
         saver.arenas[currentArenaNo].levels[currentLevelNo].timeTaken = timer;
+        saver.arenas[currentArenaNo].levels[currentLevelNo].coins_earned += score;
+        saver.usrdata.balance += score;
     }
 
     public int ScorePerGoal()

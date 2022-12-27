@@ -20,37 +20,42 @@ MonoBehaviour:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 200
-      ballCount: 2
-      starCount: 3
-      timeTaken: 5.882689
-    - Unlocked: 1
+      hiscore: 0
+      ballCount: 0
+      starCount: 0
+      coins_earned: 0
+      timeTaken: 0
+    - Unlocked: 0
       name: Level 2
       levelid: 0
       hiscore: 0
-      ballCount: 4
+      ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 1
       name: Level 3
       levelid: 0
       hiscore: 0
-      ballCount: 4
+      ballCount: 0
       starCount: 0
-      timeTaken: 16.694656
+      coins_earned: 0
+      timeTaken: 0
     - Unlocked: 1
       name: Level 4
       levelid: 0
-      hiscore: 350
+      hiscore: 0
       ballCount: 3
       starCount: 0
-      timeTaken: 23.674969
+      coins_earned: 0
+      timeTaken: 0
     - Unlocked: 1
       name: Level 5
       levelid: 0
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -58,6 +63,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -65,6 +71,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -72,6 +79,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -79,6 +87,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -86,6 +95,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -93,6 +103,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -100,6 +111,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -107,6 +119,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -114,6 +127,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -121,6 +135,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -128,6 +143,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   - name: Arena 2
     price: 0
@@ -139,6 +155,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 2
@@ -146,6 +163,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 3
@@ -153,6 +171,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 4
@@ -160,6 +179,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 5
@@ -167,6 +187,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -174,6 +195,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -181,6 +203,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -188,6 +211,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -195,6 +219,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -202,6 +227,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -209,6 +235,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -216,6 +243,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -223,6 +251,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -230,6 +259,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -237,6 +267,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -244,17 +275,19 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   - name: Arena 3
     price: 0
-    unlocked: 0
+    unlocked: 1
     levels:
-    - Unlocked: 0
+    - Unlocked: 1
       name: Level 1
       levelid: 0
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 2
@@ -262,6 +295,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 3
@@ -269,6 +303,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 4
@@ -276,6 +311,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 5
@@ -283,6 +319,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -290,6 +327,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -297,6 +335,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -304,6 +343,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -311,6 +351,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -318,6 +359,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -325,6 +367,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -332,6 +375,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -339,6 +383,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -346,6 +391,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -353,6 +399,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -360,17 +407,19 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   - name: Arena 4
     price: 0
-    unlocked: 0
+    unlocked: 1
     levels:
-    - Unlocked: 0
+    - Unlocked: 1
       name: Level 1
       levelid: 0
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 2
@@ -378,6 +427,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 3
@@ -385,6 +435,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 4
@@ -392,6 +443,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 5
@@ -399,6 +451,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -406,6 +459,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -413,6 +467,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -420,6 +475,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -427,6 +483,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -434,6 +491,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -441,6 +499,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -448,6 +507,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -455,6 +515,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -462,6 +523,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -469,6 +531,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -476,6 +539,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   - name: Arena 5
     price: 0
@@ -487,6 +551,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 2
@@ -494,6 +559,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 3
@@ -501,6 +567,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 4
@@ -508,6 +575,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 5
@@ -515,6 +583,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -522,6 +591,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -529,6 +599,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -536,6 +607,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -543,6 +615,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -550,6 +623,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -557,6 +631,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -564,6 +639,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -571,6 +647,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -578,6 +655,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -585,6 +663,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -592,6 +671,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   - name: Arena 6
     price: 0
@@ -603,6 +683,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 2
@@ -610,6 +691,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 3
@@ -617,6 +699,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 4
@@ -624,6 +707,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 5
@@ -631,6 +715,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -638,6 +723,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -645,6 +731,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -652,6 +739,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -659,6 +747,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -666,6 +755,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -673,6 +763,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -680,6 +771,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -687,6 +779,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -694,6 +787,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -701,6 +795,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -708,6 +803,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   - name: Arena 7
     price: 0
@@ -719,6 +815,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 2
@@ -726,6 +823,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 3
@@ -733,6 +831,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 4
@@ -740,6 +839,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 5
@@ -747,6 +847,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -754,6 +855,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -761,6 +863,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -768,6 +871,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -775,6 +879,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -782,6 +887,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -789,6 +895,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -796,6 +903,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -803,6 +911,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -810,6 +919,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -817,6 +927,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -824,6 +935,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   - name: Arena 8
     price: 0
@@ -835,6 +947,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 2
@@ -842,6 +955,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 3
@@ -849,6 +963,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 4
@@ -856,6 +971,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 5
@@ -863,6 +979,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -870,6 +987,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -877,6 +995,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -884,6 +1003,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -891,6 +1011,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -898,6 +1019,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -905,6 +1027,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -912,6 +1035,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -919,6 +1043,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -926,6 +1051,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -933,6 +1059,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -940,6 +1067,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   - name: Arena 9
     price: 0
@@ -951,6 +1079,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 2
@@ -958,6 +1087,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 3
@@ -965,6 +1095,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 4
@@ -972,6 +1103,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 5
@@ -979,6 +1111,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -986,6 +1119,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -993,6 +1127,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -1000,6 +1135,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -1007,6 +1143,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -1014,6 +1151,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -1021,6 +1159,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -1028,6 +1167,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -1035,6 +1175,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -1042,6 +1183,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -1049,6 +1191,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -1056,6 +1199,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   - name: Arena 10
     price: 0
@@ -1067,6 +1211,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 2
@@ -1074,6 +1219,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 3
@@ -1081,6 +1227,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 4
@@ -1088,6 +1235,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 5
@@ -1095,6 +1243,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 6
@@ -1102,6 +1251,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 7
@@ -1109,6 +1259,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 8
@@ -1116,6 +1267,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 9
@@ -1123,6 +1275,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 10
@@ -1130,6 +1283,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 11
@@ -1137,6 +1291,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 12
@@ -1144,6 +1299,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 13
@@ -1151,6 +1307,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 14
@@ -1158,6 +1315,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 15
@@ -1165,6 +1323,7 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 0
       name: Level 16
@@ -1172,12 +1331,12 @@ MonoBehaviour:
       hiscore: 0
       ballCount: 0
       starCount: 0
+      coins_earned: 0
       timeTaken: 0
   usrdata:
     Name: 
-    level: 0
     balance: 0
     usr_inventory: []
-    Sound: 0
-    Music: 0
-    Graphics: 0
+    Sound: 1
+    Music: 1
+    Graphics: 2

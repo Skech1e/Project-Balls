@@ -9,13 +9,12 @@ public class Saver : ScriptableObject
 {
     public Arena[] arenas = new Arena[10];
     public UserData usrdata = new();
-
     string scpath, cfgpath;
 
     private void Awake()
     {
         scpath = Path.Combine(Application.persistentDataPath, "scglobal.json");
-        cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");       
+        cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
     }
 
     private void OnValidate()
@@ -76,7 +75,7 @@ public class Level
 {
     public bool Unlocked;
     public string name = "Level";
-    public int levelid, hiscore, ballCount, starCount;
+    public int levelid, hiscore, ballCount, starCount, coins_earned;
     public float timeTaken;
 }
 
@@ -84,7 +83,6 @@ public class Level
 public class UserData
 {
     public string Name;
-    public int level;
     public int balance;
     public List<Inventory> usr_inventory = new();
 
