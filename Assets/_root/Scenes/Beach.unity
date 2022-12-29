@@ -1845,7 +1845,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   touchedProperty: 0
-  LevelScoreData: {fileID: 0}
 --- !u!114 &197327314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6187,7 +6186,6 @@ GameObject:
   - component: {fileID: 715186122}
   - component: {fileID: 715186120}
   - component: {fileID: 715186119}
-  - component: {fileID: 715186121}
   m_Layer: 0
   m_Name: Trajectory
   m_TagString: Untagged
@@ -6323,14 +6321,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!33 &715186121
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715186118}
-  m_Mesh: {fileID: 0}
 --- !u!4 &715186122
 Transform:
   m_ObjectHideFlags: 0
@@ -8681,7 +8671,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh326168
+  m_Name: pb_Mesh44860
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
