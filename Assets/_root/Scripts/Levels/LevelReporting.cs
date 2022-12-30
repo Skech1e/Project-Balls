@@ -12,7 +12,7 @@ public class LevelReporting : MonoBehaviour
     public static float bonus;
     enum BallCountEnum: int 
     {
-        Three = 3, Six = 6, Nine = 9
+        Three = 3, Four = 4, Five = 5, Six = 6, Seven = 7, Eight = 8, Nine = 9
     }
 
     [SerializeField] BallCountEnum _BallCount;

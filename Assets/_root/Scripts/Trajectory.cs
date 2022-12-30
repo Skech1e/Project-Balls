@@ -34,7 +34,6 @@ public class Trajectory : MonoBehaviour
     {
         line = GetComponent<LineRenderer>();
         gravity = Mathf.Abs(Physics.gravity.y);
-        line.useWorldSpace = false;
         input = new PlayerInputs();
         velocity.z = 10f;
         velocity.y = 10f;
@@ -79,11 +78,11 @@ public class Trajectory : MonoBehaviour
     {
         ClampInputValues();
         velocity.x = InputScale.x * precision;
-        velocity.y = InputScale.y * precision * 1.5f;
-        velocity.z = InputScale.y * precision;
+        velocity.y = InputScale.y * precision + 3f;
+        velocity.z = InputScale.y * precision * 1.5f;
         Yveloc = velocity.y;
         RenderLine();
-
+        print(InputScale.x * precision + " "+InputScale.y * precision);
         ballPath = lineArray;
     }
 
@@ -128,7 +127,7 @@ public class Trajectory : MonoBehaviour
 
                 if (hit)
                 {
-                    print(hitPoint.rigidbody.name);
+                    print(hitPoint.collider.bounds);
                     return hitPoint.point;
                 }
             }
@@ -137,9 +136,9 @@ public class Trajectory : MonoBehaviour
     }
     private Vector3 CalculateLinePoints(float t)
     {
-        float x = velocity.x * t;
-        float z = velocity.z * t;
-        float y = (velocity.y * t) - (gravity * Mathf.Pow(t, 2) / 2);
+        float x = transform.position.x+velocity.x * t;
+        float z = transform.position.z+velocity.z * t;
+        float y = (transform.position.y + velocity.y * t) - (gravity * Mathf.Pow(t, 2) / 2);
         return new Vector3(x, y, z);
     }
 

@@ -29,8 +29,8 @@ public class Linear : MonoBehaviour
             basketPosition.x = moveValue * (int)moveDirection;
         else if (axis == Axis.Diagonal)
         {
-            basketPosition.x = moveValue * (int)moveDirection;
-            basketPosition.y = moveValue * (int)moveDirection;
+            basketPosition.x = (moveValue/2) * (int)moveDirection;
+            basketPosition.y = (moveValue/2) * (int)moveDirection;
         }
         else if(axis == Axis.Diagonal_Inverse)
         {
