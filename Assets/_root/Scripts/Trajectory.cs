@@ -82,7 +82,6 @@ public class Trajectory : MonoBehaviour
         velocity.z = InputScale.y * precision * 1.5f;
         Yveloc = velocity.y;
         RenderLine();
-        print(InputScale.x * precision + " "+InputScale.y * precision);
         ballPath = lineArray;
     }
 
@@ -127,7 +126,6 @@ public class Trajectory : MonoBehaviour
 
                 if (hit)
                 {
-                    print(hitPoint.collider.bounds);
                     return hitPoint.point;
                 }
             }
