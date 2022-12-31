@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -64,6 +63,7 @@ public class CameraMotion : MonoBehaviour
 
     void GetPOVButton(Scene scene, LoadSceneMode mode)
     {
+        print("k");
         POV = GameObject.FindGameObjectWithTag("POV").GetComponent<Button>();
         POV.onClick.AddListener(() => POVShiftToggle());
     }
