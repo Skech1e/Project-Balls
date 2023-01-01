@@ -3083,10 +3083,6 @@ MonoBehaviour:
   - {fileID: 1870371189}
   - {fileID: 2123655577}
   - {fileID: 966156904}
-  - {fileID: 1701253833}
-  - {fileID: 1983172450}
-  - {fileID: 638845348}
-  - {fileID: 1781178513}
   Left: {fileID: 1116010713}
   Right: {fileID: 1980131087}
   counter: 0

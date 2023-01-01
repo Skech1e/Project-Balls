@@ -15,15 +15,15 @@ EditorBuildSettings:
     path: Assets/_root/Scenes/SnowLevel.unity
     guid: a45bc038976844040a6aed181efecb43
   - enabled: 1
-    path: Assets/_root/Scenes/Deepavali.unity
-    guid: 7048d40f5fc77354ca2e041bec58d4de
-  - enabled: 1
     path: Assets/_root/Scenes/Beach.unity
     guid: 6df19220107a5734a80d12827e542a7d
-  - enabled: 1
+  - enabled: 0
+    path: Assets/_root/Scenes/Deepavali.unity
+    guid: 7048d40f5fc77354ca2e041bec58d4de
+  - enabled: 0
     path: Assets/_root/Scenes/Paris.unity
     guid: 54a1a47c05c5468458cfee9ed6d3e83f
-  - enabled: 1
+  - enabled: 0
     path: Assets/_root/Scenes/Docks.unity
     guid: 9d84e969dedcf534c8a4620ec19ae510
   - enabled: 1
