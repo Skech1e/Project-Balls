@@ -13,6 +13,8 @@ public class PlayPageUI : MonoBehaviour
     PositionTween pt;
     [SerializeField] GameObject LockedPanel;
 
+    [SerializeField] List<GameObject> arenaPics = new();
+
     private Saver saver;
     // Start is called before the first frame update
     void Start()
@@ -42,7 +44,10 @@ public class PlayPageUI : MonoBehaviour
     {
         counter++;
         ArenaSelector[counter-1].GetComponent<PositionTween>().Disable();
+        arenaPics[counter-1].SetActive(false);
+
         ArenaSelector[counter].gameObject.SetActive(true);
+        arenaPics[counter].SetActive(true);
         if (saver.arenas[counter].unlocked == false)
             LockedPanel.SetActive(true);
     }
@@ -51,7 +56,9 @@ public class PlayPageUI : MonoBehaviour
     {
         counter--;
         ArenaSelector[counter+1].GetComponent<PositionTween>().Disable();
+        arenaPics[counter+1].SetActive(false);
         ArenaSelector[counter].gameObject.SetActive(true);
+        arenaPics[counter].SetActive(true);
 
         ArenaSelector[counter].localPosition = new Vector2(-Screen.width, 0);
         ArenaSelector[counter].LeanMoveLocalX(0, pt.TimeIn).setEase(pt.EaseTypeIn).setDelay(pt.DelayIn);

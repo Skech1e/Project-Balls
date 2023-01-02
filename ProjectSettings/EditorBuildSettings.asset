@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_root/Scenes/Beach.unity
     guid: 6df19220107a5734a80d12827e542a7d
-  - enabled: 1
+  - enabled: 0
     path: Assets/_root/Scenes/Deepavali.unity
     guid: 7048d40f5fc77354ca2e041bec58d4de
   - enabled: 0

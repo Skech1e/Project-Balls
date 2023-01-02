@@ -15,6 +15,8 @@ public class Saver : ScriptableObject
     {
         scpath = Path.Combine(Application.persistentDataPath, "scglobal.json");
         cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
+
+        SavetoJson(this);
     }
 
     private void OnValidate()
