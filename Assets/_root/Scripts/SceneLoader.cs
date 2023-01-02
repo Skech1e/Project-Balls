@@ -65,6 +65,7 @@ public class SceneLoader : MonoBehaviour
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
+        print("k2");
         SceneLoaded.Invoke();       
     }
 }

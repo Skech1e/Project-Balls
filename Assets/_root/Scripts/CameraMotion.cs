@@ -41,12 +41,14 @@ public class CameraMotion : MonoBehaviour
 
     private void OnEnable()
     {
-        SceneManager.sceneLoaded += GetPOVButton;
+        //SceneManager.sceneLoaded += GetPOVButton;
+        SceneLoader.SceneLoaded += GetPOVButton;
     }
 
     private void OnDisable()
     {
-        SceneManager.sceneLoaded -= GetPOVButton;
+        //SceneManager.sceneLoaded -= GetPOVButton;
+        SceneLoader.SceneLoaded -= GetPOVButton;
     }
     // Start is called before the first frame update
     void Start()
@@ -61,7 +63,7 @@ public class CameraMotion : MonoBehaviour
         POVShift();
     }
 
-    void GetPOVButton(Scene scene, LoadSceneMode mode)
+    void GetPOVButton()
     {
         print("k");
         POV = GameObject.FindGameObjectWithTag("POV").GetComponent<Button>();

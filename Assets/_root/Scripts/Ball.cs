@@ -1,11 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Unity.Mathematics;
 using Random = Unity.Mathematics.Random;
 using GlobalBasket;
-using UnityEngine.UI;
-using Unity.VisualScripting;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Ball : MonoBehaviour
@@ -28,6 +23,8 @@ public class Ball : MonoBehaviour
     public static event BallEventHandler BallEvent;
 
     GameObject thisBall;
+
+    public static bool ballAtDefaultPos;
 
     public bool ThrowProperty
     {
@@ -83,6 +80,7 @@ public class Ball : MonoBehaviour
     private void FixedUpdate()
     {
         ThrowBall();
+        ballAtDefaultPos = transform.position == defaultPos;
 
         if (Throw == false)
         {

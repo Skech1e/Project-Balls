@@ -4482,7 +4482,6 @@ GameObject:
   - component: {fileID: 111570120}
   - component: {fileID: 111570119}
   - component: {fileID: 111570122}
-  - component: {fileID: 111570121}
   m_Layer: 0
   m_Name: ArenaBG
   m_TagString: Untagged
@@ -4562,25 +4561,6 @@ RectTransform:
   m_AnchoredPosition: {x: -528, y: -957.15}
   m_SizeDelta: {x: 3.47, y: 6.15}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &111570121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111570117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EaseTypeIn: 14
-  EaseTypeOut: 15
-  TimeIn: 0.24
-  TimeOut: 0.24
-  DelayIn: 0.15
-  DelayOut: 0.15
-  Offset: 0
 --- !u!225 &111570122
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -12587,7 +12567,6 @@ GameObject:
   - component: {fileID: 307448287}
   - component: {fileID: 307448286}
   - component: {fileID: 307448289}
-  - component: {fileID: 307448288}
   m_Layer: 0
   m_Name: ArenaBG
   m_TagString: Untagged
@@ -12667,25 +12646,6 @@ RectTransform:
   m_AnchoredPosition: {x: -528, y: -957.15}
   m_SizeDelta: {x: 3.46, y: 6.15}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &307448288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307448284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EaseTypeIn: 14
-  EaseTypeOut: 15
-  TimeIn: 0.24
-  TimeOut: 0.24
-  DelayIn: 0.15
-  DelayOut: 0.15
-  Offset: 0
 --- !u!225 &307448289
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -31403,7 +31363,6 @@ GameObject:
   - component: {fileID: 829561426}
   - component: {fileID: 829561425}
   - component: {fileID: 829561428}
-  - component: {fileID: 829561427}
   m_Layer: 0
   m_Name: ArenaBG
   m_TagString: Untagged
@@ -31483,25 +31442,6 @@ RectTransform:
   m_AnchoredPosition: {x: -528, y: -957.15}
   m_SizeDelta: {x: 3.46, y: 6.14}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &829561427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829561423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EaseTypeIn: 14
-  EaseTypeOut: 15
-  TimeIn: 0.24
-  TimeOut: 0.24
-  DelayIn: 0.15
-  DelayOut: 0.15
-  Offset: 0
 --- !u!225 &829561428
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -36872,7 +36812,6 @@ GameObject:
   - component: {fileID: 991297160}
   - component: {fileID: 991297159}
   - component: {fileID: 991297162}
-  - component: {fileID: 991297161}
   m_Layer: 0
   m_Name: ArenaBG
   m_TagString: Untagged
@@ -36952,25 +36891,6 @@ RectTransform:
   m_AnchoredPosition: {x: -528, y: -957.15}
   m_SizeDelta: {x: 3.46, y: 6.14}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &991297161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991297157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EaseTypeIn: 14
-  EaseTypeOut: 15
-  TimeIn: 0.24
-  TimeOut: 0.24
-  DelayIn: 0.15
-  DelayOut: 0.15
-  Offset: 0
 --- !u!225 &991297162
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -41545,7 +41465,6 @@ GameObject:
   - component: {fileID: 1122518950}
   - component: {fileID: 1122518949}
   - component: {fileID: 1122518952}
-  - component: {fileID: 1122518951}
   m_Layer: 0
   m_Name: ArenaBG
   m_TagString: Untagged
@@ -41625,25 +41544,6 @@ RectTransform:
   m_AnchoredPosition: {x: -528, y: -957.15}
   m_SizeDelta: {x: 3.46, y: 6.14}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1122518951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1122518947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EaseTypeIn: 14
-  EaseTypeOut: 15
-  TimeIn: 0.24
-  TimeOut: 0.24
-  DelayIn: 0.15
-  DelayOut: 0.15
-  Offset: 0
 --- !u!225 &1122518952
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -46223,7 +46123,6 @@ GameObject:
   - component: {fileID: 1258154894}
   - component: {fileID: 1258154893}
   - component: {fileID: 1258154896}
-  - component: {fileID: 1258154895}
   m_Layer: 0
   m_Name: ArenaBG
   m_TagString: Untagged
@@ -46303,25 +46202,6 @@ RectTransform:
   m_AnchoredPosition: {x: -528, y: -957.15}
   m_SizeDelta: {x: 3.45, y: 6.15}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1258154895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258154891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EaseTypeIn: 14
-  EaseTypeOut: 15
-  TimeIn: 0.24
-  TimeOut: 0.24
-  DelayIn: 0.15
-  DelayOut: 0.15
-  Offset: 0
 --- !u!225 &1258154896
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -53464,7 +53344,6 @@ GameObject:
   - component: {fileID: 1477949376}
   - component: {fileID: 1477949375}
   - component: {fileID: 1477949378}
-  - component: {fileID: 1477949377}
   m_Layer: 0
   m_Name: ArenaBG
   m_TagString: Untagged
@@ -53544,25 +53423,6 @@ RectTransform:
   m_AnchoredPosition: {x: -528, y: -957.15}
   m_SizeDelta: {x: 3.46, y: 6.14}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1477949377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477949373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EaseTypeIn: 14
-  EaseTypeOut: 15
-  TimeIn: 0.24
-  TimeOut: 0.24
-  DelayIn: 0.15
-  DelayOut: 0.15
-  Offset: 0
 --- !u!225 &1477949378
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -58886,7 +58746,6 @@ GameObject:
   - component: {fileID: 1676249590}
   - component: {fileID: 1676249589}
   - component: {fileID: 1676249592}
-  - component: {fileID: 1676249591}
   m_Layer: 0
   m_Name: ArenaBG
   m_TagString: Untagged
@@ -58966,25 +58825,6 @@ RectTransform:
   m_AnchoredPosition: {x: -528, y: -957.15}
   m_SizeDelta: {x: 3.45, y: 6.14}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1676249591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676249587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EaseTypeIn: 14
-  EaseTypeOut: 15
-  TimeIn: 0.24
-  TimeOut: 0.24
-  DelayIn: 0.15
-  DelayOut: 0.15
-  Offset: 0
 --- !u!225 &1676249592
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -66710,7 +66550,6 @@ GameObject:
   - component: {fileID: 1874429805}
   - component: {fileID: 1874429804}
   - component: {fileID: 1874429807}
-  - component: {fileID: 1874429806}
   m_Layer: 0
   m_Name: ArenaBG
   m_TagString: Untagged
@@ -66790,25 +66629,6 @@ RectTransform:
   m_AnchoredPosition: {x: -528, y: -957.15}
   m_SizeDelta: {x: 3.46, y: 6.14}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1874429806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1874429802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EaseTypeIn: 14
-  EaseTypeOut: 15
-  TimeIn: 0.24
-  TimeOut: 0.24
-  DelayIn: 0.15
-  DelayOut: 0.15
-  Offset: 0
 --- !u!225 &1874429807
 CanvasGroup:
   m_ObjectHideFlags: 0
