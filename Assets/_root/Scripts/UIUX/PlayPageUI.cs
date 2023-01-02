@@ -12,7 +12,7 @@ public class PlayPageUI : MonoBehaviour
     public int counter;
     PositionTween pt;
     [SerializeField] GameObject LockedPanel;
-    
+
     private Saver saver;
     // Start is called before the first frame update
     void Start()

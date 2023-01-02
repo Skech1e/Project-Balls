@@ -33,7 +33,7 @@ MonoBehaviour:
       starCount: 0
       coins_earned: 0
       timeTaken: 0
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 3
       levelid: 0
       hiscore: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
       starCount: 0
       coins_earned: 0
       timeTaken: 0
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 4
       levelid: 0
       hiscore: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
       starCount: 0
       coins_earned: 0
       timeTaken: 0
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 5
       levelid: 0
       hiscore: 0

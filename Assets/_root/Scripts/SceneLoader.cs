@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +11,8 @@ public class SceneLoader : MonoBehaviour
 
     private static SceneLoader staticSceneLoader;
 
-    [SerializeField] GameObject cameraRotator;
+    [SerializeField] GameObject cameraRotator, LoadingScreenPanel;
+    [SerializeField] TextMeshProUGUI progressText;
     public delegate void OnSceneLoadDelegate();
     public static event OnSceneLoadDelegate SceneLoaded;
 
@@ -18,6 +20,7 @@ public class SceneLoader : MonoBehaviour
     {
         DontDestroyOnLoad(this);
         DontDestroyOnLoad(cameraRotator);
+        DontDestroyOnLoad(LoadingScreenPanel);
         SceneManager.sceneLoaded += OnSceneLoad;
 
         if(staticSceneLoader == null)
@@ -44,14 +47,24 @@ public class SceneLoader : MonoBehaviour
     }
     public void SceneLoad(int sceneNumber, int _loadLevel)
     {
-        //if(SceneManager.GetActiveScene().buildIndex != 0)
-        SceneManager.LoadSceneAsync(sceneNumber);
+        StartCoroutine(LoadSceneAsync(sceneNumber));
         loadLevel = _loadLevel - 1;
+    }
+
+    IEnumerator LoadSceneAsync(int sceneNumber)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneNumber);
+        LoadingScreenPanel.SetActive(true);
+        while (!operation.isDone)
+        {
+            progressText.text = (operation.progress * 100) + "%";
+            yield return null;
+        }
+        LoadingScreenPanel.SetActive(false);
     }
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-        print("k2");
         SceneLoaded.Invoke();       
     }
 }

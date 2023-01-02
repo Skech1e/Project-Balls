@@ -72,9 +72,12 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        direction.x = track.InputScale.x * track.precision;
-        direction.y = track.InputScale.y * track.precision * 1.5f;
-        direction.z = track.InputScale.y * track.precision;
+        //direction.x = track.InputScale.x * track.precision;
+        //direction.y = track.InputScale.y * track.precision * 1.5f;
+        //direction.z = track.InputScale.y * track.precision;
+        direction.x = track.velocity.x;
+        direction.y = track.velocity.y;
+        direction.z = track.velocity.z;
     }
 
     private void FixedUpdate()

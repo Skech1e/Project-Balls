@@ -10,7 +10,7 @@ public class Trajectory : MonoBehaviour
 {
     [SerializeField] LineRenderer line;
     [SerializeField][Range(20, 100)] int lineSegment;
-    [SerializeField] Vector3 velocity;
+    public Vector3 velocity;
     [SerializeField] float Yveloc;
     [SerializeField] float gravity;
     [SerializeField] float Ymax;
@@ -78,8 +78,8 @@ public class Trajectory : MonoBehaviour
     {
         ClampInputValues();
         velocity.x = InputScale.x * precision;
-        velocity.y = InputScale.y * precision + 3f;
-        velocity.z = InputScale.y * precision * 1.5f;
+        velocity.y = InputScale.y * precision * 1.2f;
+        velocity.z = InputScale.y * precision;
         Yveloc = velocity.y;
         RenderLine();
         ballPath = lineArray;

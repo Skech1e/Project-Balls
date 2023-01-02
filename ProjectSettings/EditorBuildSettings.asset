@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_root/Scenes/Beach.unity
     guid: 6df19220107a5734a80d12827e542a7d
-  - enabled: 0
+  - enabled: 1
     path: Assets/_root/Scenes/Deepavali.unity
     guid: 7048d40f5fc77354ca2e041bec58d4de
   - enabled: 0
@@ -26,10 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_root/Scenes/Docks.unity
     guid: 9d84e969dedcf534c8a4620ec19ae510
-  - enabled: 1
+  - enabled: 0
     path: Assets/_root/Scenes/Sci-Fi.unity
     guid: f1838fe202aac42478967208a757b0b7
-  - enabled: 1
+  - enabled: 0
     path: Assets/_root/Scenes/Theme Park.unity
     guid: 83cf18ff703ab5b4b89492a19eb61c7a
   m_configObjects: {}

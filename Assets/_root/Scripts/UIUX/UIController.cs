@@ -14,6 +14,8 @@ public class UIController : MonoBehaviour
     public delegate void UIControl();
     public static event UIControl OnRestartfromUI;
 
+    SceneLoader sceneLoader;
+
     private void OnEnable()
     {
         LevelReporting.LevelComplete += LevelFinished;
@@ -35,6 +37,7 @@ public class UIController : MonoBehaviour
     private void Awake()
     {
         //pages.SetActive(false);
+        sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
     // Start is called before the first frame update
@@ -112,7 +115,8 @@ public class UIController : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
+        sceneLoader.SceneLoad(0, 0);
     }
 
     public void Restart()
