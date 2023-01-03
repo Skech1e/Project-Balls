@@ -57,7 +57,7 @@ public class SceneLoader : MonoBehaviour
         LoadingScreenPanel.SetActive(true);
         while (!operation.isDone)
         {
-            progressText.text = (operation.progress * 100) + "%";
+            progressText.text = (operation.progress * 100).ToString("F0") + "%";
             yield return null;
         }
         LoadingScreenPanel.SetActive(false);
@@ -65,7 +65,6 @@ public class SceneLoader : MonoBehaviour
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-        print("k2");
         SceneLoaded.Invoke();       
     }
 }

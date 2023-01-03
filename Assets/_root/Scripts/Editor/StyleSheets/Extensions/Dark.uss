@@ -1,126 +1,591 @@
-.AC-Button
+.AppToolbar,
+.dockarea,
 {
-	background-color: rgba(019, 019, 019, 1);
+	background-color: 
+	rgb(019, 019, 019);
+}
+.WhiteBackground, 
+.TV-Selection,
+{
+	background-image: 
+	none;
+
+    background-color: 
+	rgba(019, 019, 019, 0.25);
+}
+.dockareaOverlay,
+{
+	background-color: 
+	rgba(019, 019, 019, 0.075);
 }
 
 
-.AppCommand
+/*| S H A D E   1 |*/
+.StatusBarIcon,
 {
-	background-color: rgba(037, 037, 037, 1);
-}
-.AppToolbar
-{
-	background-color: rgba(019, 019, 019, 1);
-}
-.AppToolbarButtonLeft
-{
-	background-color: rgba(037, 037, 037, 1);
-}
-.AppToolbarButtonRight
-{
-	background-color: rgba(037, 037, 037, 1);
+	background-color: 
+	rgb(0, 0, 0);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width:
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
 }
 
 
-.dockarea
+/*| S H A D E   2 |*/
+.HorizontalSlider,
+.PreToolbar,
+.ToolbarSeachTextField, .ToolbarSearchTextField,
+.ToolbarSearchTextFieldWithJump,
+.ToolbarSearchTextFieldWithJumpPopup,
 {
-	background-color: rgba(019, 019, 019, 1);
-}
-.dockHeader
-{
-	background-color: rgba(037, 037, 037, 1);
-}
-.dockareaOverlay
-{
-	background-color: rgba(019, 019, 019, 0.075);
+	background-color: 
+	rgb(019, 019, 019);
+
+	border-top-color: 
+	rgb(019, 019, 019);
+	border-left-color: 
+	rgb(019, 019, 019);
+	border-right-color: 
+	rgb(019, 019, 019);
+	border-bottom-color: 
+	rgb(019, 019, 019);
+
+	border-radius:
+	0px 0px 0px 0px;
 }
 
 
-.dragtab
+/*| S H A D E   3 - B O R D E R L E S S|*/
+.AppCommand,
+.AppCommandLeft,
+.AppCommandMid,
+.AppCommandRight,
+.dockHeader,
+.DropDown,
+.ProjectBrowserBottomBarBg,
+.ProjectBrowserTopBarBg,
+.ToolbarSearchTextFieldJumpButton,
 {
-	background-color: rgba(050, 050, 050, 1);
-}
-.dragtab-first
-{
-	background-color: rgba(050, 050, 050, 1);
-}
-.dragtab-label
-{
-	background-color: rgba(019, 019, 019, 0.25);
+    background-color: 
+	rgb(037, 037, 037);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width:
+	0px;
+    border-right-width:
+	0px;
+	
+	border-radius:
+	0px 0px 0px 0px;
 }
 
 
-.ObjectFieldButton
+/*| S H A D E   4 |*/
+.IN-BigTitle,
+.IN-Footer,
+.ScrollView,
+.ScrollViewAlt,
+.TabWindowBackground,
+.Toolbar,
 {
-	background-color: rgba(037, 037, 037, 1);
+	background-color:
+	rgb(050, 050, 050);
+
+	border-top-color: 
+	rgb(019, 019, 019);
+	border-left-color: 
+	rgb(019, 019, 019);
+    border-right-color: 
+	rgb(019, 019, 019);
+    border-bottom-color: 
+	rgb(019, 019, 019);
 }
 
 
-.IN-BigTitle
-{
-	background-color: rgba(050, 050, 050, 1);
-}
-.IN-Footer
-{
-	background-color: rgba(050, 050, 050, 1);
-}
 
-
-.minibutton
-{
-	background-color: rgba(037, 037, 037, 1);
-}
+/*| F I E L D S  -  M I N I   P O P U P  -  N O R M A L |*/
 .MiniPopup
 {
-	background-color: rgba(075, 075, 075, 1);
+	background-color: 
+	rgb(075, 075, 075);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width:
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| F I E L D S - N O R M A L |*/
+.BoldTextField,
+.ColorField,
+.HorizontalSliderThumb,
+.ObjectField,
+.TextField,
+.VerticalSliderThumb,
+{
+    background-color: 
+	rgb(037, 037, 037);
+
+	border-top-color: 
+	rgba(019, 019, 019, 0.25);
+	border-left-color: 
+	rgba(019, 019, 019, 0.25);
+    border-right-color: 
+	rgba(019, 019, 019, 0.25);
+    border-bottom-color: 
+	rgba(019, 019, 019, 0.25);
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| F I E L D S - H O V E R |*/
+.BoldTextField:hover,
+.ColorField:hover,
+.HorizontalSliderThumb:hover,
+.MiniPopup:hover,
+.ObjectField:hover,
+.TextField:hover,
+.VerticalSliderThumb:hover,
+{
+	background-image: 
+	none;
+
+    background-color: 
+	rgb(050, 050, 050);
+
+	border-top-color: 
+	rgb(019, 019, 019);
+	border-left-color: 
+	rgb(019, 019, 019);
+    border-right-color: 
+	rgb(019, 019, 019);
+    border-bottom-color: 
+	rgb(019, 019, 019);
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| F I E L D S - A C T I V E |*/
+.BoldTextField:active,
+.ColorField:active,
+.HorizontalSliderThumb:active,
+.MiniPopup:active,
+.ObjectField:active,
+.TextField:active,
+.VerticalSliderThumb:active,
+{
+	background-image: 
+	none;
+
+    background-color: 
+	rgb(025, 025, 025);
+
+	border-top-color: 
+	rgb(019, 019, 019);
+	border-left-color: 
+	rgb(019, 019, 019);
+    border-right-color: 
+	rgb(019, 019, 019);
+    border-bottom-color: 
+	rgb(019, 019, 019);
+	
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width:
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| F I E L D S - C H E C K E D |*/
+.BoldTextField:checked,
+.ColorField:checked,
+.HorizontalSliderThumb:checked,
+.MiniPopup:checked,
+.ObjectField:checked,
+.TextField:checked,
+.VerticalSliderThumb:checked,
+{
+	background-image: 
+	none;
+
+    background-color: 
+	rgb(037, 037, 037);
+
+	border-top-color: 
+	rgb(019, 019, 019);
+	border-left-color: 
+	rgb(019, 019, 019);
+    border-right-color: 
+	rgb(019, 019, 019);
+    border-bottom-color: 
+	rgb(019, 019, 019);
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| F I E L D S - F O C U S |*/
+.BoldTextField:focus,
+.ColorField:focus,
+.HorizontalSliderThumb:focus,
+.MiniPopup:focus,
+.ObjectField:focus,
+.TextField:focus,
+.VerticalSliderThumb:focus,
+{
+	background-image: 
+	none;
+
+    background-color: 
+	rgb(037, 037, 037);
+
+	border-top-color: 
+	rgb(019, 019, 019);
+	border-left-color: 
+	rgb(019, 019, 019);
+    border-right-color: 
+	rgb(019, 019, 019);
+    border-bottom-color: 
+	rgb(019, 019, 019);
+
+	border-radius:
+	0px 0px 0px 0px;
 }
 
 
-.SceneTopBarBg
+
+/*| D R A G T A B - L A B E L |*/
+.dragtab-label
 {
-	background-color: rgba(037, 037, 037, 1);
+	background-color:
+	rgba(019, 019, 019, 0.25);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width:
+	0px;
+    border-right-width:
+	0px;
+}
+/*| D R A G T A B - N O R M A L |*/
+.dragtab,
+.dragtab-first,
+{
+	background-color:
+	rgb(037, 037, 037);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width:
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| D R A G T A B - H O V E R |*/
+.dragtab:hover,
+.dragtab-first:hover,
+{
+	background-color:
+	rgb(019, 019, 019);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width:
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| D R A G T A B - E N A B L E D |*/
+.dragtab:enabled,
+.dragtab:focus,
+.dragtab-first:enabled,
+.dragtab-first:focus,
+{
+	background-color:
+	rgb(025, 025, 025);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width:
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
 }
 
 
-.StatusBarIcon
+/*| T O O L B A R   E L E M E N T S - N O R M A L |*/
+.toolbarbutton, 
+.toolbarbuttonRight,
+.ToolbarCreateAddNewDropDown,
+.ToolbarDropDown,
+.ToolbarDropDownLeft,
+.ToolbarDropDownMid,
+.ToolbarDropDownRight,
+.ToolbarDropDownToggle,
+.ToolbarDropDownToggleLeft,
+.ToolbarDropDownToggleMid,
+.ToolbarDropDownToggleRight,
+.ToolbarPopup,
+.ToolbarPopupLeft,
 {
-	background-color: rgba(000, 000, 000, 1);
+	background-color:
+	rgb(050, 050, 050);
+
+	border-top-color: 
+	rgba(019, 019, 019, 0.25);
+	border-left-color: 
+	rgba(019, 019, 019, 0.25);
+    border-right-color: 
+	rgba(019, 019, 019, 0.25);
+    border-bottom-color: 
+	rgba(019, 019, 019, 0.25);
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| T O O L B A R   E L E M E N T S - H O V E R |*/
+.toolbarbutton:hover,
+.toolbarbuttonRight:hover,
+.ToolbarCreateAddNewDropDown:hover,
+.ToolbarDropDown:hover,
+.ToolbarDropDownLeft:hover,
+.ToolbarDropDownMid:hover,
+.ToolbarDropDownRight:hover,
+.ToolbarDropDownToggle:hover,
+.ToolbarDropDownToggleLeft:hover,
+.ToolbarDropDownToggleMid:hover,
+.ToolbarDropDownToggleRight:hover,
+.ToolbarPopup:hover,
+.ToolbarPopupLeft:hover,
+{
+	background-color:
+	rgb(075, 075, 075);
+
+	border-top-color: 
+	rgba(019, 019, 019, 0.25);
+	border-left-color: 
+	rgba(019, 019, 019, 0.25);
+    border-right-color: 
+	rgba(019, 019, 019, 0.25);
+    border-bottom-color: 
+	rgba(019, 019, 019, 0.25);
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| T O O L B A R   E L E M E N T S - A C T I V E |*/
+.toolbarbutton:active,
+.toolbarbutton:enabled,
+.toolbarbuttonRight:active,
+.toolbarbuttonRight:enabled,
+.ToolbarCreateAddNewDropDown:active,
+.ToolbarCreateAddNewDropDown:enabled,
+.ToolbarDropDown:active,
+.ToolbarDropDown:enabled,
+.ToolbarDropDownLeft:active,
+.ToolbarDropDownLeft:enabled,
+.ToolbarDropDownMid:active,
+.ToolbarDropDownMid:enabled,
+.ToolbarDropDownRight:active,
+.ToolbarDropDownRight:enabled,
+.ToolbarDropDownToggle:active,
+.ToolbarDropDownToggle:enabled,
+.ToolbarDropDownToggleLeft:active,
+.ToolbarDropDownToggleLeft:enabled,
+.ToolbarDropDownToggleMid:active,
+.ToolbarDropDownToggleMid:enabled,
+.ToolbarDropDownToggleRight:active,
+.ToolbarDropDownToggleRight:enabled,
+.ToolbarPopup:active,
+.ToolbarPopup:enabled,
+.ToolbarPopupLeft:active,
+.ToolbarPopupLeft:enabled,
+{
+	background-color:
+	rgb(050, 050, 050);
+
+	border-top-color: 
+	rgba(019, 019, 019, 0.25);
+	border-left-color: 
+	rgba(019, 019, 019, 0.25);
+    border-right-color: 
+	rgba(019, 019, 019, 0.25);
+    border-bottom-color: 
+	rgba(019, 019, 019, 0.25);
+
+	border-radius:
+	0px 0px 0px 0px;
+}
+/*| T O O L B A R   E L E M E N T S - C H E C K E D |*/
+.toolbarbutton:checked,
+.toolbarbuttonRight:checked,
+.ToolbarCreateAddNewDropDown:checked,
+.ToolbarDropDown:checked,
+.ToolbarDropDownLeft:checked,
+.ToolbarDropDownMid:checked,
+.ToolbarDropDownRight:checked,
+.ToolbarDropDownToggle:checked,
+.ToolbarDropDownToggleLeft:checked,
+.ToolbarDropDownToggleMid:checked,
+.ToolbarDropDownToggleRight:checked,
+.ToolbarPopup:checked,
+.ToolbarPopupLeft:checked,
+{
+	background-color:
+	rgb(019, 019, 019);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width: 
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
 }
 
 
-.PreToolbar
+/*| B U T T O N S - N O R M A L |*/
+.AC-Button,
+.Button,
+.ButtonLeft,
+.ButtonMid,
+.ButtonRight,
+.DropDownButton,
+.minibutton,
+.ObjectFieldButton,
+.LargeButton,
 {
-	background-color: rgba(019, 019, 019, 1);
+	background-color:
+	rgb(019, 019, 019);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width: 
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
 }
-.Toolbar
+/*| B U T T O N S - H O V E R |*/
+.AC-Button:hover,
+.Button:hover,
+.ButtonLeft:hover,
+.ButtonMid:hover,
+.ButtonRight:hover,
+.DropDownButton:hover,
+.LargeButton:hover,
+.ObjectFieldButton:hover,
+.minibutton:hover,
 {
-	background-color: rgba(050, 050, 050, 1);
+	background-color:
+	rgb(037, 037, 037);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width: 
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
 }
-.toolbarbutton
+/*| B U T T O N S - A C T I V E |*/
+.AC-Button:active,
+.Button:active,
+.ButtonLeft:active,
+.ButtonMid:active,
+.ButtonRight:active,
+.DropDownButton:active,
+.ObjectFieldButton:active,
+.LargeButton:active,
+.minibutton:active,
 {
-	background-color: rgba(050, 050, 050, 1);
+	background-color:
+	rgb(025, 025, 025);
+
+	border-top-color: 
+	rgb(019, 019, 019);
+	border-left-color: 
+	rgb(019, 019, 019);
+    border-right-color: 
+	rgb(019, 019, 019);
+    border-bottom-color: 
+	rgb(019, 019, 019);
+
+	border-radius:
+	0px 0px 0px 0px;
 }
-.toolbarbuttonRight
+
+
+/*| T O G G L E |*/
+.Toggle, 
+.Toggle:hover,
+.Toggle:enabled,
+.Toggle:active, 
+.Toggle:checked,
 {
-	background-color: rgba(050, 050, 050, 1);
-}
-.ToolbarDropDown
-{
-	background-color: rgba(050, 050, 050, 1);
-}
-.ToolbarPopup
-{
-	background-color: rgba(050, 050, 050, 1);
-}
-.ToolbarPopupLeft
-{
-	background-color: rgba(050, 050, 050, 1);
-}
-.ToolbarSearchTextFieldWithJump
-{
-	background-color: rgba(019, 019, 019, 1);
-}
-.ToolbarSearchTextFieldJumpButton
-{
-	background-color: rgba(100, 100, 100, 1);
+	background-color:
+	rgba(0, 0, 0, 0);
+
+	border-top-width:
+	0px;
+    border-bottom-width:
+	0px;
+    border-left-width: 
+	0px;
+    border-right-width:
+	0px;
+
+	border-radius:
+	0px 0px 0px 0px;
 }

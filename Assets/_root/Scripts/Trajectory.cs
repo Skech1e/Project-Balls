@@ -78,7 +78,7 @@ public class Trajectory : MonoBehaviour
     {
         ClampInputValues();
         velocity.x = InputScale.x * precision;
-        velocity.y = InputScale.y * precision * 1.2f;
+        velocity.y = InputScale.y * precision * 1.4f;
         velocity.z = InputScale.y * precision;
         Yveloc = velocity.y;
         RenderLine();

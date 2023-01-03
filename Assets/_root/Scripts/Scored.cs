@@ -68,6 +68,7 @@ public class Scored : MonoBehaviour
     void InvokeGoalScoredEvent()
     {
         GoalScored.Invoke();
+        CancelInvokeMethod();
     }
 
     private void OnTriggerExit(Collider other)
@@ -78,6 +79,7 @@ public class Scored : MonoBehaviour
 
     void Cheer()
     {
+        print("ok");
         scoreTextPopup.transform.localPosition = initScoreTextPosition;
         scoreTextPopup.gameObject.SetActive(false);
         scoreTextPopup.alpha = 1f;

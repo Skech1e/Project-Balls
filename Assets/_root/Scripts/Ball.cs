@@ -133,13 +133,17 @@ public class Ball : MonoBehaviour
                 Invoke(nameof(ResetBall), 2f);
                 if(ballEventCalled == false)
                 {
-                    BallEvent.Invoke();
-                    ballEventCalled = true;
+                    Invoke(nameof(InvokeBallEvent), 1.8f);
                 }
             }
         }
     }
 
+    void InvokeBallEvent()
+    {
+        BallEvent.Invoke();
+        ballEventCalled = true;
+    }
 
     public static void CancelInvokeMethod()
     {
