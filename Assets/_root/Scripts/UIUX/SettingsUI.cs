@@ -15,7 +15,7 @@ public class SettingsUI : MonoBehaviour
     enum Graphics : int { Low = 0, Medium = 1, High = 2, Max = 3 };
     private readonly int graphicsLength = Enum.GetValues(typeof(Graphics)).Length;
 
-    [SerializeField]
+    /*[SerializeField]
     private int _counter;
     public int Counter
     {
@@ -25,7 +25,7 @@ public class SettingsUI : MonoBehaviour
             _counter = Mathf.Clamp(value, 0, graphicsLength);
             _counter = _counter >= graphicsLength ? 0 : _counter;
         }
-    }
+    }*/
 
     //Saving vars
     Saver saver;
@@ -40,8 +40,8 @@ public class SettingsUI : MonoBehaviour
     {
         Sound = saver.LoadUser().Sound;
         Music = saver.LoadUser().Music;
-        Counter = saver.LoadUser().Graphics;
-        QualitySettings.SetQualityLevel(Counter, false);
+        //Counter = saver.LoadUser().Graphics;
+        //QualitySettings.SetQualityLevel(Counter, false);
     }
 
     private void OnDisable()
@@ -53,7 +53,7 @@ public class SettingsUI : MonoBehaviour
     {        
         spr_sound.sprite = Sound == true ? Toggle[1] : Toggle[0];
         spr_music.sprite = Music == true ? Toggle[1] : Toggle[0];
-        txt_graphics.text = shadow_text.text = ((Graphics)Counter).ToString();
+        //txt_graphics.text = shadow_text.text = ((Graphics)Counter).ToString();
         
     }
 
@@ -73,7 +73,7 @@ public class SettingsUI : MonoBehaviour
         Music = !Music;
         spr_music.sprite = Music == true ? Toggle[1] : Toggle[0];
     }
-    public void SwitchGraphics()
+    /*public void SwitchGraphics()
     {
         Counter++;
 
@@ -82,13 +82,13 @@ public class SettingsUI : MonoBehaviour
 
         QualitySettings.SetQualityLevel(Counter);
         
-    }
+    */
 
     public void CloseSave()
     {
         saver.usrdata.Music = Music;
         saver.usrdata.Sound = Sound;
-        saver.usrdata.Graphics = Counter;
+        //saver.usrdata.Graphics = Counter;
         saver.SavetoJson(saver.usrdata);
     }
 }
