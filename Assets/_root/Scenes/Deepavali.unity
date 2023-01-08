@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18765563, g: 0.09859593, b: 0.102345794, a: 1}
+  m_IndirectSpecularColor: {r: 0.18966171, g: 0.103281274, b: 0.09906956, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3728,7 +3728,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -3850,10 +3850,11 @@ MonoBehaviour:
     m_Bits: 64
   InputScale: {x: 0, y: 0}
   ballPath: []
+  trajectoryDefaultPos: {x: 0, y: 0, z: 0}
   clampX0: -5
   clampX1: 5
   clampY0: 5
-  clampY1: 15
+  clampY1: 8
   precision: 0.01
 --- !u!120 &439620462
 LineRenderer:
@@ -4885,8 +4886,8 @@ LightingSettings:
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 0
   m_BakeBackend: 0
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
+  m_LightmapMaxSize: 512
+  m_BakeResolution: 20
   m_Padding: 2
   m_LightmapCompression: 3
   m_AO: 1
@@ -4894,7 +4895,7 @@ LightingSettings:
   m_CompAOExponent: 1
   m_CompAOExponentDirect: 0
   m_ExtractAO: 0
-  m_MixedBakeMode: 0
+  m_MixedBakeMode: 1
   m_LightmapsBakeMode: 1
   m_FilterMode: 1
   m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
@@ -7386,7 +7387,7 @@ PrefabInstance:
     - target: {fileID: -8428610997568053718, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7331113065919053495, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
@@ -7396,7 +7397,7 @@ PrefabInstance:
     - target: {fileID: -6827924125858385442, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6740269563954862787, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
@@ -7406,7 +7407,7 @@ PrefabInstance:
     - target: {fileID: -5608897688344406554, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4475488912828534171, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
@@ -7436,7 +7437,7 @@ PrefabInstance:
     - target: {fileID: -1160291851459699932, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1034914571090242095, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
@@ -7446,17 +7447,17 @@ PrefabInstance:
     - target: {fileID: -1034914571090242095, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -950430460066750858, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 581852706351803476, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
@@ -7471,12 +7472,12 @@ PrefabInstance:
     - target: {fileID: 1095542253506059152, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1595235623427077760, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5222563841239058002, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
@@ -7521,7 +7522,7 @@ PrefabInstance:
     - target: {fileID: 7755664769119081474, guid: 4457c708ae07604428b3ee212e400068,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 2147483647
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4457c708ae07604428b3ee212e400068, type: 3}
@@ -7840,7 +7841,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh376356
+  m_Name: pb_Mesh198592
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

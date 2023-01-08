@@ -25,6 +25,7 @@ public class Trajectory : MonoBehaviour
     Vector3[] lineArray;
     public Vector3[] ballPath;
     Ball ball;
+    public Vector3 trajectoryDefaultPos;
 
     [Space]
     public float clampX0, clampX1, clampY0, clampY1;
@@ -42,6 +43,7 @@ public class Trajectory : MonoBehaviour
     void Start()
     {
         transform.position = ball.transform.position;
+        precision = 0.0069f;
     }
 
     private void OnEnable()
@@ -50,6 +52,7 @@ public class Trajectory : MonoBehaviour
         input.Controls.Aim.started += TouchAim;
         input.Controls.Aim.performed += TouchAim;
         input.Controls.Aim.canceled += TouchAim;
+        InputScale = Vector3.zero;
     }
 
     private void OnDisable()

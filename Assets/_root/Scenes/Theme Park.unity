@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44752884, g: 0.4226511, b: 0.46818373, a: 1}
+  m_IndirectSpecularColor: {r: 0.44507647, g: 0.4293902, b: 0.47134173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8940,7 +8940,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   touchedProperty: 0
-  LevelScoreData: {fileID: 0}
 --- !u!114 &867874890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15942,10 +15941,11 @@ MonoBehaviour:
     m_Bits: 64
   InputScale: {x: 0, y: 0}
   ballPath: []
+  trajectoryDefaultPos: {x: 0, y: 0, z: 0}
   clampX0: -5
   clampX1: 5
   clampY0: 5
-  clampY1: 15
+  clampY1: 8
   precision: 0.01
 --- !u!120 &1794826739
 LineRenderer:

@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 43540664}
   - component: {fileID: 43540666}
   - component: {fileID: 43540665}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Time Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 54109094}
   - component: {fileID: 54109096}
   - component: {fileID: 54109095}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Hiscore Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1329,7 +1329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 141599504}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Bonus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4257,7 +4257,7 @@ GameObject:
   - component: {fileID: 385876711}
   - component: {fileID: 385876710}
   - component: {fileID: 385876709}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4386,7 +4386,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -4429,7 +4429,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
-  m_ShadowAngle: 0
+  m_ShadowAngle: 75.8
 --- !u!4 &410087041
 Transform:
   m_ObjectHideFlags: 0
@@ -4601,7 +4601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &413986753
 Transform:
   m_ObjectHideFlags: 0
@@ -5134,7 +5134,7 @@ GameObject:
   - component: {fileID: 452504802}
   - component: {fileID: 452504804}
   - component: {fileID: 452504803}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: x
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5496,7 +5496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 469381684}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5536,7 +5536,7 @@ GameObject:
   - component: {fileID: 471556526}
   - component: {fileID: 471556528}
   - component: {fileID: 471556527}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Score Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6275,8 +6275,8 @@ LightingSettings:
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 0
   m_BakeBackend: 0
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
+  m_LightmapMaxSize: 512
+  m_BakeResolution: 20
   m_Padding: 2
   m_LightmapCompression: 3
   m_AO: 1
@@ -7558,7 +7558,7 @@ GameObject:
   - component: {fileID: 635899026}
   - component: {fileID: 635899025}
   - component: {fileID: 635899030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Scoreboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7931,7 +7931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 649708679}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: HiScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8688,7 +8688,7 @@ GameObject:
   - component: {fileID: 817631928}
   - component: {fileID: 817631930}
   - component: {fileID: 817631929}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: ball_indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9016,6 +9016,7 @@ Transform:
   - {fileID: 2089128450}
   - {fileID: 380528277}
   - {fileID: 1361894579}
+  - {fileID: 2054105762}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10196,7 +10197,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29638
+  m_Name: pb_Mesh155160
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11251,7 +11252,8 @@ GameObject:
   - component: {fileID: 1080568072}
   - component: {fileID: 1080568074}
   - component: {fileID: 1080568073}
-  m_Layer: 0
+  - component: {fileID: 1080568075}
+  m_Layer: 6
   m_Name: Fencing_low_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11323,6 +11325,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080568071}
   m_Mesh: {fileID: -4975972268544837163, guid: 50b87cc6023e1f2488bf9aa7bde7c568, type: 3}
+--- !u!65 &1080568075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080568071}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.002956391, y: 3.30259, z: 5.665088}
+  m_Center: {x: -0.0000003740649, y: 1.651295, z: 1.3107125}
 --- !u!1 &1080685605
 GameObject:
   m_ObjectHideFlags: 0
@@ -11334,7 +11349,7 @@ GameObject:
   - component: {fileID: 1080685606}
   - component: {fileID: 1080685608}
   - component: {fileID: 1080685607}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Score
   m_TagString: scb1
   m_Icon: {fileID: 0}
@@ -13165,7 +13180,7 @@ GameObject:
   - component: {fileID: 1272363165}
   - component: {fileID: 1272363167}
   - component: {fileID: 1272363166}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Lives
   m_TagString: scb3
   m_Icon: {fileID: 0}
@@ -13891,7 +13906,8 @@ GameObject:
   - component: {fileID: 1309023596}
   - component: {fileID: 1309023598}
   - component: {fileID: 1309023597}
-  m_Layer: 0
+  - component: {fileID: 1309023599}
+  m_Layer: 6
   m_Name: Fencing_low_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13963,6 +13979,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309023595}
   m_Mesh: {fileID: -4975972268544837163, guid: 50b87cc6023e1f2488bf9aa7bde7c568, type: 3}
+--- !u!65 &1309023599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309023595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.002956391, y: 3.30259, z: 5.682849}
+  m_Center: {x: -0.0000040175873, y: 1.651295, z: -1.3018285}
 --- !u!1001 &1317555929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14822,7 +14851,7 @@ GameObject:
   - component: {fileID: 1363323751}
   - component: {fileID: 1363323753}
   - component: {fileID: 1363323752}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Bonus Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14958,7 +14987,7 @@ GameObject:
   - component: {fileID: 1386198392}
   - component: {fileID: 1386198394}
   - component: {fileID: 1386198393}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Time
   m_TagString: scb4
   m_Icon: {fileID: 0}
@@ -15209,10 +15238,11 @@ MonoBehaviour:
     m_Bits: 64
   InputScale: {x: 0, y: 0}
   ballPath: []
+  trajectoryDefaultPos: {x: 0, y: 0, z: 0}
   clampX0: -5
   clampX1: 5
   clampY0: 5
-  clampY1: 15
+  clampY1: 8
   precision: 0.01
 --- !u!120 &1396681923
 LineRenderer:
@@ -15567,7 +15597,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30372
+  m_Name: pb_Mesh87686
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18864,7 +18894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1784981951}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19022,7 +19052,7 @@ GameObject:
   - component: {fileID: 1822030820}
   - component: {fileID: 1822030822}
   - component: {fileID: 1822030821}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Hiscore
   m_TagString: scb0
   m_Icon: {fileID: 0}
@@ -20981,7 +21011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2033520873}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Lives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21144,6 +21174,103 @@ MonoBehaviour:
   _BallCount: 6
   sc: 100
   scTier: 070000000a000000
+--- !u!1 &2054105761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2054105762}
+  - component: {fileID: 2054105765}
+  - component: {fileID: 2054105764}
+  - component: {fileID: 2054105763}
+  m_Layer: 3
+  m_Name: Floor (1)
+  m_TagString: ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &2054105762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054105761}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.0634937, y: -1.64, z: 15.5}
+  m_LocalScale: {x: 33.474, y: 1, z: 24.451}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 861339983}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2054105763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054105761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2054105764
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054105761}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ac00368786ce0f44ea4cb491db1944ed, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2054105765
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054105761}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2058635405
 GameObject:
   m_ObjectHideFlags: 0
@@ -22307,7 +22434,7 @@ GameObject:
   - component: {fileID: 2146322002}
   - component: {fileID: 2146322004}
   - component: {fileID: 2146322003}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Bonus
   m_TagString: scb2
   m_Icon: {fileID: 0}
