@@ -4,7 +4,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public static int currentArena, currentLevel, ballCount;
-    [SerializeField] int LevelCapacity;
+    [SerializeField] int LevelCapacity, currentlvl;
     [SerializeField] List<Transform> levels = new();
 
     private void OnEnable()
@@ -19,8 +19,8 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        for (int i = 1; i < LevelCapacity  ; i++)
-            levels.Add(transform.GetChild(i-1));
+        for (int i = 0; i < LevelCapacity  ; i++)
+            levels.Add(transform.GetChild(i));
     }
 
     // Start is called before the first frame update
@@ -34,7 +34,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        currentlvl = currentLevel;
     }
 
     void GetLevelInfo()

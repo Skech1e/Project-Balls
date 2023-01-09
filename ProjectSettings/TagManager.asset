@@ -30,6 +30,7 @@ TagManager:
   - scb2
   - scb3
   - scb4
+  - Trajectory
   layers:
   - Default
   - TransparentFX

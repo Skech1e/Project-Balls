@@ -7,7 +7,7 @@ public class Ball : MonoBehaviour
 {
     [SerializeField] Vector3 direction;
 
-    public Trajectory track;
+    [SerializeField] Trajectory track;
     [SerializeField] bool Throw, ballEventCalled;
     Rigidbody body;
     Vector3 defaultPos;
@@ -52,6 +52,7 @@ public class Ball : MonoBehaviour
 
     private void Awake()
     {
+        track = FindObjectOfType<Trajectory>();
         body = GetComponent<Rigidbody>();
         defaultPos = transform.position;
         defaultRotn = transform.rotation;

@@ -15,33 +15,33 @@ MonoBehaviour:
   arenas:
   - name: Arena 1
     price: 0
-    unlocked: 0
+    unlocked: 1
     levels:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
-    - Unlocked: 0
+      hiscore: 180
+      ballCount: 2
+      starCount: 1
+      coins_earned: 180
+      timeTaken: 9.284836
+    - Unlocked: 1
       name: Level 2
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
-    - Unlocked: 0
+      hiscore: 380
+      ballCount: 5
+      starCount: 3
+      coins_earned: 380
+      timeTaken: 5.095808
+    - Unlocked: 1
       name: Level 3
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
-    - Unlocked: 0
+      hiscore: 240
+      ballCount: 5
+      starCount: 1
+      coins_earned: 240
+      timeTaken: 18.839495
+    - Unlocked: 1
       name: Level 4
       levelid: 0
       hiscore: 0
@@ -1335,7 +1335,7 @@ MonoBehaviour:
       timeTaken: 0
   usrdata:
     Name: 
-    balance: 0
+    balance: 800
     usr_inventory: []
     Sound: 1
     Music: 1

@@ -102,6 +102,7 @@ public class Levels : MonoBehaviour
     void LoadLevel()
     {
         Levelno = int.Parse(name);
+        lvlno = Levelno;
         IsLevelLoaded = true;
         SceneLoader.SceneLoad(Arena + 1, Levelno);
     }

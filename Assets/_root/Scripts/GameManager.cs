@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     bool touchedProperty;
 
-    private Saver saver;
+    private Saver saver, loader;
     public static ScriptableObject LevelScoreData;
 
     public static int[] scoreTier = new int[2];
@@ -31,14 +31,13 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         input = new();
-        LevelScoreData = Resources.Load<ScriptableObject>("UserData");
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        LevelScoreData = Resources.Load<ScriptableObject>("UserData");
         saver = LevelScoreData as Saver;
-
         saver.LoadfromJson(saver);
     }
 
