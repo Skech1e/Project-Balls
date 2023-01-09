@@ -37931,16 +37931,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6824099309406117795, guid: db52c676efa8548418c5acd5cbed855f,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6824099309849510605, guid: db52c676efa8548418c5acd5cbed855f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6824099309933758177, guid: db52c676efa8548418c5acd5cbed855f,
         type: 3}
       propertyPath: m_RootOrder
@@ -38000,11 +37990,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoadingPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6824099309933758182, guid: db52c676efa8548418c5acd5cbed855f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db52c676efa8548418c5acd5cbed855f, type: 3}
