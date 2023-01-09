@@ -43,12 +43,16 @@ public class CameraMotion : MonoBehaviour
     {
         //SceneManager.sceneLoaded += GetPOVButton;
         SceneLoader.SceneLoaded += GetPOVButton;
+        LevelReporting.LevelLoad += ResetCamera;
+        UIController.OnRestartfromUI += ResetCamera;
     }
 
     private void OnDisable()
     {
         //SceneManager.sceneLoaded -= GetPOVButton;
         SceneLoader.SceneLoaded -= GetPOVButton;
+        LevelReporting.LevelLoad -= ResetCamera;
+        UIController.OnRestartfromUI -= ResetCamera;
     }
     // Start is called before the first frame update
     void Start()
@@ -84,5 +88,14 @@ public class CameraMotion : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetAngle), speed);
             transform.position = Vector3.Slerp(transform.position, targetPos, speed);
         }            
+    }
+
+    void ResetCamera()
+    {
+        transform.position = CentrePos;
+        transform.eulerAngles = CentreAngle;
+        targetAngle = CentreAngle;
+        targetPos = CentrePos;
+        counter = 0;
     }
 }

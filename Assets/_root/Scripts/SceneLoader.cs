@@ -57,6 +57,7 @@ public class SceneLoader : MonoBehaviour
         LoadingScreenPanel.SetActive(true);
         while (!operation.isDone)
         {
+            System.GC.Collect();
             progressText.text = (operation.progress * 100).ToString("F0") + "%";
             yield return null;
         }

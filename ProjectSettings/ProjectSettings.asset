@@ -52,7 +52,7 @@ PlayerSettings:
   m_ActiveColorSpace: 1
   m_MTRendering: 1
   mipStripping: 1
-  numberOfMipsStripped: 0
+  numberOfMipsStripped: 1
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
@@ -138,13 +138,13 @@ PlayerSettings:
     Others: 1
   bundleVersion: Beta 0.1.2
   preloadedAssets:
-  - {fileID: 297742348073796522, guid: 9367d88b718fa8c46a3fc2f762bafc93, type: 3}
-  - {fileID: 4343727234628468602, guid: f34c8450244e86b46a1adbc71e1787b5, type: 2}
-  - {fileID: 4343727234628468602, guid: 421a3d83c114b0c4c90e124a51bf336f, type: 2}
-  - {fileID: 4343727234628468602, guid: 6a4ba037876460441aa3a4b20e2597f1, type: 2}
-  - {fileID: 4343727234628468602, guid: 347bc7b7ffaf1534c90fdf1735762c77, type: 2}
-  - {fileID: 4343727234628468602, guid: d789db6f75de9304eafe1d906b95c199, type: 2}
+  - {fileID: 4536062951841906494, guid: dd45f7b50d0fd21408e8efb9b02b03fc, type: 3}
   - {fileID: 3324094606386094469, guid: d09dc33c4fc35f440935cf8368474ee2, type: 3}
+  - {fileID: 6824099309933758182, guid: db52c676efa8548418c5acd5cbed855f, type: 3}
+  - {fileID: 297742348073796522, guid: 9367d88b718fa8c46a3fc2f762bafc93, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -795,7 +795,7 @@ PlayerSettings:
     Android: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel:
-    Android: 2
+    Android: 3
   incrementalIl2cppBuild: {}
   suppressCommonWarnings: 1
   allowUnsafeCode: 0

@@ -113,7 +113,7 @@ public class Ball : MonoBehaviour
     {
         CancelInvoke();
         if (resetBall == true)
-        {            
+        {   
             transform.position = defaultPos;
             body.velocity = Vector2.zero;
             body.isKinematic = true;
