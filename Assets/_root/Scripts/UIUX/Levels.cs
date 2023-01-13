@@ -58,8 +58,8 @@ public class Levels : MonoBehaviour
     void Start()
     {
         lvlno = int.Parse(name);
-        saver = GameManager.LevelScoreData as Saver;
-        saver.LoadfromJson(saver);
+        saver = FindObjectOfType<Saver>();
+        saver.LoadfromJson();
         isUnlocked = saver.arenas[Arena].levels[lvlno - 1].Unlocked;
         Unlock();
         LoadIconStats();

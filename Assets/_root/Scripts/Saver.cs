@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "UserData", menuName = "SCObj/Saver")]
-public class Saver : ScriptableObject
+//[CreateAssetMenu(fileName = "UserData", menuName = "SCObj/Saver")]
+public class Saver : MonoBehaviour
 {
     public Arena[] arenas = new Arena[10];
     public UserData usrdata = new();
@@ -13,6 +13,7 @@ public class Saver : ScriptableObject
 
     private void Awake()
     {
+
         scpath = Path.Combine(Application.persistentDataPath, "scglobal.json");
         cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
 
@@ -41,11 +42,11 @@ public class Saver : ScriptableObject
         Debug.Log("data saved successfully");
     }
 
-    public void LoadfromJson(Saver s)
+    public Saver LoadfromJson()
     {
-        string score = File.ReadAllText(scpath);
+        string scores = File.ReadAllText(scpath);
         Debug.Log("save loaded");
-        JsonUtility.FromJsonOverwrite(score, s);
+        return JsonUtility.FromJson<Saver>(scores);
     }
 
     public void SavetoJson(UserData _user)

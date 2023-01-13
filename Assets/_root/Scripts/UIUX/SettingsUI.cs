@@ -9,7 +9,6 @@ public class SettingsUI : MonoBehaviour
     [SerializeField] Image spr_music, spr_sound;
     [SerializeField] TextMeshProUGUI txt_graphics, shadow_text;
     [SerializeField] List<Sprite> Toggle = new();
-    
 
     bool Sound, Music;
     enum Graphics : int { Low = 0, Medium = 1, High = 2, Max = 3 };
@@ -33,7 +32,7 @@ public class SettingsUI : MonoBehaviour
 
     private void Awake()
     {
-       saver = GameManager.LevelScoreData as Saver;
+       saver = FindObjectOfType<Saver>();
     }
 
     private void OnEnable()

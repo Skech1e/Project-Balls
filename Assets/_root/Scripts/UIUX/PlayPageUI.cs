@@ -19,7 +19,7 @@ public class PlayPageUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        saver = GameManager.LevelScoreData as Saver;
+        saver = FindObjectOfType<Saver>();
         coinBalance.text = saver.usrdata.balance.ToString();
     }
 

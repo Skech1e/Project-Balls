@@ -36,9 +36,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        saver = FindObjectOfType<Saver>();
+        Application.targetFrameRate = 101;
         LevelScoreData = Resources.Load<ScriptableObject>("UserData");
-        saver = LevelScoreData as Saver;
-        saver.LoadfromJson(saver);
+        saver.arenas = saver.LoadfromJson().arenas;
     }
 
     // Update is called once per frame
