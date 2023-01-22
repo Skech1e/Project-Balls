@@ -101,6 +101,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   track: {fileID: 0}
   Throw: 0
+  ballEventCalled: 0
   randomValue: 1
   basketCount: []
 --- !u!54 &818554336795179953
@@ -130,5 +131,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.5311248
+  m_Radius: 2.1
   m_Center: {x: 0, y: 0, z: 0}
