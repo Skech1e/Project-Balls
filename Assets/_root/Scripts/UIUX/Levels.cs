@@ -60,7 +60,7 @@ public class Levels : MonoBehaviour
         lvlno = int.Parse(name);
         saver = FindObjectOfType<Saver>();
         saver.LoadfromJson();
-        isUnlocked = saver.arenas[Arena].levels[lvlno - 1].Unlocked;
+        isUnlocked = saver.scores.arenas[Arena].levels[lvlno - 1].Unlocked;
         Unlock();
         LoadIconStats();
     }
@@ -73,7 +73,7 @@ public class Levels : MonoBehaviour
 
     void LoadIconStats()
     {
-        var stars = saver.arenas[Arena].levels[lvlno - 1].starCount;
+        var stars = saver.scores.arenas[Arena].levels[lvlno - 1].starCount;
         switch (stars)
         {
             case 0:

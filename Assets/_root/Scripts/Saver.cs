@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+
 //[CreateAssetMenu(fileName = "UserData", menuName = "SCObj/Saver")]
 public class Saver : MonoBehaviour
 {
-    public Arena[] arenas = new Arena[10];
-    public UserData usrdata = new();
+    //public Arena[] arenas = new Arena[10];
+    [SerializeField] public Scores scores;
+    [SerializeField] public UserData usrdata;
     string scpath, cfgpath;
 
     private void Awake()
@@ -17,10 +19,10 @@ public class Saver : MonoBehaviour
         scpath = Path.Combine(Application.persistentDataPath, "scglobal.json");
         cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
 
-        SavetoJson(this);
+        //SavetoJson(scores);
     }
 
-    private void OnValidate()
+    /*private void OnValidate()
     {
         int i = 1; int j = 1;
         foreach (Arena arena in arenas)
@@ -33,20 +35,25 @@ public class Saver : MonoBehaviour
                 j = j < 16 ? (j + 1) : 1;
             }
         }
-    }
+    }*/
 
-    public void SavetoJson(Saver _score)
+    public void SavetoJson(Scores _score)
     {
-        string score = JsonUtility.ToJson(_score);
+        Scores s = new();
+        s.arenas = scores.arenas;
+
+        string score = JsonUtility.ToJson(s, true);
         File.WriteAllText(scpath, score);
         Debug.Log("data saved successfully");
     }
 
-    public Saver LoadfromJson()
+    public void LoadfromJson()
     {
-        string scores = File.ReadAllText(scpath);
+        string score = File.ReadAllText(scpath);
+        Scores s = JsonUtility.FromJson<Scores>(score);
+
+        scores.arenas = s.arenas;
         Debug.Log("save loaded");
-        return JsonUtility.FromJson<Saver>(scores);
     }
 
     public void SavetoJson(UserData _user)
@@ -63,6 +70,18 @@ public class Saver : MonoBehaviour
     }
 }
 
+
+[System.Serializable]
+public class Scores
+{
+    public Arena[] arenas = new Arena[10];
+
+
+    public override string ToString()
+    {
+        return arenas[0].name;
+    }
+}
 
 [System.Serializable]
 public class Arena
@@ -92,6 +111,7 @@ public class UserData
     public bool Sound, Music;
     public int Graphics;
 }
+
 
 [System.Serializable]
 public class Inventory

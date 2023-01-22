@@ -48,7 +48,7 @@ public class PlayPageUI : MonoBehaviour
 
         ArenaSelector[counter].gameObject.SetActive(true);
         arenaPics[counter].SetActive(true);
-        if (saver.arenas[counter].unlocked == false)
+        if (saver.scores.arenas[counter].unlocked == false)
             LockedPanel.SetActive(true);
     }
 
