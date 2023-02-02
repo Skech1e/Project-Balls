@@ -8,7 +8,7 @@ public class Levels : MonoBehaviour
 {
     [SerializeField] protected bool isUnlocked;
     [SerializeField] int Arena, lvlno;
-    public static int Levelno;
+    public static int Levelno, Arenano;
     public static bool IsLevelLoaded;
 
     Button Button;
@@ -58,9 +58,12 @@ public class Levels : MonoBehaviour
     void Start()
     {
         lvlno = int.Parse(name);
-        saver = FindObjectOfType<Saver>();
-        saver.LoadfromJson();
-        isUnlocked = saver.scores.arenas[Arena].levels[lvlno - 1].Unlocked;
+        Arenano = Arena;
+        //saver = FindObjectOfType<Saver>();
+        saver = GameManager.LevelScoreData as Saver;
+        //saver.LoadfromJson();
+        saver.LoadfromJson(saver);
+        isUnlocked = saver.arenas[Arena].levels[lvlno - 1].Unlocked;
         Unlock();
         LoadIconStats();
     }
@@ -73,7 +76,7 @@ public class Levels : MonoBehaviour
 
     void LoadIconStats()
     {
-        var stars = saver.scores.arenas[Arena].levels[lvlno - 1].starCount;
+        var stars = saver.arenas[Arena].levels[lvlno - 1].starCount;
         switch (stars)
         {
             case 0:
@@ -102,6 +105,7 @@ public class Levels : MonoBehaviour
     void LoadLevel()
     {
         Levelno = int.Parse(name);
+        Arenano = Arena;
         lvlno = Levelno;
         IsLevelLoaded = true;
         SceneLoader.SceneLoad(Arena + 1, Levelno);

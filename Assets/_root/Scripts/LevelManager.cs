@@ -26,6 +26,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentArena = Levels.Arenano;
         currentLevel = Levels.Levelno - 1;  
         levels[currentLevel].gameObject.SetActive(true);
         ResetCount();

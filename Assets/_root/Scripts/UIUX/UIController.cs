@@ -26,12 +26,12 @@ public class UIController : MonoBehaviour
     {
         LevelReporting.LevelComplete -= LevelFinished;
         LevelReporting.LevelFailed -= LevelFailed;
-        for (int i = 0; i < Stars.Length; i++)
+        /*for (int i = 0; i < Stars.Length; i++)
         {
             var temp = Stars[i].color;
             temp.a = 0f;
             Stars[i].color = temp;
-        }
+        }*/
     }
 
     private void Awake()

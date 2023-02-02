@@ -6,9 +6,9 @@ using UnityEngine;
 
 
 //[CreateAssetMenu(fileName = "UserData", menuName = "SCObj/Saver")]
-public class Saver : MonoBehaviour
+public class Saver : ScriptableObject
 {
-    //public Arena[] arenas = new Arena[10];
+    public Arena[] arenas = new Arena[10];
     [SerializeField] public Scores scores;
     [SerializeField] public UserData usrdata;
     string scpath, cfgpath;
@@ -37,7 +37,7 @@ public class Saver : MonoBehaviour
         }
     }*/
 
-    public void SavetoJson(Scores _score)
+    /*public void SavetoJson(Scores _score)
     {
         Scores s = new();
         s.arenas = scores.arenas;
@@ -45,15 +45,23 @@ public class Saver : MonoBehaviour
         string score = JsonUtility.ToJson(s, true);
         File.WriteAllText(scpath, score);
         Debug.Log("data saved successfully");
+    }*/
+    public void SavetoJson(Saver s)
+    {
+        string score = JsonUtility.ToJson(s, true);
+        File.WriteAllText(scpath, score);
+        Debug.Log("data saved successfully");
     }
 
-    public void LoadfromJson()
+    public void LoadfromJson(Saver s)
     {
         string score = File.ReadAllText(scpath);
-        Scores s = JsonUtility.FromJson<Scores>(score);
+        //Scores s = JsonUtility.FromJson<Scores>(score);
 
-        scores.arenas = s.arenas;
+        //scores.arenas = s.arenas;
         Debug.Log("save loaded");
+        //return JsonUtility.FromJson<Saver>(score);
+        JsonUtility.FromJsonOverwrite(score, s);
     }
 
     public void SavetoJson(UserData _user)

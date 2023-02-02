@@ -32,7 +32,8 @@ public class SettingsUI : MonoBehaviour
 
     private void Awake()
     {
-       saver = FindObjectOfType<Saver>();
+       //saver = FindObjectOfType<Saver>();
+       saver = GameManager.LevelScoreData as Saver;
     }
 
     private void OnEnable()

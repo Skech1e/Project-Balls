@@ -19,7 +19,8 @@ public class PlayPageUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        saver = FindObjectOfType<Saver>();
+        //saver = FindObjectOfType<Saver>();
+        saver = GameManager.LevelScoreData as Saver;
         coinBalance.text = saver.usrdata.balance.ToString();
     }
 
@@ -48,7 +49,7 @@ public class PlayPageUI : MonoBehaviour
 
         ArenaSelector[counter].gameObject.SetActive(true);
         arenaPics[counter].SetActive(true);
-        if (saver.scores.arenas[counter].unlocked == false)
+        if (saver.arenas[counter].unlocked == false)
             LockedPanel.SetActive(true);
     }
 

@@ -38,10 +38,12 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        saver = GetComponent<Saver>();
-        Application.targetFrameRate = 101;
+        saver = FindObjectOfType<Saver>();
+        Application.targetFrameRate = 420;
         LevelScoreData = Resources.Load<ScriptableObject>("UserData");
-        saver.LoadfromJson();
+        saver = LevelScoreData as Saver;
+        //saver.LoadfromJson();
+        saver.LoadfromJson(saver);
         
         //int i = 1; int j = 1;
         //foreach (Arena arena in arenas)
@@ -74,7 +76,8 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
-        saver.SavetoJson(saver.scores);
+        saver.SavetoJson(saver);
+        //saver.SavetoJson(saver.scores);
         //saver.SavetoJson(saver.usrdata);
 
         input.Disable();
@@ -98,11 +101,11 @@ public class GameManager : MonoBehaviour
     void UnlockLevels()
     {
         starCount = timer < scoreTier[0] + 1 ? 3 : timer < scoreTier[1] + 1 ? 2 : 1;
-        saver.scores.arenas[currentArenaNo].levels[currentLevelNo].starCount = starCount;
+        saver.arenas[currentArenaNo].levels[currentLevelNo].starCount = starCount;
 
         if (currentLevelNo < 16)
-            saver.scores.arenas[currentArenaNo].levels[currentLevelNo + 1].Unlocked = true;
-        saver.SavetoJson(saver.scores);
+            saver.arenas[currentArenaNo].levels[currentLevelNo + 1].Unlocked = true;
+        saver.SavetoJson(saver);
     }
 
     void InitScoreboard()   
@@ -122,7 +125,7 @@ public class GameManager : MonoBehaviour
     void InitScoreboardData()
     {
         totalScore = 0;
-        highScore = saver.scores.arenas[currentArenaNo].levels[currentLevelNo].hiscore;
+        highScore = saver.arenas[currentArenaNo].levels[currentLevelNo].hiscore;
         scoreboard[0].text = highScore.ToString();
         scoreboard[1].text = totalScore.ToString();
         scoreboard[2].text = LevelReporting.bonus.ToString("F1");
@@ -202,10 +205,10 @@ public class GameManager : MonoBehaviour
         totalScore += score;
         highScore = totalScore > highScore ? totalScore : highScore;
 
-        saver.scores.arenas[currentArenaNo].levels[currentLevelNo].ballCount = LevelReporting.ballCount;
-        saver.scores.arenas[currentArenaNo].levels[currentLevelNo].hiscore = highScore;
-        saver.scores.arenas[currentArenaNo].levels[currentLevelNo].timeTaken = timer;
-        saver.scores.arenas[currentArenaNo].levels[currentLevelNo].coins_earned += score;
+        saver.arenas[currentArenaNo].levels[currentLevelNo].ballCount = LevelReporting.ballCount;
+        saver.arenas[currentArenaNo].levels[currentLevelNo].hiscore = highScore;
+        saver.arenas[currentArenaNo].levels[currentLevelNo].timeTaken = timer;
+        saver.arenas[currentArenaNo].levels[currentLevelNo].coins_earned += score;
         saver.usrdata.balance += score;
     }
 
