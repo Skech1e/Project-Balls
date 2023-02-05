@@ -38,6 +38,8 @@ public class Ball : MonoBehaviour
         }
     }
 
+    AudioSource source;
+
     private void OnEnable()
     {
         Scored.GoalScored += CheckRemainingBaskets;
@@ -58,6 +60,7 @@ public class Ball : MonoBehaviour
         defaultRotn = transform.rotation;
         random = new Random(seed: 1);
         thisBall = gameObject;
+        source = GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -126,6 +129,7 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        source.Play();
 
         if (collision.collider.CompareTag("ground") && transform.position != defaultPos)
         {

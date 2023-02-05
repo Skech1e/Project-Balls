@@ -14,6 +14,7 @@ public abstract class Tween : MonoBehaviour
     [Range(0f, 2f)] public float DelayIn;
     [Range(0f, 2f)] public float DelayOut;
     [Range(0f, 1f)] public float Offset;
+    public float FromValue, ToValue;
     #endregion
 
 
