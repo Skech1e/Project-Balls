@@ -32,38 +32,38 @@ public class PositionTween : Tween
                   case Direction.None: return;
 
                   case Direction.RightToLeft:
-                        transform.localPosition = new Vector2(Screen.width, 0);
+                        transform.localPosition = new Vector2(Screen.width, transform.localPosition.y);
                         transform.LeanMoveLocalX(0, TimeIn).setEase(EaseTypeIn).setDelay(DelayIn);
                         return;
 
                   case Direction.LeftToRight:
-                        transform.localPosition = new Vector2(-Screen.width, 0);
+                        transform.localPosition = new Vector2(-Screen.width, transform.localPosition.y);
                         transform.LeanMoveLocalX(0, TimeIn).setEase(EaseTypeIn).setDelay(DelayIn);
                         return;
 
                   case Direction.TopToBottom:
-                        transform.localPosition = new Vector2(0, Screen.height);
+                        transform.localPosition = new Vector2(transform.localPosition.x, Screen.height);
                         transform.LeanMoveLocalY(0, TimeIn).setEase(EaseTypeIn).setDelay(DelayIn);
                         return;
 
                   case Direction.BottomToTop:
-                        transform.localPosition = new Vector2(0, -Screen.height);
+                        transform.localPosition = new Vector2(transform.localPosition.x, -Screen.height);
                         transform.LeanMoveLocalY(0, TimeIn).setEase(EaseTypeIn).setDelay(DelayIn);
                         return;
             }
       }
       protected sealed override IEnumerator WhenDisabled()
       {
-            transform.localPosition = Vector2.zero;
+            //transform.localPosition = Vector2.zero;
 
             switch (directionOut)
             {
                   case Direction.RightToLeft:
-                        transform.LeanMoveLocalX(-Screen.height, TimeOut).setEase(EaseTypeOut).setDelay(DelayOut);
+                        transform.LeanMoveLocalX(-Screen.width, TimeOut).setEase(EaseTypeOut).setDelay(DelayOut);
                         break;
 
                   case Direction.LeftToRight:
-                        transform.LeanMoveLocalX(Screen.height, TimeOut).setEase(EaseTypeOut).setDelay(DelayOut);
+                        transform.LeanMoveLocalX(Screen.width, TimeOut).setEase(EaseTypeOut).setDelay(DelayOut);
                         break;
 
                   case Direction.TopToBottom:
