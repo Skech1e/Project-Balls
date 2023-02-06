@@ -61,7 +61,7 @@ public class Scored : MonoBehaviour
             score = LevelReporting.ScorePerBasket;
             totalScore += score;
             goal = true;
-            Invoke(nameof(InvokeGoalScoredEvent), 1.5f);
+            Invoke(nameof(InvokeGoalScoredEvent), 0.5f);
         }
     }
 
