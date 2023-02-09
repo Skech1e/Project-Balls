@@ -102,13 +102,14 @@ public class LevelReporting : MonoBehaviour
 
     void ResetLevel()
     {
+        FindObjectOfType<Scored>().CancelInvoke();
+        FindObjectOfType<Ball>().CancelInvoke();
+        //Ball.CancelInvokeMethod();
         Time.timeScale = 1;
         ballCount = (int)_BallCount;
         Start();
         Ball.resetBall = true;
         LevelLoad.Invoke();
-        Scored.CancelInvokeMethod();
-        Ball.CancelInvokeMethod();
     }
 
 

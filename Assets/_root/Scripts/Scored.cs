@@ -67,12 +67,13 @@ public class Scored : MonoBehaviour
 
     void InvokeGoalScoredEvent()
     {
+        //CancelInvoke();
         GoalScored.Invoke();
-        CancelInvokeMethod();
     }
 
     private void OnTriggerExit(Collider other)
     {
+        print("called");
         bc.enabled = false;
         Invoke(nameof(Cheer), 1f);
     }
@@ -85,6 +86,7 @@ public class Scored : MonoBehaviour
         scoreTextPopup.alpha = 1f;
         goal = false;
         basket.SetActive(false);
+        print(basket.name+" basket");
     }
 
     void ScoreTextMotion()
@@ -100,10 +102,5 @@ public class Scored : MonoBehaviour
         
     }
 
-    public static void CancelInvokeMethod()
-    {
-        Scored sc = FindObjectOfType<Scored>();
-        sc.CancelInvoke();
-    }
 
 }
