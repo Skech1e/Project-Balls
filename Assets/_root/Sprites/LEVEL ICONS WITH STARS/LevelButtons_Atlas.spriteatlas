@@ -60,10 +60,6 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
     - {fileID: 2800000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
     - {fileID: 2800000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
-    - {fileID: 2800000, guid: 02dc657c764b1c34a9242b628e325c2e, type: 3}
-    - {fileID: 2800000, guid: 6fde71ceef5101c45bf0c38249aee334, type: 3}
-    - {fileID: 2800000, guid: 0ec5126f556730b418c9a3f502223696, type: 3}
-    - {fileID: 2800000, guid: f839102919ddb2940929ec43448dc0af, type: 3}
     - {fileID: 2800000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
     - {fileID: 2800000, guid: 24824d04ef9fa9f4b82631cb3ac2b937, type: 3}
     bindAsDefault: 1
@@ -81,17 +77,13 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2cbf6fe62b888c949b437c9fc9d98fe7, type: 3}
   - {fileID: 21300000, guid: 139ca337d109bc14aa4738378b0ed3fb, type: 3}
   - {fileID: 21300000, guid: b6350cf88f6b4914495db825a829d395, type: 3}
-  - {fileID: 21300000, guid: f839102919ddb2940929ec43448dc0af, type: 3}
   - {fileID: 21300000, guid: fd17378a0383097449d26ca823d378c4, type: 3}
   - {fileID: 21300000, guid: 811b211b044c15740a1b6b2d2cc73391, type: 3}
   - {fileID: 21300000, guid: 8640969bd03468644bbfa3f54f4f70b2, type: 3}
   - {fileID: 21300000, guid: 77a93cfb9c8d92c4ead2ec0744fab834, type: 3}
   - {fileID: 21300000, guid: a2055f3cdae95c14d901ec47708ff8a3, type: 3}
-  - {fileID: 21300000, guid: 02dc657c764b1c34a9242b628e325c2e, type: 3}
   - {fileID: 21300000, guid: 6bf9bdeda9d673a409cd956d54248b8b, type: 3}
   - {fileID: 21300000, guid: 4f17298ee4f31284b865437a0b9239ae, type: 3}
-  - {fileID: 21300000, guid: 6fde71ceef5101c45bf0c38249aee334, type: 3}
-  - {fileID: 21300000, guid: 0ec5126f556730b418c9a3f502223696, type: 3}
   - {fileID: 21300000, guid: 2c14546f0bf3a8544b026afdfebe1ff5, type: 3}
   m_PackedSpriteNamesToIndex:
   - LVL_7
@@ -104,17 +96,13 @@ SpriteAtlas:
   - LVL_14
   - LVL_4
   - LVL_13
-  - LVL_20
   - LVL_2
   - LVL_1
   - LVL_9
   - LVL_10
   - LOCKED_BTN
-  - LVL_17
   - LVL_15
   - LVL_6
-  - LVL_18
-  - LVL_19
   - LVL_16
   m_RenderDataMap: {}
   m_Tag: LevelButtons_Atlas

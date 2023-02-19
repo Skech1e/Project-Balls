@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   line: {fileID: 5748740037866465033}
-  lineSegment: 69
+  lineSegment: 50
   velocity: {x: 0, y: 0, z: 0}
   Yveloc: 0
   gravity: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   linecastSegment: 69
   hitMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 72
   InputScale: {x: 0, y: 0}
   ballPath: []
   trajectoryDefaultPos: {x: 0, y: 0, z: 0}

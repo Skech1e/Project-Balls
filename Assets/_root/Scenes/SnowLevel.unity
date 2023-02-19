@@ -4833,7 +4833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 661282629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowman1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10602,7 +10602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1516755422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snowman2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16382,7 +16382,7 @@ GameObject:
   - component: {fileID: 4282335639719252832}
   - component: {fileID: 4282335639718285731}
   - component: {fileID: 4282335639664094942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface258
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16402,7 +16402,7 @@ GameObject:
   - component: {fileID: 4282335639719252834}
   - component: {fileID: 4282335639718285733}
   - component: {fileID: 4282335639718285737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface257
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16422,7 +16422,7 @@ GameObject:
   - component: {fileID: 4282335639719252836}
   - component: {fileID: 4282335639718285735}
   - component: {fileID: 4282335640406795283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface244
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16441,7 +16441,7 @@ GameObject:
   - component: {fileID: 4282335639718285734}
   - component: {fileID: 4282335639719252838}
   - component: {fileID: 4282335639305507173}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GROUND_GEO
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -16461,7 +16461,7 @@ GameObject:
   - component: {fileID: 4282335639719252840}
   - component: {fileID: 4282335640068997525}
   - component: {fileID: 4282335640068997524}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface286
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16481,7 +16481,7 @@ GameObject:
   - component: {fileID: 4282335639719252842}
   - component: {fileID: 4282335639719252843}
   - component: {fileID: 603807161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface281
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16501,7 +16501,7 @@ GameObject:
   - component: {fileID: 4282335639719252844}
   - component: {fileID: 4282335639719252845}
   - component: {fileID: 4282335639719252849}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface279
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16521,7 +16521,7 @@ GameObject:
   - component: {fileID: 4282335639719252846}
   - component: {fileID: 4282335639719252847}
   - component: {fileID: 4282335639719252851}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface261
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16557,7 +16557,7 @@ GameObject:
   - component: {fileID: 4282335639719252850}
   - component: {fileID: 4282335639718285749}
   - component: {fileID: 4282335639718285752}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface294
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16577,7 +16577,7 @@ GameObject:
   - component: {fileID: 4282335639719252852}
   - component: {fileID: 4282335639718285755}
   - component: {fileID: 4282335639718285754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface289
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16595,7 +16595,7 @@ GameObject:
   - component: {fileID: 4282335639716958614}
   - component: {fileID: 4282335639718285750}
   - component: {fileID: 4282335639719252854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface287
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16611,7 +16611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4282335639716958616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: sowman_geo_grp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16630,7 +16630,7 @@ GameObject:
   - component: {fileID: 4282335639718285758}
   - component: {fileID: 4282335639719252862}
   - component: {fileID: 4282335639719252863}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: snow_wall03
   m_TagString: Untagged
   m_Icon: {fileID: 0}

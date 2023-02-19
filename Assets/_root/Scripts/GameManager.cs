@@ -43,8 +43,17 @@ public class GameManager : MonoBehaviour
         LevelScoreData = Resources.Load<ScriptableObject>("UserData");
         saver = LevelScoreData as Saver;
         //saver.LoadfromJson();
-        saver.LoadfromJson(saver);
-        
+
+        try
+        {
+            saver.LoadfromJson(saver);
+        }
+        catch (Exception e)
+        {
+            print(e);
+            saver.SavetoJson(saver);
+        }
+
         //int i = 1; int j = 1;
         //foreach (Arena arena in arenas)
         //{
@@ -108,7 +117,7 @@ public class GameManager : MonoBehaviour
         saver.SavetoJson(saver);
     }
 
-    void InitScoreboard()   
+    void InitScoreboard()
     {
         GetLevelInfo();
 

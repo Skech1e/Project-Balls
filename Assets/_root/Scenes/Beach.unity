@@ -846,7 +846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 93851551}
   - component: {fileID: 93851552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2420,7 +2420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274684576}
   - component: {fileID: 274684577}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -3410,7 +3410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 461702295}
   - component: {fileID: 461702296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -4819,7 +4819,7 @@ GameObject:
   - component: {fileID: 635899026}
   - component: {fileID: 635899025}
   - component: {fileID: 635899030}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Scoreboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7022,7 +7022,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh445806
+  m_Name: pb_Mesh137768
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16967,7 +16967,7 @@ GameObject:
   - component: {fileID: 5200238028393685262}
   - component: {fileID: 3888999336650955787}
   - component: {fileID: 5209609790852181019}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17008,7 +17008,7 @@ GameObject:
   - component: {fileID: 8621580708023002613}
   - component: {fileID: 7046146394649367181}
   - component: {fileID: 5675212223691728055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17042,7 +17042,7 @@ GameObject:
   - component: {fileID: 1254425426895075281}
   - component: {fileID: 2083931733234290135}
   - component: {fileID: 5173223234929061669}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Kaki4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17268,7 +17268,7 @@ GameObject:
   - component: {fileID: 3185672840066166727}
   - component: {fileID: 975371875852965574}
   - component: {fileID: 8563082583609234441}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface21_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17317,7 +17317,7 @@ GameObject:
   - component: {fileID: 9073480386539583632}
   - component: {fileID: 1448582587983414106}
   - component: {fileID: 6945483397761265168}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17335,7 +17335,7 @@ GameObject:
   - component: {fileID: 2639928870820633340}
   - component: {fileID: 8188905716296557813}
   - component: {fileID: 6607148226383601633}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface13_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17351,7 +17351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5049041385866069035}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cocoNut_tree_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17788,7 +17788,7 @@ GameObject:
   - component: {fileID: 8044228892401569510}
   - component: {fileID: 7118254276765181941}
   - component: {fileID: 4724962145314549616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17806,7 +17806,7 @@ GameObject:
   - component: {fileID: 2626906883436465319}
   - component: {fileID: 908746471507190575}
   - component: {fileID: 2648282467605956102}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17908,7 +17908,7 @@ GameObject:
   - component: {fileID: 7108612287618400008}
   - component: {fileID: 115089236415695488}
   - component: {fileID: 8720980189319284097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17926,7 +17926,7 @@ GameObject:
   - component: {fileID: 2541292888150266566}
   - component: {fileID: 4050704406963354923}
   - component: {fileID: 4556037540225917116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17952,7 +17952,7 @@ GameObject:
   - component: {fileID: 6323797689248690809}
   - component: {fileID: 8058248111589988451}
   - component: {fileID: 3533724396326956649}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18096,7 +18096,7 @@ GameObject:
   - component: {fileID: 6944361548098611268}
   - component: {fileID: 578844199979480850}
   - component: {fileID: 4212291151254603134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Tangan2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18114,7 +18114,7 @@ GameObject:
   - component: {fileID: 8574854311011695815}
   - component: {fileID: 2913409258451871710}
   - component: {fileID: 7352122516247194776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18132,7 +18132,7 @@ GameObject:
   - component: {fileID: 2414082706493489445}
   - component: {fileID: 4510843149448700324}
   - component: {fileID: 7979858905023380705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface20_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18183,7 +18183,7 @@ GameObject:
   - component: {fileID: 4267074148757104124}
   - component: {fileID: 1062625397464288202}
   - component: {fileID: 2911571381582841532}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18241,7 +18241,7 @@ GameObject:
   - component: {fileID: 7629864872173682615}
   - component: {fileID: 2490710913945829423}
   - component: {fileID: 64410074896206486}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18267,7 +18267,7 @@ GameObject:
   - component: {fileID: 1624573919504123698}
   - component: {fileID: 5183317852525726577}
   - component: {fileID: 1463188183757579336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18442,7 +18442,7 @@ GameObject:
   - component: {fileID: 6946398082762407735}
   - component: {fileID: 5599872116511819262}
   - component: {fileID: 1951804971355540988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:pCube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18460,7 +18460,7 @@ GameObject:
   - component: {fileID: 387581256985365123}
   - component: {fileID: 8459176598098003061}
   - component: {fileID: 595855053319764405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface16_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18536,7 +18536,7 @@ GameObject:
   - component: {fileID: 5139148667161423109}
   - component: {fileID: 2537927604882456745}
   - component: {fileID: 7005887096225181659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface16_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18634,7 +18634,7 @@ GameObject:
   - component: {fileID: 1727026840307149110}
   - component: {fileID: 8638154888230137060}
   - component: {fileID: 6446479582626178465}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18790,7 +18790,7 @@ GameObject:
   - component: {fileID: 2108911436879898369}
   - component: {fileID: 7817512555259941613}
   - component: {fileID: 8969356917541904441}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18808,7 +18808,7 @@ GameObject:
   - component: {fileID: 8749913627401410659}
   - component: {fileID: 7138978839004498999}
   - component: {fileID: 3272449203474983624}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface22_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19033,7 +19033,7 @@ GameObject:
   - component: {fileID: 296902792234180164}
   - component: {fileID: 3458591920655298944}
   - component: {fileID: 1299541960301426249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface17_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19066,7 +19066,7 @@ GameObject:
   - component: {fileID: 9066906324632488006}
   - component: {fileID: 6014590052069064771}
   - component: {fileID: 2205885153790776362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:polySurface6_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19084,7 +19084,7 @@ GameObject:
   - component: {fileID: 4297570095589233679}
   - component: {fileID: 6025386564517803684}
   - component: {fileID: 479183654986725418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19167,7 +19167,7 @@ GameObject:
   - component: {fileID: 6915033772932940182}
   - component: {fileID: 5841200119517474971}
   - component: {fileID: 6058474772347947007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19456,7 +19456,7 @@ GameObject:
   - component: {fileID: 3412843424767279438}
   - component: {fileID: 5624107134227196670}
   - component: {fileID: 6054254970298600778}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_5_Low_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19598,7 +19598,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6103560406312341130}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19639,7 +19639,7 @@ GameObject:
   - component: {fileID: 9148195934270372073}
   - component: {fileID: 5711943040741629247}
   - component: {fileID: 5674116997785201435}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_4_Low_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19714,7 +19714,7 @@ GameObject:
   - component: {fileID: 4566695615826680828}
   - component: {fileID: 9210436406242504181}
   - component: {fileID: 1211529933950523325}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19789,7 +19789,7 @@ GameObject:
   - component: {fileID: 7111713071215143360}
   - component: {fileID: 1167933555030075480}
   - component: {fileID: 3662022596149897238}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19964,7 +19964,7 @@ GameObject:
   - component: {fileID: 4297724690894229940}
   - component: {fileID: 1832584313344119674}
   - component: {fileID: 1507132113466860914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Tangan4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19990,7 +19990,7 @@ GameObject:
   - component: {fileID: 391269020859127847}
   - component: {fileID: 7682513612136217753}
   - component: {fileID: 9085482863404933379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20050,7 +20050,7 @@ GameObject:
   - component: {fileID: 7369773275215283780}
   - component: {fileID: 5139349663468204371}
   - component: {fileID: 7328146618560958630}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_1_Low_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20160,7 +20160,7 @@ GameObject:
   - component: {fileID: 5972580567947962173}
   - component: {fileID: 7440517125853333008}
   - component: {fileID: 3651794096353570201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface23_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20186,7 +20186,7 @@ GameObject:
   - component: {fileID: 1194671552550293258}
   - component: {fileID: 4360500578002097149}
   - component: {fileID: 2007416077131274863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20204,7 +20204,7 @@ GameObject:
   - component: {fileID: 6126692283107807317}
   - component: {fileID: 3127602057997233482}
   - component: {fileID: 2597331611564350284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:coconut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20416,7 +20416,7 @@ GameObject:
   - component: {fileID: 6281207799857953174}
   - component: {fileID: 5396052265666648260}
   - component: {fileID: 7239893522823043867}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_3_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20465,7 +20465,7 @@ GameObject:
   - component: {fileID: 7520262704967038175}
   - component: {fileID: 6651658539271148697}
   - component: {fileID: 151838381663979310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20483,7 +20483,7 @@ GameObject:
   - component: {fileID: 6272295136999385330}
   - component: {fileID: 3237078889633131739}
   - component: {fileID: 5416572328774088418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20559,7 +20559,7 @@ GameObject:
   - component: {fileID: 4959703032892644086}
   - component: {fileID: 4984802815727341225}
   - component: {fileID: 1220170647824636388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20592,7 +20592,7 @@ GameObject:
   - component: {fileID: 580383463694175272}
   - component: {fileID: 4158764132686554618}
   - component: {fileID: 5389490750938561698}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface13_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20610,7 +20610,7 @@ GameObject:
   - component: {fileID: 1669656440070839139}
   - component: {fileID: 2459334266548709488}
   - component: {fileID: 5119148099224371534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface14_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20678,7 +20678,7 @@ GameObject:
   - component: {fileID: 3645671882363557458}
   - component: {fileID: 3907291821969085638}
   - component: {fileID: 6669524326995905219}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:pCube10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20795,7 +20795,7 @@ GameObject:
   - component: {fileID: 8124573220946289363}
   - component: {fileID: 7299434289561071811}
   - component: {fileID: 726249836112455201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20813,7 +20813,7 @@ GameObject:
   - component: {fileID: 8033454068331537837}
   - component: {fileID: 7129192964185408941}
   - component: {fileID: 992827730778218606}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20831,7 +20831,7 @@ GameObject:
   - component: {fileID: 5843586191334373906}
   - component: {fileID: 3908481866808259072}
   - component: {fileID: 7196971655750813186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20963,7 +20963,7 @@ GameObject:
   - component: {fileID: 5946947071164380581}
   - component: {fileID: 8327123333242840430}
   - component: {fileID: 4768405683091046731}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20981,7 +20981,7 @@ GameObject:
   - component: {fileID: 5217908502169414160}
   - component: {fileID: 5195244579678146924}
   - component: {fileID: 8899130725276987959}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21088,7 +21088,7 @@ GameObject:
   - component: {fileID: 5332961364572867999}
   - component: {fileID: 8754353190659825330}
   - component: {fileID: 5055320606204183464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21104,7 +21104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6821883027985588922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:single1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21225,7 +21225,7 @@ GameObject:
   - component: {fileID: 6730860000402867399}
   - component: {fileID: 6926270362075045381}
   - component: {fileID: 2750546082357065914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface12_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21429,7 +21429,7 @@ GameObject:
   - component: {fileID: 5756849950567471384}
   - component: {fileID: 1383874369756724121}
   - component: {fileID: 229680468786594224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21485,7 +21485,7 @@ GameObject:
   - component: {fileID: 2204483644513633653}
   - component: {fileID: 6039971349903426781}
   - component: {fileID: 8576203227184917151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21643,7 +21643,7 @@ GameObject:
   - component: {fileID: 4054490692831368878}
   - component: {fileID: 3935270065025097691}
   - component: {fileID: 6958306840539469280}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:polySurface4_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21919,7 +21919,7 @@ GameObject:
   - component: {fileID: 50698157141775592}
   - component: {fileID: 4722349543709015158}
   - component: {fileID: 2216061839252807363}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22092,7 +22092,7 @@ GameObject:
   - component: {fileID: 1234015631771310034}
   - component: {fileID: 4731505889705964188}
   - component: {fileID: 8526707447682815118}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Kaki2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22347,7 +22347,7 @@ GameObject:
   - component: {fileID: 1438896470425185663}
   - component: {fileID: 3227706015815110246}
   - component: {fileID: 1480841838864779354}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:pCube6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22425,7 +22425,7 @@ GameObject:
   - component: {fileID: 8366112796567706965}
   - component: {fileID: 4902977298200867041}
   - component: {fileID: 1435671616336388572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_3_Low_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22443,7 +22443,7 @@ GameObject:
   - component: {fileID: 6060332001820365140}
   - component: {fileID: 7428630521911786739}
   - component: {fileID: 4245905141212834840}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22498,7 +22498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2764674627327299264}
   - component: {fileID: 1566019383}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broken_barrel_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22616,7 +22616,7 @@ GameObject:
   - component: {fileID: 3346550807497041976}
   - component: {fileID: 2422649697461840579}
   - component: {fileID: 1836982444523678986}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface15_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22707,7 +22707,7 @@ GameObject:
   - component: {fileID: 1199710193248934621}
   - component: {fileID: 8642674803183350484}
   - component: {fileID: 980104419060328415}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22725,7 +22725,7 @@ GameObject:
   - component: {fileID: 1563211541759798159}
   - component: {fileID: 7181902134691963131}
   - component: {fileID: 4327675205857006903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22743,7 +22743,7 @@ GameObject:
   - component: {fileID: 3945737504353977656}
   - component: {fileID: 2572222033051844458}
   - component: {fileID: 2880658929150974952}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface24_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22925,7 +22925,7 @@ GameObject:
   - component: {fileID: 7282566341120449657}
   - component: {fileID: 268582312428545795}
   - component: {fileID: 1761425428356505235}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_3_Low_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22973,7 +22973,7 @@ GameObject:
   - component: {fileID: 984739125416392346}
   - component: {fileID: 7980777211282888398}
   - component: {fileID: 1579370894221202724}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:polySurface7_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22991,7 +22991,7 @@ GameObject:
   - component: {fileID: 5488183707346338103}
   - component: {fileID: 238777531266824097}
   - component: {fileID: 3830534156273930497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23052,7 +23052,7 @@ GameObject:
   - component: {fileID: 7835928015916491122}
   - component: {fileID: 5192410496040547910}
   - component: {fileID: 7835928015916491123}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Badan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23070,7 +23070,7 @@ GameObject:
   - component: {fileID: 5531696907626302155}
   - component: {fileID: 7613202440911153847}
   - component: {fileID: 985810692747373674}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:pCube7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23264,7 +23264,7 @@ GameObject:
   - component: {fileID: 4883141402402907788}
   - component: {fileID: 3291740491046341215}
   - component: {fileID: 8069166782484002927}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23469,7 +23469,7 @@ GameObject:
   - component: {fileID: 4024074477150761914}
   - component: {fileID: 4131267890381108933}
   - component: {fileID: 4051997013093850305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23495,7 +23495,7 @@ GameObject:
   - component: {fileID: 6129941372364793674}
   - component: {fileID: 5240569602218821478}
   - component: {fileID: 1576481358087556867}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface21_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23678,7 +23678,7 @@ GameObject:
   - component: {fileID: 4506290360067367645}
   - component: {fileID: 4163776532331602466}
   - component: {fileID: 5407758092001460673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface24_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23837,7 +23837,7 @@ GameObject:
   - component: {fileID: 9063817283318925190}
   - component: {fileID: 4502393353319699828}
   - component: {fileID: 7357637942343463471}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24034,7 +24034,7 @@ GameObject:
   - component: {fileID: 6967978054541126907}
   - component: {fileID: 3108288324782450803}
   - component: {fileID: 4166230197358006413}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCylinder1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24052,7 +24052,7 @@ GameObject:
   - component: {fileID: 6804573786097632220}
   - component: {fileID: 3568262573381643096}
   - component: {fileID: 3149048654930823138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24109,7 +24109,7 @@ GameObject:
   - component: {fileID: 3344814740502628218}
   - component: {fileID: 282570324867104385}
   - component: {fileID: 6568608498529567231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24291,7 +24291,7 @@ GameObject:
   - component: {fileID: 5621810612697269702}
   - component: {fileID: 6292640303706887400}
   - component: {fileID: 607511565452283253}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24317,7 +24317,7 @@ GameObject:
   - component: {fileID: 6332098820483646253}
   - component: {fileID: 2715644247707812676}
   - component: {fileID: 7525385214814444207}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24358,7 +24358,7 @@ GameObject:
   - component: {fileID: 2061278933780538733}
   - component: {fileID: 3415306302527226558}
   - component: {fileID: 475637151915460929}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface11_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24376,7 +24376,7 @@ GameObject:
   - component: {fileID: 3381608877560133224}
   - component: {fileID: 5492685277789346926}
   - component: {fileID: 5643211921048467798}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24394,7 +24394,7 @@ GameObject:
   - component: {fileID: 1350240705300111847}
   - component: {fileID: 4619634157178540991}
   - component: {fileID: 404362715150998795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24611,7 +24611,7 @@ GameObject:
   - component: {fileID: 4815934090301678506}
   - component: {fileID: 3813674199327154879}
   - component: {fileID: 6432370703626416038}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24629,7 +24629,7 @@ GameObject:
   - component: {fileID: 3076486374082345049}
   - component: {fileID: 41435832373006750}
   - component: {fileID: 3136086572743552238}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24704,7 +24704,7 @@ GameObject:
   - component: {fileID: 9001393006830635874}
   - component: {fileID: 9019137189595233244}
   - component: {fileID: 8378134758672703482}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: log_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24722,7 +24722,7 @@ GameObject:
   - component: {fileID: 2004467824078128399}
   - component: {fileID: 6902405256094273299}
   - component: {fileID: 434452306091792565}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_4_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24790,7 +24790,7 @@ GameObject:
   - component: {fileID: 2717678070785360523}
   - component: {fileID: 3543591796155919875}
   - component: {fileID: 732732445153853350}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24808,7 +24808,7 @@ GameObject:
   - component: {fileID: 483182049241845424}
   - component: {fileID: 7064285940927545149}
   - component: {fileID: 1657195621652938382}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25018,7 +25018,7 @@ GameObject:
   - component: {fileID: 7652213569814505372}
   - component: {fileID: 7366288006733061683}
   - component: {fileID: 3644067592546444462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25118,7 +25118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8192914893746234657}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25151,7 +25151,7 @@ GameObject:
   - component: {fileID: 2579722010031882110}
   - component: {fileID: 4494693994892437144}
   - component: {fileID: 5356166932320193807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface15_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25344,7 +25344,7 @@ GameObject:
   - component: {fileID: 8726096214841405063}
   - component: {fileID: 7392967979309314231}
   - component: {fileID: 1159270815191676815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25360,7 +25360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5926691836544657637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: broken_basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25378,7 +25378,7 @@ GameObject:
   - component: {fileID: 7638439046124758998}
   - component: {fileID: 8773322150926612196}
   - component: {fileID: 7652229739179029215}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25396,7 +25396,7 @@ GameObject:
   - component: {fileID: 7678558514505169287}
   - component: {fileID: 663347574278862486}
   - component: {fileID: 7966578592923876611}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25514,7 +25514,7 @@ GameObject:
   - component: {fileID: 1086356399248286169}
   - component: {fileID: 8271908382129058415}
   - component: {fileID: 8271908382129058416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Kaki3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25582,7 +25582,7 @@ GameObject:
   - component: {fileID: 6008206540540317384}
   - component: {fileID: 2913081351361705070}
   - component: {fileID: 7630812391281669073}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25738,7 +25738,7 @@ GameObject:
   - component: {fileID: 1511768360855652833}
   - component: {fileID: 1904238794134823921}
   - component: {fileID: 3031269623114615012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25771,7 +25771,7 @@ GameObject:
   - component: {fileID: 3704712250086051886}
   - component: {fileID: 6022548729786389035}
   - component: {fileID: 7485891663822376655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface18_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25797,7 +25797,7 @@ GameObject:
   - component: {fileID: 3312576263392752031}
   - component: {fileID: 7850108736193304350}
   - component: {fileID: 4598861584259543736}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25979,7 +25979,7 @@ GameObject:
   - component: {fileID: 1420089439897499090}
   - component: {fileID: 8689428185927096275}
   - component: {fileID: 6156400226788255616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_2_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26062,7 +26062,7 @@ GameObject:
   - component: {fileID: 3519395997376421309}
   - component: {fileID: 6390075992194280333}
   - component: {fileID: 4169826786161147946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26317,7 +26317,7 @@ GameObject:
   - component: {fileID: 8160603428959928806}
   - component: {fileID: 7304982112240646144}
   - component: {fileID: 7760816102394946781}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface22_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26335,7 +26335,7 @@ GameObject:
   - component: {fileID: 7755855685822968217}
   - component: {fileID: 2960466339840526473}
   - component: {fileID: 3769177607694748605}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26381,7 +26381,7 @@ GameObject:
   - component: {fileID: 6711320587893918442}
   - component: {fileID: 8341544727453512172}
   - component: {fileID: 6380566463711507440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26707,7 +26707,7 @@ GameObject:
   - component: {fileID: 9032402060215811116}
   - component: {fileID: 7079192035259613502}
   - component: {fileID: 397639217714332402}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:polySurface5_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26725,7 +26725,7 @@ GameObject:
   - component: {fileID: 532415866957369129}
   - component: {fileID: 2479394357488763146}
   - component: {fileID: 2620170463333860375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_1_Low_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26813,7 +26813,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5089448731321113812}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:single
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26831,7 +26831,7 @@ GameObject:
   - component: {fileID: 2744140822049110924}
   - component: {fileID: 6906803833820598948}
   - component: {fileID: 7929481836814786349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26877,7 +26877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7652503974351661794}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26948,7 +26948,7 @@ GameObject:
   - component: {fileID: 7123737801734221244}
   - component: {fileID: 3056715321861809766}
   - component: {fileID: 7569783515352879807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27124,7 +27124,7 @@ GameObject:
   - component: {fileID: 7808531507139497147}
   - component: {fileID: 535060687245719452}
   - component: {fileID: 9151116936179189846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface20_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27277,7 +27277,7 @@ GameObject:
   - component: {fileID: 3944965237653819196}
   - component: {fileID: 2876094823313188595}
   - component: {fileID: 6613396609840223553}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: basket_ball_hoop1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27308,7 +27308,7 @@ GameObject:
   - component: {fileID: 5781724142916974434}
   - component: {fileID: 9144151824965181872}
   - component: {fileID: 1090937546408539188}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: base_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27334,7 +27334,7 @@ GameObject:
   - component: {fileID: 32719679201263540}
   - component: {fileID: 1593647377854877225}
   - component: {fileID: 1447662570919906960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27434,7 +27434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4577245214786125928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27482,7 +27482,7 @@ GameObject:
   - component: {fileID: 1543591613392111850}
   - component: {fileID: 5412996758703381086}
   - component: {fileID: 744391968259199969}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface12_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27500,7 +27500,7 @@ GameObject:
   - component: {fileID: 4772468398089688385}
   - component: {fileID: 6037864268403566411}
   - component: {fileID: 4465102395951358159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface23_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27675,7 +27675,7 @@ GameObject:
   - component: {fileID: 8255476743388287372}
   - component: {fileID: 5837820938754562830}
   - component: {fileID: 1752312500816996659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27774,7 +27774,7 @@ GameObject:
   - component: {fileID: 9005811348891245888}
   - component: {fileID: 5757065393209626041}
   - component: {fileID: 9005811348891245889}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Kaki1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27941,7 +27941,7 @@ GameObject:
   - component: {fileID: 8057197858901370091}
   - component: {fileID: 2071789838326840733}
   - component: {fileID: 4847132293816728074}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28078,7 +28078,7 @@ GameObject:
   - component: {fileID: 5939926594908062}
   - component: {fileID: 199175270058338020}
   - component: {fileID: 5836625595902226058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28112,7 +28112,7 @@ GameObject:
   - component: {fileID: 1225444427171781648}
   - component: {fileID: 1340335921324339279}
   - component: {fileID: 6833172310162507917}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28130,7 +28130,7 @@ GameObject:
   - component: {fileID: 8387343942177478541}
   - component: {fileID: 899980398818380711}
   - component: {fileID: 6582085870366437536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface17_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28156,7 +28156,7 @@ GameObject:
   - component: {fileID: 9188822327699412446}
   - component: {fileID: 2094844567292868049}
   - component: {fileID: 2327192979782969076}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface19_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28216,7 +28216,7 @@ GameObject:
   - component: {fileID: 2036499934166584}
   - component: {fileID: 8099994104148416500}
   - component: {fileID: 5864822998777426360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28276,7 +28276,7 @@ GameObject:
   - component: {fileID: 8615612143743301405}
   - component: {fileID: 7888212061997483912}
   - component: {fileID: 3300019640801252034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface19_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28536,7 +28536,7 @@ GameObject:
   - component: {fileID: 4009224027655078306}
   - component: {fileID: 8089081189615801754}
   - component: {fileID: 5329457869703224394}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_1_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28790,7 +28790,7 @@ GameObject:
   - component: {fileID: 7704887135844700289}
   - component: {fileID: 1805875800770918141}
   - component: {fileID: 1712493485084082815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28893,7 +28893,7 @@ GameObject:
   - component: {fileID: 2544953301388849885}
   - component: {fileID: 8989611027197576708}
   - component: {fileID: 1623989073749526098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28911,7 +28911,7 @@ GameObject:
   - component: {fileID: 2342011941707923855}
   - component: {fileID: 5169807076399340531}
   - component: {fileID: 4120276358715544151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29009,7 +29009,7 @@ GameObject:
   - component: {fileID: 8003629833530352608}
   - component: {fileID: 2152684566586239921}
   - component: {fileID: 5800521900946327161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29042,7 +29042,7 @@ GameObject:
   - component: {fileID: 2642608911702162943}
   - component: {fileID: 1897227369981299794}
   - component: {fileID: 6108278293669241702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29060,7 +29060,7 @@ GameObject:
   - component: {fileID: 1996184442346616424}
   - component: {fileID: 8960178322413522780}
   - component: {fileID: 4237315823281421057}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29143,7 +29143,7 @@ GameObject:
   - component: {fileID: 4126959993653359789}
   - component: {fileID: 107242462985261932}
   - component: {fileID: 2798917852801704589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Tangan3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29240,7 +29240,7 @@ GameObject:
   - component: {fileID: 8466349741455604062}
   - component: {fileID: 4191433137744701299}
   - component: {fileID: 2147988992504001376}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface18_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29330,7 +29330,7 @@ GameObject:
   - component: {fileID: 3398218634497584106}
   - component: {fileID: 4956012572652376827}
   - component: {fileID: 1561003427687863842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29390,7 +29390,7 @@ GameObject:
   - component: {fileID: 6347463638368185815}
   - component: {fileID: 5378114090506983824}
   - component: {fileID: 2339522226365440547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29456,7 +29456,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9072536964057759710}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cocoNut_tree_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29475,7 +29475,7 @@ GameObject:
   - component: {fileID: 6380834636993065177}
   - component: {fileID: 2545720539392896987}
   - component: {fileID: 7991634943799274332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_2_Low_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29536,7 +29536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5031728714970342687}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cocoNut_tree_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29592,7 +29592,7 @@ GameObject:
   - component: {fileID: 4663693714831767936}
   - component: {fileID: 5770925521580525695}
   - component: {fileID: 8509052253245679929}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_5_Low1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29652,7 +29652,7 @@ GameObject:
   - component: {fileID: 3680701638907972246}
   - component: {fileID: 2729235421633175713}
   - component: {fileID: 1880189041013515420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Mata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29686,7 +29686,7 @@ GameObject:
   - component: {fileID: 2057065359153548575}
   - component: {fileID: 6495504508988655136}
   - component: {fileID: 2756346414766312741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29718,7 +29718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836750335245889804}
   - component: {fileID: 8126759674786002019}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Broken_barrel_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29765,7 +29765,7 @@ GameObject:
   - component: {fileID: 4332006687899079647}
   - component: {fileID: 5934917489211176104}
   - component: {fileID: 7019701523049563617}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29783,7 +29783,7 @@ GameObject:
   - component: {fileID: 5704447139711758840}
   - component: {fileID: 6427168675996087939}
   - component: {fileID: 4439240811154542090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29906,7 +29906,7 @@ GameObject:
   - component: {fileID: 2999340526142961194}
   - component: {fileID: 4660865796975575042}
   - component: {fileID: 158804488908977966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_5_Low_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29924,7 +29924,7 @@ GameObject:
   - component: {fileID: 4177165171400643928}
   - component: {fileID: 3839649479288574752}
   - component: {fileID: 6095782063637039976}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_5_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29942,7 +29942,7 @@ GameObject:
   - component: {fileID: 4761146641613933151}
   - component: {fileID: 232017937688787010}
   - component: {fileID: 6694273561602563928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface10_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29960,7 +29960,7 @@ GameObject:
   - component: {fileID: 5155908889062976890}
   - component: {fileID: 1386278266791303393}
   - component: {fileID: 7085474122350013587}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Tangan1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30051,7 +30051,7 @@ GameObject:
   - component: {fileID: 4972589019846300601}
   - component: {fileID: 3072317564527413180}
   - component: {fileID: 1577560862975793054}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30084,7 +30084,7 @@ GameObject:
   - component: {fileID: 3797568033116439023}
   - component: {fileID: 4048894277780534636}
   - component: {fileID: 4902431890214286571}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:pCube9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30125,7 +30125,7 @@ GameObject:
   - component: {fileID: 9206172003180154524}
   - component: {fileID: 1439452744190547059}
   - component: {fileID: 1388179099305119007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crab:Badan2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30214,7 +30214,7 @@ GameObject:
   - component: {fileID: 5400945041269644964}
   - component: {fileID: 976988084227364068}
   - component: {fileID: 3081111801168567521}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:pCube8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30331,7 +30331,7 @@ GameObject:
   - component: {fileID: 7950735196185028779}
   - component: {fileID: 4505648142710761531}
   - component: {fileID: 5691537710192568037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30395,7 +30395,7 @@ GameObject:
   - component: {fileID: 7369880283423094683}
   - component: {fileID: 898520245560042375}
   - component: {fileID: 2431306348483793041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface25_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30413,7 +30413,7 @@ GameObject:
   - component: {fileID: 3176650648557070747}
   - component: {fileID: 4576375496834301352}
   - component: {fileID: 1370752871376223879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30432,7 +30432,7 @@ GameObject:
   - component: {fileID: 8916455538342189999}
   - component: {fileID: 1407669919416891306}
   - component: {fileID: 1566019385}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: starfish1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30458,7 +30458,7 @@ GameObject:
   - component: {fileID: 2659218560950564355}
   - component: {fileID: 1234676400296497675}
   - component: {fileID: 7834410804658306016}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30564,7 +30564,7 @@ GameObject:
   - component: {fileID: 7473002712308928385}
   - component: {fileID: 3442361827025996986}
   - component: {fileID: 6798957922535012922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wooden_basket:pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30582,7 +30582,7 @@ GameObject:
   - component: {fileID: 3218386349519203562}
   - component: {fileID: 586928133813216617}
   - component: {fileID: 500734045299224245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree:polySurface14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30600,7 +30600,7 @@ GameObject:
   - component: {fileID: 4009785017044196552}
   - component: {fileID: 3645395062831524073}
   - component: {fileID: 3474711351370161418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_4_Low_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30618,7 +30618,7 @@ GameObject:
   - component: {fileID: 5671917245389141807}
   - component: {fileID: 931831195348609428}
   - component: {fileID: 7678525914328685397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface14_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30686,7 +30686,7 @@ GameObject:
   - component: {fileID: 1960257799512820570}
   - component: {fileID: 6945039895450894568}
   - component: {fileID: 1821265075203586684}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: coconut_tree2:polySurface29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30885,7 +30885,7 @@ GameObject:
   - component: {fileID: 7920672102672075997}
   - component: {fileID: 6436280709019057511}
   - component: {fileID: 5024466761433294156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_5_Low2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30901,7 +30901,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4699219549544739454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wood_barricade:double
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31049,7 +31049,7 @@ GameObject:
   - component: {fileID: 2596332858095948380}
   - component: {fileID: 6977281363228024726}
   - component: {fileID: 1983267902464946292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone_2_Low_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31090,7 +31090,7 @@ GameObject:
   - component: {fileID: 2318788079317589963}
   - component: {fileID: 9124274623733671827}
   - component: {fileID: 4069088523169640339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polySurface20
   m_TagString: Untagged
   m_Icon: {fileID: 0}

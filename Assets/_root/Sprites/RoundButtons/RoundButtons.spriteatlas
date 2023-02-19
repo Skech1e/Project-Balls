@@ -23,7 +23,7 @@ SpriteAtlas:
     platformSettings:
     - serializedVersion: 3
       m_BuildTarget: DefaultTexturePlatform
-      m_MaxTextureSize: 2048
+      m_MaxTextureSize: 1024
       m_ResizeAlgorithm: 0
       m_TextureFormat: 4
       m_TextureCompression: 0
@@ -54,7 +54,6 @@ SpriteAtlas:
     - {fileID: 2800000, guid: ad655c16ff64d8745844e7a28974207e, type: 3}
     - {fileID: 2800000, guid: 5a92a7f658c98c341beeca4b5c1d1bcf, type: 3}
     - {fileID: 2800000, guid: be57dfcc0e881e5488fd7a22abcbd6fb, type: 3}
-    - {fileID: 2800000, guid: c9dce4573492a1c4a9e541c96944f239, type: 3}
     - {fileID: 2800000, guid: 257d6708ea19ee54e885bd50bddd4ad0, type: 3}
     - {fileID: 2800000, guid: 1c4cda5e2684df5468d029d843365096, type: 3}
     - {fileID: 2800000, guid: 61ce1db8bc4596444953a0a4a64875d6, type: 3}
@@ -70,7 +69,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: aa4c3c45df05d2a409c01c643ec74d20, type: 3}
   - {fileID: 21300000, guid: ad655c16ff64d8745844e7a28974207e, type: 3}
   - {fileID: 21300000, guid: 5a92a7f658c98c341beeca4b5c1d1bcf, type: 3}
-  - {fileID: 21300000, guid: c9dce4573492a1c4a9e541c96944f239, type: 3}
   - {fileID: 21300000, guid: 9539b197a7c910548ba880bfab0ef676, type: 3}
   - {fileID: 21300000, guid: 257d6708ea19ee54e885bd50bddd4ad0, type: 3}
   - {fileID: 21300000, guid: 61ce1db8bc4596444953a0a4a64875d6, type: 3}
@@ -87,7 +85,6 @@ SpriteAtlas:
   - EXIT BUTTON@2x
   - LEFT ARROW BUTTON@2x
   - RIGHT ARROW BUTTON@2x
-  - PLAY BUTTON BLUE@2x
   - HOME BUTTON@2x
   - PLAY BUTTON GREEN@2x
   - BALL_BTN
