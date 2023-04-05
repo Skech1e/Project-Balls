@@ -38,6 +38,7 @@ public class UIController : MonoBehaviour
     {
         //pages.SetActive(false);
         sceneLoader = FindObjectOfType<SceneLoader>();
+        Application.targetFrameRate = 420;
     }
 
     // Start is called before the first frame update
@@ -56,11 +57,6 @@ public class UIController : MonoBehaviour
     public void Close()
     {
         transform.parent.gameObject.SetActive(false);
-    }
-
-    public void Apply()
-    {
-
     }
 
     public void OnApplicationQuit()

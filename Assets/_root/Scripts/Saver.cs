@@ -19,6 +19,7 @@ public class Saver : ScriptableObject
         scpath = Path.Combine(Application.persistentDataPath, "scglobal.json");
         cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
 
+        LoadfromJson(this);
         //SavetoJson(scores);
     }
 
@@ -57,6 +58,11 @@ public class Saver : ScriptableObject
     {
         string score = File.ReadAllText(scpath);
         //Scores s = JsonUtility.FromJson<Scores>(score);
+        if (score is null)
+        {
+            Debug.Log("No save found! Created.");
+            SavetoJson(this);
+        }
 
         //scores.arenas = s.arenas;
         Debug.Log("save loaded");
@@ -74,6 +80,11 @@ public class Saver : ScriptableObject
     public UserData LoadUser()
     {
         string user = File.ReadAllText(cfgpath);
+        if (user is null)
+        {
+            Debug.Log("No save found! Created.");
+            SavetoJson(usrdata);
+        }
         return JsonUtility.FromJson<UserData>(user);
     }
 }
