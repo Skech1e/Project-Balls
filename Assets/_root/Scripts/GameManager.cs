@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static LevelUIManager;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,12 +21,12 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     bool touchedProperty;
 
-    private Saver saver, loader;
-    private Scores scoredata;
-    public static ScriptableObject LevelScoreData;
+    [field: SerializeField] public static Saver saver;
 
     public static int[] scoreTier = new int[2];
     public static int starCount;
+    public const int totalStars = 3;
+    [field: SerializeField] public int starsRemaining { get; private set; }
 
 
     private void Awake()
@@ -38,13 +37,13 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        saver = FindObjectOfType<Saver>();
+        //saver = FindObjectOfType<Saver>();
         Application.targetFrameRate = 420;
-        LevelScoreData = Resources.Load<ScriptableObject>("UserData");
-        saver = LevelScoreData as Saver;
+        //saver = LevelScoreData as Saver;
+        saver = Resources.Load<Saver>("UserData");
         //saver.LoadfromJson();
-
-        try
+        //saver.LoadfromJson(saver);
+        /*try
         {
             saver.LoadfromJson(saver);
         }
@@ -52,19 +51,8 @@ public class GameManager : MonoBehaviour
         {
             print(e);
             saver.SavetoJson(saver);
-        }
+        }*/
 
-        //int i = 1; int j = 1;
-        //foreach (Arena arena in arenas)
-        //{
-        //    arena.name = "Arena " + i;
-        //    i = i < 10 ? (i + 1) : 1;
-        //    foreach (Level level in arena.levels)
-        //    {
-        //        level.name = "Level " + j;
-        //        j = j < 16 ? (j + 1) : 1;
-        //    }
-        //}
     }
 
     // Update is called once per frame
@@ -79,7 +67,7 @@ public class GameManager : MonoBehaviour
         Ball.BallEvent += CoroutineCaller;
         LevelReporting.LevelLoad += InitScoreboard;
         LevelReporting.LevelLoad += ResetTimer;
-        LevelReporting.LevelComplete += UnlockLevels;
+        LevelReporting.LevelComplete += StarScoring;
         UIController.OnRestartfromUI += ResetTimer;
     }
 
@@ -97,7 +85,7 @@ public class GameManager : MonoBehaviour
         Ball.BallEvent -= CoroutineCaller;
         LevelReporting.LevelLoad -= InitScoreboard;
         LevelReporting.LevelLoad -= ResetTimer;
-        LevelReporting.LevelComplete -= UnlockLevels;
+        LevelReporting.LevelComplete -= StarScoring;
         UIController.OnRestartfromUI -= ResetTimer;
     }
 
@@ -105,16 +93,46 @@ public class GameManager : MonoBehaviour
     {
         currentArenaNo = LevelManager.currentArena;
         currentLevelNo = LevelManager.currentLevel;
+        starsRemaining = totalStars - saver.arenas[currentArenaNo].levels[currentLevelNo].starCount;
+    }
+
+    void StarScoring()
+    {
+        //starCount = timer < scoreTier[0] + 1 ? 3 : timer < scoreTier[1] + 1 ? 2 : 1;
+        void SaveStars()
+        {
+            saver.arenas[currentArenaNo].levels[currentLevelNo].starCount = starCount;
+            saver.usrdata.starbalance += starCount;
+            starsRemaining -= starCount;
+        }
+
+        if (timer < scoreTier[0] + 1)
+        {
+            starCount = 3;
+            if (starsRemaining > 0)
+                SaveStars();
+        }
+        else if (timer < scoreTier[1] + 1)
+        {
+            starCount = 2;
+            if (starsRemaining > 1)
+                SaveStars();
+        }
+        else
+        {
+            starCount = 1;
+            if (starsRemaining > 2)
+                SaveStars();
+        }
+
+        UnlockLevels();
+        saver.SavetoJson(saver);
     }
 
     void UnlockLevels()
     {
-        starCount = timer < scoreTier[0] + 1 ? 3 : timer < scoreTier[1] + 1 ? 2 : 1;
-        saver.arenas[currentArenaNo].levels[currentLevelNo].starCount = starCount;
-
         if (currentLevelNo < 16)
             saver.arenas[currentArenaNo].levels[currentLevelNo + 1].Unlocked = true;
-        saver.SavetoJson(saver);
     }
 
     void InitScoreboard()
@@ -202,12 +220,14 @@ public class GameManager : MonoBehaviour
     void CoroutineCaller()
     {
         StartCoroutine(UpdateBallCount());
+
+        IEnumerator UpdateBallCount()
+        {
+            yield return new WaitForSeconds(0.1f);
+            scoreboard[3].text = LevelReporting.ballCount.ToString();
+        }
     }
-    IEnumerator UpdateBallCount()
-    {
-        yield return new WaitForSeconds(0.1f);
-        scoreboard[3].text = LevelReporting.ballCount.ToString();
-    }
+
 
     void RecordScores()
     {

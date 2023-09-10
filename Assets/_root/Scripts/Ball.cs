@@ -24,6 +24,9 @@ public class Ball : MonoBehaviour
 
     GameObject thisBall;
 
+    [field: SerializeField]
+    MeshRenderer ballmesh;
+
     public static bool ballAtDefaultPos;
 
     public bool ThrowProperty
@@ -61,6 +64,7 @@ public class Ball : MonoBehaviour
         random = new Random(seed: 1);
         thisBall = gameObject;
         source = GetComponent<AudioSource>();
+        ballmesh = GetComponent<MeshRenderer>();
     }
 
     // Start is called before the first frame update
@@ -68,6 +72,7 @@ public class Ball : MonoBehaviour
     {
         body.isKinematic = true;
         resetBall = true;
+        ballmesh.material = GameManager.saver.usrdata.active_skin;
     }
 
     // Update is called once per frame

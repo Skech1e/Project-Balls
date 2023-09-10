@@ -23,14 +23,15 @@ public class Levels : MonoBehaviour
 
     private void Awake()
     {
-        LevelIcon = GetComponent<Image>();
         IconScore = new GameObject[2];
-        LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
+        LevelIcon = GetComponent<Image>();
+        Button = GetComponent<Button>();
+        /*LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
+        Button.interactable = isUnlocked == true ? true : false;*/
+        //Unlock();
         for (int i = 0; i < 2; i++)
             IconScore[i] = transform.GetChild(i).gameObject;
 
-        Button = GetComponent<Button>();
-        Button.interactable = isUnlocked == true ? true : false;
         SceneLoader = FindObjectOfType<SceneLoader>();
 
         Button.onClick.AddListener(() => LoadLevel());
@@ -46,24 +47,24 @@ public class Levels : MonoBehaviour
 
     private void OnEnable()
     {
-
+        PlayPageUI.updateIcons += Unlock;
     }
 
     private void OnDisable()
     {
-
+        PlayPageUI.updateIcons -= Unlock;
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        LevelIcon = GetComponent<Image>();
+        Button = GetComponent<Button>();
         lvlno = int.Parse(name);
         Arenano = Arena;
-        //saver = FindObjectOfType<Saver>();
-        saver = GameManager.LevelScoreData as Saver;
-        //saver.LoadfromJson();
-        saver.LoadfromJson(saver);
-        isUnlocked = saver.arenas[Arena].levels[lvlno - 1].Unlocked;
+        saver = GameManager.saver;
+        //saver.LoadfromJson(saver);
+        //isUnlocked = saver.arenas[Arena].levels[lvlno - 1].Unlocked;
         Unlock();
         LoadIconStats();
     }
@@ -97,8 +98,7 @@ public class Levels : MonoBehaviour
 
     void Unlock()
     {
-        LevelIcon = GetComponent<Image>();
-        Button = GetComponent<Button>();
+        isUnlocked = saver.arenas[Arena].levels[lvlno - 1].Unlocked;
         LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
         Button.interactable = isUnlocked == true ? true : false;
     }

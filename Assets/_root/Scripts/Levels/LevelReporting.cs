@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +11,7 @@ public class LevelReporting : MonoBehaviour
 
     public static int Levelnumber;
     public static float bonus;
-    enum BallCountEnum: int 
+    enum BallCountEnum : int
     {
         Three = 3, Four = 4, Five = 5, Six = 6, Seven = 7, Eight = 8, Nine = 9
     }
@@ -20,7 +21,7 @@ public class LevelReporting : MonoBehaviour
     public static int ballCount;
     public static int goalCount, ScorePerBasket;
 
-    enum Scorepergoal: int
+    enum Scorepergoal : int
     {
         Seventy_Five = 75,
         Hundred = 100,
@@ -31,7 +32,7 @@ public class LevelReporting : MonoBehaviour
     }
     [SerializeField] Scorepergoal sc;
 
-    enum ScoringTier: int
+    enum ScoringTier : int
     {
         Five = 5,
         Seven = 7,
@@ -82,7 +83,7 @@ public class LevelReporting : MonoBehaviour
     {
         ScorePerBasket = (int)sc;
         bonus = 2.0f;
-        foreach(Transform child in transform)
+        foreach (Transform child in transform)
             child.gameObject.SetActive(true);
 
         basketCount = FindObjectsOfType<Basket>(false);
@@ -91,7 +92,7 @@ public class LevelReporting : MonoBehaviour
 
         ballCount = (int)_BallCount;
         goalCount = 0;
-        
+
     }
 
     // Update is called once per frame
@@ -117,17 +118,36 @@ public class LevelReporting : MonoBehaviour
     {
         goalCount++;
         if (goalCount == basketCount.Length)
-        {
-            LevelComplete.Invoke();
-        }
+            Result(true);
     }
 
     void BallLivesTracker()
     {
         ballCount--;
         if (ballCount == 0 && goalCount != basketCount.Length)
-            LevelFailed.Invoke();
+            Result(false);
     }
 
+    void Result(bool win)
+    {
+        if(win)
+        {
+            StartCoroutine(Pass());
+            IEnumerator Pass()
+            {
+                yield return new WaitForSeconds(1.8f);
+                LevelComplete.Invoke();
+            }
+        }
+        else
+        {
+            StartCoroutine(Fail());
+            IEnumerator Fail()
+            {
+                yield return new WaitForSeconds(1.8f);
+                LevelFailed.Invoke();
+            }
+        }
+    }
 
 }

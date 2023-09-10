@@ -441,6 +441,8 @@ MonoBehaviour:
   DelayIn: 0.25
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094605372746686
@@ -528,6 +530,8 @@ MonoBehaviour:
   DelayIn: 0.4
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094605388156665
@@ -861,6 +865,8 @@ MonoBehaviour:
   DelayIn: 0.15
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!114 &3324094605466069831
@@ -978,6 +984,8 @@ MonoBehaviour:
   DelayIn: 0.15
   DelayOut: 0
   Offset: 0.69
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094605517877488
@@ -1169,6 +1177,8 @@ MonoBehaviour:
   DelayIn: 0.4
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094605521272594
@@ -1541,6 +1551,8 @@ MonoBehaviour:
   DelayIn: 0.25
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094605706995682
@@ -1630,6 +1642,8 @@ MonoBehaviour:
   DelayIn: 0.2
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094605733511268
@@ -1954,6 +1968,8 @@ MonoBehaviour:
   DelayIn: 0.25
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094605802556622
@@ -2744,6 +2760,8 @@ MonoBehaviour:
   DelayIn: 0.15
   DelayOut: 0.15
   Offset: 0.699
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 3
 --- !u!1 &3324094606020327891
@@ -3079,7 +3097,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3324094605466069827}
+      - m_Target: {fileID: 3324094605485786485}
         m_TargetAssemblyTypeName: Tween, Assembly-CSharp
         m_MethodName: Disable
         m_Mode: 1
@@ -3224,6 +3242,8 @@ MonoBehaviour:
   DelayIn: 0.8
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094606117340869
@@ -3340,6 +3360,8 @@ MonoBehaviour:
   DelayIn: 0.15
   DelayOut: 0.15
   Offset: 0
+  FromValue: 0
+  ToValue: 0
 --- !u!1 &3324094606148994411
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,6 +3476,8 @@ MonoBehaviour:
   DelayIn: 0.15
   DelayOut: 0.15
   Offset: 0
+  FromValue: 0
+  ToValue: 0
 --- !u!114 &3324094606148994414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3473,6 +3497,8 @@ MonoBehaviour:
   DelayIn: 0.15
   DelayOut: 0.15
   Offset: 0.699
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 3
 --- !u!114 &3324094606148994413
@@ -3667,6 +3693,8 @@ MonoBehaviour:
   DelayIn: 0.4
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094606191137606
@@ -3864,6 +3892,8 @@ MonoBehaviour:
   DelayIn: 0.6
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094606221494928
@@ -4137,6 +4167,8 @@ MonoBehaviour:
   DelayIn: 0.15
   DelayOut: 0.15
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 3
 --- !u!1 &3324094606279686009
@@ -4224,6 +4256,8 @@ MonoBehaviour:
   DelayIn: 0.25
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 3
 --- !u!1 &3324094606288046770
@@ -4551,6 +4585,8 @@ MonoBehaviour:
   DelayIn: 0.15
   DelayOut: 0.15
   Offset: 0
+  FromValue: 0
+  ToValue: 0
 --- !u!1 &3324094606332960812
 GameObject:
   m_ObjectHideFlags: 0
@@ -6039,6 +6075,8 @@ MonoBehaviour:
   DelayIn: 0.25
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094606868590552
@@ -6714,6 +6752,8 @@ MonoBehaviour:
   DelayIn: 0.4
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094607225961275
@@ -6905,6 +6945,8 @@ MonoBehaviour:
   DelayIn: 0.4
   DelayOut: 0
   Offset: 0
+  FromValue: 0
+  ToValue: 0
   scaleTypeIn: 3
   scaleTypeOut: 0
 --- !u!1 &3324094607232043872
@@ -7372,6 +7414,8 @@ MonoBehaviour:
   DelayIn: 0.15
   DelayOut: 0.15
   Offset: 0
+  FromValue: 0
+  ToValue: 0
 --- !u!1 &3324094607321704515
 GameObject:
   m_ObjectHideFlags: 0

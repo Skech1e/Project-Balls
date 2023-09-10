@@ -9,6 +9,7 @@ public class CameraMotion : MonoBehaviour
     List<Vector3> angles, positions;
     [SerializeField] Button POV;
     [SerializeField] float speed;
+    Animator animator;
 
     int counter;
 
@@ -37,6 +38,7 @@ public class CameraMotion : MonoBehaviour
             LeftUpperPos,
             RightUpperPos
         };
+        
     }
 
     private void OnEnable()
@@ -59,17 +61,17 @@ public class CameraMotion : MonoBehaviour
     {
         targetAngle = CentreAngle;
         speed = 0.042f;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         POVShift();
     }
 
     void GetPOVButton()
     {
-        print("k");
         POV = GameObject.FindGameObjectWithTag("POV").GetComponent<Button>();
         POV.onClick.AddListener(() => POVShiftToggle());
     }
@@ -78,7 +80,9 @@ public class CameraMotion : MonoBehaviour
     {
         counter += counter < 2 ? 1 : -counter;
         targetAngle = angles[counter];
-        targetPos = positions[counter];        
+        targetPos = positions[counter];
+        
+        //animator.SetInteger("pos", counter);
     }
 
     void POVShift()
@@ -87,7 +91,8 @@ public class CameraMotion : MonoBehaviour
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(targetAngle), speed);
             transform.position = Vector3.Slerp(transform.position, targetPos, speed);
-        }            
+        }
+        
     }
 
     void ResetCamera()

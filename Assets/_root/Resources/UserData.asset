@@ -14,50 +14,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arenas:
   - name: Arena 1
-    price: 0
+    starPrice: 0
+    coinPrice: 0
     unlocked: 1
     levels:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
+      hiscore: 560
+      ballCount: 3
+      starCount: 2
+      coins_earned: 1130
+      timeTaken: 6.265906
     - Unlocked: 1
       name: Level 2
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
+      hiscore: 598
+      ballCount: 4
+      starCount: 1
+      coins_earned: 2524
+      timeTaken: 16.7866
     - Unlocked: 1
       name: Level 3
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
-    - Unlocked: 0
+      hiscore: 1337
+      ballCount: 2
+      starCount: 1
+      coins_earned: 795
+      timeTaken: 18.384853
+    - Unlocked: 1
       name: Level 4
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
-    - Unlocked: 0
+      hiscore: 390
+      ballCount: 5
+      starCount: 3
+      coins_earned: 390
+      timeTaken: 4.793315
+    - Unlocked: 1
       name: Level 5
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
-    - Unlocked: 0
+      hiscore: 520
+      ballCount: 3
+      starCount: 1
+      coins_earned: 520
+      timeTaken: 20.937723
+    - Unlocked: 1
       name: Level 6
       levelid: 0
       hiscore: 0
@@ -146,15 +147,16 @@ MonoBehaviour:
       coins_earned: 0
       timeTaken: 0
   - name: Arena 2
-    price: 0
+    starPrice: 0
+    coinPrice: 0
     unlocked: 1
     levels:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 0
+      hiscore: 123
       ballCount: 0
-      starCount: 0
+      starCount: 2
       coins_earned: 0
       timeTaken: 0
     - Unlocked: 1
@@ -165,7 +167,7 @@ MonoBehaviour:
       starCount: 0
       coins_earned: 0
       timeTaken: 0
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 3
       levelid: 0
       hiscore: 0
@@ -278,17 +280,18 @@ MonoBehaviour:
       coins_earned: 0
       timeTaken: 0
   - name: Arena 3
-    price: 0
+    starPrice: 0
+    coinPrice: 0
     unlocked: 1
     levels:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
+      hiscore: 999
+      ballCount: 1
+      starCount: 1
+      coins_earned: 640
+      timeTaken: 21.142466
     - Unlocked: 1
       name: Level 2
       levelid: 0
@@ -297,7 +300,7 @@ MonoBehaviour:
       starCount: 0
       coins_earned: 0
       timeTaken: 0
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 3
       levelid: 0
       hiscore: 0
@@ -410,7 +413,8 @@ MonoBehaviour:
       coins_earned: 0
       timeTaken: 0
   - name: Arena 4
-    price: 0
+    starPrice: 45
+    coinPrice: 3500
     unlocked: 1
     levels:
     - Unlocked: 1
@@ -421,7 +425,7 @@ MonoBehaviour:
       starCount: 0
       coins_earned: 0
       timeTaken: 0
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 2
       levelid: 0
       hiscore: 0
@@ -429,7 +433,7 @@ MonoBehaviour:
       starCount: 0
       coins_earned: 0
       timeTaken: 0
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 3
       levelid: 0
       hiscore: 0
@@ -542,10 +546,11 @@ MonoBehaviour:
       coins_earned: 0
       timeTaken: 0
   - name: Arena 5
-    price: 0
-    unlocked: 0
+    starPrice: 50
+    coinPrice: 5000
+    unlocked: 1
     levels:
-    - Unlocked: 0
+    - Unlocked: 1
       name: Level 1
       levelid: 0
       hiscore: 0
@@ -674,7 +679,8 @@ MonoBehaviour:
       coins_earned: 0
       timeTaken: 0
   - name: Arena 6
-    price: 0
+    starPrice: 55
+    coinPrice: 6500
     unlocked: 0
     levels:
     - Unlocked: 0
@@ -806,7 +812,8 @@ MonoBehaviour:
       coins_earned: 0
       timeTaken: 0
   - name: Arena 7
-    price: 0
+    starPrice: 0
+    coinPrice: 0
     unlocked: 0
     levels:
     - Unlocked: 0
@@ -938,7 +945,8 @@ MonoBehaviour:
       coins_earned: 0
       timeTaken: 0
   - name: Arena 8
-    price: 0
+    starPrice: 0
+    coinPrice: 0
     unlocked: 0
     levels:
     - Unlocked: 0
@@ -1070,7 +1078,8 @@ MonoBehaviour:
       coins_earned: 0
       timeTaken: 0
   - name: Arena 9
-    price: 0
+    starPrice: 0
+    coinPrice: 0
     unlocked: 0
     levels:
     - Unlocked: 0
@@ -1202,7 +1211,8 @@ MonoBehaviour:
       coins_earned: 0
       timeTaken: 0
   - name: Arena 10
-    price: 0
+    starPrice: 0
+    coinPrice: 0
     unlocked: 0
     levels:
     - Unlocked: 0
@@ -1333,1332 +1343,14 @@ MonoBehaviour:
       starCount: 0
       coins_earned: 0
       timeTaken: 0
-  scores:
-    arenas:
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-    - name: 
-      price: 0
-      unlocked: 0
-      levels:
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
-      - Unlocked: 0
-        name: Level
-        levelid: 0
-        hiscore: 0
-        ballCount: 0
-        starCount: 0
-        coins_earned: 0
-        timeTaken: 0
   usrdata:
     Name: 
-    balance: 6799
+    balance: 4169
+    starbalance: 80
+    active_skin: {fileID: 102900000, guid: 7096662908e5fed409f1e3d1a25a2eee, type: 3}
     usr_inventory: []
     Sound: 1
     Music: 0
-    Graphics: 2
+  inventory:
+    skinId: 02000000060000000a00000011000000
+    arenaID: 

@@ -9,8 +9,9 @@ using UnityEngine;
 public class Saver : ScriptableObject
 {
     public Arena[] arenas = new Arena[10];
-    [SerializeField] public Scores scores;
-    [SerializeField] public UserData usrdata;
+    //[SerializeField] public Scores scores;
+    public UserData usrdata;
+    public Inventory inventory;
     string scpath, cfgpath;
 
     private void Awake()
@@ -20,7 +21,6 @@ public class Saver : ScriptableObject
         cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
 
         LoadfromJson(this);
-        //SavetoJson(scores);
     }
 
     /*private void OnValidate()
@@ -57,16 +57,16 @@ public class Saver : ScriptableObject
     public void LoadfromJson(Saver s)
     {
         string score = File.ReadAllText(scpath);
-        //Scores s = JsonUtility.FromJson<Scores>(score);
         if (score is null)
         {
             Debug.Log("No save found! Created.");
             SavetoJson(this);
+            SavetoJson(usrdata);
+            SavetoJson(inventory);
+            return;
         }
 
-        //scores.arenas = s.arenas;
         Debug.Log("save loaded");
-        //return JsonUtility.FromJson<Saver>(score);
         JsonUtility.FromJsonOverwrite(score, s);
     }
 
@@ -80,12 +80,22 @@ public class Saver : ScriptableObject
     public UserData LoadUser()
     {
         string user = File.ReadAllText(cfgpath);
-        if (user is null)
-        {
-            Debug.Log("No save found! Created.");
-            SavetoJson(usrdata);
-        }
+        Debug.Log("Usr data loaded");
         return JsonUtility.FromJson<UserData>(user);
+    }
+
+    public void SavetoJson(Inventory _inv)
+    {
+        string inv = JsonUtility.ToJson(_inv);
+        File.WriteAllText(cfgpath, inv);
+        Debug.Log("inventory saved");
+    }
+
+    public Inventory LoadInventory()
+    {
+        string inventory = File.ReadAllText(cfgpath);
+        Debug.Log("Inventory Loaded");
+        return JsonUtility.FromJson<Inventory>(inventory);
     }
 }
 
@@ -106,7 +116,7 @@ public class Scores
 public class Arena
 {
     public string name;
-    public int price;
+    public int starPrice, coinPrice;
     public bool unlocked;
     public Level[] levels = new Level[16];
 }
@@ -124,18 +134,17 @@ public class Level
 public class UserData
 {
     public string Name;
-    public int balance;
+    public int balance, starbalance;
+    public Material active_skin;
     public List<Inventory> usr_inventory = new();
 
     public bool Sound, Music;
-    public int Graphics;
 }
 
 
 [System.Serializable]
 public class Inventory
 {
-    public string id;
-    public string name;
-    public int price;
+    public List<int> skinId;
+    public List<int> arenaID;
 }

@@ -15,10 +15,10 @@ public class Scored : MonoBehaviour
     [SerializeField] GameObject basket;
     public Scored[] basketCount;
 
-
     public delegate void OnGoal();
     public static event OnGoal GoalScored;
 
+    [SerializeField] ParticleSystem glow, glitter;
 
     private void Awake()
     {
@@ -33,6 +33,8 @@ public class Scored : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        glow.Stop();
+        glitter.Stop();
     }
 
     private void OnEnable()
@@ -61,6 +63,8 @@ public class Scored : MonoBehaviour
             score = LevelReporting.ScorePerBasket;
             totalScore += score;
             goal = true;
+            glow.Play();
+            glitter.Play();
             Invoke(nameof(InvokeGoalScoredEvent), 0.5f);
         }
     }
@@ -73,20 +77,18 @@ public class Scored : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        print("called");
         bc.enabled = false;
         Invoke(nameof(Cheer), 1f);
     }
 
     void Cheer()
     {
-        print("ok");
         scoreTextPopup.transform.localPosition = initScoreTextPosition;
         scoreTextPopup.gameObject.SetActive(false);
         scoreTextPopup.alpha = 1f;
         goal = false;
         basket.SetActive(false);
-        print(basket.name+" basket");
+        //print(basket.name+" basket");
     }
 
     void ScoreTextMotion()

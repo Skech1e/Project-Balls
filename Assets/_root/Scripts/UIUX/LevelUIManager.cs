@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LevelUIManager : MonoBehaviour
 {
+    // TO BE DELETED
+
     //[SerializeField] List<Arena> Arenas = new();
     [SerializeField] List<Levels> Arena1 = new();
     [SerializeField] List<Levels> Arena2 = new();
