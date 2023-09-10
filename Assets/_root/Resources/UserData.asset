@@ -7,7 +7,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e41139a8fc19974488eb8666abefc5d1, type: 3}
   m_Name: UserData
@@ -21,44 +21,44 @@ MonoBehaviour:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 560
-      ballCount: 3
-      starCount: 2
-      coins_earned: 1130
-      timeTaken: 6.265906
-    - Unlocked: 1
+      hiscore: 0
+      ballCount: 0
+      starCount: 0
+      coins_earned: 0
+      timeTaken: 0
+    - Unlocked: 0
       name: Level 2
       levelid: 0
-      hiscore: 598
-      ballCount: 4
-      starCount: 1
-      coins_earned: 2524
-      timeTaken: 16.7866
-    - Unlocked: 1
+      hiscore: 0
+      ballCount: 0
+      starCount: 0
+      coins_earned: 0
+      timeTaken: 0
+    - Unlocked: 0
       name: Level 3
       levelid: 0
-      hiscore: 1337
-      ballCount: 2
-      starCount: 1
-      coins_earned: 795
-      timeTaken: 18.384853
-    - Unlocked: 1
+      hiscore: 0
+      ballCount: 0
+      starCount: 0
+      coins_earned: 0
+      timeTaken: 0
+    - Unlocked: 0
       name: Level 4
       levelid: 0
-      hiscore: 390
-      ballCount: 5
-      starCount: 3
-      coins_earned: 390
-      timeTaken: 4.793315
-    - Unlocked: 1
+      hiscore: 0
+      ballCount: 0
+      starCount: 0
+      coins_earned: 0
+      timeTaken: 0
+    - Unlocked: 0
       name: Level 5
       levelid: 0
-      hiscore: 520
-      ballCount: 3
-      starCount: 1
-      coins_earned: 520
-      timeTaken: 20.937723
-    - Unlocked: 1
+      hiscore: 0
+      ballCount: 0
+      starCount: 0
+      coins_earned: 0
+      timeTaken: 0
+    - Unlocked: 0
       name: Level 6
       levelid: 0
       hiscore: 0
@@ -154,12 +154,12 @@ MonoBehaviour:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 123
+      hiscore: 0
       ballCount: 0
-      starCount: 2
+      starCount: 0
       coins_earned: 0
       timeTaken: 0
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 2
       levelid: 0
       hiscore: 0
@@ -287,12 +287,12 @@ MonoBehaviour:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 999
-      ballCount: 1
-      starCount: 1
-      coins_earned: 640
-      timeTaken: 21.142466
-    - Unlocked: 1
+      hiscore: 0
+      ballCount: 0
+      starCount: 0
+      coins_earned: 0
+      timeTaken: 0
+    - Unlocked: 0
       name: Level 2
       levelid: 0
       hiscore: 0
@@ -415,9 +415,9 @@ MonoBehaviour:
   - name: Arena 4
     starPrice: 45
     coinPrice: 3500
-    unlocked: 1
+    unlocked: 0
     levels:
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 1
       levelid: 0
       hiscore: 0
@@ -548,9 +548,9 @@ MonoBehaviour:
   - name: Arena 5
     starPrice: 50
     coinPrice: 5000
-    unlocked: 1
+    unlocked: 0
     levels:
-    - Unlocked: 1
+    - Unlocked: 0
       name: Level 1
       levelid: 0
       hiscore: 0
@@ -1345,12 +1345,12 @@ MonoBehaviour:
       timeTaken: 0
   usrdata:
     Name: 
-    balance: 4169
-    starbalance: 80
-    active_skin: {fileID: 102900000, guid: 7096662908e5fed409f1e3d1a25a2eee, type: 3}
+    balance: 7777
+    starbalance: 69
+    active_skin: {fileID: 2100000, guid: 7572deb49191bae4eb430034fba4eea6, type: 2}
     usr_inventory: []
     Sound: 1
-    Music: 0
+    Music: 1
   inventory:
-    skinId: 02000000060000000a00000011000000
+    skinId: 00000000
     arenaID: 

@@ -100,7 +100,7 @@ public class SkinMenu : MonoBehaviour
         {
             BuyBtn.gameObject.SetActive(false);
             EquipBtn.gameObject.SetActive(true);
-            pricetxt.text = "sold";
+            pricetxt.text = "owned";
             if(saver.usrdata.active_skin == skins[skinID].Material)
                 EquipBtn.interactable = false;
             else

@@ -54,13 +54,13 @@ public class LevelReporting : MonoBehaviour
 
     private void OnEnable()
     {
-        Ball.BallEvent += BallLivesTracker;
         Levelnumber = int.Parse(name);
         LevelManager.currentLevel = Levelnumber - 1;
 
         for (int i = 0; i < scTier.Length; i++)
             GameManager.scoreTier[i] = (int)scTier[i];
 
+        Ball.BallEvent += BallLivesTracker;
         ResetLevel();
         Scored.GoalScored += GoalTracker;
 
@@ -103,8 +103,8 @@ public class LevelReporting : MonoBehaviour
 
     void ResetLevel()
     {
-        FindObjectOfType<Scored>().CancelInvoke();
-        FindObjectOfType<Ball>().CancelInvoke();
+        FindObjectOfType<Scored>()?.CancelInvoke();
+        FindObjectOfType<Ball>()?.CancelInvoke();
         //Ball.CancelInvokeMethod();
         Time.timeScale = 1;
         ballCount = (int)_BallCount;
@@ -144,7 +144,7 @@ public class LevelReporting : MonoBehaviour
             StartCoroutine(Fail());
             IEnumerator Fail()
             {
-                yield return new WaitForSeconds(1.8f);
+                yield return new WaitForSeconds(0f);
                 LevelFailed.Invoke();
             }
         }
