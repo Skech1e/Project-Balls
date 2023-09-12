@@ -10,7 +10,7 @@ public class SettingsUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI txt_graphics, shadow_text;
     [SerializeField] List<Sprite> Toggle = new();
 
-    bool Sound, Music;
+    [SerializeField] bool Sound, Music;
     enum Graphics : int { Low = 0, Medium = 1, High = 2, Max = 3 };
     private readonly int graphicsLength = Enum.GetValues(typeof(Graphics)).Length;
 
@@ -36,8 +36,11 @@ public class SettingsUI : MonoBehaviour
 
     private void OnEnable()
     {
-        Sound = saver.LoadUser().Sound;
-        Music = saver.LoadUser().Music;
+        Sound = saver.usrdata.Sound;
+        Music = saver.usrdata.Music;
+
+        spr_sound.sprite = Sound == true ? Toggle[1] : Toggle[0];
+        spr_music.sprite = Music == true ? Toggle[1] : Toggle[0];
         //Counter = saver.LoadUser().Graphics;
         //QualitySettings.SetQualityLevel(Counter, false);
     }
@@ -49,8 +52,7 @@ public class SettingsUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {        
-        spr_sound.sprite = Sound == true ? Toggle[1] : Toggle[0];
-        spr_music.sprite = Music == true ? Toggle[1] : Toggle[0];
+        
         //txt_graphics.text = shadow_text.text = ((Graphics)Counter).ToString();
         
     }

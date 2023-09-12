@@ -8,6 +8,7 @@ public class Ball : MonoBehaviour
     [SerializeField] Vector3 direction;
 
     [SerializeField] Trajectory track;
+    TrailRenderer trail;
     [SerializeField] bool Throw, ballEventCalled;
     Rigidbody body;
     Vector3 defaultPos;
@@ -58,6 +59,7 @@ public class Ball : MonoBehaviour
     private void Awake()
     {
         track = FindObjectOfType<Trajectory>();
+        trail = GetComponent<TrailRenderer>();
         body = GetComponent<Rigidbody>();
         defaultPos = transform.position;
         defaultRotn = transform.rotation;
@@ -129,6 +131,8 @@ public class Ball : MonoBehaviour
             track.gameObject.SetActive(true);
             Throw = false;
             ballEventCalled = false;
+            trail.emitting = true;
+            trail.Clear();
         }
     }
 

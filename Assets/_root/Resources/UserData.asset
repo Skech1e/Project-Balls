@@ -1345,10 +1345,9 @@ MonoBehaviour:
       timeTaken: 0
   usrdata:
     Name: 
-    balance: 7777
-    starbalance: 69
+    balance: 0
+    starbalance: 0
     active_skin: {fileID: 2100000, guid: 7572deb49191bae4eb430034fba4eea6, type: 2}
-    usr_inventory: []
     Sound: 1
     Music: 1
   inventory:

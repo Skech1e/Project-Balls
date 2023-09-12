@@ -136,9 +136,8 @@ public class UserData
     public string Name;
     public int balance, starbalance;
     public Material active_skin;
-    public List<Inventory> usr_inventory = new();
-
     public bool Sound, Music;
+
 }
 
 
