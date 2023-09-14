@@ -21,28 +21,28 @@ MonoBehaviour:
     - Unlocked: 1
       name: Level 1
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
-    - Unlocked: 0
+      hiscore: 200
+      ballCount: 2
+      starCount: 3
+      coins_earned: 950
+      timeTaken: 6.227273
+    - Unlocked: 1
       name: Level 2
       levelid: 0
-      hiscore: 0
-      ballCount: 0
-      starCount: 0
-      coins_earned: 0
-      timeTaken: 0
-    - Unlocked: 0
+      hiscore: 390
+      ballCount: 5
+      starCount: 3
+      coins_earned: 390
+      timeTaken: 5.386697
+    - Unlocked: 1
       name: Level 3
       levelid: 0
       hiscore: 0
       ballCount: 0
-      starCount: 0
+      starCount: 2
       coins_earned: 0
       timeTaken: 0
-    - Unlocked: 0
+    - Unlocked: 1
       name: Level 4
       levelid: 0
       hiscore: 0
@@ -1345,11 +1345,11 @@ MonoBehaviour:
       timeTaken: 0
   usrdata:
     Name: 
-    balance: 0
-    starbalance: 0
-    active_skin: {fileID: 2100000, guid: 7572deb49191bae4eb430034fba4eea6, type: 2}
+    balance: 4119
+    starbalance: 78
+    active_skin: {fileID: 2100000, guid: e42e279f282720149870c81790ea65ea, type: 2}
     Sound: 1
     Music: 1
   inventory:
-    skinId: 00000000
+    skinId: 000000000300000004000000070000001100000009000000
     arenaID: 

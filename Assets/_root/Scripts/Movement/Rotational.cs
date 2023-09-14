@@ -24,7 +24,7 @@ public class Rotational : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         basket.RotateAround(Centre, Vector3.forward, Speed * Time.deltaTime);
         basket.Rotate(0, 0, Speed * Time.deltaTime );

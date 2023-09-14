@@ -233,11 +233,15 @@ public class GameManager : MonoBehaviour
     {
         totalScore += score;
         highScore = totalScore > highScore ? totalScore : highScore;
+    }
 
-        saver.arenas[currentArenaNo].levels[currentLevelNo].ballCount = LevelReporting.ballCount;
-        saver.arenas[currentArenaNo].levels[currentLevelNo].hiscore = highScore;
-        saver.arenas[currentArenaNo].levels[currentLevelNo].timeTaken = timer;
-        saver.arenas[currentArenaNo].levels[currentLevelNo].coins_earned += score;
+    public void SaveScores()
+    {
+        var level = saver.arenas[currentArenaNo].levels[currentLevelNo];
+        level.ballCount = LevelReporting.ballCount;
+        level.hiscore = highScore;
+        level.timeTaken = timer;
+        level.coins_earned += score;
         saver.usrdata.balance += score;
     }
 

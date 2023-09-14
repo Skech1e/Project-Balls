@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9d81d4b2da72449fc50ce69bb1b66, type: 3}
   m_Name: cheese
   m_EditorClassIdentifier: 
+  <id>k__BackingField: 3
   <Name>k__BackingField: Cheese
   <Material>k__BackingField: {fileID: 2100000, guid: 54d05dcfc3cade144a864dc76326600b,
     type: 2}

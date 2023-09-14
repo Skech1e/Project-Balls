@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9d81d4b2da72449fc50ce69bb1b66, type: 3}
   m_Name: water drop
   m_EditorClassIdentifier: 
+  <id>k__BackingField: 21
   <Name>k__BackingField: Water Drop
   <Material>k__BackingField: {fileID: 2100000, guid: bb7edd0053edb764e9e858bf9f2486f9,
     type: 2}
-  <Price>k__BackingField: 1000
+  <Price>k__BackingField: 20000
   icon: {fileID: 0}

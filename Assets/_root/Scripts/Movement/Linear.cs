@@ -20,7 +20,7 @@ public class Linear : MonoBehaviour
         basketPosition = transform.GetChild(0).localPosition;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         transform.GetChild(0).localPosition = basketPosition;
         moveValue = Mathf.PingPong(Time.time * Speed, Length) + offset;

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9d81d4b2da72449fc50ce69bb1b66, type: 3}
   m_Name: stickerbomb
   m_EditorClassIdentifier: 
+  <id>k__BackingField: 19
   <Name>k__BackingField: Stickerbomb
   <Material>k__BackingField: {fileID: 2100000, guid: 7451ba00b91df9a4db8e15fa8b9aef0f,
     type: 2}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9d81d4b2da72449fc50ce69bb1b66, type: 3}
   m_Name: doodle
   m_EditorClassIdentifier: 
+  <id>k__BackingField: 6
   <Name>k__BackingField: Doodle
   <Material>k__BackingField: {fileID: 2100000, guid: 94e1feaeca48692479123ac42f997526,
     type: 2}

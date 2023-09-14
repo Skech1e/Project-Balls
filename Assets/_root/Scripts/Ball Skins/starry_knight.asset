@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9d81d4b2da72449fc50ce69bb1b66, type: 3}
   m_Name: starry_knight
   m_EditorClassIdentifier: 
+  <id>k__BackingField: 18
   <Name>k__BackingField: Starry Knight
   <Material>k__BackingField: {fileID: 2100000, guid: d4db691e83bb10842aa340b8a09ef7fb,
     type: 2}

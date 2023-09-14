@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9d81d4b2da72449fc50ce69bb1b66, type: 3}
   m_Name: abstract
   m_EditorClassIdentifier: 
+  <id>k__BackingField: 1
   <Name>k__BackingField: Abstract
   <Material>k__BackingField: {fileID: 2100000, guid: 9d7e04ba806c51a4dbfbd93e12753a43,
     type: 2}

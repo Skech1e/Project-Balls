@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9d81d4b2da72449fc50ce69bb1b66, type: 3}
   m_Name: leopard
   m_EditorClassIdentifier: 
+  <id>k__BackingField: 12
   <Name>k__BackingField: Leopard
   <Material>k__BackingField: {fileID: 2100000, guid: 118a0191e206bb7459c9ac4504df5805,
     type: 2}

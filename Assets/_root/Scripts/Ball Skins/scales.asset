@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61d9d81d4b2da72449fc50ce69bb1b66, type: 3}
   m_Name: scales
   m_EditorClassIdentifier: 
+  <id>k__BackingField: 17
   <Name>k__BackingField: Scales
   <Material>k__BackingField: {fileID: 2100000, guid: 808f37930e50a8c4ea90748a6aa6415a,
     type: 2}

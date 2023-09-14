@@ -22215,7 +22215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571518697}
   m_LocalRotation: {x: 0.08715578, y: -0, z: -0, w: 0.9961947}
-  m_LocalPosition: {x: 0.010000229, y: 3.0679996, z: -16.67}
+  m_LocalPosition: {x: 0.010000229, y: 4.59, z: -16.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31740,7 +31740,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810874879}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: 12.01001, y: 3.777954, z: 4.83}
+  m_LocalPosition: {x: 12.01001, y: 5.2999268, z: 4.83}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35948,7 +35948,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 01064033d081ee04aa827e3d6a452e35, type: 2}
   - {fileID: 11400000, guid: 56f757229e7b8c74a852c063c140c009, type: 2}
   - {fileID: 11400000, guid: a0bd0f33f53820b4f91891dd9ac4c08c, type: 2}
-  <skinID>k__BackingField: 0
+  <srno>k__BackingField: 0
   pricetxt: {fileID: 169428519}
   balance: {fileID: 217314297}
   Left: {fileID: 1971468943}
