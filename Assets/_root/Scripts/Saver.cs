@@ -135,7 +135,7 @@ public class UserData
 {
     public string Name;
     public int balance, starbalance;
-    public Material active_skin;
+    public Skin active_skin;
     public bool Sound, Music;
 
 }
@@ -144,6 +144,6 @@ public class UserData
 [System.Serializable]
 public class Inventory
 {
-    public List<int> skinId;
+    public List<Skin> skinList;
     public List<int> arenaID;
 }

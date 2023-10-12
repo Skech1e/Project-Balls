@@ -13,7 +13,7 @@ public class PlayPageUI : MonoBehaviour
     PositionTween pt;
     [SerializeField] GameObject LockedPanel;
 
-    [SerializeField] List<GameObject> arenaPics = new();
+    public List<GameObject> arenaPics = new();
 
     private Saver saver;
 

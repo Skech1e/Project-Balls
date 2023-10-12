@@ -54,11 +54,15 @@ SpriteAtlas:
     - {fileID: 2800000, guid: f99e383d0916cfe43a67e0b46a2da123, type: 3}
     - {fileID: 2800000, guid: 79a2ccf34c07145419e341917d2b0a2e, type: 3}
     - {fileID: 2800000, guid: f13084bf26274e949876b24d4477cfda, type: 3}
+    - {fileID: 2800000, guid: 80d18f93c610cf7449c0ba23107fd059, type: 3}
+    - {fileID: 2800000, guid: e1e81ab3fbed9eb4682a8b6542877875, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 80d18f93c610cf7449c0ba23107fd059, type: 3}
+  - {fileID: 21300000, guid: e1e81ab3fbed9eb4682a8b6542877875, type: 3}
   - {fileID: 21300000, guid: 79a2ccf34c07145419e341917d2b0a2e, type: 3}
   - {fileID: 21300000, guid: aaec24f51868c924a81e95d1ac4fb631, type: 3}
   - {fileID: 21300000, guid: 2d173e6801486cf4eb6391c19968114b, type: 3}
@@ -70,6 +74,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: b4ff36edf864fce4ba46d8eafe0dd13f, type: 3}
   - {fileID: 21300000, guid: f13084bf26274e949876b24d4477cfda, type: 3}
   m_PackedSpriteNamesToIndex:
+  - coins
+  - no ads
   - coin5
   - c2
   - coin1

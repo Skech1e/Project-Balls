@@ -17,6 +17,7 @@ public class Levels : MonoBehaviour
     [SerializeField] GameObject[] IconScore;
 
     SceneLoader SceneLoader;
+    GameManager gameManager;
 
     private Saver saver;
     //[SerializeField] ScriptableObject UserLevelData;
@@ -26,6 +27,7 @@ public class Levels : MonoBehaviour
         IconScore = new GameObject[2];
         LevelIcon = GetComponent<Image>();
         Button = GetComponent<Button>();
+        gameManager = FindObjectOfType<GameManager>();
         /*LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
         Button.interactable = isUnlocked == true ? true : false;*/
         //Unlock();

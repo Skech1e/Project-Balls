@@ -15,6 +15,7 @@ public class UIController : MonoBehaviour
     public static event UIControl OnRestartfromUI;
 
     SceneLoader sceneLoader;
+    GameManager gameManager;
 
     private void OnEnable()
     {
@@ -39,6 +40,7 @@ public class UIController : MonoBehaviour
         //pages.SetActive(false);
         sceneLoader = FindObjectOfType<SceneLoader>();
         Application.targetFrameRate = 420;
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Start is called before the first frame update
@@ -71,11 +73,6 @@ public class UIController : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1;
-    }
-
-    public void NextLevel()
-    {
-        //Time.timeScale = 1;
     }
 
     public void LevelFinished()
@@ -113,6 +110,7 @@ public class UIController : MonoBehaviour
         Time.timeScale = 1;
         //SceneManager.LoadScene(0);
         sceneLoader.SceneLoad(0, 0);
+        gameManager.SaveScores();
     }
 
     public void Restart()

@@ -37,22 +37,11 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //saver = FindObjectOfType<Saver>();
         Application.targetFrameRate = 420;
-        //saver = LevelScoreData as Saver;
         saver = Resources.Load<Saver>("UserData");
         //saver.LoadfromJson();
-        //saver.LoadfromJson(saver);
-        /*try
-        {
-            saver.LoadfromJson(saver);
-        }
-        catch (Exception e)
-        {
-            print(e);
-            saver.SavetoJson(saver);
-        }*/
-
+        if (saver.usrdata.active_skin == null)
+            saver.usrdata.active_skin = saver.inventory.skinList[0];
     }
 
     // Update is called once per frame
@@ -131,7 +120,7 @@ public class GameManager : MonoBehaviour
 
     void UnlockLevels()
     {
-        if (currentLevelNo < 16)
+        if (currentLevelNo < 15)
             saver.arenas[currentArenaNo].levels[currentLevelNo + 1].Unlocked = true;
     }
 
@@ -243,6 +232,8 @@ public class GameManager : MonoBehaviour
         level.timeTaken = timer;
         level.coins_earned += score;
         saver.usrdata.balance += score;
+
+        level.ballCount = level.hiscore = (int)(level.timeTaken = level.coins_earned = 0);
     }
 
     public int ScorePerGoal()

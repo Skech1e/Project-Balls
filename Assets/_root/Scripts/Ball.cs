@@ -74,7 +74,7 @@ public class Ball : MonoBehaviour
     {
         body.isKinematic = true;
         resetBall = true;
-        ballmesh.material = GameManager.saver.usrdata.active_skin;
+        ballmesh.material = GameManager.saver.usrdata.active_skin.Material;
     }
 
     // Update is called once per frame

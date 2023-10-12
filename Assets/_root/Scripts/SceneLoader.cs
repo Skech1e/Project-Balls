@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class SceneLoader : MonoBehaviour
     public delegate void OnSceneLoadDelegate();
     public static event OnSceneLoadDelegate SceneLoaded;
 
+    [SerializeField]
+    PlayPageUI ppu;
+
+    public Image background;
+    public GameObject LevelBG_Ref;
+
     private void OnEnable()
     {
         DontDestroyOnLoad(this);
@@ -23,7 +30,7 @@ public class SceneLoader : MonoBehaviour
         DontDestroyOnLoad(LoadingScreenPanel);
         SceneManager.sceneLoaded += OnSceneLoad;
 
-        if(staticSceneLoader == null)
+        if (staticSceneLoader == null)
             staticSceneLoader = this;
         else
             Destroy(gameObject);
@@ -35,7 +42,7 @@ public class SceneLoader : MonoBehaviour
 
     private void Update()
     {
-        
+
     }
     private void Start()
     {
@@ -47,6 +54,26 @@ public class SceneLoader : MonoBehaviour
     }
     public void SceneLoad(int sceneNumber, int _loadLevel)
     {
+        if (ppu = FindObjectOfType<PlayPageUI>())
+        {
+            foreach (GameObject child in ppu.arenaPics)
+            {
+                if (child.activeSelf)
+                {
+                    background.sprite = child.GetComponent<Image>().sprite;
+                    break;
+                }
+            }
+        }
+
+        /*foreach (Transform child in LevelBG_Ref.transform)
+        {
+            if (child.gameObject.activeSelf)
+            {
+                background.sprite = child.GetComponent<Image>().sprite;
+                break;
+            }
+        }*/
         StartCoroutine(LoadSceneAsync(sceneNumber));
         loadLevel = _loadLevel - 1;
     }
@@ -66,6 +93,6 @@ public class SceneLoader : MonoBehaviour
 
     void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
-        SceneLoaded.Invoke();       
+        SceneLoaded.Invoke();
     }
 }

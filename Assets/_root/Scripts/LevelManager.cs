@@ -6,7 +6,8 @@ public class LevelManager : MonoBehaviour
     public static int currentArena, currentLevel, ballCount;
     [SerializeField] int LevelCapacity, currentlvl;
     [SerializeField] List<Transform> levels = new();
-
+    SceneLoader sceneLoader;
+    Saver saver;
     private void OnEnable()
     {
         LevelReporting.LevelLoad += GetLevelInfo;
@@ -19,7 +20,7 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        for (int i = 0; i < LevelCapacity  ; i++)
+        for (int i = 0; i < LevelCapacity; i++)
             levels.Add(transform.GetChild(i));
     }
 
@@ -27,9 +28,11 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         currentArena = Levels.Arenano;
-        currentLevel = Levels.Levelno - 1;  
+        currentLevel = Levels.Levelno - 1;
         levels[currentLevel].gameObject.SetActive(true);
         ResetCount();
+        sceneLoader = FindObjectOfType<SceneLoader>();
+        saver = GameManager.saver;
     }
 
     // Update is called once per frame
@@ -45,9 +48,21 @@ public class LevelManager : MonoBehaviour
 
     public void ChangeLevel()
     {
-        levels[currentLevel].gameObject.SetActive(false);
-        currentLevel++;
-        levels[currentLevel].gameObject.SetActive(true);
+        if (currentLevel < 15)
+        {
+            levels[currentLevel].gameObject.SetActive(false);
+            currentLevel++;
+            levels[currentLevel].gameObject.SetActive(true);
+        }
+        else
+        {
+            if (saver.arenas[currentArena + 1].unlocked == true && currentArena < 4)
+            {
+                Levels.Arenano++;
+                Levels.Levelno = 1;
+                sceneLoader.SceneLoad(currentArena + 2, currentLevel);
+            }
+        }
 
         Ball.resetBall = true;
         ResetCount();

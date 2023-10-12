@@ -86,7 +86,7 @@ public class SkinMenu : MonoBehaviour
     public void Buy()
     {
         saver.usrdata.balance -= skins[srno].Price;
-        saver.inventory.skinId.Add(skins[srno].id);
+        saver.inventory.skinList.Add(skins[srno]);
         saver.SavetoJson(saver.inventory);
         skins.Insert(1, skins[srno]);
         skins.RemoveAt(srno+1);
@@ -97,18 +97,18 @@ public class SkinMenu : MonoBehaviour
 
     public void Equip()
     {
-        saver.usrdata.active_skin = skins[srno].Material;
+        saver.usrdata.active_skin = skins[srno];
         EquipBtn.interactable = false;
     }
 
     void ReflectSavedData()
     {
-        if (saver.inventory.skinId.Contains(skins[srno].id))
+        if (saver.inventory.skinList.Contains(skins[srno]))
         {
             BuyBtn.gameObject.SetActive(false);
             EquipBtn.gameObject.SetActive(true);
             pricetxt.text = "owned";
-            if(saver.usrdata.active_skin == skins[srno].Material)
+            if(saver.usrdata.active_skin == skins[srno])
                 EquipBtn.interactable = false;
             else
                 EquipBtn.interactable = true;
@@ -122,11 +122,11 @@ public class SkinMenu : MonoBehaviour
 
     void SortPurchasedSkins()
     {
-        var skinList = saver.inventory.skinId;
-        for (int i = 0; i < skinList.Count; i++)
+        var list = saver.inventory.skinList;
+        for (int i = 0; i < list.Count; i++)
         {
-            skins.Insert(i, skins[skinList[i]]);
-            skins.RemoveAt(skinList[i] + 1);
+            skins.Insert(i, list[i]);
+            skins.RemoveAt(list[i].id + 1);
         }
     }
 }
