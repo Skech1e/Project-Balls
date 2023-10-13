@@ -29,10 +29,10 @@ MonoBehaviour:
     - Unlocked: 1
       name: Level 2
       levelid: 0
-      hiscore: 390
-      ballCount: 6
+      hiscore: 0
+      ballCount: 0
       starCount: 3
-      coins_earned: 590
+      coins_earned: 0
       timeTaken: 0
     - Unlocked: 1
       name: Level 3
@@ -1345,13 +1345,12 @@ MonoBehaviour:
       timeTaken: 0
   usrdata:
     Name: 
-    balance: 3579
+    balance: 3679
     starbalance: 89
-    active_skin: {fileID: 21300000, guid: f13084bf26274e949876b24d4477cfda, type: 3}
+    active_skin: {fileID: 3, guid: 21d2d5d6901f2ca43a8015c60ada4e2c, type: 3}
     Sound: 1
     Music: 1
   inventory:
     skinList:
     - {fileID: 11400000, guid: 2bfacba0260b62943addbd2dd9ee247a, type: 2}
-    - {fileID: 11400000, guid: 1559353dd05b0ac429a0d6ce976e0743, type: 2}
     arenaID: 
