@@ -106,7 +106,6 @@ public class LevelReporting : MonoBehaviour
     {
         FindObjectOfType<Scored>()?.CancelInvoke();
         FindObjectOfType<Ball>()?.CancelInvoke();
-        //Ball.CancelInvokeMethod();
         Time.timeScale = 1;
         ballCount = (int)_BallCount;
         Start();

@@ -4703,6 +4703,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalScore: 0
   score: 69
+  m_net: {fileID: 418056986445841644}
+  m_ring: {fileID: 319912611662967406}
   scoreTextPopup: {fileID: 406035287}
   basket: {fileID: 0}
   basketCount: []
@@ -9721,7 +9723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4581884499368506809
 Transform:
   m_ObjectHideFlags: 0

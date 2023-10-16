@@ -10,6 +10,11 @@ public class Scored : MonoBehaviour
     [SerializeField] int score;
     bool goal;
     BoxCollider bc;
+    [SerializeField]
+    SkinnedMeshRenderer m_net;
+    [SerializeField]
+    MeshRenderer m_ring;
+    int prop_dissolve;
     [SerializeField] TextMeshProUGUI scoreTextPopup;
     Vector3 initScoreTextPosition, TargetScoreTextPosition;
     [SerializeField] GameObject basket;
@@ -32,21 +37,21 @@ public class Scored : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        glow.Stop();
-        glitter.Stop();
+    {        
     }
 
     private void OnEnable()
     {
         basketCount = FindObjectsOfType<Scored>(false);
-        
-
+        prop_dissolve = Shader.PropertyToID("_Amount");
+        //glow.Stop();
+        glitter.Stop();
+        m_net.material.SetFloat(prop_dissolve, 0f);
+        m_ring.material.SetFloat(prop_dissolve, 0f);
     }
 
     private void OnDisable()
     {
-        
     }
 
 
@@ -63,17 +68,26 @@ public class Scored : MonoBehaviour
             score = LevelReporting.ScorePerBasket;
             totalScore += score;
             goal = true;
-            glow.Play();
+            //glow.Play();
             glitter.Play();
             Invoke(nameof(InvokeGoalScoredEvent), 0.5f);
+            StartCoroutine(nameof(Decrement));
         }
     }
 
-    void InvokeGoalScoredEvent()
+    IEnumerator Decrement()
     {
-        //CancelInvoke();
-        GoalScored.Invoke();
+        float sec = 0.0f;
+        while (sec < 1f)
+        {
+            sec += Time.deltaTime;
+            m_net.material.SetFloat(prop_dissolve, sec);
+            m_ring.material.SetFloat(prop_dissolve, sec);
+            yield return null;
+        }
     }
+
+    void InvokeGoalScoredEvent() => GoalScored.Invoke();
 
     private void OnTriggerExit(Collider other)
     {
@@ -93,15 +107,15 @@ public class Scored : MonoBehaviour
 
     void ScoreTextMotion()
     {
-        if(goal == true)
+        if (goal == true)
         {
             scoreTextPopup.text = score.ToString();
             scoreTextPopup.gameObject.SetActive(true);
             var pos = scoreTextPopup.transform.localPosition;
             scoreTextPopup.transform.localPosition = Vector3.MoveTowards(pos, TargetScoreTextPosition, Time.deltaTime);
-            scoreTextPopup.alpha -= Time.deltaTime * 1.69f;            
+            scoreTextPopup.alpha -= Time.deltaTime * 1.69f;
         }
-        
+
     }
 
 

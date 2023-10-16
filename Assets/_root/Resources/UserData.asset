@@ -1345,12 +1345,13 @@ MonoBehaviour:
       timeTaken: 0
   usrdata:
     Name: 
-    balance: 3679
+    balance: 3879
     starbalance: 89
-    active_skin: {fileID: 3, guid: 21d2d5d6901f2ca43a8015c60ada4e2c, type: 3}
+    active_skin: {fileID: 2800000, guid: 810f66354dd304a43bcebe1a55601513, type: 3}
     Sound: 1
     Music: 1
   inventory:
     skinList:
     - {fileID: 11400000, guid: 2bfacba0260b62943addbd2dd9ee247a, type: 2}
+    - {fileID: 11400000, guid: e1eabd9b88e649644b765859dd86baf6, type: 2}
     arenaID: 
