@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7698266255240854901}
   - component: {fileID: 608069616639699610}
   m_Layer: 0
-  m_Name: Basket Ball
+  m_Name: Ball
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,6 +107,7 @@ MonoBehaviour:
   randomValue: 1
   basketCount: []
   ballmesh: {fileID: 0}
+  skinList: {fileID: 11400000, guid: 652c1aa36b8f1094c8ba11100ad043bf, type: 2}
 --- !u!54 &818554336795179953
 Rigidbody:
   m_ObjectHideFlags: 0

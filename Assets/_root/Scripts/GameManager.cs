@@ -38,10 +38,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 420;
-        saver = Resources.Load<Saver>("UserData");
+        //saver = Resources.Load<Saver>("UserData");
+        saver = ScriptableObject.CreateInstance<Saver>();
         //saver.LoadfromJson();
-        if (saver.usrdata.active_skin == null)
-            saver.usrdata.active_skin = saver.inventory.skinList[0];
     }
 
     // Update is called once per frame

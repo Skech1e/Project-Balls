@@ -2,7 +2,6 @@ using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "BallSkin", menuName = "Ball Skin")]
-[System.Serializable]
 public class Skin : ScriptableObject
 {
     [field: SerializeField]

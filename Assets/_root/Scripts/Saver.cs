@@ -16,7 +16,6 @@ public class Saver : ScriptableObject
 
     private void Awake()
     {
-
         scpath = Path.Combine(Application.persistentDataPath, "scglobal.json");
         cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
 
@@ -135,7 +134,7 @@ public class UserData
 {
     public string Name;
     public int balance, starbalance;
-    public Skin active_skin;
+    public byte active_skin;
     public bool Sound, Music;
 
 }
@@ -144,6 +143,6 @@ public class UserData
 [System.Serializable]
 public class Inventory
 {
-    public List<Skin> skinList;
+    public List<byte> skinList;
     public List<int> arenaID;
 }

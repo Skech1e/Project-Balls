@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 406035286}
   - component: {fileID: 406035288}
   - component: {fileID: 406035287}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 1073159656}
   - component: {fileID: 1073159655}
   - component: {fileID: 1073159654}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 311831784525107668}
   - component: {fileID: 418056986445841644}
   - component: {fileID: 481479715311170740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Net
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4228,7 +4228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 303051418852891148}
   - component: {fileID: 345835969873303436}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Side Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4277,7 +4277,7 @@ GameObject:
   - component: {fileID: 342485381270909360}
   - component: {fileID: 7654523964698936305}
   - component: {fileID: 2590575203739668716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4483,7 +4483,7 @@ GameObject:
   - component: {fileID: 8768755763280602715}
   - component: {fileID: 8623137603532705589}
   - component: {fileID: 8442077771809825985}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: basket
   m_TagString: basket
   m_Icon: {fileID: 0}
@@ -4563,7 +4563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 303168863578161026}
   - component: {fileID: 346141426121715248}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Front Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4608,7 +4608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 302917118911711174}
   - component: {fileID: 343127621092325524}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'Side Collider '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4654,7 +4654,7 @@ GameObject:
   - component: {fileID: 303048716189927138}
   - component: {fileID: 303048716189927149}
   - component: {fileID: 303048716189927148}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Final Detector
   m_TagString: Normal Basket
   m_Icon: {fileID: 0}
@@ -4720,7 +4720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 298461209634946780}
   - component: {fileID: 298461209634946783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4765,7 +4765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 298461210019004615}
   - component: {fileID: 5325338957470643665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4812,7 +4812,7 @@ GameObject:
   - component: {fileID: 298461210461483793}
   - component: {fileID: 298461210461483792}
   - component: {fileID: 298461210461483795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Preliminary Detector
   m_TagString: Normal Basket
   m_Icon: {fileID: 0}
@@ -4869,7 +4869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3508520223054730209}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Celebration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4904,7 +4904,7 @@ GameObject:
   - component: {fileID: 5966643871200454878}
   - component: {fileID: 5420746011446824480}
   - component: {fileID: 6378714560738776773}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: glitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9717,7 +9717,7 @@ GameObject:
   - component: {fileID: 4581884499368506809}
   - component: {fileID: 7661518807780316560}
   - component: {fileID: 7988336244893082274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

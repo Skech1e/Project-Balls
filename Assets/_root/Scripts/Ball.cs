@@ -27,6 +27,7 @@ public class Ball : MonoBehaviour
 
     [field: SerializeField]
     MeshRenderer ballmesh;
+    public SkinList skinList;
 
     public static bool ballAtDefaultPos;
 
@@ -74,7 +75,12 @@ public class Ball : MonoBehaviour
     {
         body.isKinematic = true;
         resetBall = true;
-        ballmesh.material = GameManager.saver.usrdata.active_skin.Material;
+        //ballmesh.material = GameManager.saver.usrdata.active_skin.Material;
+        foreach (Skin skin in skinList.Skins)
+        {
+            if (GameManager.saver.usrdata.active_skin == skin.id)
+                ballmesh.material = skin.Material;
+        }
     }
 
     // Update is called once per frame
