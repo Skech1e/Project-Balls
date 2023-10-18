@@ -38,9 +38,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 420;
-        //saver = Resources.Load<Saver>("UserData");
-        saver = ScriptableObject.CreateInstance<Saver>();
+        //saver = Resources.Load<Saver>("UserData");  for testing
         //saver.LoadfromJson();
+        saver = ScriptableObject.CreateInstance<Saver>();
     }
 
     // Update is called once per frame

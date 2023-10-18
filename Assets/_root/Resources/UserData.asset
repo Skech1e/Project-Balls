@@ -1351,8 +1351,5 @@ MonoBehaviour:
     Sound: 1
     Music: 1
   inventory:
-    skinList: 000305
+    skinList: 000309
     arenaID: 
-  scpath: C:/Users/shubhadnya.pawaskar/AppData/LocalLow/GameInstitute/Crazy Basket\scglobal.json
-  cfgpath: C:/Users/shubhadnya.pawaskar/AppData/LocalLow/GameInstitute/Crazy Basket\cb_usr.json
-  skinlist: {fileID: 0}
