@@ -9,7 +9,6 @@ using UnityEngine;
 public class Saver : ScriptableObject
 {
     public Arena[] arenas = new Arena[10];
-    //[SerializeField] public Scores scores;
     public UserData usrdata;
     public Inventory inventory;
     string scpath, cfgpath;
@@ -36,21 +35,12 @@ public class Saver : ScriptableObject
             }
         }
     }*/
-
-    /*public void SavetoJson(Scores _score)
-    {
-        Scores s = new();
-        s.arenas = scores.arenas;
-
-        string score = JsonUtility.ToJson(s, true);
-        File.WriteAllText(scpath, score);
-        Debug.Log("data saved successfully");
-    }*/
+    
     public void SavetoJson(Saver s)
     {
         string score = JsonUtility.ToJson(s, true);
         File.WriteAllText(scpath, score);
-        Debug.Log("data saved successfully");
+        //Debug.Log("data saved successfully");
     }
 
     public void LoadfromJson(Saver s)
@@ -58,14 +48,14 @@ public class Saver : ScriptableObject
         string score = File.ReadAllText(scpath);
         if (score is null)
         {
-            Debug.Log("No save found! Created.");
+            //Debug.Log("No save found! Created.");
             SavetoJson(this);
             SavetoJson(usrdata);
             SavetoJson(inventory);
             return;
         }
 
-        Debug.Log("save loaded");
+        //Debug.Log("save loaded");
         JsonUtility.FromJsonOverwrite(score, s);
     }
 
@@ -73,13 +63,13 @@ public class Saver : ScriptableObject
     {
         string user = JsonUtility.ToJson(_user);
         File.WriteAllText(cfgpath, user);
-        Debug.Log("user config saved");
+        //Debug.Log("user config saved");
     }
 
     public UserData LoadUser()
     {
         string user = File.ReadAllText(cfgpath);
-        Debug.Log("Usr data loaded");
+        //Debug.Log("Usr data loaded");
         return JsonUtility.FromJson<UserData>(user);
     }
 
@@ -87,27 +77,14 @@ public class Saver : ScriptableObject
     {
         string inv = JsonUtility.ToJson(_inv);
         File.WriteAllText(cfgpath, inv);
-        Debug.Log("inventory saved");
+        //Debug.Log("inventory saved");
     }
 
     public Inventory LoadInventory()
     {
         string inventory = File.ReadAllText(cfgpath);
-        Debug.Log("Inventory Loaded");
+        //Debug.Log("Inventory Loaded");
         return JsonUtility.FromJson<Inventory>(inventory);
-    }
-}
-
-
-[System.Serializable]
-public class Scores
-{
-    public Arena[] arenas = new Arena[10];
-
-
-    public override string ToString()
-    {
-        return arenas[0].name;
     }
 }
 
@@ -136,13 +113,10 @@ public class UserData
     public int balance, starbalance;
     public byte active_skin;
     public bool Sound, Music;
-
 }
-
 
 [System.Serializable]
 public class Inventory
 {
     public List<byte> skinList;
-    public List<int> arenaID;
 }

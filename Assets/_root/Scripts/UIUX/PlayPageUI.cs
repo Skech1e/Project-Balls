@@ -104,7 +104,7 @@ public class PlayPageUI : MonoBehaviour
             }
             else
             {
-                print(saver.usrdata.starbalance);
+                //print(saver.usrdata.starbalance);
                 if (saver.usrdata.starbalance > saver.arenas[counter].starPrice)
                     UnlockBtn.interactable = true;
                 if (saver.usrdata.balance > saver.arenas[counter].coinPrice)
@@ -128,6 +128,7 @@ public class PlayPageUI : MonoBehaviour
         }
         saver.arenas[counter].unlocked = true;
         saver.arenas[counter].levels[0].Unlocked = true;
+        saver.SavetoJson(saver);
         updateIcons.Invoke();
         UnlockBtn.interactable = false;
         BuyBtn.interactable = false;

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SkinMenu : MonoBehaviour
 {
     [SerializeField] MeshRenderer ball;
-    [SerializeField] List<Skin> skins;
+    [SerializeField] List<Skin> skinList;
     [field: SerializeField] public int srno { get; private set; }
     [SerializeField] TextMeshProUGUI pricetxt, balance;
 
@@ -23,14 +23,14 @@ public class SkinMenu : MonoBehaviour
 
     void Start()
     {  
-        ball.material = skins[srno].Material;
-        pricetxt.text = skins[srno].Price.ToString();
+        ball.material = skinList[srno].Material;
+        pricetxt.text = skinList[srno].Price.ToString();
         balance.text = saver.usrdata.balance.ToString();
 
         Left.gameObject.SetActive(srno != 0);
-        Right.gameObject.SetActive(srno != skins.Count-1);
+        Right.gameObject.SetActive(srno != skinList.Count-1);
 
-        if (saver.usrdata.balance < skins[srno].Price)
+        if (saver.usrdata.balance < skinList[srno].Price)
             BuyBtn.interactable = false;
         else
             BuyBtn.interactable = true;
@@ -55,17 +55,17 @@ public class SkinMenu : MonoBehaviour
         {
             case -1:
                 srno = (byte)(srno > 0 ? srno - 1 : srno);
-                ball.material = skins[srno].Material;
-                pricetxt.text = skins[srno].Price.ToString();
+                ball.material = skinList[srno].Material;
+                pricetxt.text = skinList[srno].Price.ToString();
                 break;
             case 1:
-                srno = (byte)(srno < skins.Count - 1 ? srno + 1 : srno);
-                ball.material = skins[srno].Material;
-                pricetxt.text = skins[srno].Price.ToString();
+                srno = (byte)(srno < skinList.Count - 1 ? srno + 1 : srno);
+                ball.material = skinList[srno].Material;
+                pricetxt.text = skinList[srno].Price.ToString();
                 break;
         }
 
-        if (srno == skins.Count - 1)
+        if (srno == skinList.Count - 1)
             Right.gameObject.SetActive(false);
         else
             Right.gameObject.SetActive(true);
@@ -75,7 +75,7 @@ public class SkinMenu : MonoBehaviour
         else
             Left.gameObject.SetActive(true);
 
-        if (saver.usrdata.balance < skins[srno].Price)
+        if (saver.usrdata.balance < skinList[srno].Price)
             BuyBtn.interactable = false;
         else
             BuyBtn.interactable = true;
@@ -85,11 +85,11 @@ public class SkinMenu : MonoBehaviour
 
     public void Buy()
     {
-        saver.usrdata.balance -= skins[srno].Price;
-        saver.inventory.skinList.Add(skins[srno].id);
+        saver.usrdata.balance -= skinList[srno].Price;
+        saver.inventory.skinList.Add(skinList[srno].id);
         saver.SavetoJson(saver.inventory);
-        skins.Insert(1, skins[srno]);
-        skins.RemoveAt(srno+1);
+        skinList.Insert(1, skinList[srno]);
+        skinList.RemoveAt(srno+1);
         srno = 1;
         ReflectSavedData();
         balance.text = saver.usrdata.balance.ToString();
@@ -97,18 +97,18 @@ public class SkinMenu : MonoBehaviour
 
     public void Equip()
     {
-        saver.usrdata.active_skin = skins[srno].id;
+        saver.usrdata.active_skin = skinList[srno].id;
         EquipBtn.interactable = false;
     }
 
     void ReflectSavedData()
     {
-        if (saver.inventory.skinList.Contains(skins[srno].id))
+        if (saver.inventory.skinList.Contains(skinList[srno].id))
         {
             BuyBtn.gameObject.SetActive(false);
             EquipBtn.gameObject.SetActive(true);
             pricetxt.text = "owned";
-            if(saver.usrdata.active_skin == skins[srno].id)
+            if(saver.usrdata.active_skin == skinList[srno].id)
                 EquipBtn.interactable = false;
             else
                 EquipBtn.interactable = true;
@@ -125,8 +125,8 @@ public class SkinMenu : MonoBehaviour
         var list = saver.inventory.skinList;
         for (byte i = 0; i < list.Count; i++)
         {
-            skins.Insert(i, skins[list[i]]);
-            skins.RemoveAt(list[i] + 1);
+            skinList.Insert(i, skinList[list[i]]);
+            skinList.RemoveAt(list[i] + 1);
         }
     }
 }
