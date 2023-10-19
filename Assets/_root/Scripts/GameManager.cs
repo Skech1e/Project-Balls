@@ -38,9 +38,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 420;
-        //saver = Resources.Load<Saver>("UserData");  for testing
+        //saver = ScriptableObject.CreateInstance<Saver>();
+        saver = Resources.Load<Saver>("UserData");
         //saver.LoadfromJson();
-        saver = ScriptableObject.CreateInstance<Saver>();
     }
 
     // Update is called once per frame
@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
-        saver.SavetoJson(saver);
+        saver.SavetoJson(saver.scoredata);
         //saver.SavetoJson(saver.scores);
         //saver.SavetoJson(saver.usrdata);
 
@@ -81,46 +81,48 @@ public class GameManager : MonoBehaviour
     {
         currentArenaNo = LevelManager.currentArena;
         currentLevelNo = LevelManager.currentLevel;
-        starsRemaining = totalStars - saver.arenas[currentArenaNo].levels[currentLevelNo].starCount;
+        starsRemaining = totalStars - saver.scoredata.arenas[currentArenaNo].levels[currentLevelNo].starCount;
     }
 
     void StarScoring()
     {
-        //starCount = timer < scoreTier[0] + 1 ? 3 : timer < scoreTier[1] + 1 ? 2 : 1;
-        void SaveStars()
-        {
-            saver.arenas[currentArenaNo].levels[currentLevelNo].starCount = starCount;
-            saver.usrdata.starbalance += starCount;
-            starsRemaining -= starCount;
-        }
+        int maxStars;
 
-        if (timer < scoreTier[0] + 1)
+        if (timer < scoreTier[0] + 1) // * * *
         {
-            starCount = 3;
-            if (starsRemaining > 0)
-                SaveStars();
+            maxStars = 3;
+            starCount = starsRemaining;
         }
-        else if (timer < scoreTier[1] + 1)
+        else if (timer < scoreTier[1] + 1) // * *
         {
-            starCount = 2;
-            if (starsRemaining > 1)
-                SaveStars();
+            maxStars = 2;
+            starCount = starsRemaining - maxStars + 1;  // credit 2 stars if 3 remaining or 1 when 2 remaining
         }
-        else
+        else // *
         {
-            starCount = 1;
+            maxStars = 1;
             if (starsRemaining > 2)
-                SaveStars();
+            {
+                starCount = maxStars;
+                starsRemaining -= starCount;
+            }
         }
 
+    }
+    public void SaveStars()
+    {
+        saver.scoredata.arenas[currentArenaNo].levels[currentLevelNo].starCount = starCount;
+        saver.usrdata.starbalance += starCount;
+        
         UnlockLevels();
-        saver.SavetoJson(saver);
+        saver.SavetoJson(saver.scoredata);
+        print("okkk");
     }
 
     void UnlockLevels()
     {
         if (currentLevelNo < 15)
-            saver.arenas[currentArenaNo].levels[currentLevelNo + 1].Unlocked = true;
+            saver.scoredata.arenas[currentArenaNo].levels[currentLevelNo + 1].Unlocked = true;
     }
 
     void InitScoreboard()
@@ -140,7 +142,7 @@ public class GameManager : MonoBehaviour
     void InitScoreboardData()
     {
         totalScore = 0;
-        highScore = saver.arenas[currentArenaNo].levels[currentLevelNo].hiscore;
+        highScore = saver.scoredata.arenas[currentArenaNo].levels[currentLevelNo].hiscore;
         scoreboard[0].text = highScore.ToString();
         scoreboard[1].text = totalScore.ToString();
         scoreboard[2].text = LevelReporting.bonus.ToString("F1");
@@ -225,7 +227,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveScores()
     {
-        var level = saver.arenas[currentArenaNo].levels[currentLevelNo];
+        var level = saver.scoredata.arenas[currentArenaNo].levels[currentLevelNo];
         level.ballCount = LevelReporting.ballCount;
         level.hiscore = highScore;
         level.timeTaken = timer;
@@ -235,12 +237,12 @@ public class GameManager : MonoBehaviour
         level.ballCount = level.hiscore = (int)(level.timeTaken = level.coins_earned = 0);
     }
 
-    public int ScorePerGoal()
+    public void ScorePerGoal()
     {
         var _score = (float)LevelReporting.ScorePerBasket;
         score = Mathf.RoundToInt(_score * LevelReporting.bonus);
 
-        return score;
+        // return score;
     }
 
 }

@@ -110,7 +110,12 @@ public class UIController : MonoBehaviour
         Time.timeScale = 1;
         //SceneManager.LoadScene(0);
         sceneLoader.SceneLoad(0, 0);
+    }
+
+    public void Saving()
+    {
         gameManager.SaveScores();
+        gameManager.SaveStars();
     }
 
     public void Restart()

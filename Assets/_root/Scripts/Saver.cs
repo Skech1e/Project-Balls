@@ -8,7 +8,8 @@ using UnityEngine;
 //[CreateAssetMenu(fileName = "UserData", menuName = "SCObj/Saver")]
 public class Saver : ScriptableObject
 {
-    public Arena[] arenas = new Arena[10];
+    public Scores scoredata;
+    //public Arena[] arenas = new Arena[10];
     public UserData usrdata;
     public Inventory inventory;
     string scpath, cfgpath;
@@ -18,7 +19,7 @@ public class Saver : ScriptableObject
         scpath = Path.Combine(Application.persistentDataPath, "scglobal.json");
         cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
 
-        LoadfromJson(this);
+        LoadfromJson();
     }
 
     /*private void OnValidate()
@@ -36,27 +37,27 @@ public class Saver : ScriptableObject
         }
     }*/
     
-    public void SavetoJson(Saver s)
+    public void SavetoJson(Scores s)
     {
         string score = JsonUtility.ToJson(s, true);
         File.WriteAllText(scpath, score);
         //Debug.Log("data saved successfully");
     }
 
-    public void LoadfromJson(Saver s)
+    public Scores LoadfromJson()
     {
         string score = File.ReadAllText(scpath);
         if (score is null)
         {
-            //Debug.Log("No save found! Created.");
-            SavetoJson(this);
+            Debug.Log("No save found! Created.");
+            SavetoJson(scoredata);
             SavetoJson(usrdata);
             SavetoJson(inventory);
-            return;
         }
 
         //Debug.Log("save loaded");
-        JsonUtility.FromJsonOverwrite(score, s);
+        //JsonUtility.FromJsonOverwrite(score, arenas);
+        return JsonUtility.FromJson<Scores>(score);
     }
 
     public void SavetoJson(UserData _user)
@@ -86,6 +87,12 @@ public class Saver : ScriptableObject
         //Debug.Log("Inventory Loaded");
         return JsonUtility.FromJson<Inventory>(inventory);
     }
+}
+
+[System.Serializable]
+public class Scores
+{
+    public Arena[] arenas = new Arena[10];
 }
 
 [System.Serializable]

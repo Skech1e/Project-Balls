@@ -92,12 +92,12 @@ public class PlayPageUI : MonoBehaviour
     void UpdateDetails()
     {
         //starBalance.text = saver.usrdata.starbalance.ToString();
-        if (saver.arenas[counter].unlocked == false)
+        if (saver.scoredata.arenas[counter].unlocked == false)
         {
             LockedPanel.SetActive(true);
-            starPrice.text = saver.arenas[counter].starPrice.ToString();
-            coin_price.text = saver.arenas[counter].coinPrice.ToString();
-            if (saver.arenas[counter - 1].unlocked != true)
+            starPrice.text = saver.scoredata.arenas[counter].starPrice.ToString();
+            coin_price.text = saver.scoredata.arenas[counter].coinPrice.ToString();
+            if (saver.scoredata.arenas[counter - 1].unlocked != true)
             {
                 UnlockBtn.interactable = false;
                 BuyBtn.interactable = false;
@@ -105,9 +105,9 @@ public class PlayPageUI : MonoBehaviour
             else
             {
                 //print(saver.usrdata.starbalance);
-                if (saver.usrdata.starbalance > saver.arenas[counter].starPrice)
+                if (saver.usrdata.starbalance > saver.scoredata.arenas[counter].starPrice)
                     UnlockBtn.interactable = true;
-                if (saver.usrdata.balance > saver.arenas[counter].coinPrice)
+                if (saver.usrdata.balance > saver.scoredata.arenas[counter].coinPrice)
                     BuyBtn.interactable = true;
             }
         }
@@ -118,17 +118,17 @@ public class PlayPageUI : MonoBehaviour
         switch (mode)
         {
             case 0:
-                saver.usrdata.starbalance -= saver.arenas[counter].starPrice;
+                saver.usrdata.starbalance -= saver.scoredata.arenas[counter].starPrice;
                 starBalanceHUD.text = saver.usrdata.starbalance.ToString();
                 break;
             case 1:
-                saver.usrdata.balance -= saver.arenas[counter].coinPrice;
+                saver.usrdata.balance -= saver.scoredata.arenas[counter].coinPrice;
                 coinBalanceHUD.text = saver.usrdata.balance.ToString();
                 break;
         }
-        saver.arenas[counter].unlocked = true;
-        saver.arenas[counter].levels[0].Unlocked = true;
-        saver.SavetoJson(saver);
+        saver.scoredata.arenas[counter].unlocked = true;
+        saver.scoredata.arenas[counter].levels[0].Unlocked = true;
+        saver.SavetoJson(saver.scoredata);
         updateIcons.Invoke();
         UnlockBtn.interactable = false;
         BuyBtn.interactable = false;

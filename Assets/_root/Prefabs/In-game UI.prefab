@@ -5957,6 +5957,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3324094606386094471}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: Saving
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3324094606821201138
 GameObject:
   m_ObjectHideFlags: 0
@@ -6900,6 +6912,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3324094606386094471}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: Saving
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3324094607144435603
 GameObject:
   m_ObjectHideFlags: 0
@@ -7186,6 +7210,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3324094606313332917}
         m_TargetAssemblyTypeName: Tween, Assembly-CSharp
         m_MethodName: Enable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3324094606386094471}
+        m_TargetAssemblyTypeName: UIController, Assembly-CSharp
+        m_MethodName: Saving
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

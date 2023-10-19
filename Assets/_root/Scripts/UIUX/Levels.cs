@@ -79,7 +79,7 @@ public class Levels : MonoBehaviour
 
     void LoadIconStats()
     {
-        var stars = saver.arenas[Arena].levels[lvlno - 1].starCount;
+        var stars = saver.scoredata.arenas[Arena].levels[lvlno - 1].starCount;
         switch (stars)
         {
             case 0:
@@ -100,7 +100,7 @@ public class Levels : MonoBehaviour
 
     void Unlock()
     {
-        isUnlocked = saver.arenas[Arena].levels[lvlno - 1].Unlocked;
+        isUnlocked = saver.scoredata.arenas[Arena].levels[lvlno - 1].Unlocked;
         LevelIcon.sprite = isUnlocked == true ? IconList[1] : IconList[0];
         Button.interactable = isUnlocked == true ? true : false;
     }

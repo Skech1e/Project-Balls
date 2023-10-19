@@ -56,7 +56,7 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            if (saver.arenas[currentArena + 1].unlocked == true && currentArena < 4)
+            if (saver.scoredata.arenas[currentArena + 1].unlocked == true && currentArena < 4)
             {
                 Levels.Arenano++;
                 Levels.Levelno = 1;
