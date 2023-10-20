@@ -36,8 +36,8 @@ public class SettingsUI : MonoBehaviour
 
     private void OnEnable()
     {
-        Sound = saver.usrdata.Sound;
-        Music = saver.usrdata.Music;
+        Sound = saver.usrdata.settings.Sound;
+        Music = saver.usrdata.settings.Music;
 
         spr_sound.sprite = Sound == true ? Toggle[1] : Toggle[0];
         spr_music.sprite = Music == true ? Toggle[1] : Toggle[0];
@@ -86,8 +86,8 @@ public class SettingsUI : MonoBehaviour
 
     public void CloseSave()
     {
-        saver.usrdata.Music = Music;
-        saver.usrdata.Sound = Sound;
+        saver.usrdata.settings.Music = Music;
+        saver.usrdata.settings.Sound = Sound;
         //saver.usrdata.Graphics = Counter;
         saver.SavetoJson(saver.usrdata);
     }

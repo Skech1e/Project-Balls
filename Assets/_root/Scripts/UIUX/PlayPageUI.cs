@@ -22,9 +22,9 @@ public class PlayPageUI : MonoBehaviour
 
     private void OnEnable()
     {
-        starBalance.text = saver.usrdata.starbalance.ToString();
-        starBalanceHUD.text = saver.usrdata.starbalance.ToString();
-        coinBalanceHUD.text = saver.usrdata.balance.ToString();
+        starBalance.text = saver.usrdata.inventory.starbalance.ToString();
+        starBalanceHUD.text = saver.usrdata.inventory.starbalance.ToString();
+        coinBalanceHUD.text = saver.usrdata.inventory.balance.ToString();
     }
 
     private void OnDisable()
@@ -35,9 +35,9 @@ public class PlayPageUI : MonoBehaviour
     void Start()
     {
         saver = GameManager.saver;
-        starBalance.text = saver.usrdata.starbalance.ToString();
-        starBalanceHUD.text = saver.usrdata.starbalance.ToString();
-        coinBalanceHUD.text = saver.usrdata.balance.ToString();
+        starBalance.text = saver.usrdata.inventory.starbalance.ToString();
+        starBalanceHUD.text = saver.usrdata.inventory.starbalance.ToString();
+        coinBalanceHUD.text = saver.usrdata.inventory.balance.ToString();
     }
 
 
@@ -105,9 +105,9 @@ public class PlayPageUI : MonoBehaviour
             else
             {
                 //print(saver.usrdata.starbalance);
-                if (saver.usrdata.starbalance > saver.scoredata.arenas[counter].starPrice)
+                if (saver.usrdata.inventory.starbalance > saver.scoredata.arenas[counter].starPrice)
                     UnlockBtn.interactable = true;
-                if (saver.usrdata.balance > saver.scoredata.arenas[counter].coinPrice)
+                if (saver.usrdata.inventory.balance > saver.scoredata.arenas[counter].coinPrice)
                     BuyBtn.interactable = true;
             }
         }
@@ -118,12 +118,12 @@ public class PlayPageUI : MonoBehaviour
         switch (mode)
         {
             case 0:
-                saver.usrdata.starbalance -= saver.scoredata.arenas[counter].starPrice;
-                starBalanceHUD.text = saver.usrdata.starbalance.ToString();
+                saver.usrdata.inventory.starbalance -= saver.scoredata.arenas[counter].starPrice;
+                starBalanceHUD.text = saver.usrdata.inventory.starbalance.ToString();
                 break;
             case 1:
-                saver.usrdata.balance -= saver.scoredata.arenas[counter].coinPrice;
-                coinBalanceHUD.text = saver.usrdata.balance.ToString();
+                saver.usrdata.inventory.balance -= saver.scoredata.arenas[counter].coinPrice;
+                coinBalanceHUD.text = saver.usrdata.inventory.balance.ToString();
                 break;
         }
         saver.scoredata.arenas[counter].unlocked = true;

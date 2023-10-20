@@ -15,12 +15,12 @@ MonoBehaviour:
   scoredata:
     arenas:
     - name: Playground
-      starPrice: 38
+      starPrice: 0
       coinPrice: 0
       unlocked: 1
       levels:
       - Unlocked: 1
-        name: Level 0
+        name: Level
         levelid: 0
         hiscore: 0
         ballCount: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
         timeTaken: 0
     - name: Snow
       starPrice: 42
-      coinPrice: 10000
+      coinPrice: 5000
       unlocked: 0
       levels:
       - Unlocked: 0
@@ -282,7 +282,7 @@ MonoBehaviour:
         timeTaken: 0
     - name: Beach
       starPrice: 42
-      coinPrice: 15000
+      coinPrice: 6500
       unlocked: 0
       levels:
       - Unlocked: 0
@@ -415,7 +415,7 @@ MonoBehaviour:
         timeTaken: 0
     - name: Deepavali
       starPrice: 45
-      coinPrice: 30000
+      coinPrice: 8000
       unlocked: 0
       levels:
       - Unlocked: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
         timeTaken: 0
     - name: Paris
       starPrice: 45
-      coinPrice: 45000
+      coinPrice: 9500
       unlocked: 0
       levels:
       - Unlocked: 0
@@ -680,11 +680,12 @@ MonoBehaviour:
         coins_earned: 0
         timeTaken: 0
   usrdata:
-    Name: 
-    balance: 4679
-    starbalance: 98
-    active_skin: 5
-    Sound: 1
-    Music: 1
-  inventory:
-    skinList: 000309
+    settings:
+      Name: 
+      Sound: 1
+      Music: 0
+    inventory:
+      balance: 9289
+      starbalance: 117
+      active_skin: 0
+      skinList: 00

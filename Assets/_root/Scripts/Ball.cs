@@ -78,7 +78,7 @@ public class Ball : MonoBehaviour
         //ballmesh.material = GameManager.saver.usrdata.active_skin.Material;
         foreach (Skin skin in skinList.Skins)
         {
-            if (GameManager.saver.usrdata.active_skin == skin.id)
+            if (GameManager.saver.usrdata.inventory.active_skin == skin.id)
                 ballmesh.material = skin.Material;
         }
     }

@@ -49,7 +49,6 @@ public class LevelReporting : MonoBehaviour
     public delegate void OnGoalReport();
     public static event OnGoalReport LevelComplete;
     public static event OnGoalReport LevelFailed;
-    public static event OnGoalReport Record;
     public delegate void OnLevelLoad();
     public static event OnLevelLoad LevelLoad;
 

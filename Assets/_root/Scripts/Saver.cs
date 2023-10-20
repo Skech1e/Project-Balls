@@ -9,15 +9,13 @@ using UnityEngine;
 public class Saver : ScriptableObject
 {
     public Scores scoredata;
-    //public Arena[] arenas = new Arena[10];
     public UserData usrdata;
-    public Inventory inventory;
-    string scpath, cfgpath;
+    string scpath, datapath;
 
     private void Awake()
     {
         scpath = Path.Combine(Application.persistentDataPath, "scglobal.json");
-        cfgpath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
+        datapath = Path.Combine(Application.persistentDataPath, "cb_usr.json");
 
         LoadfromJson();
     }
@@ -37,6 +35,13 @@ public class Saver : ScriptableObject
         }
     }*/
     
+    public void SaveAll()
+    {
+        //Debug.Log("Everything saved");
+        SavetoJson(scoredata);
+        SavetoJson(usrdata);
+    }
+
     public void SavetoJson(Scores s)
     {
         string score = JsonUtility.ToJson(s, true);
@@ -44,55 +49,64 @@ public class Saver : ScriptableObject
         //Debug.Log("data saved successfully");
     }
 
-    public Scores LoadfromJson()
+    public void LoadfromJson()
     {
-        string score = File.ReadAllText(scpath);
-        if (score is null)
+        string data = File.ReadAllText(scpath);
+        if (data is null)
         {
             Debug.Log("No save found! Created.");
             SavetoJson(scoredata);
             SavetoJson(usrdata);
-            SavetoJson(inventory);
         }
 
         //Debug.Log("save loaded");
-        //JsonUtility.FromJsonOverwrite(score, arenas);
-        return JsonUtility.FromJson<Scores>(score);
+        JsonUtility.FromJsonOverwrite(data, this);
     }
 
+    #region Userdata settings
     public void SavetoJson(UserData _user)
     {
-        string user = JsonUtility.ToJson(_user);
-        File.WriteAllText(cfgpath, user);
+        string user = JsonUtility.ToJson(_user, true);
+        File.WriteAllText(datapath, user);
         //Debug.Log("user config saved");
     }
 
     public UserData LoadUser()
     {
-        string user = File.ReadAllText(cfgpath);
+        string user = File.ReadAllText(datapath);
         //Debug.Log("Usr data loaded");
         return JsonUtility.FromJson<UserData>(user);
     }
+    #endregion
 
+    /*#region Inventory
     public void SavetoJson(Inventory _inv)
     {
         string inv = JsonUtility.ToJson(_inv);
-        File.WriteAllText(cfgpath, inv);
+        File.WriteAllText(datapath, inv);
         //Debug.Log("inventory saved");
     }
 
     public Inventory LoadInventory()
     {
-        string inventory = File.ReadAllText(cfgpath);
+        string inventory = File.ReadAllText(datapath);
         //Debug.Log("Inventory Loaded");
         return JsonUtility.FromJson<Inventory>(inventory);
     }
+    #endregion*/
 }
 
 [System.Serializable]
 public class Scores
 {
     public Arena[] arenas = new Arena[10];
+}
+
+[System.Serializable]
+public class UserData
+{
+    public Settings settings = new();
+    public Inventory inventory = new();
 }
 
 [System.Serializable]
@@ -114,16 +128,16 @@ public class Level
 }
 
 [System.Serializable]
-public class UserData
+public class Settings
 {
     public string Name;
-    public int balance, starbalance;
-    public byte active_skin;
     public bool Sound, Music;
 }
 
 [System.Serializable]
 public class Inventory
 {
+    public int balance, starbalance;
+    public byte active_skin;
     public List<byte> skinList;
 }

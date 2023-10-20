@@ -857,9 +857,122 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 62479970}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
       objectReference: {fileID: 2024490506}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 62479973}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 62479972}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 62479971}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Saving
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: Disable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Enable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: Tween, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3324094607225961278, guid: d09dc33c4fc35f440935cf8368474ee2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d09dc33c4fc35f440935cf8368474ee2, type: 3}
+--- !u!114 &62479970 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3324094606386094471, guid: d09dc33c4fc35f440935cf8368474ee2,
+    type: 3}
+  m_PrefabInstance: {fileID: 62479969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31ac3825a13ec8488feb9abf7cae67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &62479971 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3324094606313332917, guid: d09dc33c4fc35f440935cf8368474ee2,
+    type: 3}
+  m_PrefabInstance: {fileID: 62479969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &62479972 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3324094606117340889, guid: d09dc33c4fc35f440935cf8368474ee2,
+    type: 3}
+  m_PrefabInstance: {fileID: 62479969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7413fa7fc72ae41987ae66b5d62fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &62479973 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3324094605466069827, guid: d09dc33c4fc35f440935cf8368474ee2,
+    type: 3}
+  m_PrefabInstance: {fileID: 62479969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b92a18449a10274b99a7b23d884d76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &70895094
 GameObject:
   m_ObjectHideFlags: 0
@@ -8881,7 +8994,6 @@ GameObject:
   - component: {fileID: 867874891}
   - component: {fileID: 867874890}
   - component: {fileID: 867874889}
-  - component: {fileID: 867874888}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8904,22 +9016,6 @@ Transform:
   m_Father: {fileID: 929688759}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 9.24, y: 0, z: 0}
---- !u!114 &867874888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867874886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f03427a818d90846bfbe0b58477f697, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  test: 1
-  basketCount: []
-  goalCount: 0
-  currentLevel: 0
 --- !u!114 &867874889
 MonoBehaviour:
   m_ObjectHideFlags: 0

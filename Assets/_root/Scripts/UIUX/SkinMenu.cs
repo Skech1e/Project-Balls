@@ -25,12 +25,12 @@ public class SkinMenu : MonoBehaviour
     {  
         ball.material = skinList[srno].Material;
         pricetxt.text = skinList[srno].Price.ToString();
-        balance.text = saver.usrdata.balance.ToString();
+        balance.text = saver.usrdata.inventory.balance.ToString();
 
         Left.gameObject.SetActive(srno != 0);
         Right.gameObject.SetActive(srno != skinList.Count-1);
 
-        if (saver.usrdata.balance < skinList[srno].Price)
+        if (saver.usrdata.inventory.balance < skinList[srno].Price)
             BuyBtn.interactable = false;
         else
             BuyBtn.interactable = true;
@@ -75,7 +75,7 @@ public class SkinMenu : MonoBehaviour
         else
             Left.gameObject.SetActive(true);
 
-        if (saver.usrdata.balance < skinList[srno].Price)
+        if (saver.usrdata.inventory.balance < skinList[srno].Price)
             BuyBtn.interactable = false;
         else
             BuyBtn.interactable = true;
@@ -85,30 +85,30 @@ public class SkinMenu : MonoBehaviour
 
     public void Buy()
     {
-        saver.usrdata.balance -= skinList[srno].Price;
-        saver.inventory.skinList.Add(skinList[srno].id);
-        saver.SavetoJson(saver.inventory);
+        saver.usrdata.inventory.balance -= skinList[srno].Price;
+        saver.usrdata.inventory.skinList.Add(skinList[srno].id);
+        saver.SavetoJson(saver.usrdata);
         skinList.Insert(1, skinList[srno]);
         skinList.RemoveAt(srno+1);
         srno = 1;
         ReflectSavedData();
-        balance.text = saver.usrdata.balance.ToString();
+        balance.text = saver.usrdata.inventory.balance.ToString();
     }
 
     public void Equip()
     {
-        saver.usrdata.active_skin = skinList[srno].id;
+        saver.usrdata.inventory.active_skin = skinList[srno].id;
         EquipBtn.interactable = false;
     }
 
     void ReflectSavedData()
     {
-        if (saver.inventory.skinList.Contains(skinList[srno].id))
+        if (saver.usrdata.inventory.skinList.Contains(skinList[srno].id))
         {
             BuyBtn.gameObject.SetActive(false);
             EquipBtn.gameObject.SetActive(true);
             pricetxt.text = "owned";
-            if(saver.usrdata.active_skin == skinList[srno].id)
+            if(saver.usrdata.inventory.active_skin == skinList[srno].id)
                 EquipBtn.interactable = false;
             else
                 EquipBtn.interactable = true;
@@ -122,7 +122,7 @@ public class SkinMenu : MonoBehaviour
 
     void SortPurchasedSkins()
     {
-        var list = saver.inventory.skinList;
+        var list = saver.usrdata.inventory.skinList;
         for (byte i = 0; i < list.Count; i++)
         {
             skinList.Insert(i, skinList[list[i]]);

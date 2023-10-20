@@ -24,10 +24,11 @@ public class GameManager : MonoBehaviour
     [field: SerializeField] public static Saver saver;
 
     public static int[] scoreTier = new int[2];
-    public static int starCount;
+    public static int starsGot, starsCredited;
     public const int totalStars = 3;
     [field: SerializeField] public int starsRemaining { get; private set; }
 
+    public int STARS;
 
     private void Awake()
     {
@@ -47,6 +48,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         CountUp();
+        STARS = starsGot;
     }
 
     private void OnEnable()
@@ -61,10 +63,7 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
-        saver.SavetoJson(saver.scoredata);
-        //saver.SavetoJson(saver.scores);
-        //saver.SavetoJson(saver.usrdata);
-
+        saver.SaveAll();
         input.Disable();
         input.Controls.Aim.started -= FirstTouch;
         input.Controls.Aim.performed -= FirstTouch;
@@ -86,37 +85,32 @@ public class GameManager : MonoBehaviour
 
     void StarScoring()
     {
-        int maxStars;
-
         if (timer < scoreTier[0] + 1) // * * *
         {
-            maxStars = 3;
-            starCount = starsRemaining;
+            starsGot = 3;
+            starsCredited = starsRemaining;
         }
         else if (timer < scoreTier[1] + 1) // * *
         {
-            maxStars = 2;
-            starCount = starsRemaining - maxStars + 1;  // credit 2 stars if 3 remaining or 1 when 2 remaining
+            starsGot = 2;
+            starsCredited = starsRemaining - starsGot + 1;  // credit 2 stars if 3 remaining or 1 when 2 remaining
         }
         else // *
         {
-            maxStars = 1;
+            starsGot = 1;
             if (starsRemaining > 2)
-            {
-                starCount = maxStars;
-                starsRemaining -= starCount;
-            }
+                starsCredited = starsGot;
         }
 
     }
     public void SaveStars()
     {
-        saver.scoredata.arenas[currentArenaNo].levels[currentLevelNo].starCount = starCount;
-        saver.usrdata.starbalance += starCount;
+
+        saver.scoredata.arenas[currentArenaNo].levels[currentLevelNo].starCount += starsCredited;
+        saver.usrdata.inventory.starbalance += starsCredited;
         
         UnlockLevels();
         saver.SavetoJson(saver.scoredata);
-        print("okkk");
     }
 
     void UnlockLevels()
@@ -141,7 +135,9 @@ public class GameManager : MonoBehaviour
 
     void InitScoreboardData()
     {
+        score = 0;
         totalScore = 0;
+        starsGot = 0;
         highScore = saver.scoredata.arenas[currentArenaNo].levels[currentLevelNo].hiscore;
         scoreboard[0].text = highScore.ToString();
         scoreboard[1].text = totalScore.ToString();
@@ -232,7 +228,7 @@ public class GameManager : MonoBehaviour
         level.hiscore = highScore;
         level.timeTaken = timer;
         level.coins_earned += score;
-        saver.usrdata.balance += score;
+        saver.usrdata.inventory.balance += score;
 
         level.ballCount = level.hiscore = (int)(level.timeTaken = level.coins_earned = 0);
     }

@@ -69,8 +69,5 @@ public class LevelManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    void ResetCount()
-    {
-        LevelReporting.goalCount = 0;
-    }
+    void ResetCount() => LevelReporting.goalCount = 0;
 }

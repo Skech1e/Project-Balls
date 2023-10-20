@@ -89,7 +89,7 @@ public class UIController : MonoBehaviour
 
     void DisplayStars()
     {
-        for(int i = 0; i < GameManager.starCount; i++)
+        for(int i = 0; i < GameManager.starsGot; i++)
         {
             var temp = Stars[i].color;
             temp.a = 1f;
@@ -121,6 +121,10 @@ public class UIController : MonoBehaviour
     public void Restart()
     {
         OnRestartfromUI.Invoke();
+        ResetStars();
+    }
+    void ResetStars()
+    {
         for (int i = 0; i < Stars.Length; i++)
         {
             var temp = Stars[i].color;

@@ -35867,7 +35867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 434528474}
-  skins:
+  skinList:
   - {fileID: 11400000, guid: 2bfacba0260b62943addbd2dd9ee247a, type: 2}
   - {fileID: 11400000, guid: de933ce0119ac724f9d3f366abcf220a, type: 2}
   - {fileID: 11400000, guid: 6068e76e78c639f4f966397b4b4e16c4, type: 2}
