@@ -30,9 +30,10 @@ public class GoogleAdManager : MonoBehaviour
     {
         List<string> devices = new()
         {
-            AdRequest.TestDeviceSimulator, "347e60922d62406ab6eed7a07a28e7db"
+            AdRequest.TestDeviceSimulator, "347e60922d62406ab6eed7a07a28e7db", "2f3637ba2a884af4b8ecd4cae63cc156"
         };
-        RequestConfiguration config = new RequestConfiguration.Builder().SetTestDeviceIds(devices).build();
+        //RequestConfiguration config = new RequestConfiguration.Builder().SetTestDeviceIds(devices).build();
+        RequestConfiguration config = new(); config.TestDeviceIds = devices;
         MobileAds.SetRequestConfiguration(config);
         MobileAds.Initialize((_) => MobileAdsEventExecutor.ExecuteInUpdate(() => { }));
 
