@@ -1524,6 +1524,7 @@ MonoBehaviour:
   - {fileID: 0}
   touchedProperty: 0
   <starsRemaining>k__BackingField: 0
+  STARS: 0
 --- !u!114 &37375286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31559,6 +31560,7 @@ MonoBehaviour:
   - {fileID: 0}
   touchedProperty: 0
   <starsRemaining>k__BackingField: 0
+  STARS: 0
 --- !u!114 &810874884
 MonoBehaviour:
   m_ObjectHideFlags: 0

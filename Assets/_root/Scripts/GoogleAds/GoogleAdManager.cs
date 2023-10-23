@@ -4,6 +4,7 @@ using UnityEngine;
 using GoogleMobileAds.Api;
 using GoogleMobileAds.Common;
 using System;
+using TMPro;
 
 public class GoogleAdManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GoogleAdManager : MonoBehaviour
 
     BannerView bannerAd;
     InterstitialAd _interstitialAd;
+    public TextMeshProUGUI status;
 
     AdRequest adRequest = new();
 
@@ -83,6 +85,9 @@ public class GoogleAdManager : MonoBehaviour
         DestroyBanner();
         bannerAd = new(banner, AdSize.Banner, AdPosition.Bottom);
         bannerAd.LoadAd(adRequest);
+        bannerAd.OnBannerAdLoaded += () => { status.text = "Loaded"; };
+        Action<LoadAdError> value = (_) => { status.text = "Error"; };
+        bannerAd.OnBannerAdLoadFailed += value;
     }
 
     private void DestroyBanner()
