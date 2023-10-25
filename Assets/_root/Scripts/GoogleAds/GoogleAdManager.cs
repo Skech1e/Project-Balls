@@ -34,9 +34,12 @@ public class GoogleAdManager : MonoBehaviour
         {
             AdRequest.TestDeviceSimulator, "347e60922d62406ab6eed7a07a28e7db", "2f3637ba2a884af4b8ecd4cae63cc156"
         };
+        status.text = "Pre Request";
         //RequestConfiguration config = new RequestConfiguration.Builder().SetTestDeviceIds(devices).build();
         RequestConfiguration config = new(); config.TestDeviceIds = devices;
+        status.text = "test devices added";
         MobileAds.SetRequestConfiguration(config);
+        status.text = "Pre Init";
         MobileAds.Initialize((_) => MobileAdsEventExecutor.ExecuteInUpdate(() =>
         {
             status.text = "Initialized";
