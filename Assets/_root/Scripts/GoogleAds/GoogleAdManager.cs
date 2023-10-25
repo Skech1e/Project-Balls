@@ -8,7 +8,7 @@ using TMPro;
 
 public class GoogleAdManager : MonoBehaviour
 {
-    public static GoogleAdManager instance {  get; private set; }
+    public static GoogleAdManager instance { get; private set; }
 
     public const string interstitial = "ca-app-pub-3940256099942544/1033173712";
     public const string banner = "ca-app-pub-3940256099942544/6300978111";
@@ -28,7 +28,7 @@ public class GoogleAdManager : MonoBehaviour
         else Destroy(this);
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
         List<string> devices = new()
         {
@@ -37,10 +37,15 @@ public class GoogleAdManager : MonoBehaviour
         //RequestConfiguration config = new RequestConfiguration.Builder().SetTestDeviceIds(devices).build();
         RequestConfiguration config = new(); config.TestDeviceIds = devices;
         MobileAds.SetRequestConfiguration(config);
-        MobileAds.Initialize((_) => MobileAdsEventExecutor.ExecuteInUpdate(() => { }));
+        MobileAds.Initialize((_) => MobileAdsEventExecutor.ExecuteInUpdate(() =>
+        {
+            status.text = "Initialized";
+        }));
+        yield return new WaitForSeconds(1f);
+        status.text = "urmom";
 
-        PreloadBanner();
-        PreloadInterstitial();
+        //PreloadBanner();
+        //PreloadInterstitial();
     }
 
     #region Interstitial
@@ -68,13 +73,13 @@ public class GoogleAdManager : MonoBehaviour
 
     void DestroyInterstitial()
     {
-        if(_interstitialAd != null)
+        if (_interstitialAd != null)
             _interstitialAd.Destroy();
     }
 
     public void ShowInterstitial()
     {
-        if(_interstitialAd != null && _interstitialAd.CanShowAd())
+        if (_interstitialAd != null && _interstitialAd.CanShowAd())
             _interstitialAd.Show();
     }
     #endregion
@@ -92,7 +97,7 @@ public class GoogleAdManager : MonoBehaviour
 
     private void DestroyBanner()
     {
-        if(bannerAd != null) bannerAd.Destroy();
+        if (bannerAd != null) bannerAd.Destroy();
     }
     #endregion
 }
