@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using GoogleMobileAds.Api;
-using GoogleMobileAds.Common;
+//using GoogleMobileAds.Api;
+//using GoogleMobileAds.Common;
 using System;
 using TMPro;
 
@@ -13,7 +13,7 @@ public class GoogleAdManager : MonoBehaviour
     public const string interstitial = "ca-app-pub-3940256099942544/1033173712";
     public const string banner = "ca-app-pub-3940256099942544/6300978111";
 
-    BannerView bannerAd;
+    /*BannerView bannerAd;
     InterstitialAd _interstitialAd;
     public TextMeshProUGUI status;
 
@@ -102,5 +102,5 @@ public class GoogleAdManager : MonoBehaviour
     {
         if (bannerAd != null) bannerAd.Destroy();
     }
-    #endregion
+    #endregion*/
 }

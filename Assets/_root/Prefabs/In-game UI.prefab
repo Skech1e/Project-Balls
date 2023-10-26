@@ -152,7 +152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &599497755037861298
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2058,8 +2058,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoogleAdManager, Assembly-CSharp
+      - m_Target: {fileID: 7034284715442140628}
+        m_TargetAssemblyTypeName: AdManager, Assembly-CSharp
         m_MethodName: ShowInterstitial
         m_Mode: 1
         m_Arguments:
@@ -3333,8 +3333,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GoogleAdManager, Assembly-CSharp
+      - m_Target: {fileID: 7034284715442140628}
+        m_TargetAssemblyTypeName: AdManager, Assembly-CSharp
         m_MethodName: ShowInterstitial
         m_Mode: 1
         m_Arguments:
@@ -4763,7 +4763,6 @@ GameObject:
   - component: {fileID: 3324094606313332916}
   - component: {fileID: 3324094606313332918}
   - component: {fileID: 3324094606313332917}
-  - component: {fileID: 3161824210506984461}
   m_Layer: 0
   m_Name: Buttons
   m_TagString: Untagged
@@ -4826,22 +4825,6 @@ MonoBehaviour:
   Offset: 0
   FromValue: 0
   ToValue: 0
---- !u!114 &3161824210506984461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3324094606313332915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9ad64ed3fa6fcc4eabc4c65c8abd939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _androidAdUnitId: BannerAd1
-  _iOsAdUnitId: Banner_iOS
-  _position: 4
-  textbox: {fileID: 4409887329401206894}
 --- !u!1 &3324094606332960812
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,6 +5258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3324094606386094470}
   - component: {fileID: 3324094606386094471}
+  - component: {fileID: 7034284715442140628}
   m_Layer: 0
   m_Name: In-game UI
   m_TagString: Untagged
@@ -5320,6 +5304,24 @@ MonoBehaviour:
   - {fileID: 3324094605233893225}
   - {fileID: 3324094606868590554}
   - {fileID: 3324094605311124337}
+--- !u!114 &7034284715442140628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3324094606386094469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ad64ed3fa6fcc4eabc4c65c8abd939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidGameId: 5413834
+  _testMode: 0
+  _interstitial: Interstitial_Android
+  _banner: Banner_Android
+  _reward: 
+  status: {fileID: 4409887329401206894}
 --- !u!1 &3324094606429268143
 GameObject:
   m_ObjectHideFlags: 0
