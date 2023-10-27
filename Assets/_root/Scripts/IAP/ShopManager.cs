@@ -6,7 +6,8 @@ public class ShopManager : MonoBehaviour
 {
     public static ShopManager instance {  get; private set; }
 
-    
+    [SerializeField]
+    private Items[] items;
 
     private void Awake()
     {
@@ -14,6 +15,8 @@ public class ShopManager : MonoBehaviour
             instance = this;
         else
             Destroy(this);
+
+        items = new Items[6];
     }
     void Start()
     {
