@@ -38,8 +38,8 @@ namespace GooglePlayGames {
 
         public const string ApplicationId = "853312753018"; // Filled in automatically
         public const string IosClientId = "__IOS_CLIENTID__"; // Filled in automatically
-        public const string WebClientId = ""; // Filled in automatically
-        public const string NearbyConnectionServiceId = "";
+        public const string WebClientId = "853312753018-v58vi63cd4lfab4t0k5vjn0ioumeqsco.apps.googleusercontent.com"; // Filled in automatically
+        public const string NearbyConnectionServiceId = "com.GameInstitute.CrazyBasket";
 
         public static bool ApplicationIdInitialized() {
             return !string.IsNullOrEmpty(ApplicationId) && !ApplicationId.Equals(ToEscapedToken(UnescapedApplicationId));
