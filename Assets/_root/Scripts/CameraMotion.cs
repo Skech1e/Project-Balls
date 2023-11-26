@@ -7,7 +7,7 @@ public class CameraMotion : MonoBehaviour
 {
     Vector3 LeftUpperAngle, CentreAngle, RightUpperAngle, targetAngle, targetPos, CentrePos, LeftUpperPos, RightUpperPos;
     List<Vector3> angles, positions;
-    [SerializeField] Button POV;
+    [SerializeField] Button? POV;
     [SerializeField] float speed;
     Animator animator;
 
@@ -72,8 +72,11 @@ public class CameraMotion : MonoBehaviour
 
     void GetPOVButton()
     {
-        POV = GameObject.FindGameObjectWithTag("POV").GetComponent<Button>();
-        POV.onClick.AddListener(() => POVShiftToggle());
+        if (SceneManager.GetActiveScene().buildIndex > 0)
+        {
+            POV = GameObject.FindGameObjectWithTag("POV").GetComponent<Button>();
+            POV.onClick.AddListener(() => POVShiftToggle());
+        }
     }
 
     void POVShiftToggle()
