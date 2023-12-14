@@ -10,9 +10,10 @@ using System.IO;
 
 public class PlayGames : MonoBehaviour
 {
-    public static PlayGames playGames {  get; private set; }
+    public static PlayGames playGames { get; private set; }
     public TextMeshProUGUI check;
     string savepath;
+    bool isOnline;
     private void Awake()
     {
         if (playGames == null)
@@ -25,8 +26,10 @@ public class PlayGames : MonoBehaviour
 
     void Start()
     {
+        isOnline = Application.internetReachability == NetworkReachability.NotReachable ? false : true;
         PlayGamesPlatform.Activate();
-        PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+        if (isOnline)
+            PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
         //check.text = "Start";
     }
 
@@ -34,7 +37,9 @@ public class PlayGames : MonoBehaviour
     {
         check.text = "entered";
         check.text = status.ToString();
-        if (status == SignInStatus.Success) { check.text = "Success";
+        if (status == SignInStatus.Success)
+        {
+            check.text = "Success";
             OpenSavedGame(savepath);
         }
         else
@@ -44,7 +49,7 @@ public class PlayGames : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     void OpenSavedGame(string filename)
     {

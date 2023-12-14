@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     public int STARS;
 
     [Header("GPG")]
-    public bool isConnectedOnline;
+    public static bool isConnectedOnline;
     TextMeshProUGUI check;
 
     private void Awake()
@@ -47,8 +47,10 @@ public class GameManager : MonoBehaviour
     {
         Application.targetFrameRate = 420;
         isConnectedOnline = Application.internetReachability == NetworkReachability.NotReachable ? false : true;
-        if (isConnectedOnline) 
-            PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+        if (isConnectedOnline)
+        {
+            //PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+        }
         else saver = Resources.Load<Saver>("UserData");
         //saver.LoadfromJson();
     }
