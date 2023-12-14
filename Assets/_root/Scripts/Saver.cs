@@ -19,21 +19,6 @@ public class Saver : ScriptableObject
 
         LoadfromJson();
     }
-
-    /*private void OnValidate()
-    {
-        int i = 1; int j = 1;
-        foreach (Arena arena in arenas)
-        {
-            arena.name = "Arena " + i;
-            i = i < 10 ? (i + 1) : 1;
-            foreach (Level level in arena.levels)
-            {
-                level.name = "Level " + j;
-                j = j < 16 ? (j + 1) : 1;
-            }
-        }
-    }*/
     
     public void SaveAll()
     {
@@ -51,13 +36,14 @@ public class Saver : ScriptableObject
 
     public void LoadfromJson()
     {
-        string data = File.ReadAllText(scpath);
-        if (data is null)
+        if (!File.Exists(scpath))
         {
+            File.Create(scpath);
+            File.Create(datapath);
             Debug.Log("No save found! Created.");
-            SavetoJson(scoredata);
-            SavetoJson(usrdata);
+            SaveAll();
         }
+        string data = File.ReadAllText(scpath);
 
         //Debug.Log("save loaded");
         JsonUtility.FromJsonOverwrite(data, this);
