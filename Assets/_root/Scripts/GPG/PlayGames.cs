@@ -3,25 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
+using GooglePlayGames.BasicApi.SavedGame;
 using System;
 using TMPro;
-using GooglePlayGames.BasicApi.SavedGame;
+using System.IO;
 
 public class PlayGames : MonoBehaviour
 {
+    public static PlayGames playGames {  get; private set; }
     public TextMeshProUGUI check;
+    string savepath;
+    private void Awake()
+    {
+        if (playGames == null)
+            playGames = this;
+        else
+            Destroy(this);
+
+        savepath = Path.Combine(Application.persistentDataPath, "scglobal.json");
+    }
 
     void Start()
     {
-        //PlayGamesPlatform.Activate();
+        PlayGamesPlatform.Activate();
         PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
-
+        //check.text = "Start";
     }
 
     private void ProcessAuthentication(SignInStatus status)
     {
+        check.text = "entered";
+        check.text = status.ToString();
         if (status == SignInStatus.Success) { check.text = "Success";
-            OpenSavedGame("scglobal.json");
+            OpenSavedGame(savepath);
         }
         else
             check.text = "Failed";
@@ -34,6 +48,7 @@ public class PlayGames : MonoBehaviour
     }
     void OpenSavedGame(string filename)
     {
+        check.text = "OpenSavedGame";
         ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
         savedGameClient.OpenWithAutomaticConflictResolution(filename, DataSource.ReadCacheOrNetwork,
             ConflictResolutionStrategy.UseLongestPlaytime, OnSavedGameOpened);
@@ -44,7 +59,7 @@ public class PlayGames : MonoBehaviour
         if (status == SavedGameRequestStatus.Success)
         {
             // handle reading or writing of saved game.
-            check.text = "OpenSavedGame";
+            check.text = "OnSavedGameOpened";
             GameManager.saver = (Saver)game;
             check.text = "Save Loaded";
         }

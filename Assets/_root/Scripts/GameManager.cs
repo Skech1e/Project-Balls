@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using GooglePlayGames;
+using GooglePlayGames.BasicApi;
+using GooglePlayGames.BasicApi.SavedGame;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,6 +33,10 @@ public class GameManager : MonoBehaviour
 
     public int STARS;
 
+    [Header("GPG")]
+    public bool isConnectedOnline;
+    TextMeshProUGUI check;
+
     private void Awake()
     {
         input = new();
@@ -39,8 +46,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 420;
-        //saver = ScriptableObject.CreateInstance<Saver>();
-        saver = Resources.Load<Saver>("UserData");
+        isConnectedOnline = Application.internetReachability == NetworkReachability.NotReachable ? false : true;
+        if (isConnectedOnline) 
+            PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+        else saver = Resources.Load<Saver>("UserData");
         //saver.LoadfromJson();
     }
 
@@ -63,6 +72,7 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
+        isConnectedOnline = Application.internetReachability == NetworkReachability.NotReachable ? false : true;
         saver.SaveAll();
         input.Disable();
         input.Controls.Aim.started -= FirstTouch;
@@ -75,6 +85,68 @@ public class GameManager : MonoBehaviour
         LevelReporting.LevelComplete -= StarScoring;
         UIController.OnRestartfromUI -= ResetTimer;
     }
+
+    #region GooglePlayGames
+
+    private void ProcessAuthentication(SignInStatus status)
+    {
+        if (status == SignInStatus.Success)
+        {
+            check.text = "Success";
+            OpenSavedGame("scglobal.json");
+        }
+        else
+            check.text = "Failed";
+    }
+
+    void OpenSavedGame(string filename)
+    {
+        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+        savedGameClient.OpenWithAutomaticConflictResolution(filename, DataSource.ReadCacheOrNetwork,
+            ConflictResolutionStrategy.UseLongestPlaytime, OnSavedGameOpened);
+    }
+
+    private void OnSavedGameOpened(SavedGameRequestStatus status, ISavedGameMetadata game)
+    {
+        if (status == SavedGameRequestStatus.Success)
+        {
+            // handle reading or writing of saved game.
+            check.text = "OpenSavedGame";
+            saver = (Saver)game;
+            check.text = "Save Loaded";
+        }
+        else
+        {
+            // handle error
+            check.text = "Save Load Failed";
+        }
+    }
+
+    void SaveGame(ISavedGameMetadata game, byte[] savedData, TimeSpan totalPlaytime)
+    {
+        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+
+        SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder();
+        builder = builder
+            .WithUpdatedPlayedTime(totalPlaytime)
+            .WithUpdatedDescription("Saved game at " + DateTime.Now);
+        SavedGameMetadataUpdate updatedMetadata = builder.Build();
+        savedGameClient.CommitUpdate(game, updatedMetadata, savedData, OnSavedGameWritten);
+    }
+
+    public void OnSavedGameWritten(SavedGameRequestStatus status, ISavedGameMetadata game)
+    {
+        if (status == SavedGameRequestStatus.Success)
+        {
+            // handle reading or writing of saved game.
+        }
+        else
+        {
+            // handle error
+        }
+    }
+
+    #endregion
 
     void GetLevelInfo()
     {
@@ -108,7 +180,7 @@ public class GameManager : MonoBehaviour
 
         saver.scoredata.arenas[currentArenaNo].levels[currentLevelNo].starCount += starsCredited;
         saver.usrdata.inventory.starbalance += starsCredited;
-        
+
         UnlockLevels();
         saver.SavetoJson(saver.scoredata);
     }
