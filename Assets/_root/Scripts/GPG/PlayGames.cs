@@ -7,11 +7,12 @@ using GooglePlayGames.BasicApi.SavedGame;
 using System;
 using TMPro;
 using System.IO;
+using System.Text;
 
 public class PlayGames : MonoBehaviour
 {
     public static PlayGames playGames { get; private set; }
-    public TextMeshProUGUI check;
+    public TextMeshProUGUI check, debug;
     string savepath;
     bool isOnline;
     private void Awake()
@@ -65,8 +66,19 @@ public class PlayGames : MonoBehaviour
         {
             // handle reading or writing of saved game.
             check.text = "OnSavedGameOpened";
-            GameManager.saver = (Saver)game;
+            //GameManager.saver = (Saver)game;
+            debug.text = game.Filename;
             check.text = "Save Loaded";
+
+            string scjson = JsonUtility.ToJson(GameManager.saver.scoredata);
+            string usrjson = JsonUtility.ToJson(GameManager.saver.usrdata);
+
+            byte[] scdata = Encoding.UTF8.GetBytes(scjson);
+            byte[] usrdata = Encoding.UTF8.GetBytes(usrjson);
+            SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder();
+            SavedGameMetadataUpdate update = builder.Build();
+            ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+            savedGameClient.CommitUpdate(game, update, usrdata, OnSavedGameWritten);
         }
         else
         {
@@ -86,10 +98,27 @@ public class PlayGames : MonoBehaviour
         if (status == SavedGameRequestStatus.Success)
         {
             // handle processing the byte array data
+            check.text = "Saved to Cloud";
         }
         else
         {
             // handle error
+            check.text = "nope";
         }
+    }
+    private void OnSavedGameWritten(SavedGameRequestStatus status, ISavedGameMetadata metaData)
+    {
+        if (status == SavedGameRequestStatus.Success)
+        {
+            Debug.Log("Save successful");
+        }
+        else
+        {
+            Debug.LogError("Failed to write saved game data");
+        }
+    }
+    void SaveGameData()
+    {
+
     }
 }
