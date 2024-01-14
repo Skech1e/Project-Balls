@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
         if (isConnectedOnline)
         {
             //PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+            saver.LoadfromJson();
         }
         else saver = Resources.Load<Saver>("UserData");
         //saver.LoadfromJson();
