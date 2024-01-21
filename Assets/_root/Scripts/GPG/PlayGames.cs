@@ -33,10 +33,10 @@ public class PlayGames : MonoBehaviour
         if (isOnline)
             PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
         //check.text = "Start";
-        GameManager.saver.LoadfromJson();
+        //GameManager.saver.LoadfromJson();
     }
 
-    private void ProcessAuthentication(SignInStatus status)
+    public void ProcessAuthentication(SignInStatus status)
     {
         check.text = "entered";
         check.text = status.ToString();

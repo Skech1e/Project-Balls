@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using GooglePlayGames.BasicApi.SavedGame;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class GameManager : MonoBehaviour
     bool touchedProperty;
 
     [field: SerializeField] public static Saver saver;
-
+    public Saver sav;
     public static int[] scoreTier = new int[2];
     public static int starsGot, starsCredited;
     public const int totalStars = 3;
@@ -36,10 +37,15 @@ public class GameManager : MonoBehaviour
     [Header("GPG")]
     public static bool isConnectedOnline;
     TextMeshProUGUI check;
+    string scpath, datapath;
 
     private void Awake()
     {
         input = new();
+        saver = Resources.Load<Saver>("UserData");
+        sav = saver;
+        saver.LoadfromJson();
+        saver.LoadUser();
     }
 
     // Start is called before the first frame update
@@ -47,13 +53,16 @@ public class GameManager : MonoBehaviour
     {
         Application.targetFrameRate = 420;
         isConnectedOnline = Application.internetReachability == NetworkReachability.NotReachable ? false : true;
+        /*saver = Resources.Load<Saver>("UserData");
+        sav = saver;
+        saver.LoadfromJson();
+        saver.LoadUser();
         if (isConnectedOnline)
         {
-            //PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
-            saver.LoadfromJson();
-        }
-        else saver = Resources.Load<Saver>("UserData");
-        //saver.LoadfromJson();
+            PlayGamesPlatform.Activate();
+            PlayGamesPlatform.Instance.Authenticate(PlayGames.playGames.ProcessAuthentication);
+        }*/
+
     }
 
     // Update is called once per frame
@@ -87,69 +96,7 @@ public class GameManager : MonoBehaviour
         LevelReporting.LevelLoad -= ResetTimer;
         LevelReporting.LevelComplete -= StarScoring;
         UIController.OnRestartfromUI -= ResetTimer;
-    }
-
-    #region GooglePlayGames
-
-    private void ProcessAuthentication(SignInStatus status)
-    {
-        if (status == SignInStatus.Success)
-        {
-            check.text = "Success";
-            OpenSavedGame("scglobal.json");
-        }
-        else
-            check.text = "Failed";
-    }
-
-    void OpenSavedGame(string filename)
-    {
-        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-        savedGameClient.OpenWithAutomaticConflictResolution(filename, DataSource.ReadCacheOrNetwork,
-            ConflictResolutionStrategy.UseLongestPlaytime, OnSavedGameOpened);
-    }
-
-    private void OnSavedGameOpened(SavedGameRequestStatus status, ISavedGameMetadata game)
-    {
-        if (status == SavedGameRequestStatus.Success)
-        {
-            // handle reading or writing of saved game.
-            check.text = "OpenSavedGame";
-            saver = (Saver)game;
-            check.text = "Save Loaded";
-        }
-        else
-        {
-            // handle error
-            check.text = "Save Load Failed";
-        }
-    }
-
-    void SaveGame(ISavedGameMetadata game, byte[] savedData, TimeSpan totalPlaytime)
-    {
-        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-
-        SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder();
-        builder = builder
-            .WithUpdatedPlayedTime(totalPlaytime)
-            .WithUpdatedDescription("Saved game at " + DateTime.Now);
-        SavedGameMetadataUpdate updatedMetadata = builder.Build();
-        savedGameClient.CommitUpdate(game, updatedMetadata, savedData, OnSavedGameWritten);
-    }
-
-    public void OnSavedGameWritten(SavedGameRequestStatus status, ISavedGameMetadata game)
-    {
-        if (status == SavedGameRequestStatus.Success)
-        {
-            // handle reading or writing of saved game.
-        }
-        else
-        {
-            // handle error
-        }
-    }
-
-    #endregion
+    }    
 
     void GetLevelInfo()
     {
