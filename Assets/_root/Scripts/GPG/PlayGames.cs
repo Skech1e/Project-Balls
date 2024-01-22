@@ -9,6 +9,11 @@ using TMPro;
 using System.IO;
 using System.Text;
 
+public enum SaveGameOperation
+{
+    Load, Save
+}
+
 public class PlayGames : MonoBehaviour
 {
     public static PlayGames playGames { get; private set; }
@@ -43,23 +48,33 @@ public class PlayGames : MonoBehaviour
         if (status == SignInStatus.Success)
         {
             check.text = "Success";
-            OpenSavedGame(savepath);
+            
         }
         else
             check.text = "Failed";
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GPGSave(SaveGameOperation operation)
     {
-
-    }
-    void OpenSavedGame(string filename)
-    {
-        check.text = "OpenSavedGame";
         ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-        savedGameClient.OpenWithAutomaticConflictResolution(filename, DataSource.ReadCacheOrNetwork,
+
+        if (operation == SaveGameOperation.Load)
+        {
+            check.text = "load";
+            savedGameClient.OpenWithAutomaticConflictResolution(savepath, DataSource.ReadCacheOrNetwork,
+            ConflictResolutionStrategy.UseLongestPlaytime, OnSavedGameOpenedToLoad);
+
+            void OnSavedGameOpenedToLoad(SavedGameRequestStatus status, ISavedGameMetadata metadata)
+            {
+                savedGameClient.ReadBinaryData(metadata, OnSavedGameDataRead);
+            }
+        }
+        if (operation == SaveGameOperation.Save)
+        {
+            check.text = "save";
+            savedGameClient.OpenWithAutomaticConflictResolution(savepath, DataSource.ReadCacheOrNetwork,
             ConflictResolutionStrategy.UseLongestPlaytime, OnSavedGameOpened);
+        }
     }
 
     private void OnSavedGameOpened(SavedGameRequestStatus status, ISavedGameMetadata game)
@@ -68,24 +83,15 @@ public class PlayGames : MonoBehaviour
         {
             // handle reading or writing of saved game.
             check.text = "OnSavedGameOpened";
-            //GameManager.saver = (Saver)game;
-            //debug.text = game?.Filename;
-            //check.text = "Save Loaded";
 
             string scjson = JsonUtility.ToJson(GameManager.saver.scoredata);
-            check.text = "scoredata";
             string usrjson = JsonUtility.ToJson(GameManager.saver.usrdata);
-            check.text = "before encoding";
             byte[] scdata = Encoding.UTF8.GetBytes(scjson);
-            check.text = "scjson encoding";
             byte[] usrdata = Encoding.UTF8.GetBytes(usrjson);
-            check.text = "before build";
+
             SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder();
-            check.text = "after builder inst";
             SavedGameMetadataUpdate update = builder.Build();
-            check.text = "after build";
             ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-            check.text = "before commit";
             savedGameClient.CommitUpdate(game, update, usrdata, OnSavedGameWritten);
             check.text = "save commit";
             debug.text = game.ToString();
@@ -97,18 +103,14 @@ public class PlayGames : MonoBehaviour
         }
     }
 
-    void LoadGameData(ISavedGameMetadata game)
-    {
-        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-        savedGameClient.ReadBinaryData(game, OnSavedGameDataRead);
-    }
-
-    public void OnSavedGameDataRead(SavedGameRequestStatus status, byte[] data)
+    public void OnSavedGameDataRead(SavedGameRequestStatus status, byte[] savedata)
     {
         if (status == SavedGameRequestStatus.Success)
         {
+            string data = Encoding.UTF8.GetString(savedata);
             // handle processing the byte array data
-            check.text = "Saved to Cloud";
+            debug.text = data;
+            check.text = "Loaded Data from Cloud";
         }
         else
         {
@@ -116,6 +118,8 @@ public class PlayGames : MonoBehaviour
             check.text = "nope";
         }
     }
+
+
     private void OnSavedGameWritten(SavedGameRequestStatus status, ISavedGameMetadata metaData)
     {
         if (status == SavedGameRequestStatus.Success)
@@ -126,9 +130,5 @@ public class PlayGames : MonoBehaviour
         {
             Debug.LogError("Failed to write saved game data");
         }
-    }
-    void SaveGameData()
-    {
-
     }
 }

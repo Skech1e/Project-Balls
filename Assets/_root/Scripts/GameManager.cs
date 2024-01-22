@@ -9,6 +9,7 @@ using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using GooglePlayGames.BasicApi.SavedGame;
 using System.IO;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,14 +39,31 @@ public class GameManager : MonoBehaviour
     public static bool isConnectedOnline;
     TextMeshProUGUI check;
     string scpath, datapath;
+    public UnityEvent<SaveGameOperation> gpgEvent;
 
     private void Awake()
     {
         input = new();
         saver = Resources.Load<Saver>("UserData");
         sav = saver;
-        saver.LoadfromJson();
-        saver.LoadUser();
+        if (saver.CheckForSave())
+        {
+            saver.LoadfromJson();
+            saver.LoadUser();
+            if (isConnectedOnline)
+            {
+                gpgEvent.Invoke(SaveGameOperation.Load);
+            }
+        }
+        else
+        {
+            saver.CreateSave();
+            saver.SaveAll();
+            if (isConnectedOnline)
+            {
+                gpgEvent.Invoke(SaveGameOperation.Save);
+            }
+        }
     }
 
     // Start is called before the first frame update
@@ -63,6 +81,10 @@ public class GameManager : MonoBehaviour
             PlayGamesPlatform.Instance.Authenticate(PlayGames.playGames.ProcessAuthentication);
         }*/
 
+        if (isConnectedOnline)
+        {
+
+        }
     }
 
     // Update is called once per frame
@@ -96,7 +118,7 @@ public class GameManager : MonoBehaviour
         LevelReporting.LevelLoad -= ResetTimer;
         LevelReporting.LevelComplete -= StarScoring;
         UIController.OnRestartfromUI -= ResetTimer;
-    }    
+    }
 
     void GetLevelInfo()
     {

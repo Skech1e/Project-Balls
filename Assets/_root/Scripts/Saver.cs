@@ -19,7 +19,16 @@ public class Saver : ScriptableObject
 
         LoadfromJson();
     }
-    
+
+    public bool CheckForSave() => File.Exists(scpath);
+    public void CreateSave()
+    {
+        File.Create(scpath);
+        File.Create(datapath);
+        Debug.Log("No save found! Created.");
+        SaveAll();
+    }
+
     public void SaveAll()
     {
         //Debug.Log("Everything saved");
@@ -36,13 +45,13 @@ public class Saver : ScriptableObject
 
     public void LoadfromJson()
     {
-        if (!File.Exists(scpath))
+        /*if (!File.Exists(scpath))
         {
             File.Create(scpath);
             File.Create(datapath);
             Debug.Log("No save found! Created.");
             SaveAll();
-        }
+        }*/
         string data = File.ReadAllText(scpath);
 
         //Debug.Log("save loaded");
