@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     [Header("GPG")]
     public static bool isConnectedOnline;
-    TextMeshProUGUI check;
+    public TextMeshProUGUI check;
     string scpath, datapath;
     public UnityEvent<SaveGameOperation> gpgEvent;
 
@@ -46,24 +46,7 @@ public class GameManager : MonoBehaviour
         input = new();
         saver = Resources.Load<Saver>("UserData");
         sav = saver;
-        if (saver.CheckForSave())
-        {
-            saver.LoadfromJson();
-            saver.LoadUser();
-            if (isConnectedOnline)
-            {
-                gpgEvent.Invoke(SaveGameOperation.Load);
-            }
-        }
-        else
-        {
-            saver.CreateSave();
-            saver.SaveAll();
-            if (isConnectedOnline)
-            {
-                gpgEvent.Invoke(SaveGameOperation.Save);
-            }
-        }
+        
     }
 
     // Start is called before the first frame update
@@ -71,6 +54,30 @@ public class GameManager : MonoBehaviour
     {
         Application.targetFrameRate = 420;
         isConnectedOnline = Application.internetReachability == NetworkReachability.NotReachable ? false : true;
+
+        if (saver.CheckForSave())
+        {
+            //saver.CreateSave();
+            saver.LoadfromJson();
+            saver.LoadUser();
+            if (isConnectedOnline)
+            {
+                check.text = "online";
+                gpgEvent.Invoke(SaveGameOperation.Load);
+            }
+        }
+        else
+        {
+            check.text = "no save";
+            saver.CreateSave();
+            check.text = "save created";
+            if (isConnectedOnline)
+            {
+                check.text = "online2";
+                gpgEvent.Invoke(SaveGameOperation.Save);
+            }
+        }
+
         /*saver = Resources.Load<Saver>("UserData");
         sav = saver;
         saver.LoadfromJson();

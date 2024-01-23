@@ -23,8 +23,8 @@ public class Saver : ScriptableObject
     public bool CheckForSave() => File.Exists(scpath);
     public void CreateSave()
     {
-        File.Create(scpath);
-        File.Create(datapath);
+        File.Create(scpath, 2048, FileOptions.RandomAccess);
+        File.Create(datapath, 2048, FileOptions.RandomAccess);
         Debug.Log("No save found! Created.");
         SaveAll();
     }

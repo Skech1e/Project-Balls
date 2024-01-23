@@ -43,15 +43,18 @@ public class PlayGames : MonoBehaviour
 
     public void ProcessAuthentication(SignInStatus status)
     {
-        check.text = "entered";
-        check.text = status.ToString();
+        //check.text = "entered";
+        //check.text = status.ToString();
         if (status == SignInStatus.Success)
         {
-            check.text = "Success";
+            //check.text = "Success";
             
         }
         else
-            check.text = "Failed";
+        {
+            //check.text = "Failed";
+
+        }
     }
 
     public void GPGSave(SaveGameOperation operation)
