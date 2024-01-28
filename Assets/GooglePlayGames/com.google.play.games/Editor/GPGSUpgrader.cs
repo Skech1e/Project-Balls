@@ -33,28 +33,38 @@ namespace GooglePlayGames.Editor
         /// </summary>
         static GPGSUpgrader()
         {
-            if (EditorApplication.isPlayingOrWillChangePlaymode)
-                return;
-            Debug.Log("GPGSUpgrader start");
+            var xstart = new System.Diagnostics.Stopwatch();
+            xstart.Start();
+            bool needAssetRefresh = false;
+            string initialVer = GPGSProjectSettings.Instance.Get(GPGSUtil.LASTUPGRADEKEY, "00000");
+            if (!initialVer.Equals(PluginVersion.VersionKey))
+            {
+                Debug.Log("Upgrading from format version " + initialVer + " to " + PluginVersion.VersionKey);                
+
+                needAssetRefresh = true;
+                Debug.Log("Done all upgrades to " + PluginVersion.VersionKey);
+
+                string msg = GPGSStrings.PostInstall.Text.Replace(
+                    "$VERSION",
+                    PluginVersion.VersionString);
+                EditorUtility.DisplayDialog(GPGSStrings.PostInstall.Title, msg, "OK");
+            }
 
             GPGSProjectSettings.Instance.Set(GPGSUtil.LASTUPGRADEKEY, PluginVersion.VersionKey);
-            GPGSProjectSettings.Instance.Set(GPGSUtil.PLUGINVERSIONKEY,
-                PluginVersion.VersionString);
+            GPGSProjectSettings.Instance.Set(GPGSUtil.PLUGINVERSIONKEY, PluginVersion.VersionString);
             GPGSProjectSettings.Instance.Save();
 
-            bool isChanged = false;
             // Check that there is a AndroidManifest.xml file
             if (!GPGSUtil.AndroidManifestExists())
             {
-                isChanged = true;
                 GPGSUtil.GenerateAndroidManifest();
+                needAssetRefresh = true;
             }
 
-            if (isChanged)
-            {
+            if (needAssetRefresh)
                 AssetDatabase.Refresh();
-            }
-            Debug.Log("GPGSUpgrader done");
+
+            Debug.LogFormat("GPGSUpgrader complete: took {0} ms", xstart.ElapsedMilliseconds);
         }
     }
 }

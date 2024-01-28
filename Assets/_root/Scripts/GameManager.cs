@@ -40,13 +40,14 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI check;
     string scpath, datapath;
     public UnityEvent<SaveGameOperation> gpgEvent;
+    public static SaveGameOperation gpgAction;
 
     private void Awake()
     {
         input = new();
         saver = Resources.Load<Saver>("UserData");
         sav = saver;
-        
+        gpgAction = new();
     }
 
     // Start is called before the first frame update
@@ -57,27 +58,27 @@ public class GameManager : MonoBehaviour
 
         if (saver.CheckForSave())
         {
-            //saver.CreateSave();
             saver.LoadfromJson();
             saver.LoadUser();
             if (isConnectedOnline)
             {
                 check.text = "online";
-                gpgEvent.Invoke(SaveGameOperation.Load);
+                gpgAction = SaveGameOperation.Save;
             }
         }
         else
         {
-            check.text = "no save";
-            saver.CreateSave();
-            check.text = "save created";
             if (isConnectedOnline)
             {
                 check.text = "online2";
-                gpgEvent.Invoke(SaveGameOperation.Save);
+                gpgAction = SaveGameOperation.Load;
             }
-        }
+            check.text = "no save";
+            saver.SaveAll();
+            check.text = "save created";
 
+        }
+        PlayGames.playGames.LoadGPG();
         /*saver = Resources.Load<Saver>("UserData");
         sav = saver;
         saver.LoadfromJson();

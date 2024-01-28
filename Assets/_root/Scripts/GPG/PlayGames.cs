@@ -8,6 +8,7 @@ using System;
 using TMPro;
 using System.IO;
 using System.Text;
+using static GameManager;
 
 public enum SaveGameOperation
 {
@@ -18,27 +19,27 @@ public class PlayGames : MonoBehaviour
 {
     public static PlayGames playGames { get; private set; }
     public TextMeshProUGUI check, debug;
-    string savepath;
+    string savefile;
     bool isOnline;
+    ISavedGameClient savedGameClient;
     private void Awake()
     {
         if (playGames == null)
             playGames = this;
         else
             Destroy(this);
-
-        //savepath = Path.Combine(Application.persistentDataPath, "scglobal.json");
-        savepath = "scglobal.json";
+        savefile = "scores";
     }
 
-    void Start()
+    public void LoadGPG()
     {
         isOnline = Application.internetReachability == NetworkReachability.NotReachable ? false : true;
-        PlayGamesPlatform.Activate();
         if (isOnline)
+        {
+            PlayGamesPlatform.Activate();
             PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
-        //check.text = "Start";
-        //GameManager.saver.LoadfromJson();
+            savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+        }
     }
 
     public void ProcessAuthentication(SignInStatus status)
@@ -47,35 +48,32 @@ public class PlayGames : MonoBehaviour
         //check.text = status.ToString();
         if (status == SignInStatus.Success)
         {
-            //check.text = "Success";
-            
+            GPGSave(gpgAction);
+           
         }
         else
         {
-            //check.text = "Failed";
+            check.text = "Failed";
 
         }
     }
 
     public void GPGSave(SaveGameOperation operation)
     {
-        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-
         if (operation == SaveGameOperation.Load)
         {
             check.text = "load";
-            savedGameClient.OpenWithAutomaticConflictResolution(savepath, DataSource.ReadCacheOrNetwork,
+            savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+            Debug.Log(savedGameClient.ToString());
+            savedGameClient.OpenWithAutomaticConflictResolution(savefile, DataSource.ReadCacheOrNetwork,
             ConflictResolutionStrategy.UseLongestPlaytime, OnSavedGameOpenedToLoad);
-
-            void OnSavedGameOpenedToLoad(SavedGameRequestStatus status, ISavedGameMetadata metadata)
-            {
-                savedGameClient.ReadBinaryData(metadata, OnSavedGameDataRead);
-            }
         }
         if (operation == SaveGameOperation.Save)
         {
             check.text = "save";
-            savedGameClient.OpenWithAutomaticConflictResolution(savepath, DataSource.ReadCacheOrNetwork,
+            savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+            Debug.Log(savedGameClient.ToString());
+            savedGameClient.OpenWithAutomaticConflictResolution(savefile, DataSource.ReadCacheOrNetwork,
             ConflictResolutionStrategy.UseLongestPlaytime, OnSavedGameOpened);
         }
     }
@@ -94,7 +92,7 @@ public class PlayGames : MonoBehaviour
 
             SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder();
             SavedGameMetadataUpdate update = builder.Build();
-            ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+            savedGameClient = PlayGamesPlatform.Instance.SavedGame;
             savedGameClient.CommitUpdate(game, update, usrdata, OnSavedGameWritten);
             check.text = "save commit";
             debug.text = game.ToString();
@@ -106,13 +104,23 @@ public class PlayGames : MonoBehaviour
         }
     }
 
+
+    void OnSavedGameOpenedToLoad(SavedGameRequestStatus status, ISavedGameMetadata metadata)
+    {
+        savedGameClient.ReadBinaryData(metadata, OnSavedGameDataRead);
+    }
     public void OnSavedGameDataRead(SavedGameRequestStatus status, byte[] savedata)
     {
         if (status == SavedGameRequestStatus.Success)
         {
+            check.text = "loading2";
             string data = Encoding.UTF8.GetString(savedata);
             // handle processing the byte array data
             debug.text = data;
+            if(data != null)
+            {
+
+            }
             check.text = "Loaded Data from Cloud";
         }
         else
