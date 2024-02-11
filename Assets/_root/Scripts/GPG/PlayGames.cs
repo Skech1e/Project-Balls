@@ -85,15 +85,17 @@ public class PlayGames : MonoBehaviour
             // handle reading or writing of saved game.
             check.text = "OnSavedGameOpened";
 
-            string scjson = JsonUtility.ToJson(GameManager.saver.scoredata);
-            string usrjson = JsonUtility.ToJson(GameManager.saver.usrdata);
+            /*string scjson = JsonUtility.ToJson(saver.scoredata);
+            string usrjson = JsonUtility.ToJson(saver.usrdata);
             byte[] scdata = Encoding.UTF8.GetBytes(scjson);
-            byte[] usrdata = Encoding.UTF8.GetBytes(usrjson);
+            byte[] usrdata = Encoding.UTF8.GetBytes(usrjson);*/
+            string savedata = JsonUtility.ToJson(saver);
+            byte[] fullsave = Encoding.UTF8.GetBytes(savedata);
 
             SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder();
             SavedGameMetadataUpdate update = builder.Build();
             savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-            savedGameClient.CommitUpdate(game, update, usrdata, OnSavedGameWritten);
+            savedGameClient.CommitUpdate(game, update, fullsave, OnSavedGameWritten);
             check.text = "save commit";
             debug.text = game.ToString();
         }
@@ -116,7 +118,9 @@ public class PlayGames : MonoBehaviour
             check.text = "loading2";
             string data = Encoding.UTF8.GetString(savedata);
             // handle processing the byte array data
+
             debug.text = data;
+            JsonUtility.FromJsonOverwrite(data, saver.usrdata);
             if(data != null)
             {
 
@@ -140,6 +144,24 @@ public class PlayGames : MonoBehaviour
         else
         {
             Debug.LogError("Failed to write saved game data");
+        }
+    }
+
+    private void DeleteSaveData(string filename)
+    {
+        savedGameClient.OpenWithAutomaticConflictResolution(filename, DataSource.ReadCacheOrNetwork,
+                    ConflictResolutionStrategy.UseLongestPlaytime, DeleteSavedGame);
+    }
+
+    private void DeleteSavedGame(SavedGameRequestStatus status, ISavedGameMetadata game)
+    {
+        if(status == SavedGameRequestStatus.Success)
+        {
+            savedGameClient.Delete(game);
+        }
+        else
+        {
+
         }
     }
 }
