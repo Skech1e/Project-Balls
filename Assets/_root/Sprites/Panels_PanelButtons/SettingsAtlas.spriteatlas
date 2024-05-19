@@ -46,7 +46,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: ce42a71eb84e4d64fbded01c9041d15d, type: 3}
     - {fileID: 2800000, guid: 02226ca82218b8146b879000f85bdd0f, type: 3}
-    - {fileID: 2800000, guid: bc5914022ced84e42bf67fcafea91662, type: 3}
+    - {fileID: 2800000, guid: b1c1e357730f6ca4a9ffe80631779c30, type: 3}
     - {fileID: 2800000, guid: c6595bfbd90b941499a9d751cec4b6a3, type: 3}
     - {fileID: 2800000, guid: 33d10f6c005b93b4b8e73f00630a331e, type: 3}
     - {fileID: 2800000, guid: e692b6ece6882324d87409a6fb7cb425, type: 3}
@@ -65,11 +65,11 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: d0664d31a81b0ab42bc8b8fdeb528002, type: 3}
   - {fileID: 21300000, guid: 800f5071c9e5cc4469371eff6d38b9d2, type: 3}
-  - {fileID: 21300000, guid: bc5914022ced84e42bf67fcafea91662, type: 3}
   - {fileID: 21300000, guid: 4b8b28e36a39c5249af160fe1730a133, type: 3}
   - {fileID: 21300000, guid: 1838fcf305757b54f93fd9ca1a7b0d40, type: 3}
   - {fileID: 21300000, guid: cf363115a2749d14f8c085016da98bb4, type: 3}
   - {fileID: 21300000, guid: 896e56a65ec861c478afc6f3061b432c, type: 3}
+  - {fileID: 21300000, guid: b1c1e357730f6ca4a9ffe80631779c30, type: 3}
   - {fileID: 21300000, guid: 58cbc6e7e30d14e4e83eaad39e1588ea, type: 3}
   - {fileID: 21300000, guid: 02226ca82218b8146b879000f85bdd0f, type: 3}
   - {fileID: 21300000, guid: 6c39deda72d6dc14786a4986579e2949, type: 3}
@@ -80,11 +80,11 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - YES_BTN
   - EXIT_PANEL
-  - 'PRIVACY POLICY '
   - quit_psd_btn
   - setting_psd_btn
   - restart_psd_btn
   - paused_panel_2
+  - rate-us
   - resume_psd_btn
   - MORE GAMES
   - NO_BTN

@@ -86,9 +86,6 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //direction.x = track.InputScale.x * track.precision;
-        //direction.y = track.InputScale.y * track.precision * 1.5f;
-        //direction.z = track.InputScale.y * track.precision;
         direction.x = track.velocity.x;
         direction.y = track.velocity.y;
         direction.z = track.velocity.z;
@@ -145,7 +142,7 @@ public class Ball : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         source.Play();
-
+        
         if (collision.collider.CompareTag("ground") && transform.position != defaultPos)
         {
             if (Throw == true)

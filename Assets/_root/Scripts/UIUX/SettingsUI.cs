@@ -6,11 +6,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class SettingsUI : MonoBehaviour
 {
-    [SerializeField] Image spr_music, spr_sound;
-    [SerializeField] TextMeshProUGUI txt_graphics, shadow_text;
+    [SerializeField] Image spr_music, spr_sound, spr_vibrate;
     [SerializeField] List<Sprite> Toggle = new();
 
-    [SerializeField] bool Sound, Music;
+    [SerializeField] bool Sound, Music, Vibrate;
     enum Graphics : int { Low = 0, Medium = 1, High = 2, Max = 3 };
     private readonly int graphicsLength = Enum.GetValues(typeof(Graphics)).Length;
 
@@ -38,9 +37,11 @@ public class SettingsUI : MonoBehaviour
     {
         Sound = saver.usrdata.settings.Sound;
         Music = saver.usrdata.settings.Music;
+        Vibrate = saver.usrdata.settings.Vibrate;
 
         spr_sound.sprite = Sound == true ? Toggle[1] : Toggle[0];
         spr_music.sprite = Music == true ? Toggle[1] : Toggle[0];
+        spr_vibrate.sprite = Vibrate == true ? Toggle[1] : Toggle[0];
         //Counter = saver.LoadUser().Graphics;
         //QualitySettings.SetQualityLevel(Counter, false);
     }
@@ -72,6 +73,12 @@ public class SettingsUI : MonoBehaviour
     {
         Music = !Music;
         spr_music.sprite = Music == true ? Toggle[1] : Toggle[0];
+    }
+
+    public void ToggleVibrate()
+    {
+        Vibrate = !Vibrate;
+        spr_vibrate.sprite = Vibrate == true ? Toggle[1] : Toggle[0];
     }
     /*public void SwitchGraphics()
     {

@@ -126,7 +126,7 @@ public class Level
 public class Settings
 {
     public string Name;
-    public bool Sound, Music;
+    public bool Sound, Music, Vibrate;
 }
 
 [System.Serializable]
