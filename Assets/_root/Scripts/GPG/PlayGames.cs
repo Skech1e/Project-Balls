@@ -20,7 +20,7 @@ public class PlayGames : MonoBehaviour
     public static PlayGames playGames { get; private set; }
     public TextMeshProUGUI check, debug;
     string savefile;
-    bool isOnline;
+    bool isOnline, isAuthed;
     ISavedGameClient savedGameClient;
     private void Awake()
     {
@@ -37,9 +37,15 @@ public class PlayGames : MonoBehaviour
         if (isOnline)
         {
             PlayGamesPlatform.Activate();
-            PlayGamesPlatform.Instance.Authenticate(ProcessAuthentication);
+            PlayGamesPlatform.Instance.Authenticate(GooglePlayGames.BasicApi.SignInInteractivity.CanPromptAlways, ProcessAuthentication);
             savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+            isAuthed = true;
         }
+    }
+
+    public void SignInInteractivity()
+    {
+
     }
 
     public void ProcessAuthentication(SignInStatus status)
@@ -49,12 +55,38 @@ public class PlayGames : MonoBehaviour
         if (status == SignInStatus.Success)
         {
             GPGSave(gpgAction);
-           
+
         }
         else
         {
             check.text = "Failed";
 
+        }
+    }
+
+    public void GPGUI()
+    {
+        if (isOnline)
+        {
+            if (isAuthed)
+            {
+                PlayGamesPlatform.Instance.SignOut();
+            }
+            PlayGamesPlatform.Activate();
+            PlayGamesPlatform.Instance.Authenticate(GooglePlayGames.BasicApi.SignInInteractivity.CanPromptAlways, ProcessAuthentication);
+            savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+        }
+
+    }
+    public void OnSavedGameSelected(SelectUIStatus status, ISavedGameMetadata game)
+    {
+        if (status == SelectUIStatus.SavedGameSelected)
+        {
+            // handle selected game save
+        }
+        else
+        {
+            // handle cancel or error
         }
     }
 
@@ -121,7 +153,7 @@ public class PlayGames : MonoBehaviour
 
             debug.text = data;
             JsonUtility.FromJsonOverwrite(data, saver.usrdata);
-            if(data != null)
+            if (data != null)
             {
 
             }
@@ -155,7 +187,7 @@ public class PlayGames : MonoBehaviour
 
     private void DeleteSavedGame(SavedGameRequestStatus status, ISavedGameMetadata game)
     {
-        if(status == SavedGameRequestStatus.Success)
+        if (status == SavedGameRequestStatus.Success)
         {
             savedGameClient.Delete(game);
         }

@@ -59,11 +59,13 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 61ce1db8bc4596444953a0a4a64875d6, type: 3}
     - {fileID: 2800000, guid: 3779fc6abe4efb949889e44e912e2ca9, type: 3}
     - {fileID: 2800000, guid: fa8f8232506fa534999f146ddd957f8a, type: 3}
+    - {fileID: 2800000, guid: 9d6706e02c1ad2844acd1f2828c90a6e, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 9d6706e02c1ad2844acd1f2828c90a6e, type: 3}
   - {fileID: 21300000, guid: e3f49e615b8ac41428cf60f2bfe431da, type: 3}
   - {fileID: 21300000, guid: fa8f8232506fa534999f146ddd957f8a, type: 3}
   - {fileID: 21300000, guid: aa4c3c45df05d2a409c01c643ec74d20, type: 3}
@@ -80,6 +82,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 612dee7ee9750f04589dcf918f40fec3, type: 3}
   - {fileID: 21300000, guid: 9a4f95cf10e64374fa7fe251d378591a, type: 3}
   m_PackedSpriteNamesToIndex:
+  - gpg_btn
   - SHOP BUTTON@2x
   - STADIUM_IMG_PANEL
   - EXIT BUTTON@2x

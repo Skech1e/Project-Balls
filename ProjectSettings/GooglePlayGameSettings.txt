@@ -1,5 +1,5 @@
-lastUpgrade=01101
-proj.pluginVersion=0.11.01
+lastUpgrade=01014
+proj.pluginVersion=0.10.14
 proj.AppId=853312753018
 and.BundleId=com.GameInstitute.CrazyBasket
 proj.classDir=Assets%2f_root%2fScripts%2fGPG%2f

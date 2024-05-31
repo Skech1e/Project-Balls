@@ -1,6 +1,7 @@
 using UnityEngine;
 using Random = Unity.Mathematics.Random;
 using GlobalBasket;
+using CandyCoded.HapticFeedback;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Ball : MonoBehaviour
@@ -127,7 +128,7 @@ public class Ball : MonoBehaviour
     {
         CancelInvoke();
         if (resetBall == true)
-        {   
+        {
             transform.position = defaultPos;
             body.velocity = Vector2.zero;
             body.isKinematic = true;
@@ -142,13 +143,15 @@ public class Ball : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         source.Play();
-        
+        if (GameManager.saver.usrdata.settings.Vibrate)
+            HapticFeedback.MediumFeedback();
+
         if (collision.collider.CompareTag("ground") && transform.position != defaultPos)
         {
             if (Throw == true)
             {
                 Invoke(nameof(ResetBall), 2f);
-                if(ballEventCalled == false)
+                if (ballEventCalled == false)
                 {
                     Invoke(nameof(InvokeBallEvent), 1.8f);
                 }

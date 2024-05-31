@@ -13,18 +13,6 @@ public class SettingsUI : MonoBehaviour
     enum Graphics : int { Low = 0, Medium = 1, High = 2, Max = 3 };
     private readonly int graphicsLength = Enum.GetValues(typeof(Graphics)).Length;
 
-    /*[SerializeField]
-    private int _counter;
-    public int Counter
-    {
-        get => _counter;
-        set
-        {
-            _counter = Mathf.Clamp(value, 0, graphicsLength);
-            _counter = _counter >= graphicsLength ? 0 : _counter;
-        }
-    }*/
-
     //Saving vars
     Saver saver;
 
